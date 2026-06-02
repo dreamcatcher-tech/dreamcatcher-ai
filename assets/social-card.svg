@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" role="img" aria-labelledby="title desc">
+  <title id="title">Dreamcatcher.ai social card</title>
+  <desc id="desc">Dreamcatcher.ai dedicated AI agents looked after by people.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1200" y2="630" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#07111f"/>
+      <stop offset=".58" stop-color="#0b1526"/>
+      <stop offset="1" stop-color="#111f36"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="190" y1="140" x2="1040" y2="520" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#22d3ee"/>
+      <stop offset=".52" stop-color="#34d399"/>
+      <stop offset="1" stop-color="#a78bfa"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="630" fill="url(#bg)"/>
+  <circle cx="988" cy="104" r="280" fill="#22d3ee" opacity=".12"/>
+  <circle cx="190" cy="560" r="300" fill="#34d399" opacity=".10"/>
+  <g transform="translate(92 88)">
+    <rect width="96" height="96" rx="24" fill="#07111f" stroke="url(#accent)" stroke-width="4"/>
+    <circle cx="48" cy="48" r="31" fill="none" stroke="url(#accent)" stroke-width="5"/>
+    <path d="M24 49c10-13 20-19 29-17 9 1 15 8 19 20M31 70c8-20 21-31 37-32M27 31c10 22 26 34 47 35M21 48h54M48 17v62" fill="none" stroke="#eaf8ff" stroke-opacity=".76" stroke-width="2.4" stroke-linecap="round"/>
+    <circle cx="48" cy="48" r="6" fill="#eaf8ff"/>
+  </g>
+  <text x="92" y="260" fill="#eef7ff" font-family="Inter, system-ui, sans-serif" font-size="72" font-weight="850" letter-spacing="-4">Your own AI agent,</text>
+  <text x="92" y="346" fill="#eef7ff" font-family="Inter, system-ui, sans-serif" font-size="72" font-weight="850" letter-spacing="-4">looked after by people.</text>
+  <text x="96" y="436" fill="#c5d3e8" font-family="Inter, system-ui, sans-serif" font-size="30">Dedicated · portable · human-mediated · channel-native</text>
+  <rect x="92" y="504" width="310" height="58" rx="29" fill="url(#accent)"/>
+  <text x="247" y="542" text-anchor="middle" fill="#051320" font-family="Inter, system-ui, sans-serif" font-size="22" font-weight="850">Dreamcatcher.ai</text>
+</svg>
