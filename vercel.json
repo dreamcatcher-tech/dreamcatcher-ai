@@ -1,0 +1,13 @@
+{
+  "$schema": "https://openapi.vercel.sh/vercel.json",
+  "framework": null,
+  "buildCommand": "node scripts/build.mjs",
+  "installCommand": "true",
+  "outputDirectory": "dist",
+  "cleanUrls": true,
+  "trailingSlash": false,
+  "redirects": [
+    { "source": "/chat", "destination": "/", "permanent": false },
+    { "source": "/chat/:path*", "destination": "/", "permanent": false }
+  ]
+}
