@@ -13,6 +13,7 @@ await copyFile(join(root, 'index.html'), join(dist, 'index.html'));
 await copyFile(join(root, 'styles.css'), join(dist, 'styles.css'));
 await copyFile(join(root, 'robots.txt'), join(dist, 'robots.txt'));
 await copyFile(join(root, 'sitemap.xml'), join(dist, 'sitemap.xml'));
+await copyFile(join(root, 'CNAME'), join(dist, 'CNAME'));
 await writeFile(join(dist, '.nojekyll'), '');
 await cp(join(root, 'assets'), join(dist, 'assets'), { recursive: true });
 

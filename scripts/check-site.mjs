@@ -17,6 +17,7 @@ const requiredFiles = [
   'assets/social-card.svg',
   'robots.txt',
   'sitemap.xml',
+  'CNAME',
   'vercel.json',
 ];
 for (const file of requiredFiles) {
@@ -38,6 +39,7 @@ const mustContain = [
   ['Human steward', read('assets/agent-capsule.svg')],
   ['mailto:tom@dreamcatcher.ai', html],
   ['framework', read('vercel.json')],
+  ['dreamcatcher.ai', read('CNAME')],
 ];
 for (const [needle, haystack] of mustContain) {
   if (!haystack.includes(needle)) fail(`Expected content not found: ${needle}`);
