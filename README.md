@@ -16,16 +16,17 @@ Then open <http://127.0.0.1:3100/>.
 
 ## Deployment
 
-Production `dreamcatcher.ai` is served by the Fly app `dreamcatcher-ai-home`. The container runs Caddy on raw TCP ports 80/443 so Caddy can manage Let's Encrypt certificates for both `dreamcatcher.ai` and `www.dreamcatcher.ai`.
+Production is back on GitHub Pages. The canonical Pages custom domain is `www.dreamcatcher.ai`; the apex `dreamcatcher.ai` is configured at DNS level for GitHub Pages and redirects to `www`.
 
-```bash
-npm run build
-fly deploy --app dreamcatcher-ai-home --remote-only --ha=false
-```
+Current web DNS at Porkbun:
 
-DNS is managed at Porkbun. Current web records point the apex and `www` to the Fly app's shared IPv4 and dedicated IPv6 addresses. DNS snapshots and rollback notes live under `dns-backups/`.
+- `A @` -> GitHub Pages IPv4 records `185.199.108.153`, `185.199.109.153`, `185.199.110.153`, `185.199.111.153`
+- `AAAA @` -> GitHub Pages IPv6 records `2606:50c0:8000::153`, `2606:50c0:8001::153`, `2606:50c0:8002::153`, `2606:50c0:8003::153`
+- `CNAME www` -> `dreamcatcher-tech.github.io`
 
-GitHub Pages and Vercel static config are retained as non-production/static fallback paths; `/chat` redirects to `/` because the former web-chat surface has been retired.
+DNS snapshots and rollback notes live under `dns-backups/`. Commit a pre-change backup before any DNS write and a verified post-change backup afterwards.
+
+The Fly/Caddy files are retained as a fallback path only; they are not the production DNS target.
 
 ## Content direction
 

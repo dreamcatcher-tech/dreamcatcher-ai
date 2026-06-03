@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://dreamcatcher.ai/sitemap.xml
+Sitemap: https://www.dreamcatcher.ai/sitemap.xml
