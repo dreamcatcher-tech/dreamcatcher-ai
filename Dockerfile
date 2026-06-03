@@ -1,9 +1,8 @@
-FROM nginx:1.27-alpine
+FROM caddy:2.9-alpine
 
-COPY dist/ /usr/share/nginx/html/
+COPY Caddyfile /etc/caddy/Caddyfile
+COPY dist/ /srv/
 
-RUN chmod -R a+rX /usr/share/nginx/html \
-  && sed -i 's/listen       80;/listen       8080;/' /etc/nginx/conf.d/default.conf \
-  && sed -i 's/listen  \[::\]:80;/listen  [::]:8080;/' /etc/nginx/conf.d/default.conf
+RUN chmod -R a+rX /srv /etc/caddy/Caddyfile
 
-EXPOSE 8080
+EXPOSE 80 443

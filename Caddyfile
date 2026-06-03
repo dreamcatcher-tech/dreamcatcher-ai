@@ -1,0 +1,4 @@
+dreamcatcher.ai, www.dreamcatcher.ai {
+	root * /srv
+	file_server
+}

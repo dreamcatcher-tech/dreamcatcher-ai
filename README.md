@@ -16,12 +16,16 @@ Then open <http://127.0.0.1:3100/>.
 
 ## Deployment
 
-Vercel is configured as a static project via `vercel.json`:
+Production `dreamcatcher.ai` is served by the Fly app `dreamcatcher-ai-home`. The container runs Caddy on raw TCP ports 80/443 so Caddy can manage Let's Encrypt certificates for both `dreamcatcher.ai` and `www.dreamcatcher.ai`.
 
-- `framework: null`
-- `buildCommand: node scripts/build.mjs`
-- `outputDirectory: dist`
-- `/chat` redirects to `/` because the former web-chat surface has been retired.
+```bash
+npm run build
+fly deploy --app dreamcatcher-ai-home --remote-only --ha=false
+```
+
+DNS is managed at Porkbun. Current web records point the apex and `www` to the Fly app's shared IPv4 and dedicated IPv6 addresses. DNS snapshots and rollback notes live under `dns-backups/`.
+
+GitHub Pages and Vercel static config are retained as non-production/static fallback paths; `/chat` redirects to `/` because the former web-chat surface has been retired.
 
 ## Content direction
 
