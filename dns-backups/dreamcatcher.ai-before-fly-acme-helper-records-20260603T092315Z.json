@@ -1,0 +1,451 @@
+{
+  "domain": "dreamcatcher.ai",
+  "generated_at_utc": "2026-06-03T09:23:15Z",
+  "purpose": "Snapshot after moving web DNS to Fly and before adding Fly ACME challenge/ownership records.",
+  "records": [
+    {
+      "content": "66.241.124.100",
+      "id": "552625854",
+      "name": "dreamcatcher.ai",
+      "notes": "",
+      "prio": "0",
+      "ttl": "600",
+      "type": "A"
+    },
+    {
+      "content": "66.241.124.100",
+      "id": "552625869",
+      "name": "www.dreamcatcher.ai",
+      "notes": "",
+      "prio": "0",
+      "ttl": "600",
+      "type": "A"
+    },
+    {
+      "content": "2a09:8280:1::11e:d1f0:0",
+      "id": "552625866",
+      "name": "dreamcatcher.ai",
+      "notes": "",
+      "prio": "0",
+      "ttl": "600",
+      "type": "AAAA"
+    },
+    {
+      "content": "2a09:8280:1::11e:d1f0:0",
+      "id": "552625873",
+      "name": "www.dreamcatcher.ai",
+      "notes": "",
+      "prio": "0",
+      "ttl": "600",
+      "type": "AAAA"
+    },
+    {
+      "content": "accounts.clerk.services",
+      "id": "509508544",
+      "name": "accounts.dreamcatcher.ai",
+      "notes": "",
+      "prio": "0",
+      "ttl": "600",
+      "type": "CNAME"
+    },
+    {
+      "content": "_0f7ad858d363534bb43f884c41c8affd.duyqrilejt.acm-validations.aws",
+      "id": "509508539",
+      "name": "_aa01f2bce6378add2eea0961c3087f26.dreamcatcher.ai",
+      "notes": "",
+      "prio": "0",
+      "ttl": "600",
+      "type": "CNAME"
+    },
+    {
+      "content": "dreamcatcher-agents.github.io.",
+      "id": "550364828",
+      "name": "agents.dreamcatcher.ai",
+      "notes": "",
+      "prio": "0",
+      "ttl": "600",
+      "type": "CNAME"
+    },
+    {
+      "content": "frontend-api.clerk.services",
+      "id": "509508545",
+      "name": "clerk.dreamcatcher.ai",
+      "notes": "",
+      "prio": "0",
+      "ttl": "600",
+      "type": "CNAME"
+    },
+    {
+      "content": "dkim1.70plyqi6o7qr.clerk.services",
+      "id": "509508541",
+      "name": "clk._domainkey.dreamcatcher.ai",
+      "notes": "",
+      "prio": "0",
+      "ttl": "600",
+      "type": "CNAME"
+    },
+    {
+      "content": "dkim2.70plyqi6o7qr.clerk.services",
+      "id": "509508542",
+      "name": "clk2._domainkey.dreamcatcher.ai",
+      "notes": "",
+      "prio": "0",
+      "ttl": "600",
+      "type": "CNAME"
+    },
+    {
+      "content": "mail.70plyqi6o7qr.clerk.services",
+      "id": "509508547",
+      "name": "clkmail.dreamcatcher.ai",
+      "notes": "",
+      "prio": "0",
+      "ttl": "600",
+      "type": "CNAME"
+    },
+    {
+      "content": "inbound-smtp.us-east-1.amazonaws.com",
+      "id": "550597257",
+      "name": "agent.dreamcatcher.ai",
+      "notes": "",
+      "prio": "0",
+      "ttl": "600",
+      "type": "MX"
+    },
+    {
+      "content": "feedback-smtp.us-east-1.amazonses.com",
+      "id": "550597338",
+      "name": "mail.agent.dreamcatcher.ai",
+      "notes": "",
+      "prio": "0",
+      "ttl": "600",
+      "type": "MX"
+    },
+    {
+      "content": "aspmx.l.google.com",
+      "id": "509508525",
+      "name": "dreamcatcher.ai",
+      "notes": "",
+      "prio": "1",
+      "ttl": "3600",
+      "type": "MX"
+    },
+    {
+      "content": "alt4.aspmx.l.google.com",
+      "id": "509508530",
+      "name": "dreamcatcher.ai",
+      "notes": "",
+      "prio": "10",
+      "ttl": "3600",
+      "type": "MX"
+    },
+    {
+      "content": "alt3.aspmx.l.google.com",
+      "id": "509508529",
+      "name": "dreamcatcher.ai",
+      "notes": "",
+      "prio": "10",
+      "ttl": "3600",
+      "type": "MX"
+    },
+    {
+      "content": "alt2.aspmx.l.google.com",
+      "id": "509508534",
+      "name": "dreamcatcher.ai",
+      "notes": "",
+      "prio": "5",
+      "ttl": "3600",
+      "type": "MX"
+    },
+    {
+      "content": "alt1.aspmx.l.google.com",
+      "id": "509508533",
+      "name": "dreamcatcher.ai",
+      "notes": "",
+      "prio": "5",
+      "ttl": "3600",
+      "type": "MX"
+    },
+    {
+      "content": "curitiba.porkbun.com",
+      "id": "509507809",
+      "name": "dreamcatcher.ai",
+      "notes": null,
+      "prio": null,
+      "ttl": "86400",
+      "type": "NS"
+    },
+    {
+      "content": "fortaleza.porkbun.com",
+      "id": "509507808",
+      "name": "dreamcatcher.ai",
+      "notes": null,
+      "prio": null,
+      "ttl": "86400",
+      "type": "NS"
+    },
+    {
+      "content": "maceio.porkbun.com",
+      "id": "509507806",
+      "name": "dreamcatcher.ai",
+      "notes": null,
+      "prio": null,
+      "ttl": "86400",
+      "type": "NS"
+    },
+    {
+      "content": "salvador.porkbun.com",
+      "id": "509507807",
+      "name": "dreamcatcher.ai",
+      "notes": null,
+      "prio": null,
+      "ttl": "86400",
+      "type": "NS"
+    },
+    {
+      "content": "google-site-verification=FSXGlm03UYU-1wmnpAJygU2X74NaL2_7DNOQup3rIjs",
+      "id": "509508538",
+      "name": "dreamcatcher.ai",
+      "notes": "",
+      "prio": "0",
+      "ttl": "1800",
+      "type": "TXT"
+    },
+    {
+      "content": "v=spf1 include:amazonses.com -all",
+      "id": "550597380",
+      "name": "mail.agent.dreamcatcher.ai",
+      "notes": "",
+      "prio": "0",
+      "ttl": "600",
+      "type": "TXT"
+    },
+    {
+      "content": "v=DKIM1; k=rsa; p=MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAnqQLy1j53lF67CVOSuy4fn4mrKkax2t8bndZxIF4O4BeC/tk0f19OkOTyqJP8ydhetP6NbOUJJ6PNMHXiaKotuTgK73X6BTHUjY0xbJwydnDXB7aewfGFE3PNuwmPhniYnAjAAbzxBvIqI5dW4I51xebkGWHFtEH31LqpM4M/K1Qz2RxUbVEOogfgTvFDfgJoNxI7uVkArqxgoyi2b0G4YMqsuZcZETLhUo867qYUyaBrwp/xF7gHogybvIfNGkJlpLtyB6IFXTiwOHNiMLSlWLV3ZV+dNBg1+1My8yM5ZhOkSx5hkDSxroZqq85NAA0H7qEhZmChoJBxYjFj/IuOQIDAQAB",
+      "id": "550597157",
+      "name": "agentmail._domainkey.agent.dreamcatcher.ai",
+      "notes": "",
+      "prio": "0",
+      "ttl": "600",
+      "type": "TXT"
+    },
+    {
+      "content": "v=DMARC1; p=reject; rua=mailto:dmarc@agent.dreamcatcher.ai",
+      "id": "550597422",
+      "name": "_dmarc.agent.dreamcatcher.ai",
+      "notes": "",
+      "prio": "0",
+      "ttl": "600",
+      "type": "TXT"
+    },
+    {
+      "content": "d1b1a0f05a",
+      "id": "509508543",
+      "name": "_github-challenge-dreamcatcher-ai.dreamcatcher.ai",
+      "notes": "",
+      "prio": "0",
+      "ttl": "1800",
+      "type": "TXT"
+    },
+    {
+      "content": "1f7e6295f1b976aaabe937162d6304",
+      "id": "550385762",
+      "name": "_github-pages-challenge-dreamcatcher-agents.agents.dreamcatcher.ai",
+      "notes": "",
+      "prio": "0",
+      "ttl": "600",
+      "type": "TXT"
+    }
+  ],
+  "relevant_records": [
+    {
+      "content": "66.241.124.100",
+      "id": "552625854",
+      "name": "dreamcatcher.ai",
+      "notes": "",
+      "prio": "0",
+      "ttl": "600",
+      "type": "A"
+    },
+    {
+      "content": "66.241.124.100",
+      "id": "552625869",
+      "name": "www.dreamcatcher.ai",
+      "notes": "",
+      "prio": "0",
+      "ttl": "600",
+      "type": "A"
+    },
+    {
+      "content": "2a09:8280:1::11e:d1f0:0",
+      "id": "552625866",
+      "name": "dreamcatcher.ai",
+      "notes": "",
+      "prio": "0",
+      "ttl": "600",
+      "type": "AAAA"
+    },
+    {
+      "content": "2a09:8280:1::11e:d1f0:0",
+      "id": "552625873",
+      "name": "www.dreamcatcher.ai",
+      "notes": "",
+      "prio": "0",
+      "ttl": "600",
+      "type": "AAAA"
+    },
+    {
+      "content": "accounts.clerk.services",
+      "id": "509508544",
+      "name": "accounts.dreamcatcher.ai",
+      "notes": "",
+      "prio": "0",
+      "ttl": "600",
+      "type": "CNAME"
+    },
+    {
+      "content": "_0f7ad858d363534bb43f884c41c8affd.duyqrilejt.acm-validations.aws",
+      "id": "509508539",
+      "name": "_aa01f2bce6378add2eea0961c3087f26.dreamcatcher.ai",
+      "notes": "",
+      "prio": "0",
+      "ttl": "600",
+      "type": "CNAME"
+    },
+    {
+      "content": "dreamcatcher-agents.github.io.",
+      "id": "550364828",
+      "name": "agents.dreamcatcher.ai",
+      "notes": "",
+      "prio": "0",
+      "ttl": "600",
+      "type": "CNAME"
+    },
+    {
+      "content": "frontend-api.clerk.services",
+      "id": "509508545",
+      "name": "clerk.dreamcatcher.ai",
+      "notes": "",
+      "prio": "0",
+      "ttl": "600",
+      "type": "CNAME"
+    },
+    {
+      "content": "dkim1.70plyqi6o7qr.clerk.services",
+      "id": "509508541",
+      "name": "clk._domainkey.dreamcatcher.ai",
+      "notes": "",
+      "prio": "0",
+      "ttl": "600",
+      "type": "CNAME"
+    },
+    {
+      "content": "dkim2.70plyqi6o7qr.clerk.services",
+      "id": "509508542",
+      "name": "clk2._domainkey.dreamcatcher.ai",
+      "notes": "",
+      "prio": "0",
+      "ttl": "600",
+      "type": "CNAME"
+    },
+    {
+      "content": "mail.70plyqi6o7qr.clerk.services",
+      "id": "509508547",
+      "name": "clkmail.dreamcatcher.ai",
+      "notes": "",
+      "prio": "0",
+      "ttl": "600",
+      "type": "CNAME"
+    },
+    {
+      "content": "aspmx.l.google.com",
+      "id": "509508525",
+      "name": "dreamcatcher.ai",
+      "notes": "",
+      "prio": "1",
+      "ttl": "3600",
+      "type": "MX"
+    },
+    {
+      "content": "alt4.aspmx.l.google.com",
+      "id": "509508530",
+      "name": "dreamcatcher.ai",
+      "notes": "",
+      "prio": "10",
+      "ttl": "3600",
+      "type": "MX"
+    },
+    {
+      "content": "alt3.aspmx.l.google.com",
+      "id": "509508529",
+      "name": "dreamcatcher.ai",
+      "notes": "",
+      "prio": "10",
+      "ttl": "3600",
+      "type": "MX"
+    },
+    {
+      "content": "alt2.aspmx.l.google.com",
+      "id": "509508534",
+      "name": "dreamcatcher.ai",
+      "notes": "",
+      "prio": "5",
+      "ttl": "3600",
+      "type": "MX"
+    },
+    {
+      "content": "alt1.aspmx.l.google.com",
+      "id": "509508533",
+      "name": "dreamcatcher.ai",
+      "notes": "",
+      "prio": "5",
+      "ttl": "3600",
+      "type": "MX"
+    },
+    {
+      "content": "curitiba.porkbun.com",
+      "id": "509507809",
+      "name": "dreamcatcher.ai",
+      "notes": null,
+      "prio": null,
+      "ttl": "86400",
+      "type": "NS"
+    },
+    {
+      "content": "fortaleza.porkbun.com",
+      "id": "509507808",
+      "name": "dreamcatcher.ai",
+      "notes": null,
+      "prio": null,
+      "ttl": "86400",
+      "type": "NS"
+    },
+    {
+      "content": "maceio.porkbun.com",
+      "id": "509507806",
+      "name": "dreamcatcher.ai",
+      "notes": null,
+      "prio": null,
+      "ttl": "86400",
+      "type": "NS"
+    },
+    {
+      "content": "salvador.porkbun.com",
+      "id": "509507807",
+      "name": "dreamcatcher.ai",
+      "notes": null,
+      "prio": null,
+      "ttl": "86400",
+      "type": "NS"
+    },
+    {
+      "content": "google-site-verification=FSXGlm03UYU-1wmnpAJygU2X74NaL2_7DNOQup3rIjs",
+      "id": "509508538",
+      "name": "dreamcatcher.ai",
+      "notes": "",
+      "prio": "0",
+      "ttl": "1800",
+      "type": "TXT"
+    }
+  ],
+  "source": "Porkbun API before adding Fly ACME/ownership helper DNS records"
+}
