@@ -26,7 +26,7 @@ Current web DNS at Porkbun:
 
 DNS snapshots and rollback notes live under `dns-backups/`. Commit a pre-change backup before any DNS write and a verified post-change backup afterwards.
 
-The Fly/Caddy files are retained as a fallback path only; they are not the production DNS target.
+Fly/Caddy fallback hosting has been removed; production is GitHub Pages only.
 
 ## Content direction
 
