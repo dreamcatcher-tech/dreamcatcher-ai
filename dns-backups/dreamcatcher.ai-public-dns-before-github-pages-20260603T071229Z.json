@@ -1,0 +1,155 @@
+{
+  "domain": "dreamcatcher.ai",
+  "empty_queries": [
+    {
+      "answer_count": 0,
+      "name": "dreamcatcher.ai",
+      "status": 0,
+      "type": "AAAA"
+    },
+    {
+      "answer_count": 0,
+      "name": "dreamcatcher.ai",
+      "status": 0,
+      "type": "CNAME"
+    },
+    {
+      "answer_count": 0,
+      "name": "dreamcatcher.ai",
+      "status": 0,
+      "type": "CAA"
+    },
+    {
+      "answer_count": 0,
+      "name": "www.dreamcatcher.ai",
+      "status": 3,
+      "type": "NS"
+    },
+    {
+      "answer_count": 0,
+      "name": "www.dreamcatcher.ai",
+      "status": 3,
+      "type": "A"
+    },
+    {
+      "answer_count": 0,
+      "name": "www.dreamcatcher.ai",
+      "status": 3,
+      "type": "AAAA"
+    },
+    {
+      "answer_count": 0,
+      "name": "www.dreamcatcher.ai",
+      "status": 3,
+      "type": "CNAME"
+    },
+    {
+      "answer_count": 0,
+      "name": "www.dreamcatcher.ai",
+      "status": 3,
+      "type": "MX"
+    },
+    {
+      "answer_count": 0,
+      "name": "www.dreamcatcher.ai",
+      "status": 3,
+      "type": "TXT"
+    },
+    {
+      "answer_count": 0,
+      "name": "www.dreamcatcher.ai",
+      "status": 3,
+      "type": "CAA"
+    }
+  ],
+  "generated_at_utc": "2026-06-03T07:12:29Z",
+  "purpose": "Rollback snapshot before changing dreamcatcher.ai from Vercel to GitHub Pages",
+  "records": [
+    {
+      "data": "curitiba.ns.porkbun.com.",
+      "name": "dreamcatcher.ai",
+      "source_type_code": 2,
+      "ttl": 86400,
+      "type": "NS"
+    },
+    {
+      "data": "fortaleza.ns.porkbun.com.",
+      "name": "dreamcatcher.ai",
+      "source_type_code": 2,
+      "ttl": 86400,
+      "type": "NS"
+    },
+    {
+      "data": "maceio.ns.porkbun.com.",
+      "name": "dreamcatcher.ai",
+      "source_type_code": 2,
+      "ttl": 86400,
+      "type": "NS"
+    },
+    {
+      "data": "salvador.ns.porkbun.com.",
+      "name": "dreamcatcher.ai",
+      "source_type_code": 2,
+      "ttl": 86400,
+      "type": "NS"
+    },
+    {
+      "data": "216.150.1.1",
+      "name": "dreamcatcher.ai",
+      "source_type_code": 1,
+      "ttl": 10800,
+      "type": "A"
+    },
+    {
+      "data": "1 aspmx.l.google.com.",
+      "name": "dreamcatcher.ai",
+      "source_type_code": 15,
+      "ttl": 3600,
+      "type": "MX"
+    },
+    {
+      "data": "10 alt3.aspmx.l.google.com.",
+      "name": "dreamcatcher.ai",
+      "source_type_code": 15,
+      "ttl": 3600,
+      "type": "MX"
+    },
+    {
+      "data": "10 alt4.aspmx.l.google.com.",
+      "name": "dreamcatcher.ai",
+      "source_type_code": 15,
+      "ttl": 3600,
+      "type": "MX"
+    },
+    {
+      "data": "5 alt1.aspmx.l.google.com.",
+      "name": "dreamcatcher.ai",
+      "source_type_code": 15,
+      "ttl": 3600,
+      "type": "MX"
+    },
+    {
+      "data": "5 alt2.aspmx.l.google.com.",
+      "name": "dreamcatcher.ai",
+      "source_type_code": 15,
+      "ttl": 3600,
+      "type": "MX"
+    },
+    {
+      "data": "\"google-site-verification=FSXGlm03UYU-1wmnpAJygU2X74NaL2_7DNOQup3rIjs\"",
+      "name": "dreamcatcher.ai",
+      "source_type_code": 16,
+      "ttl": 1800,
+      "type": "TXT"
+    }
+  ],
+  "restore_summary": {
+    "apex_a_before_cutover": [
+      "216.150.1.1"
+    ],
+    "apex_aaaa_before_cutover": [],
+    "keep_mail_and_verification_records": true,
+    "www_records_before_cutover": []
+  },
+  "source": "public DNS via Cloudflare DNS-over-HTTPS before Porkbun cutover"
+}
