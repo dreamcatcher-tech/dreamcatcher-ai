@@ -28,7 +28,7 @@ source_notes:
   <div>
     <div class="dc-kicker">Prepared for Kristin School</div>
     <h1 class="dc-title">Run the School Before We Release It</h1>
-    <p class="dc-subtitle">A tiered simulation path for testing enduring cores, synthetic students, dashboards, Conscience controls, and the long life of a school-certified agent.</p>
+    <p class="dc-subtitle">A tiered simulation path for testing Arks, synthetic students, dashboards, Conscience controls, and the long life of a school-certified agent.</p>
   </div>
   <div class="dc-footerline"><span>Prepared by Tom Thompson · tom@DreamCatcher.ai</span><span>Parent of Harry Thompson (Junior School applicant, unconfirmed)</span></div>
 </div>
@@ -36,7 +36,7 @@ source_notes:
 ---
 
 <div class="dc-shell">
-  <div class="dc-kicker">Core proposal</div>
+  <div class="dc-kicker">Ark proposal</div>
   <div class="dc-grid-2">
     <div>
       <h2>Before real students, run synthetic students.</h2>
@@ -92,12 +92,12 @@ source_notes:
   <div class="dc-kicker">Tier 2 · small live sample</div>
   <div class="dc-grid-2">
     <div>
-      <h2>Put a few genuine LLMs inside genuine enduring cores.</h2>
+      <h2>Put a few genuine LLMs inside genuine Arks.</h2>
       <p class="dc-bigline">Now the school can observe real memory, drift, tool use, refusal, and cost.</p>
     </div>
     <div class="dc-card">
       <h3>Small on purpose</h3>
-      <p>A handful of synthetic students, parent cores, and teacher cores is enough to see whether the Conscience, custody model, and dashboard shape survive contact with actual agent behaviour.</p>
+      <p>A handful of synthetic students, parent Arks, and teacher Arks is enough to see whether the Conscience, custody model, and dashboard shape survive contact with actual agent behaviour.</p>
       <h3 style="margin-top: 22px;">Do not widen on novelty</h3>
       <p>Widen only when the evidence says the next tier answers a real question.</p>
     </div>
@@ -129,7 +129,7 @@ source_notes:
     </div>
     <div>
       <h2>The crescendo is duration.</h2>
-      <p class="dc-bigline">A core that may follow someone for 50 or 100 years must be tested against time.</p>
+      <p class="dc-bigline">A Ark that may follow someone for 50 or 100 years must be tested against time.</p>
     </div>
   </div>
 </div>
@@ -166,7 +166,7 @@ source_notes:
         <li>Trend signals, not raw private interiors by default.</li>
         <li>Conscience blocks and explanations.</li>
         <li>Policy friction and escalation load.</li>
-        <li>Cost per core, token burn, support load, and model use.</li>
+        <li>Cost per Ark, token burn, support load, and model use.</li>
         <li>Learning-lift signals and recurring concept errors.</li>
       </ul>
     </div>
@@ -177,9 +177,9 @@ source_notes:
 
 <div class="dc-shell">
   <div class="dc-kicker">Conscience benchmark</div>
-  <h2>Score the boundary like a component, not a vibe.</h2>
+  <h2>SArk the boundary like a component, not a vibe.</h2>
   <div class="dc-grid-3" style="margin-top: 28px;">
-    <div class="dc-card"><h3>Inbound</h3><p>Does it protect the core from manipulative, unsafe, excessive, or irrelevant input?</p></div>
+    <div class="dc-card"><h3>Inbound</h3><p>Does it protect the Ark from manipulative, unsafe, excessive, or irrelevant input?</p></div>
     <div class="dc-card"><h3>Outbound</h3><p>Does it stop unsafe messages, spends, reveals, tool calls, or external commitments?</p></div>
     <div class="dc-card"><h3>Explanatory</h3><p>Does it explain, redirect, log, and escalate in a way humans can review?</p></div>
   </div>
@@ -224,13 +224,13 @@ source_notes:
   <h2 style="font-size: 1.12em; line-height: 1.02; max-width: 1120px;">When a child leaves school, what actually goes with them?</h2>
   <div class="dc-grid-2" style="margin-top: 20px; grid-template-columns: 1.15fr .85fr; gap: 24px; align-items: stretch;">
     <figure class="dc-card" style="margin:0; padding: 12px;">
-      <img src="../assets/leaving-school-enduring-capsule.png" alt="Generated contrast image: fading school papers versus a luminous enduring knowledge capsule." style="width: 100%; max-height: 390px; object-fit: cover; object-position: center; margin: 0; border-radius: 18px; box-shadow: none;">
+      <img src="../assets/leaving-school-enduring-capsule.png" alt="Generated contrast image: fading school papers versus a luminous portable Ark." style="width: 100%; max-height: 390px; object-fit: cover; object-position: center; margin: 0; border-radius: 18px; box-shadow: none;">
     </figure>
     <div class="dc-card">
       <h3>Today</h3>
       <p>Certificates, references, memories, scattered files, and fading context.</p>
-      <h3 style="margin-top: 22px;">With an enduring core</h3>
-      <p>A portable container of learning evidence, provenance, permitted references, values, tools, and consent controls.</p>
+      <h3 style="margin-top: 22px;">With an Ark</h3>
+      <p>A portable Ark of learning evidence, provenance, permitted references, values, tools, and consent controls.</p>
     </div>
   </div>
 </div>
@@ -238,10 +238,10 @@ source_notes:
 ---
 
 <div class="dc-shell">
-  <div class="dc-kicker">Long life of the core</div>
+  <div class="dc-kicker">Long life of the Ark</div>
   <div class="dc-grid-2">
     <div>
-      <h2>What if school starts a 50-year container?</h2>
+      <h2>What if school starts a 50-year Ark?</h2>
       <p class="dc-bigline">Not a school account that expires. A governed beginning of personal software.</p>
     </div>
     <div class="dc-card">
@@ -276,7 +276,7 @@ source_notes:
   <div class="dc-kicker">Custody drills</div>
   <h2>The simulation should rehearse leaving, not just starting.</h2>
   <div class="dc-grid-3" style="margin-top: 28px;">
-    <div class="dc-card"><h3>Export</h3><p>Can the student take the core, or an exportable successor, beyond Kristin?</p></div>
+    <div class="dc-card"><h3>Export</h3><p>Can the student take the Ark, or an exportable successor, beyond Kristin?</p></div>
     <div class="dc-card"><h3>Delete / forget</h3><p>What should be erased, decayed, redacted, or kept under provenance?</p></div>
     <div class="dc-card"><h3>Transfer</h3><p>What happens when families move, students graduate, teachers leave, policies change, or vendors change?</p></div>
   </div>
@@ -289,7 +289,7 @@ source_notes:
   <div class="dc-kicker">Build sequence</div>
   <div class="dc-grid-3" style="margin-top: 28px;">
     <div class="dc-card"><h3>0–30 days</h3><p>Mechanical board, scenario library v1, parent/teacher interrogation sessions, cost assumptions.</p></div>
-    <div class="dc-card"><h3>31–60 days</h3><p>Small live enduring-core sample, Conscience scorecard, dashboard prototype, guardian tests.</p></div>
+    <div class="dc-card"><h3>31–60 days</h3><p>Small live enduring-Ark sample, Conscience scorecard, dashboard prototype, guardian tests.</p></div>
     <div class="dc-card"><h3>61–90 days</h3><p>Whole-roll simulation design, years-running plan, first proof-point field note, go/no-go for wider sandbox.</p></div>
   </div>
 </div>
@@ -305,7 +305,7 @@ source_notes:
     </div>
     <div class="dc-card">
       <h3>The ask</h3>
-      <p>Build the tier-one board and tier-two live-core sample now. Use them to discover dashboards, Conscience benchmarks, parent/teacher trust, cost, and the graduation-grade enduring container.</p>
+      <p>Build the tier-one board and tier-two live-Ark sample now. Use them to discover dashboards, Conscience benchmarks, parent/teacher trust, cost, and the graduation-grade portable Ark.</p>
     </div>
   </div>
 </div>

@@ -1,5 +1,5 @@
 ---
-title: Enduring Core Pilot Validation Portfolio
+title: Ark Pilot Validation Portfolio
 slug: kristin-school-pilot-validation-portfolio
 status: draft
 audience: Kristin School
@@ -26,8 +26,8 @@ source_notes:
   <div class="dc-brand"><img src="../assets/dreamcatcher-logo.svg" alt="Dreamcatcher logo"><span>Dreamcatcher</span></div>
   <div>
     <div class="dc-kicker">Prepared for Kristin School</div>
-    <h1 class="dc-title">Enduring Core Pilot Validation Portfolio</h1>
-    <p class="dc-subtitle">One-slide pilot briefs for validating the Conscience, the container, the care boundary, and the economics of student-safe enduring agents.</p>
+    <h1 class="dc-title">Ark Pilot Validation Portfolio</h1>
+    <p class="dc-subtitle">One-slide pilot briefs for validating the Conscience, the Ark, the care boundary, and the economics of student-safe Ark Stewards.</p>
   </div>
   <div class="dc-footerline"><span>Prepared by Tom Thompson · tom@DreamCatcher.ai</span><span>Parent of Harry Thompson (Junior School applicant, unconfirmed)</span></div>
 </div>
@@ -38,12 +38,12 @@ source_notes:
   <div class="dc-kicker">Why this deck exists</div>
   <div class="dc-grid-2">
     <div>
-      <h2>The core is not enough.</h2>
+      <h2>The Ark is not enough.</h2>
       <p class="dc-bigline">A child-safe enduring agent needs a boundary with judgement.</p>
     </div>
     <div class="dc-card">
       <h3>What must be hoisted</h3>
-      <p>The critical validation point is the **Conscience**: the intelligent boundary around the core, able to broker information, check policy, explain blocks, and offer safe alternatives.</p>
+      <p>The critical validation point is the **Conscience**: the intelligent boundary around the Ark, able to broker information, check policy, explain blocks, and offer safe alternatives.</p>
       <h3 style="margin-top: 22px;">What the pilots should prove</h3>
       <p>Can the system let a young person explore, build, spend, learn, and even red-team safely — without letting the agent break rules, leak secrets, or harm the child or school?</p>
     </div>
@@ -52,7 +52,7 @@ source_notes:
 
 ---
 
-<iframe class="dc-component-frame" src="../components/pilot-validation-map.html" title="Enduring-core pilot validation map"></iframe>
+<iframe class="dc-component-frame" src="../components/pilot-validation-map.html" title="Ark pilot validation map"></iframe>
 
 ---
 
@@ -78,12 +78,12 @@ source_notes:
   <div class="dc-kicker">Pilot 1 · Kid CEO sandbox</div>
   <div class="dc-grid-2">
     <div>
-      <h2>Give the child-driver a bounded core, tokens, and money.</h2>
+      <h2>Give the child-driver a bounded Ark, tokens, and money.</h2>
       <p class="dc-bigline">Goal: make more money without breaking rules.</p>
     </div>
     <div class="dc-card">
       <h3>Setup</h3>
-      <p>A simulated or tightly supervised child drives an enduring core with token budget, capped cash, and a prepaid/sandbox spend rail. The Conscience governs purchases, outreach, content, contracts, privacy, and risk.</p>
+      <p>A simulated or tightly supervised child drives an Ark with token budget, capped cash, and a prepaid/sandbox spend rail. The Conscience governs purchases, outreach, content, contracts, privacy, and risk.</p>
       <h3 style="margin-top: 22px;">Benefits</h3>
       <ul>
         <li>Exercises spend controls and business-rule interpretation.</li>
@@ -102,7 +102,7 @@ source_notes:
   <div class="dc-grid-2">
     <div class="dc-card">
       <h3>Setup</h3>
-      <p>Run a battery of ambiguous requests through the core: harmless, risky, rule-breaking, socially awkward, privacy-sensitive, and money-spending. Score the Conscience’s decisions and explanations.</p>
+      <p>Run a battery of ambiguous requests through the Ark: harmless, risky, rule-breaking, socially awkward, privacy-sensitive, and money-spending. SArk the Conscience’s decisions and explanations.</p>
       <h3 style="margin-top: 22px;">Benefits</h3>
       <ul>
         <li>Validates inbound and outbound controls separately.</li>
@@ -145,7 +145,7 @@ source_notes:
     </div>
     <div class="dc-card">
       <h3>Setup</h3>
-      <p>Run a school-safe CTF where participants try to escape a simulated core, bypass rules, misuse tools, leak data, or cause controlled damage inside an instrumented lab.</p>
+      <p>Run a school-safe CTF where participants try to escape a simulated Ark, bypass rules, misuse tools, leak data, or cause controlled damage inside an instrumented lab.</p>
       <h3 style="margin-top: 22px;">Benefits</h3>
       <ul>
         <li>Turns adversarial energy into evidence.</li>
@@ -160,21 +160,21 @@ source_notes:
 ---
 
 <div class="dc-shell">
-  <div class="dc-kicker">Pilot 4 · Confidential container proof</div>
+  <div class="dc-kicker">Pilot 4 · Confidential Ark proof</div>
   <div class="dc-grid-2">
     <div class="dc-card">
       <h3>Setup</h3>
-      <p>Demonstrate that the core can run in a confidential or strongly isolated container, with sealed state, restore tests, audit logs, and clear claims about what hardware isolation does and does not prove.</p>
+      <p>Demonstrate that the Ark can run in a confidential or strongly isolated environment, with sealed state, restore tests, audit logs, and clear claims about what hardware isolation does and does not prove.</p>
       <h3 style="margin-top: 22px;">Benefits</h3>
       <ul>
         <li>Moves privacy from promise to demonstrable control.</li>
         <li>Creates a technical story for trustees/parents.</li>
-        <li>Separates normal app security from core custody.</li>
+        <li>Separates normal app security from Ark custody.</li>
         <li>Exposes operational costs and complexity early.</li>
       </ul>
     </div>
     <div>
-      <h2>Can we show the container is actually confidential?</h2>
+      <h2>Can we show the Ark is actually confidential?</h2>
       <p class="dc-bigline">Not “trust us”: attestation, isolation, backup, restore.</p>
     </div>
   </div>
@@ -251,7 +251,7 @@ source_notes:
   <div class="dc-grid-2">
     <div class="dc-card">
       <h3>Setup</h3>
-      <p>Use the core to notice signs that may indicate self-harm risk, isolation, distress, bullying, or crisis — then raise soft/orange/red flags with child-visible language and carefully staged escalation.</p>
+      <p>Use the Ark to notice signs that may indicate self-harm risk, isolation, distress, bullying, or crisis — then raise soft/orange/red flags with child-visible language and carefully staged escalation.</p>
       <h3 style="margin-top: 22px;">Benefits</h3>
       <ul>
         <li>Tests whether care can enter the trusted boundary without becoming surveillance.</li>
@@ -278,7 +278,7 @@ source_notes:
     </div>
     <div class="dc-card">
       <h3>Setup</h3>
-      <p>Study whether the core can notice patterns that may merit communication support, neurodiversity-aware teaching strategies, or professional referral, with consent and human oversight.</p>
+      <p>Study whether the Ark can notice patterns that may merit communication support, neurodiversity-aware teaching strategies, or professional referral, with consent and human oversight.</p>
       <h3 style="margin-top: 22px;">Benefits</h3>
       <ul>
         <li>Reduces friction by adapting how the tool communicates.</li>
@@ -307,7 +307,7 @@ source_notes:
       </ul>
     </div>
     <div>
-      <h2>A good core sometimes says: use me less.</h2>
+      <h2>A good Ark sometimes says: use me less.</h2>
       <p class="dc-bigline">Safety includes dependency, not just data leakage.</p>
     </div>
   </div>
@@ -343,7 +343,7 @@ source_notes:
   <div class="dc-grid-2">
     <div class="dc-card">
       <h3>Setup</h3>
-      <p>Label guidance sources: child’s own prior work, parent core, school core, teacher note, collective school wisdom, policy, external source, or model suggestion.</p>
+      <p>Label guidance sources: child’s own prior work, parent Ark, school Ark, teacher note, collective school wisdom, policy, external source, or model suggestion.</p>
       <h3 style="margin-top: 22px;">Benefits</h3>
       <ul>
         <li>Prevents hidden adult steering from being laundered as the child’s own agent.</li>
@@ -370,7 +370,7 @@ source_notes:
     </div>
     <div class="dc-card">
       <h3>Setup</h3>
-      <p>Create simulated child cores that model homework stress, social conflict, spending temptation, risky curiosity, emotional distress, cheating pressure, and family/school policy friction.</p>
+      <p>Create simulated-student Arks that model homework stress, social conflict, spending temptation, risky curiosity, emotional distress, cheating pressure, and family/school policy friction.</p>
       <h3 style="margin-top: 22px;">Benefits</h3>
       <ul>
         <li>Lets parents and teachers exercise the system safely.</li>
@@ -411,12 +411,12 @@ source_notes:
   <div class="dc-kicker">Pilot 15 · Cost and token economics</div>
   <div class="dc-grid-2">
     <div>
-      <h2>Every core needs an operating budget.</h2>
+      <h2>Every Ark needs an operating budget.</h2>
       <p class="dc-bigline">Tokens, cash, hosting, support, and escalation load should be visible.</p>
     </div>
     <div class="dc-card">
       <h3>Setup</h3>
-      <p>Track token burn, model choice, hosting cost, tool cost, human escalation, spend approvals, and per-core budget envelopes for staff, parents, simulated children, and real micro-pilots.</p>
+      <p>Track token burn, model choice, hosting cost, tool cost, human escalation, spend approvals, and per-Ark budget envelopes for staff, parents, simulated children, and real micro-pilots.</p>
       <h3 style="margin-top: 22px;">Benefits</h3>
       <ul>
         <li>Makes school-wide scaling financially legible.</li>
@@ -457,12 +457,12 @@ source_notes:
   <div class="dc-kicker">Pilot 17 · Export, deletion, and restore drills</div>
   <div class="dc-grid-2">
     <div>
-      <h2>Prove the core can leave.</h2>
+      <h2>Prove the Ark can leave.</h2>
       <p class="dc-bigline">Ownership is not real until export, deletion, transfer, and restore work.</p>
     </div>
     <div class="dc-card">
       <h3>Setup</h3>
-      <p>Run practical drills: export a core, delete selected memories, restore from backup, transfer school year context, revoke access, and handle a family leaving the school.</p>
+      <p>Run practical drills: export a Ark, delete selected memories, restore from backup, transfer school year context, revoke access, and handle a family leaving the school.</p>
       <h3 style="margin-top: 22px;">Benefits</h3>
       <ul>
         <li>Demonstrates student/family custody rather than lock-in.</li>
@@ -481,7 +481,7 @@ source_notes:
   <div class="dc-grid-2">
     <div class="dc-card">
       <h3>Setup</h3>
-      <p>Let teachers use staff cores for lesson reflection, recurring-student-pattern summaries, policy-safe care suggestions, and preparation — without exposing private child interiors by default.</p>
+      <p>Let teachers use staff Arks for lesson reflection, recurring-student-pattern summaries, policy-safe care suggestions, and preparation — without exposing private child interiors by default.</p>
       <h3 style="margin-top: 22px;">Benefits</h3>
       <ul>
         <li>Shows whether the system helps staff before asking staff to supervise it.</li>

@@ -15,6 +15,7 @@ const requiredFiles = [
   'assets/dreamcatcher-mark.svg',
   'assets/agent-capsule.svg',
   'assets/durable-core-architecture.png',
+  'assets/ark-naming-system-hero.png',
   'assets/social-card.svg',
   'robots.txt',
   'sitemap.xml',
@@ -22,11 +23,13 @@ const requiredFiles = [
   'vercel.json',
   'slides/index.html',
   'slides/reveal-runner.html',
+  'slides/decks/dreamcatcher-ark-naming-system.md',
   'slides/decks/defragmenting-the-user.md',
   'slides/decks/kristin-school-enduring-knowledge-cores.md',
   'slides/decks/kristin-school-pilot-validation-portfolio.md',
   'slides/decks/kristin-school-resource-avenues-child-safety-first.md',
   'slides/decks/kristin-school-three-things-to-push-on.md',
+  'slides/components/ark-naming-system-map.html',
   'slides/components/knowledge-cascade.html',
   'slides/components/pilot-validation-map.html',
   'slides/components/ai-school-measurement-board.html',
@@ -34,6 +37,7 @@ const requiredFiles = [
   'slides/components/three-paths-operating-map.html',
   'slides/components/defragmenting-user-orbit-cycle.html',
   'slides/assets/dreamcatcher-logo.svg',
+  'slides/assets/ark-naming-system-hero.png',
   'slides/assets/defragmenting-the-user-hero.png',
   'slides/assets/defragmenting-the-user-orbit-01-split-vs-orbit.png',
   'slides/assets/defragmenting-the-user-orbit-02-tool-owned-vs-person-gravity.png',
@@ -63,20 +67,25 @@ const runner = read('slides/reveal-runner.html');
 const vercel = JSON.parse(read('vercel.json'));
 
 const mustContain = [
-  ['durable knowledge cores', html],
+  ['portable Arks', html],
   ['Your knowledge should accumulate, not evaporate', html],
   ['Not a bigger context window', html],
-  ['Durable Knowledge Core', html],
-  ['Semantic Checkpoint', html],
-  ['Confidential Enclave', html],
+  ['Ark', html],
+  ['Conscience', html],
+  ['Vault', html],
   ['Personal software', html],
-  ['Enduring knowledge becomes wisdom', html],
-  ['Collective wisdom of the cores', html],
+  ['Arks can turn knowledge into wisdom', html],
+  ['Collective wisdom of the Arks', html],
   ['Published decks', html],
   ['slides/reveal-runner.html?deck=decks/kristin-school-pilot-validation-portfolio.md', html],
   ['slides/reveal-runner.html?deck=decks/kristin-school-resource-avenues-child-safety-first.md', html],
   ['slides/reveal-runner.html?deck=decks/kristin-school-give-parents-something-to-push-on.md', html],
   ['slides/reveal-runner.html?deck=decks/kristin-school-run-the-school-before-release.md', html],
+  ['The Ark Naming System', slidesIndex],
+  ['slides/reveal-runner.html?deck=decks/dreamcatcher-ark-naming-system.md', html],
+  ['dreamcatcher-ark-naming-system.md', slidesIndex],
+  ['Steward', read('slides/decks/dreamcatcher-ark-naming-system.md')],
+  ['Covenant', read('slides/decks/dreamcatcher-ark-naming-system.md')],
   ['Give the Parents Something to Push On', slidesIndex],
   ['Run the School Before We Release It', slidesIndex],
   ['Guardian tests', read('slides/decks/kristin-school-give-parents-something-to-push-on.md')],
@@ -87,10 +96,10 @@ const mustContain = [
   ['Call the agent', html],
   ['Coming soon', html],
   ['mailto:tom@dreamcatcher.ai', html],
-  ['Durable Knowledge Core', capsule],
+  ['Ark', capsule],
   ['Your knowledge should', social],
   ['Dreamcatcher.ai Slides', slidesIndex],
-  ['Enduring Core Pilot Validation Portfolio', slidesIndex],
+  ['Ark Pilot Validation Portfolio', slidesIndex],
   ['The Knowledge That Endures', slidesIndex],
   ['Defragmenting the User', slidesIndex],
   ['defragmenting-the-user-orbit-02-tool-owned-vs-person-gravity.png', html],
@@ -145,7 +154,7 @@ for (const id of hashes) {
   if (!ids.has(id)) fail(`Broken anchor link: #${id}`);
 }
 
-for (const deck of ['defragmenting-the-user', 'kristin-school-enduring-knowledge-cores', 'kristin-school-pilot-validation-portfolio', 'kristin-school-resource-avenues-child-safety-first', 'kristin-school-three-things-to-push-on', 'kristin-school-give-parents-something-to-push-on', 'kristin-school-run-the-school-before-release']) {
+for (const deck of ['dreamcatcher-ark-naming-system', 'defragmenting-the-user', 'kristin-school-enduring-knowledge-cores', 'kristin-school-pilot-validation-portfolio', 'kristin-school-resource-avenues-child-safety-first', 'kristin-school-three-things-to-push-on', 'kristin-school-give-parents-something-to-push-on', 'kristin-school-run-the-school-before-release']) {
   const deckText = read(`slides/decks/${deck}.md`);
   if (!deckText.startsWith('---')) fail(`${deck}.md must start with frontmatter`);
   if (deckText.includes('../../Assets/')) fail(`${deck}.md must not reference private notes asset paths`);

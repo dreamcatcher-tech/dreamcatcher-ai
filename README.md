@@ -30,22 +30,22 @@ Fly/Caddy fallback hosting has been removed; production is GitHub Pages only.
 
 ## Content direction
 
-The page now positions Dreamcatcher around **durable knowledge cores** rather than generic AI agents:
+The page now positions Dreamcatcher around **portable Arks** rather than generic AI agents:
 
 - **Intentional knowledge concentration:** people leave knowledge trails anyway; Dreamcatcher turns scattered school/work/family breadcrumbs into owned, protected, useful knowledge.
-- **Enduring knowledge core:** not a bigger context window — a long-lived place where work, records, history, values, judgment and distilled wisdom accumulate.
-- **Personal software:** records stay in the durable core; software, models and services come to them. Servers become plumbing, not prisons.
-- **Semantic checkpoint:** approvals, policies, redaction, denial and escalation guard the boundary.
-- **Confidential enclave:** precious records can sit in a smaller inner zone that returns redacted answers or refusals rather than raw material.
-- **Collective wisdom of the cores:** family, school and team cores can interact through permissioned, auditable wisdom streams.
+- **Ark:** not a bigger context window — a portable, student/person-owned vessel where work, records, history, values, judgment and distilled wisdom accumulate.
+- **Steward:** the active agent/persona working inside the Ark; models and tools can change without erasing continuity.
+- **Conscience:** approvals, policies, redaction, denial and escalation guard the boundary.
+- **Vault:** precious records can sit in a smaller inner zone that returns redacted answers or refusals rather than raw material.
+- **Collective wisdom of the Arks:** family, school and team Arks can interact through permissioned, auditable wisdom streams.
 
-Main visual asset: `assets/durable-core-architecture.png`, generated with the configured OpenAI image generator backend.
+Main visual asset: `assets/ark-naming-system-hero.png`, generated with the configured OpenAI image generator backend.
 
 
 ## Slide deck publishing
 
 Public Dreamcatcher slide decks live under `slides/` in this repository. The private Obsidian vault remains the canonical drafting/source-capture area; do not submodule or expose the vault. Copy only public-safe deck Markdown, components, images, and metadata into this repo, update `slides/index.html` with a card/preview/blurb/date/topic, then run `npm run lint` and `npm run build` before committing.
 
-Current published decks include `Three Things to Push On`, `Defragmenting the User`, `The Knowledge That Endures`, `Enduring Core Pilot Validation Portfolio`, and `Child-Safety-First Resource Avenues`.
+Current published decks include `The Ark Naming System`, `Three Things to Push On`, `Defragmenting the User`, `The Knowledge That Endures`, `Ark Pilot Validation Portfolio`, and `Child-Safety-First Resource Avenues`.
 
 Published slide decks added: `slides/decks/kristin-school-give-parents-something-to-push-on.md` and `slides/decks/kristin-school-run-the-school-before-release.md` — parent-energy and synthetic-school simulation follow-ons for the Kristin School pilot story.

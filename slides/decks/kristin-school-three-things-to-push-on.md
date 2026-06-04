@@ -6,7 +6,7 @@ audience: Kristin School
 created: 2026-06-04
 assets:
   cover: ../assets/parent-energy-channel.png
-  durable_core: ../assets/defragmenting-the-user-hero.png
+  durable_Ark: ../assets/defragmenting-the-user-hero.png
   conscience_spectrum: ../assets/conscience-visibility-spectrum.png
 links:
   defragmenting_the_user: https://www.dreamcatcher.ai/slides/reveal-runner.html?deck=decks/defragmenting-the-user.md
@@ -20,7 +20,7 @@ links:
   <div>
     <p class="dc-kicker">Kristin School · orientation deck</p>
     <h1 class="dc-title">Three things to push on.</h1>
-    <p class="dc-subtitle">Concentrate the core · put parents in the loop · tune the Conscience.</p>
+    <p class="dc-subtitle">Concentrate the Ark · put parents in the loop · tune the Conscience.</p>
   </div>
   <div class="dc-footerline">
     <span>Prepared by Tom Thompson · tom@DreamCatcher.ai</span>
@@ -37,7 +37,7 @@ links:
   <div class="dc-grid-3" style="margin-top: 34px;">
     <article class="dc-card"><h3>Without an interface</h3><p>Energy leaks into reassurance, anxiety, side channels and repeated debate.</p></article>
     <article class="dc-card"><h3>With a pilot surface</h3><p>Energy becomes adult testing, scenarios, funding signals, policy friction and proof.</p></article>
-    <article class="dc-card"><h3>The object to push on</h3><p>A portable core, a visible Conscience, and a proof-point cadence the school can govern.</p></article>
+    <article class="dc-card"><h3>The object to push on</h3><p>A portable Ark, a visible Conscience, and a proof-point cadence the school can govern.</p></article>
   </div>
 </section>
 
@@ -47,8 +47,8 @@ links:
   <p class="dc-kicker">The operating map</p>
   <h2>Run three paths concurrently.</h2>
   <div class="dc-grid-3" style="margin-top: 28px;">
-    <article class="dc-card"><h3>1 · Concentrate</h3><p>Pull diffuse tooling, records, decisions and evidence into a durable core the person or family can carry forward.</p><p><strong>Proof:</strong> ownership, portability, continuity.</p></article>
-    <article class="dc-card"><h3>2 · Parents first</h3><p>Issue parent cores and use adults as testers, simulated students, supervisors and guardian-test authors.</p><p><strong>Proof:</strong> trust, friction, real cost, real questions.</p></article>
+    <article class="dc-card"><h3>1 · Concentrate</h3><p>Pull diffuse tooling, records, decisions and evidence into a Ark the person or family can carry forward.</p><p><strong>Proof:</strong> ownership, portability, continuity.</p></article>
+    <article class="dc-card"><h3>2 · Parents first</h3><p>Issue parent Arks and use adults as testers, simulated students, supervisors and guardian-test authors.</p><p><strong>Proof:</strong> trust, friction, real cost, real questions.</p></article>
     <article class="dc-card"><h3>3 · Tune Conscience</h3><p>Test the humane middle between total opacity and surveillance: permitted summaries, explainable blocks, escalation.</p><p><strong>Proof:</strong> visibility parameter, safety evidence.</p></article>
   </div>
   <div class="dc-card" style="margin-top: 26px; border-color: rgba(88,215,211,.35); background: rgba(88,215,211,.08);">
@@ -63,9 +63,9 @@ links:
   <p class="dc-kicker">Path 1 · Concentrate</p>
   <div class="dc-grid-2">
     <div>
-      <h2>Haul diffuse tooling into one durable container.</h2>
-      <p class="dc-bigline">The core is the non-diffusion move.</p>
-      <p class="dc-muted">The issue is not just “too many AI tools.” It is school portals, SaaS apps, files, inboxes, model chats and family evidence scattered outside a durable owner-controlled place.</p>
+      <h2>Haul diffuse tooling into one portable Ark.</h2>
+      <p class="dc-bigline">The Ark is the non-diffusion move.</p>
+      <p class="dc-muted">The issue is not just “too many AI tools.” It is school portals, SaaS apps, files, inboxes, model chats and family evidence scattered outside a portable owner-controlled Ark.</p>
       <div class="dc-pill-row">
         <a class="dc-pill" href="https://www.dreamcatcher.ai/slides/reveal-runner.html?deck=decks/defragmenting-the-user.md">Open: Defragmenting the User</a>
         <a class="dc-pill" href="https://www.dreamcatcher.ai/slides/reveal-runner.html?deck=decks/kristin-school-enduring-knowledge-cores.md">Open: The Knowledge That Endures</a>
@@ -74,9 +74,9 @@ links:
     <div class="dc-card">
       <h3>What this path proves</h3>
       <ul>
-        <li>Can a parent or student carry a long-lived core across tools?</li>
+        <li>Can a parent or student carry a long-lived Ark across tools?</li>
         <li>Can records, values, learning evidence and decisions accumulate instead of evaporating?</li>
-        <li>Can services remain replaceable around the core?</li>
+        <li>Can services remain replaceable around the Ark?</li>
       </ul>
     </div>
   </div>
@@ -89,14 +89,14 @@ links:
   <div class="dc-grid-2">
     <div>
       <h2>Parents are not an audience. They are the first adult test cohort.</h2>
-      <p class="dc-bigline">Issue parent cores. Let adults act as guinea pigs before children do.</p>
-      <p class="dc-muted">Parents can consent, complain, supervise, pretend to be students, pressure-test dashboards and discover what a non-diffusion core feels like from the inside.</p>
+      <p class="dc-bigline">Issue parent Arks. Let adults act as guinea pigs before children do.</p>
+      <p class="dc-muted">Parents can consent, complain, supervise, pretend to be students, pressure-test dashboards and discover what a non-diffusion Ark feels like from the inside.</p>
     </div>
     <div class="dc-card">
       <h3>Useful parent roles</h3>
       <ul>
         <li>Adult users of real cores.</li>
-        <li>Supervisors of simulated student cores.</li>
+        <li>Supervisors of simulated student Arks.</li>
         <li>Source of guardian tests and awkward scenarios.</li>
         <li>Funding/time signal when blockers are visible.</li>
       </ul>
@@ -141,8 +141,8 @@ links:
   <p class="dc-kicker">Deep dives</p>
   <h2>This deck is the front door. Use the detailed decks for the work.</h2>
   <div class="dc-grid-2" style="margin-top: 28px;">
-    <article class="dc-card"><h3>Defragmenting the User</h3><p>Why the old world scatters the person and the new world makes the person the core.</p><p><a href="https://www.dreamcatcher.ai/slides/reveal-runner.html?deck=decks/defragmenting-the-user.md">Open deck →</a></p></article>
-    <article class="dc-card"><h3>The Knowledge That Endures</h3><p>Durable school/family knowledge cores, adult-first pilots and living institutional wisdom.</p><p><a href="https://www.dreamcatcher.ai/slides/reveal-runner.html?deck=decks/kristin-school-enduring-knowledge-cores.md">Open deck →</a></p></article>
+    <article class="dc-card"><h3>Defragmenting the User</h3><p>Why the old world scatters the person and the new world makes the person the Ark.</p><p><a href="https://www.dreamcatcher.ai/slides/reveal-runner.html?deck=decks/defragmenting-the-user.md">Open deck →</a></p></article>
+    <article class="dc-card"><h3>The Knowledge That Endures</h3><p>Durable school/family Arks, adult-first pilots and living institutional wisdom.</p><p><a href="https://www.dreamcatcher.ai/slides/reveal-runner.html?deck=decks/kristin-school-enduring-knowledge-cores.md">Open deck →</a></p></article>
     <article class="dc-card"><h3>Pilot Validation Portfolio</h3><p>One-slide pilot briefs for Conscience, containment, confidential custody, care and learning lift.</p><p><a href="https://www.dreamcatcher.ai/slides/reveal-runner.html?deck=decks/kristin-school-pilot-validation-portfolio.md">Open deck →</a></p></article>
     <article class="dc-card"><h3>Resource Avenues</h3><p>Child safety as the first public research gate, plus proof-point boards and support asks.</p><p><a href="https://www.dreamcatcher.ai/slides/reveal-runner.html?deck=decks/kristin-school-resource-avenues-child-safety-first.md">Open deck →</a></p></article>
   </div>

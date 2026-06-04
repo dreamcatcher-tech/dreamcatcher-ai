@@ -28,7 +28,7 @@ source_notes:
   <div>
     <div class="dc-kicker">Prepared for Kristin School</div>
     <h1 class="dc-title">Give the Parents Something to Push On</h1>
-    <p class="dc-subtitle">Harnessing parental energy as testing, resources, governance feedback, and proof for enduring-core pilots.</p>
+    <p class="dc-subtitle">Harnessing parental energy as testing, resources, governance feedback, and proof for Ark pilots.</p>
   </div>
   <div class="dc-footerline"><span>Prepared by Tom Thompson · tom@DreamCatcher.ai</span><span>Parent of Harry Thompson (Junior School applicant, unconfirmed)</span></div>
 </div>
@@ -36,7 +36,7 @@ source_notes:
 ---
 
 <div class="dc-shell">
-  <div class="dc-kicker">Core observation</div>
+  <div class="dc-kicker">Ark observation</div>
   <div class="dc-grid-2">
     <div>
       <h2>This is not about calming parents down.</h2>
@@ -92,11 +92,11 @@ source_notes:
   <div class="dc-grid-2">
     <div>
       <h2>Give parents their own cores.</h2>
-      <p class="dc-bigline">Not a parent dashboard. A real enduring core they can live with.</p>
+      <p class="dc-bigline">Not a parent dashboard. A real Ark they can live with.</p>
     </div>
     <div class="dc-card">
       <h3>Why this changes the conversation</h3>
-      <p>A parent who has used a core understands custody, memory, permissions, annoyance, cost, delight, and trust failure from the inside.</p>
+      <p>A parent who has used a Ark understands custody, memory, permissions, annoyance, cost, delight, and trust failure from the inside.</p>
       <h3 style="margin-top: 22px;">What it produces</h3>
       <div class="dc-pill-row"><span class="dc-pill">adult usage evidence</span><span class="dc-pill">guardian test cases</span><span class="dc-pill">cost signals</span><span class="dc-pill">trust objections</span></div>
     </div>
@@ -142,7 +142,7 @@ source_notes:
       <h3>Example guardian tests</h3>
       <ul>
         <li>Can the Conscience say no and explain why?</li>
-        <li>Can a parent approve a high-consequence action without owning the child’s private core?</li>
+        <li>Can a parent approve a high-consequence action without owning the child’s private Ark?</li>
         <li>Can visibility be tuned between “nothing” and “everything”?</li>
         <li>Can export, deletion, restore, and emergency keys be exercised?</li>
       </ul>
@@ -176,7 +176,7 @@ source_notes:
   <div class="dc-grid-3" style="margin-top: 28px;">
     <div class="dc-card"><h3>Too little</h3><p>The school and parents see nothing useful until harm has already happened.</p></div>
     <div class="dc-card"><h3>The middle</h3><p>Permitted summaries, trend signals, explanations, and staged escalation under consent and policy.</p></div>
-    <div class="dc-card"><h3>Too much</h3><p>Raw visibility becomes surveillance, destroying the trust that makes the core valuable.</p></div>
+    <div class="dc-card"><h3>Too much</h3><p>Raw visibility becomes surveillance, destroying the trust that makes the Ark valuable.</p></div>
   </div>
   <p class="dc-muted" style="font-size: .48em; margin-top: 28px;">Parent participation here is taste tuning and governance tuning, not a substitute for child consent.</p>
 </div>
@@ -217,14 +217,14 @@ source_notes:
   <div class="dc-kicker">Co-steering</div>
   <div class="dc-grid-2">
     <div class="dc-card">
-      <h3>Parent cores should influence — not own — child cores</h3>
-      <p>A parent core can offer family values, lessons, constraints, and permitted summaries through policy. The child core remains protected, attributed, and age-appropriately independent.</p>
+      <h3>Parent cores should influence — not own — child Arks</h3>
+      <p>A parent Ark can offer family values, lessons, constraints, and permitted summaries through policy. The child Ark remains protected, attributed, and age-appropriately independent.</p>
       <h3 style="margin-top: 22px;">The open tuning question</h3>
       <p>How much came from parent, school, child, collective wisdom, source material, or model? Influence attribution should be visible and adjustable.</p>
     </div>
     <div>
       <h2>The family becomes a governed wisdom stream.</h2>
-      <p class="dc-bigline">Not one pot. Not surveillance. Permissioned influence among enduring cores.</p>
+      <p class="dc-bigline">Not one pot. Not surveillance. Permissioned influence among Arks.</p>
     </div>
   </div>
 </div>
@@ -247,7 +247,7 @@ source_notes:
 <div class="dc-shell">
   <div class="dc-kicker">First 30 days</div>
   <div class="dc-grid-3" style="margin-top: 28px;">
-    <div class="dc-card"><h3>1 · Five parent cores</h3><p>Kristin-address gated pilot slots. Adults use cores for real adult work and feedback.</p></div>
+    <div class="dc-card"><h3>1 · Five parent Arks</h3><p>Kristin-address gated pilot slots. Adults use cores for real adult work and feedback.</p></div>
     <div class="dc-card"><h3>2 · Guardian test v1</h3><p>Run consent, visibility, recovery, cost, and Conscience drills; publish what failed.</p></div>
     <div class="dc-card"><h3>3 · Simulation preview</h3><p>Give parents and teachers the first school-shaped sandbox to interrogate.</p></div>
   </div>
@@ -269,7 +269,7 @@ source_notes:
     </div>
     <div class="dc-card">
       <h3>The ask</h3>
-      <p>Start with adult parent cores, guardian tests, a simulation surface, and a public-safe proof-point rhythm. Let parental energy help build the evidence needed before real students enter the system.</p>
+      <p>Start with adult parent Arks, guardian tests, a simulation surface, and a public-safe proof-point rhythm. Let parental energy help build the evidence needed before real students enter the system.</p>
     </div>
   </div>
 </div>

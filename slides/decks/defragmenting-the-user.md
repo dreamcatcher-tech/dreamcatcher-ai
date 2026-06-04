@@ -1,6 +1,6 @@
 ---
 title: Defragmenting the User
-subtitle: From SaaS sprawl to durable cores
+subtitle: From SaaS sprawl to Arks
 slug: defragmenting-the-user
 created: 2026-06-04T12:29:42+12:00
 status: seed
@@ -20,12 +20,12 @@ components:
 
 # Defragmenting the User
 
-## From SaaS sprawl to durable cores
+## From SaaS sprawl to Arks
 
-![Generated image: tool-owned panels slice the person on the left, while a whole person/core has tools orbiting on the right.](../assets/defragmenting-the-user-orbit-02-tool-owned-vs-person-gravity.png)
+![Generated image: tool-owned panels slice the person on the left, while a whole person/Ark has tools orbiting on the right.](../assets/defragmenting-the-user-orbit-02-tool-owned-vs-person-gravity.png)
 
 Notes:
-The old world makes the user a cross-cutting concern. The new world makes the user the core.
+The old world makes the user a cross-cutting concern. The new world makes the user the Ark.
 
 ---
 
@@ -64,7 +64,7 @@ In old SaaS, **the user** cuts across every application.
 <iframe class="dc-component-frame" src="../components/defragmenting-user-orbit-cycle.html" title="Tap to cycle generated images of tools orbiting a unified person instead of fragmenting them"></iframe>
 
 Notes:
-Tap or click the image to cycle through three generated visual directions. The chosen default is the clearest: tool-owned panels slice the person on the left; a whole person/core has tools orbiting on the right.
+Tap or click the image to cycle through three generated visual directions. The chosen default is the clearest: tool-owned panels slice the person on the left; a whole person/Ark has tools orbiting on the right.
 
 ---
 
@@ -102,9 +102,9 @@ SSO helps you log in.
 
 ---
 
-## Enterprise with a durable core
+## Enterprise with a Ark
 
-The durable core holds continuity:
+The Ark holds continuity:
 
 - records
 - keys and approvals
@@ -113,7 +113,7 @@ The durable core holds continuity:
 - history and provenance
 - personal software context
 
-Services become replaceable tools around the core.
+Services become replaceable tools around the Ark.
 
 ---
 
@@ -128,5 +128,5 @@ Application owns record → user gets account → integrations recover coherence
 After:
 
 ```text
-Durable core owns continuity → services orbit → software comes to the core
+Durable Ark owns continuity → services orbit → software comes to the Ark
 ```

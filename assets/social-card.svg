@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" role="img" aria-labelledby="title desc">
-  <title id="title">Dreamcatcher.ai durable knowledge cores</title>
-  <desc id="desc">Dreamcatcher turns scattered knowledge into an owned durable core protected by semantic checkpoints.</desc>
+  <title id="title">Dreamcatcher.ai portable Arks</title>
+  <desc id="desc">Dreamcatcher turns scattered knowledge into an owned Ark protected by a Conscience boundary.</desc>
   <defs>
     <linearGradient id="bg" x1="0" y1="0" x2="1200" y2="630" gradientUnits="userSpaceOnUse">
       <stop stop-color="#06101d"/>
@@ -28,8 +28,8 @@
     <ellipse cx="184" cy="210" rx="154" ry="84" fill="#f6d66f" opacity=".16" stroke="url(#core)" stroke-width="9"/>
     <ellipse cx="184" cy="210" rx="72" ry="42" fill="#07111f" stroke="#f2f8ff" stroke-width="4"/>
     <text x="184" y="204" text-anchor="middle" fill="#f2f8ff" font-family="Inter, system-ui, sans-serif" font-size="22" font-weight="850">Enclave</text>
-    <text x="184" y="238" text-anchor="middle" fill="#f6d66f" font-family="Inter, system-ui, sans-serif" font-size="24" font-weight="850">Durable Core</text>
-    <text x="184" y="62" text-anchor="middle" fill="#c8d6ea" font-family="Inter, system-ui, sans-serif" font-size="20" font-weight="800">Semantic Checkpoint</text>
+    <text x="184" y="238" text-anchor="middle" fill="#f6d66f" font-family="Inter, system-ui, sans-serif" font-size="24" font-weight="850">Ark</text>
+    <text x="184" y="62" text-anchor="middle" fill="#c8d6ea" font-family="Inter, system-ui, sans-serif" font-size="20" font-weight="800">Conscience</text>
     <g fill="#07111f" stroke="#22d3ee" stroke-width="3">
       <rect x="-18" y="112" width="72" height="48" rx="14"/>
       <rect x="315" y="112" width="72" height="48" rx="14"/>
@@ -46,7 +46,7 @@
   <text x="86" y="250" fill="#f2f8ff" font-family="Inter, system-ui, sans-serif" font-size="72" font-weight="850" letter-spacing="-4">Your knowledge should</text>
   <text x="86" y="334" fill="#f6d66f" font-family="Inter, system-ui, sans-serif" font-size="72" font-weight="850" letter-spacing="-4">accumulate,</text>
   <text x="86" y="418" fill="#f2f8ff" font-family="Inter, system-ui, sans-serif" font-size="72" font-weight="850" letter-spacing="-4">not evaporate.</text>
-  <text x="90" y="490" fill="#c8d6ea" font-family="Inter, system-ui, sans-serif" font-size="29">Own the core. Swap the tools. Build personal software.</text>
+  <text x="90" y="490" fill="#c8d6ea" font-family="Inter, system-ui, sans-serif" font-size="29">Own the Ark. Swap the engines. Build personal software.</text>
   <rect x="86" y="532" width="360" height="58" rx="29" fill="url(#core)"/>
   <text x="266" y="570" text-anchor="middle" fill="#051320" font-family="Inter, system-ui, sans-serif" font-size="22" font-weight="900">Dreamcatcher.ai</text>
 </svg>

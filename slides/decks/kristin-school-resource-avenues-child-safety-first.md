@@ -43,7 +43,7 @@ source_notes:
     </div>
     <div class="dc-card">
       <h3>The parent-facing message</h3>
-      <p>We are not asking for child-facing enduring cores before the boundary is proven. We are asking the school to validate the boundary that would make release responsible.</p>
+      <p>We are not asking for child-facing Arks before the boundary is proven. We are asking the school to validate the boundary that would make release responsible.</p>
       <h3 style="margin-top: 22px;">The external-facing message</h3>
       <p>This is a child/youth safety, parent-control, and education deployment research problem — the kind where outside partners may want to contribute.</p>
     </div>
@@ -74,8 +74,8 @@ source_notes:
   <div class="dc-kicker">Release gate</div>
   <h2>What must be true before child-facing release?</h2>
   <div class="dc-grid-3" style="margin-top: 28px;">
-    <div class="dc-card"><h3>Minder / conscience</h3><p>Can the boundary block, redirect, explain, and record decisions across inbound/outbound actions?</p></div>
-    <div class="dc-card"><h3>Custody and privacy</h3><p>Can the core protect child data, avoid unnecessary raw visibility, support export/delete/restore, and obey age/data rules?</p></div>
+    <div class="dc-card"><h3>Conscience</h3><p>Can the boundary block, redirect, explain, and record decisions across inbound/outbound actions?</p></div>
+    <div class="dc-card"><h3>Custody and privacy</h3><p>Can the Ark protect child data, avoid unnecessary raw visibility, support export/delete/restore, and obey age/data rules?</p></div>
     <div class="dc-card"><h3>Escalation</h3><p>Can wellbeing or safety concerns move through soft/orange/red human-overseen pathways without becoming covert surveillance?</p></div>
   </div>
   <p class="dc-muted" style="font-size: .48em; margin-top: 28px;">This is a release gate, not a slogan. If the gate fails, student rollout waits while adult and simulated sandboxes continue.</p>
@@ -112,7 +112,7 @@ source_notes:
   <div class="dc-kicker">What we would ask for</div>
   <h2>Make the ask specific enough to be useful.</h2>
   <div class="dc-grid-3" style="margin-top: 28px;">
-    <div class="dc-card"><h3>1 · Credits</h3><p>API/model credits for simulated-child scenarios, minder benchmarks, dashboard generation, and parent/staff sandbox workloads.</p></div>
+    <div class="dc-card"><h3>1 · Credits</h3><p>API/model credits for simulated-child scenarios, Conscience benchmarks, dashboard generation, and parent/staff sandbox workloads.</p></div>
     <div class="dc-card"><h3>2 · Engineering review</h3><p>Advice on age-appropriate behaviour, safety evaluations, red-team harnesses, privacy boundaries, and escalation design.</p></div>
     <div class="dc-card"><h3>3 · Legitimacy / visibility</h3><p>Permissioned co-design language, partner credibility, and a safer path to invite other schools into the measurement board later.</p></div>
   </div>
@@ -169,10 +169,10 @@ source_notes:
       <ul>
         <li>Policy and consent completeness.</li>
         <li>Number and type of sandbox scenarios tested.</li>
-        <li>Minder benchmark pass/fail and explanation quality.</li>
+        <li>Conscience benchmark pass/fail and explanation quality.</li>
         <li>Parent and teacher participation.</li>
         <li>Incidents, reversals, and lessons learned.</li>
-        <li>Cost per core, token burn, escalation load, and support load.</li>
+        <li>Cost per Ark, token burn, escalation load, and support load.</li>
       </ul>
     </div>
   </div>
@@ -184,8 +184,8 @@ source_notes:
   <div class="dc-kicker">What can happen while the blocker remains closed</div>
   <h2>Sandboxing keeps momentum without pretending the release gate is solved.</h2>
   <div class="dc-grid-3" style="margin-top: 28px;">
-    <div class="dc-card"><h3>Adult cores</h3><p>Staff and parent partners use real enduring cores for adult work, reflection, and feedback.</p></div>
-    <div class="dc-card"><h3>Simulated children</h3><p>Synthetic child cores exercise hard cases: secrecy, unsafe asks, overuse, bullying, confusion, money, escalation.</p></div>
+    <div class="dc-card"><h3>Adult cores</h3><p>Staff and parent partners use real Arks for adult work, reflection, and feedback.</p></div>
+    <div class="dc-card"><h3>Simulated children</h3><p>Synthetic child Arks exercise hard cases: secrecy, unsafe asks, overuse, bullying, confusion, money, escalation.</p></div>
     <div class="dc-card"><h3>Problem register</h3><p>Every concern, request, idea, and cost trigger enters a visible pipeline instead of evaporating into meetings.</p></div>
   </div>
 </div>
@@ -231,7 +231,7 @@ source_notes:
   <div class="dc-kicker">90-day path</div>
   <div class="dc-grid-3" style="margin-top: 28px;">
     <div class="dc-card"><h3>First 30 days</h3><p>Define child-safety gate, draft parent page, choose sandbox cohorts, create measurement board, prepare OpenAI ask packet.</p></div>
-    <div class="dc-card"><h3>Days 31–60</h3><p>Run staff/parent adult-core sandboxes, simulated-child scenarios, minder benchmark v1, and support-needs navigator prototype.</p></div>
+    <div class="dc-card"><h3>Days 31–60</h3><p>Run staff/parent adult Ark sandboxes, simulated-child scenarios, Conscience benchmark v1, and support-needs navigator prototype.</p></div>
     <div class="dc-card"><h3>Days 61–90</h3><p>Publish first field notes, compare against reference cases, revise blocker list, decide whether any narrow real-student micro-pilot is ethically ready.</p></div>
   </div>
 </div>
@@ -243,14 +243,14 @@ source_notes:
   <div class="dc-grid-2">
     <div>
       <h2>If we approach OpenAI, make it measurable.</h2>
-      <p class="dc-bigline">“Help us research child-safe enduring cores in a school setting.”</p>
+      <p class="dc-bigline">“Help us research child-safe Arks in a school setting.”</p>
     </div>
     <div class="dc-card">
       <h3>Packet contents</h3>
       <ul>
         <li>Child-safety gate and release blocker.</li>
         <li>Sandbox-only plan and consent model.</li>
-        <li>Minder benchmark and simulated-child scenario library.</li>
+        <li>Conscience benchmark and simulated-child scenario library.</li>
         <li>Learning-support navigator wedge, with SEND only as an external reference.</li>
         <li>Measurement board and newsletter cadence.</li>
         <li>Specific ask: credits, technical review, safety/evaluation advice, and permitted visibility.</li>
@@ -283,7 +283,7 @@ source_notes:
   <div class="dc-kicker">Source spine · OpenAI</div>
   <h2>Official source URLs and date checked.</h2>
   <div class="dc-card" style="margin-top: 20px;">
-    <p style="font-size: .36em; line-height: 1.28;">Checked 2026-06-04 UTC:<br>
+    <p style="font-size: .36em; line-height: 1.28; overflow-wrap: anywhere; word-break: break-word;">Checked 2026-06-04 UTC:<br>
       OpenAI grants portal — https://openai.smapply.org/<br>
       Youth safety and opportunity — https://openai.com/index/advancing-youth-safety-and-opportunity-through-global-leadership/<br>
       Education for Countries — https://openai.com/index/edu-for-countries/<br>
@@ -300,7 +300,7 @@ source_notes:
   <div class="dc-kicker">Source spine · New Zealand</div>
   <h2>Guardrail source URLs and date checked.</h2>
   <div class="dc-card" style="margin-top: 20px;">
-    <p style="font-size: .36em; line-height: 1.28;">Checked 2026-06-04 UTC:<br>
+    <p style="font-size: .36em; line-height: 1.28; overflow-wrap: anywhere; word-break: break-word;">Checked 2026-06-04 UTC:<br>
       Ministry of Education GenAI guidance — https://www.education.govt.nz/school/digital-technology/generative-ai/<br>
       NZQA acceptable AI use guidance — https://www2.nzqa.govt.nz/ncea/ncea-for-teachers-and-schools/managing-national-assessment-in-schools/ai-guidance/<br>
       Privacy Commissioner AI guidance — https://www.privacy.org.nz/resources-and-learning/a-z-topics/ai/<br>

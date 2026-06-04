@@ -30,7 +30,7 @@ source_notes:
   <div>
     <div class="dc-kicker">Prepared for Kristin School</div>
     <h1 class="dc-title">The Knowledge That Endures</h1>
-    <p class="dc-subtitle">Enduring agents, durable knowledge cores, and the wisdom a school can keep building.</p>
+    <p class="dc-subtitle">Enduring agents, student Arks, and the wisdom a school can keep building.</p>
   </div>
   <div class="dc-footerline"><span>Prepared by Tom Thompson · tom@DreamCatcher.ai</span><span>Parent of Harry Thompson (Junior School applicant, unconfirmed)</span></div>
 </div>
@@ -107,14 +107,14 @@ source_notes:
   <div class="dc-grid-3" style="margin-top: 28px;">
     <div class="dc-card"><h3>Parental energy</h3><p>Anxious, eager, forceful, practical: “choose for us, do something, make it happen — we can help.”</p></div>
     <div class="dc-card"><h3>School obligation</h3><p>Regulatory requirements, duty of care, educational mandate, and responsibility for children’s development.</p></div>
-    <div class="dc-card"><h3>Enduring-core strategy</h3><p>A malleable agentic-core system that can be tested first with adults, then simulated children, before real students.</p></div>
+    <div class="dc-card"><h3>Enduring-Ark strategy</h3><p>A malleable Ark system that can be tested first with adults, then simulated children, before real students.</p></div>
   </div>
   <p class="dc-muted" style="font-size: 0.48em; margin-top: 34px;">The pitch is to give parental energy a safe place to go — not by deciding everything in advance, but by turning it into evidence.</p>
 </div>
 
 ---
 
-<iframe class="dc-component-frame" src="../components/kristin-pilot-path.html" title="Kristin School enduring-core pilot path"></iframe>
+<iframe class="dc-component-frame" src="../components/kristin-pilot-path.html" title="Kristin School Ark pilot path"></iframe>
 
 ---
 
@@ -126,9 +126,9 @@ source_notes:
       <p class="dc-bigline">Parents can consent to iteration in a way children cannot.</p>
     </div>
     <div class="dc-card">
-      <h3>Why parent cores first?</h3>
+      <h3>Why parent Arks first?</h3>
       <ul>
-        <li>Parents learn what an enduring core feels like in daily use.</li>
+        <li>Parents learn what an Ark feels like in daily use.</li>
         <li>They become capable of helping children use the system.</li>
         <li>They can test rough edges without putting children in the blast radius.</li>
         <li>The school sees real adult behaviour, requests, trust gaps, costs, and failure modes.</li>
@@ -140,7 +140,7 @@ source_notes:
 
 ---
 
-<iframe class="dc-component-frame" src="../components/child-core-influence-model.html" title="Child enduring-core influence model"></iframe>
+<iframe class="dc-component-frame" src="../components/child-core-influence-model.html" title="Child Ark influence model"></iframe>
 
 ---
 
@@ -149,20 +149,20 @@ source_notes:
   <div class="dc-grid-2">
     <div class="dc-card">
       <h3>The parent’s agent is not just a parent dashboard.</h3>
-      <p>It is the parent’s own enduring core: values, family history, judgement, commitments, preferences, and lessons from experience.</p>
+      <p>It is the parent’s own Ark: values, family history, judgement, commitments, preferences, and lessons from experience.</p>
       <h3 style="margin-top: 24px;">The child’s agent is not a parent-owned account.</h3>
-      <p>It is the child’s protected learning core, with adult influence mediated through policy, attribution, summaries, and escalation rules.</p>
+      <p>It is the child’s protected learning Ark, with adult influence mediated through policy, attribution, summaries, and escalation rules.</p>
     </div>
     <div>
       <h2>Wisdom can be proxied.</h2>
-      <p class="dc-bigline">A parent’s core can help steer a child’s core without exposing the parent’s whole private interior — or consuming the child’s.</p>
+      <p class="dc-bigline">A parent’s Ark can help steer a child’s Ark without exposing the parent’s whole private interior — or consuming the child’s.</p>
     </div>
   </div>
 </div>
 
 ---
 
-<iframe class="dc-component-frame" src="../components/confidentiality-spectrum.html" title="Child core confidentiality and visibility spectrum"></iframe>
+<iframe class="dc-component-frame" src="../components/confidentiality-spectrum.html" title="Child Ark confidentiality and visibility spectrum"></iframe>
 
 ---
 
@@ -174,9 +174,9 @@ source_notes:
   <div class="dc-kicker">Pilot phases</div>
   <h2>A stepwise path that can stop, correct, or widen.</h2>
   <div class="dc-grid-3" style="margin-top: 28px;">
-    <div class="dc-card"><h3>1 · Kristin sandbox</h3><p>Give the department its own isolated agentic workforce and enduring cores. Use it internally first.</p></div>
+    <div class="dc-card"><h3>1 · Kristin sandbox</h3><p>Give the department its own isolated agentic workforce and Arks. Use it internally first.</p></div>
     <div class="dc-card"><h3>2 · Parent partners</h3><p>Invite interested parents into a bounded pilot. Their cores are real; the child counterpart can begin simulated.</p></div>
-    <div class="dc-card"><h3>3 · Simulated child cores</h3><p>Exercise realistic and deliberately problematic situations before any student rollout.</p></div>
+    <div class="dc-card"><h3>3 · Simulated child Arks</h3><p>Exercise realistic and deliberately problematic situations before any student rollout.</p></div>
   </div>
   <div class="dc-grid-3" style="margin-top: 20px;">
     <div class="dc-card"><h3>4 · Dashboard what matters</h3><p>Behaviour patterns, policy friction, costs, token burn, escalation load, trust, visibility, and parent requests.</p></div>
@@ -199,9 +199,9 @@ source_notes:
       <ul>
         <li>Verify a Kristin School email address.</li>
         <li>Show a limited initial list — for example, five pilot cores.</li>
-        <li>Let the parent select and bond to one core.</li>
+        <li>Let the parent select and bond to one Ark.</li>
         <li>Start using it for real adult work and reflection.</li>
-        <li>Only later connect to simulated child cores, dashboards, and school policy experiments.</li>
+        <li>Only later connect to simulated-student Arks, dashboards, and school policy experiments.</li>
       </ul>
     </div>
   </div>
@@ -229,17 +229,17 @@ source_notes:
 ---
 
 <div class="dc-shell">
-  <div class="dc-kicker">Core claim</div>
+  <div class="dc-kicker">Ark claim</div>
   <div class="dc-grid-2">
     <div>
       <h2>An enduring agent is not the chat window.</h2>
-      <p class="dc-bigline">It is the durable knowledge core behind the interface.</p>
+      <p class="dc-bigline">It is the durable Ark behind the interface.</p>
     </div>
     <div class="dc-card">
       <h3>What persists</h3>
       <p>Records, learning history, decisions, evidence, corrections, preferences, values, policies, tools, and the long-run distilled knowledge of the person or institution.</p>
       <h3 style="margin-top: 24px;">What can change</h3>
-      <p>Models, apps, browsers, channels, interfaces, tools, and service providers can plug in and be replaced. The core stays.</p>
+      <p>Models, apps, browsers, channels, interfaces, tools, and service providers can plug in and be replaced. The Ark stays.</p>
     </div>
   </div>
 </div>
@@ -250,11 +250,11 @@ source_notes:
   <div class="dc-kicker">From individual cores to school wisdom</div>
   <h2>Wisdom should be permissioned, not pooled.</h2>
   <div class="dc-grid-3" style="margin-top: 28px;">
-    <div class="dc-card"><h3>Student core</h3><p>A protected learning history that helps the student build on prior work, strengths, questions, and feedback.</p></div>
-    <div class="dc-card"><h3>Teacher / family core</h3><p>Experience, care, values, and judgment can contribute permitted guidance without exposing private raw material.</p></div>
+    <div class="dc-card"><h3>Student Ark</h3><p>A protected learning history that helps the student build on prior work, strengths, questions, and feedback.</p></div>
+    <div class="dc-card"><h3>Teacher / family Ark</h3><p>Experience, care, values, and judgment can contribute permitted guidance without exposing private raw material.</p></div>
     <div class="dc-card"><h3>School knowledge stream</h3><p>Institutional memory, culture, values, alumni lessons, and recurring patterns become usable as living legacy.</p></div>
   </div>
-  <p class="dc-muted" style="font-size: 0.48em; margin-top: 30px;">This is adjacent to “collective intelligence” and “institutional memory,” but the Dreamcatcher distinction is owned enduring cores plus governed interaction.</p>
+  <p class="dc-muted" style="font-size: 0.48em; margin-top: 30px;">This is adjacent to “collective intelligence” and “institutional memory,” but the Dreamcatcher distinction is owned Arks plus governed interaction.</p>
 </div>
 
 ---
@@ -269,9 +269,9 @@ source_notes:
     <div class="dc-card">
       <h3>What this pilot proves or disproves</h3>
       <ul>
-        <li>Can enduring cores make adult AI use more coherent and accountable?</li>
+        <li>Can Arks make adult AI use more coherent and accountable?</li>
         <li>Can parent wisdom help children indirectly without surveillance?</li>
-        <li>Can simulated child cores expose boundary failures before real rollout?</li>
+        <li>Can simulated-student Arks expose boundary failures before real rollout?</li>
         <li>Can dashboards predict cost, trust, and governance load?</li>
         <li>Can the school defend its AI direction with evidence?</li>
       </ul>
@@ -286,7 +286,7 @@ source_notes:
   <h2>Your knowledge should accumulate, not evaporate.</h2>
   <p class="dc-bigline">The immediate move is not to put children inside an AI system. It is to let adults learn, simulate, measure, correct, and then choose the path with evidence.</p>
   <div class="dc-pill-row">
-    <span class="dc-pill">adult cores first</span><span class="dc-pill">simulated children</span><span class="dc-pill">dashboards</span><span class="dc-pill">visibility tuning</span><span class="dc-pill">living legacy</span>
+    <span class="dc-pill">adult Arks first</span><span class="dc-pill">simulated children</span><span class="dc-pill">dashboards</span><span class="dc-pill">visibility tuning</span><span class="dc-pill">living legacy</span>
   </div>
   <div class="dc-footerline" style="margin-top: 104px;"><span>Dreamcatcher</span><span>Prepared for Kristin School · Tom Thompson</span></div>
 </div>
