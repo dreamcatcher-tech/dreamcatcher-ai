@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>AI school measurement board</title>
+  <style>
+    :root { --ink:#06111f; --blue:#0d2238; --teal:#58d7d3; --gold:#f5c76b; --cream:#f8f4e8; --muted:rgba(248,244,232,.66); --line:rgba(255,255,255,.13); }
+    * { box-sizing: border-box; }
+    html, body { margin:0; width:100%; height:100%; background:transparent; font-family:Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; color:var(--cream); }
+    .canvas { width:min(1280px,100vw); height:100vh; padding:26px; background:linear-gradient(135deg, rgba(6,17,31,.98), rgba(13,34,56,.95)); border:1px solid var(--line); border-radius:26px; overflow:hidden; }
+    .top { display:flex; justify-content:space-between; gap:26px; align-items:flex-end; margin-bottom:16px; }
+    .kicker { color:var(--teal); text-transform:uppercase; letter-spacing:.16em; font-size:12px; font-weight:850; }
+    h1 { margin:5px 0 0; font-size:33px; line-height:.98; letter-spacing:-.055em; }
+    .principle { max-width:420px; color:var(--muted); font-size:13px; line-height:1.25; text-align:right; }
+    .board { display:grid; grid-template-columns: 1.02fr repeat(5, 1fr); gap:8px; height:calc(100% - 72px); }
+    .cell { border:1px solid var(--line); border-radius:14px; background:rgba(255,255,255,.055); padding:11px; min-width:0; box-shadow:inset 0 1px 0 rgba(255,255,255,.07); }
+    .head { background:rgba(88,215,211,.11); border-color:rgba(88,215,211,.30); color:var(--teal); font-weight:850; font-size:12px; text-transform:uppercase; letter-spacing:.08em; display:flex; align-items:center; }
+    .rowhead { background:rgba(245,199,107,.10); border-color:rgba(245,199,107,.25); }
+    .rowhead h2 { color:var(--gold); margin:0 0 6px; font-size:16px; line-height:1.05; letter-spacing:-.03em; }
+    .rowhead p { margin:0; color:var(--muted); font-size:11px; line-height:1.18; }
+    .cell strong { display:block; color:var(--cream); font-size:13px; line-height:1.08; letter-spacing:-.01em; margin-bottom:5px; }
+    .cell span { display:block; color:rgba(248,244,232,.72); font-size:11px; line-height:1.18; }
+    .tag { display:inline-block; margin-top:8px; border:1px solid rgba(88,215,211,.32); color:var(--teal); border-radius:999px; padding:3px 7px; font-size:10px; font-weight:800; font-style:normal; }
+    .pending { color:var(--gold)!important; }
+  </style>
+</head>
+<body>
+  <main class="canvas">
+    <div class="top">
+      <div><div class="kicker">Measurement board / newsletter spine</div><h1>Track proof points, not school prestige.</h1></div>
+      <div class="principle">Draft board for monthly updates. Scores stay blank until evidence is collected; reference cases show what to measure.</div>
+    </div>
+    <section class="board" aria-label="AI school proof-point measurement board">
+      <div class="cell head">Reference / lane</div>
+      <div class="cell head">Safety gate</div>
+      <div class="cell head">Teacher lift</div>
+      <div class="cell head">Access / controls</div>
+      <div class="cell head">Inclusion support</div>
+      <div class="cell head">Evidence shared</div>
+
+      <div class="cell rowhead"><h2>Kristin pilot target</h2><p>Proposed local evidence track</p></div>
+      <div class="cell"><strong>Minder benchmark</strong><span>Blocked / allowed / redirected cases with reasons.</span><em class="tag pending">TBD</em></div>
+      <div class="cell"><strong>Department sandbox</strong><span>Staff cores before child-facing release.</span><em class="tag pending">TBD</em></div>
+      <div class="cell"><strong>Parent cores first</strong><span>Adult consent, simulated children, visible limits.</span><em class="tag pending">TBD</em></div>
+      <div class="cell"><strong>Navigator pilot</strong><span>SEND / learning-support pathway help, not diagnosis.</span><em class="tag pending">TBD</em></div>
+      <div class="cell"><strong>Field notes</strong><span>Monthly blocker log, metrics, source links.</span><em class="tag pending">TBD</em></div>
+
+      <div class="cell rowhead"><h2>NZ baseline</h2><p>Ministry / NZQA / privacy guardrails</p></div>
+      <div class="cell"><strong>Policy required</strong><span>MoE: talk, make policy, manage risk/privacy/review.</span></div>
+      <div class="cell"><strong>Teacher central</strong><span>Human teachers remain responsible; AI supports judgement.</span></div>
+      <div class="cell"><strong>Age & data rules</strong><span>ChatGPT 13+; parental permission under 18; no U13 personal info.</span></div>
+      <div class="cell"><strong>Cultural bias</strong><span>NZ context weak on mātauranga, te reo Māori, Pacific languages.</span></div>
+      <div class="cell"><strong>2 case studies</strong><span>MoE points to two NZ GenAI school case studies.</span></div>
+
+      <div class="cell rowhead"><h2>OpenAI / Estonia</h2><p>National rollout reference</p></div>
+      <div class="cell"><strong>Small pilots</strong><span>High-school access via local-leader pilots and protections.</span></div>
+      <div class="cell"><strong>Teacher training</strong><span>Education for Countries pairs tools with training.</span></div>
+      <div class="cell"><strong>30k+ rollout</strong><span>Access at scale; use Kristin board to ask what controls/evidence came with it.</span></div>
+      <div class="cell"><strong>Localized learning</strong><span>Research-driven deployment and curriculum alignment.</span></div>
+      <div class="cell"><strong>Research partners</strong><span>Stanford + Estonian researchers study impact.</span></div>
+
+      <div class="cell rowhead"><h2>SchoolAI / Arco</h2><p>Product and inclusion references</p></div>
+      <div class="cell"><strong>SchoolAI:</strong><span>Careful design with oversight, not answer outsourcing.</span></div>
+      <div class="cell"><strong>SchoolAI:</strong><span>Reports broad classroom reach and teacher progress signals.</span></div>
+      <div class="cell"><strong>SchoolAI:</strong><span>Teacher dashboard plus personalized student support.</span></div>
+      <div class="cell"><strong>Arco:</strong><span>Adapts lessons to learning-support profiles with privacy.</span></div>
+      <div class="cell"><strong>OpenAI cases</strong><span>Published deployment evidence; treat metrics as source-reported.</span></div>
+    </section>
+  </main>
+</body>
+</html>

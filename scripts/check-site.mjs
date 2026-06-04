@@ -25,8 +25,11 @@ const requiredFiles = [
   'slides/decks/defragmenting-the-user.md',
   'slides/decks/kristin-school-enduring-knowledge-cores.md',
   'slides/decks/kristin-school-pilot-validation-portfolio.md',
+  'slides/decks/kristin-school-resource-avenues-child-safety-first.md',
   'slides/components/knowledge-cascade.html',
   'slides/components/pilot-validation-map.html',
+  'slides/components/ai-school-measurement-board.html',
+  'slides/components/resource-avenues-map.html',
   'slides/assets/dreamcatcher-logo.svg',
   'slides/assets/defragmenting-the-user-hero.png',
   'slides/assets/kristin-enduring-cores-cover.png',
@@ -55,6 +58,7 @@ const mustContain = [
   ['Collective wisdom of the cores', html],
   ['Published decks', html],
   ['slides/reveal-runner.html?deck=decks/kristin-school-pilot-validation-portfolio.md', html],
+  ['slides/reveal-runner.html?deck=decks/kristin-school-resource-avenues-child-safety-first.md', html],
   ['Telegram', html],
   ['WhatsApp', html],
   ['Email', html],
@@ -67,6 +71,7 @@ const mustContain = [
   ['Enduring Core Pilot Validation Portfolio', slidesIndex],
   ['The Knowledge That Endures', slidesIndex],
   ['Defragmenting the User', slidesIndex],
+  ['Child-Safety-First Resource Avenues', slidesIndex],
   ['reveal.js@6.0.1', runner],
   ['js-yaml@4.2.0', runner],
   ['framework', read('vercel.json')],
@@ -111,7 +116,7 @@ for (const id of hashes) {
   if (!ids.has(id)) fail(`Broken anchor link: #${id}`);
 }
 
-for (const deck of ['defragmenting-the-user', 'kristin-school-enduring-knowledge-cores', 'kristin-school-pilot-validation-portfolio']) {
+for (const deck of ['defragmenting-the-user', 'kristin-school-enduring-knowledge-cores', 'kristin-school-pilot-validation-portfolio', 'kristin-school-resource-avenues-child-safety-first']) {
   const deckText = read(`slides/decks/${deck}.md`);
   if (!deckText.startsWith('---')) fail(`${deck}.md must start with frontmatter`);
   if (deckText.includes('../../Assets/')) fail(`${deck}.md must not reference private notes asset paths`);

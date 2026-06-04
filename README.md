@@ -45,3 +45,5 @@ Main visual asset: `assets/durable-core-architecture.png`, generated with the co
 ## Slide deck publishing
 
 Public Dreamcatcher slide decks live under `slides/` in this repository. The private Obsidian vault remains the canonical drafting/source-capture area; do not submodule or expose the vault. Copy only public-safe deck Markdown, components, images, and metadata into this repo, update `slides/index.html` with a card/preview/blurb/date/topic, then run `npm run lint` and `npm run build` before committing.
+
+Current published decks include `Defragmenting the User`, `The Knowledge That Endures`, `Enduring Core Pilot Validation Portfolio`, and `Child-Safety-First Resource Avenues`.
