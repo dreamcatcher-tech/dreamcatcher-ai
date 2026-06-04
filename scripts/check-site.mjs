@@ -33,6 +33,7 @@ const requiredFiles = [
   'slides/assets/dreamcatcher-logo.svg',
   'slides/assets/defragmenting-the-user-hero.png',
   'slides/assets/kristin-enduring-cores-cover.png',
+  'slides/assets/conscience-visibility-spectrum.png',
 ];
 for (const file of requiredFiles) {
   if (!existsSync(join(root, file))) fail(`Missing ${file}`);
@@ -72,6 +73,7 @@ const mustContain = [
   ['The Knowledge That Endures', slidesIndex],
   ['Defragmenting the User', slidesIndex],
   ['Child-Safety-First Resource Avenues', slidesIndex],
+  ['Conscience', read('slides/decks/kristin-school-pilot-validation-portfolio.md')],
   ['reveal.js@6.0.1', runner],
   ['js-yaml@4.2.0', runner],
   ['framework', read('vercel.json')],

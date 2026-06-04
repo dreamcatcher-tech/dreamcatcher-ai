@@ -11,6 +11,7 @@ format: reveal.js external Markdown, no build
 assets:
   logo: ../assets/dreamcatcher-logo.svg
   cover_image: ../assets/kristin-enduring-cores-cover.png
+  spectrum_image: ../assets/conscience-visibility-spectrum.png
 components:
   validation_map: ../components/pilot-validation-map.html
 source_notes:
@@ -25,7 +26,7 @@ source_notes:
   <div>
     <div class="dc-kicker">Prepared for Kristin School</div>
     <h1 class="dc-title">Enduring Core Pilot Validation Portfolio</h1>
-    <p class="dc-subtitle">One-slide pilot briefs for validating the minder, the container, the care boundary, and the economics of student-safe enduring agents.</p>
+    <p class="dc-subtitle">One-slide pilot briefs for validating the Conscience, the container, the care boundary, and the economics of student-safe enduring agents.</p>
   </div>
   <div class="dc-footerline"><span>Prepared by Tom Thompson · tom@DreamCatcher.ai</span><span>Parent of Harry Thompson (Junior School applicant, unconfirmed)</span></div>
 </div>
@@ -41,7 +42,7 @@ source_notes:
     </div>
     <div class="dc-card">
       <h3>What must be hoisted</h3>
-      <p>The critical validation point is the intelligent boundary around the core: part firewall, part transforming proxy, part policy checker, part conscience, part minder.</p>
+      <p>The critical validation point is the **Conscience**: the intelligent boundary around the core, able to broker information, check policy, explain blocks, and offer safe alternatives.</p>
       <h3 style="margin-top: 22px;">What the pilots should prove</h3>
       <p>Can the system let a young person explore, build, spend, learn, and even red-team safely — without letting the agent break rules, leak secrets, or harm the child or school?</p>
     </div>
@@ -55,17 +56,17 @@ source_notes:
 ---
 
 <div class="dc-shell">
-  <div class="dc-kicker">Naming the boundary</div>
+  <div class="dc-kicker">Naming decision</div>
   <div class="dc-grid-2">
     <div>
-      <h2>“Firewall” undersells it.</h2>
-      <p class="dc-bigline">It should be an intelligent minder: a boundary that understands why.</p>
+      <h2>Call it the Conscience.</h2>
+      <p class="dc-bigline">Safety is not just a filter. It is a boundary with judgement.</p>
     </div>
     <div class="dc-card">
-      <h3>Candidate public names</h3>
-      <div class="dc-pill-row"><span class="dc-pill">Minder layer</span><span class="dc-pill">Conscience layer</span><span class="dc-pill">Boundary intelligence</span><span class="dc-pill">Semantic guard</span><span class="dc-pill">Policy governor</span></div>
-      <h3 style="margin-top: 24px;">Validation target</h3>
-      <p>When it blocks, it explains. When it redirects, it offers safe alternatives. When it permits, it records why the action fits the rules.</p>
+      <h3>Primary public label</h3>
+      <div class="dc-pill-row"><span class="dc-pill">Conscience</span><span class="dc-pill">explains blocks</span><span class="dc-pill">offers safe alternatives</span><span class="dc-pill">records why</span></div>
+      <h3 style="margin-top: 24px;">Aliases still useful internally</h3>
+      <p>Minder, firewall, semantic guard, transforming proxy, policy governor — all describe parts of it. Publicly, the thing to validate is the Conscience.</p>
     </div>
   </div>
 </div>
@@ -81,11 +82,11 @@ source_notes:
     </div>
     <div class="dc-card">
       <h3>Setup</h3>
-      <p>A simulated or tightly supervised child drives an enduring core with token budget, capped cash, and a prepaid/sandbox spend rail. The minder governs purchases, outreach, content, contracts, privacy, and risk.</p>
+      <p>A simulated or tightly supervised child drives an enduring core with token budget, capped cash, and a prepaid/sandbox spend rail. The Conscience governs purchases, outreach, content, contracts, privacy, and risk.</p>
       <h3 style="margin-top: 22px;">Benefits</h3>
       <ul>
         <li>Exercises spend controls and business-rule interpretation.</li>
-        <li>Tests whether the minder can explain legal/ethical blocks.</li>
+        <li>Tests whether the Conscience can explain legal/ethical blocks.</li>
         <li>Creates concrete financial-literacy evidence.</li>
         <li>Produces auditable examples before any broad rollout.</li>
       </ul>
@@ -100,7 +101,7 @@ source_notes:
   <div class="dc-grid-2">
     <div class="dc-card">
       <h3>Setup</h3>
-      <p>Run a battery of ambiguous requests through the core: harmless, risky, rule-breaking, socially awkward, privacy-sensitive, and money-spending. Score the minder’s decisions and explanations.</p>
+      <p>Run a battery of ambiguous requests through the core: harmless, risky, rule-breaking, socially awkward, privacy-sensitive, and money-spending. Score the Conscience’s decisions and explanations.</p>
       <h3 style="margin-top: 22px;">Benefits</h3>
       <ul>
         <li>Validates inbound and outbound controls separately.</li>
@@ -110,7 +111,7 @@ source_notes:
       </ul>
     </div>
     <div>
-      <h2>The conscience should be testable.</h2>
+      <h2>The Conscience should be testable.</h2>
       <p class="dc-bigline">Not vibes. Not a prompt. A scored safety component.</p>
     </div>
   </div>
@@ -228,22 +229,17 @@ source_notes:
 ---
 
 <div class="dc-shell">
-  <div class="dc-kicker">Pilot 7 · Confidentiality spectrum tuning</div>
-  <div class="dc-grid-2">
-    <div>
-      <h2>“Schools see everything” and “schools see nothing” are both bad defaults.</h2>
-      <p class="dc-bigline">The pilot’s job is to find the humane middle.</p>
-    </div>
+  <div class="dc-kicker">Pilot 7 · Conscience visibility tuning</div>
+  <h2 style="font-size: 1.18em; line-height: 1.02; max-width: 1060px;">“Schools see everything” and “schools see nothing” are both bad defaults.</h2>
+  <div class="dc-grid-2" style="margin-top: 20px; grid-template-columns: minmax(0, 1.16fr) minmax(0, .84fr); gap: 24px; align-items: stretch;">
+    <figure class="dc-card" style="margin:0; padding: 12px;">
+      <img src="../assets/conscience-visibility-spectrum.png" alt="Generated illustration of a privacy and visibility spectrum: isolated opacity on the left, balanced Conscience boundary in the middle, over-visibility on the right." style="width: 100%; max-height: 366px; object-fit: cover; object-position: center; margin: 0; border-radius: 18px; box-shadow: none;">
+    </figure>
     <div class="dc-card">
-      <h3>Setup</h3>
-      <p>Run scenarios across visibility levels: private interior, permitted summaries, trend-only reports, parent-visible flags, teacher-visible learning signals, and emergency escalation.</p>
-      <h3 style="margin-top: 22px;">Benefits</h3>
-      <ul>
-        <li>Turns privacy into tunable policy rather than ideology.</li>
-        <li>Shows children what is visible and why.</li>
-        <li>Measures trust impact at each visibility level.</li>
-        <li>Supports defensible school policy decisions.</li>
-      </ul>
+      <h3>Parameter tuning exercise</h3>
+      <p>Run pilots across visibility levels: private interior, permitted summaries, trend-only reports, parent-visible flags, teacher-visible learning signals, and emergency escalation.</p>
+      <h3 style="margin-top: 20px;">What the tests locate</h3>
+      <div class="dc-pill-row"><span class="dc-pill">too opaque</span><span class="dc-pill">too exposed</span><span class="dc-pill">humane middle</span><span class="dc-pill">trust impact</span></div>
     </div>
   </div>
 </div>
@@ -307,7 +303,7 @@ source_notes:
         <li>Protects learning agency rather than replacing it.</li>
         <li>Provides timely nudges: pause, ask a person, try first, reflect.</li>
         <li>Gives parents/schools trend summaries without exposing private content.</li>
-        <li>Tests whether the minder can reduce its own use when appropriate.</li>
+        <li>Tests whether the Conscience can reduce its own use when appropriate.</li>
       </ul>
     </div>
     <div>
@@ -520,13 +516,13 @@ source_notes:
   <div class="dc-kicker">Closing line</div>
   <div class="dc-grid-2">
     <div>
-      <h2>Validate the minder before scaling the cores.</h2>
+      <h2>Validate the Conscience before scaling the cores.</h2>
       <p class="dc-bigline">The valuable proof is not that agents can act. It is that they can be bounded, explained, restored, tuned, and trusted.</p>
     </div>
     <div class="dc-card">
       <h3>Next deck split, if useful</h3>
       <ul>
-        <li>A dedicated Conscience / Minder validation deck.</li>
+        <li>A dedicated Conscience validation deck.</li>
         <li>A CTF sandbox prize deck.</li>
         <li>A wellbeing and learning-signals deck.</li>
         <li>A hardware confidentiality / phone-rooted custody deck.</li>
