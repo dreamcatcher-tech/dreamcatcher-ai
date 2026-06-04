@@ -41,6 +41,7 @@ The page now positions Dreamcatcher around **portable Arks** rather than generic
 
 Main visual asset: `assets/ark-naming-system-hero.png`, generated with the configured OpenAI image generator backend.
 
+Generated site logo assets: `assets/dreamcatcher-logo.png` and the header/favicon-sized `assets/dreamcatcher-logo-180.png`.
 
 ## Slide deck publishing
 

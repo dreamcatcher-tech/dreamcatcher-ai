@@ -13,6 +13,8 @@ const requiredFiles = [
   'index.html',
   'styles.css',
   'assets/dreamcatcher-mark.svg',
+  'assets/dreamcatcher-logo.png',
+  'assets/dreamcatcher-logo-180.png',
   'assets/agent-capsule.svg',
   'assets/durable-core-architecture.png',
   'assets/ark-naming-system-hero.png',
@@ -68,6 +70,7 @@ const vercel = JSON.parse(read('vercel.json'));
 
 const mustContain = [
   ['portable Arks', html],
+  ['assets/dreamcatcher-logo-180.png', html],
   ['Your knowledge should accumulate, not evaporate', html],
   ['Not a bigger context window', html],
   ['Ark', html],
