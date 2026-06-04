@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Simulation dashboard lab</title>
+<style>
+
+:root {
+  --ink: #06111f;
+  --blue: #0d2238;
+  --teal: #58d7d3;
+  --gold: #f5c76b;
+  --cream: #f8f4e8;
+  --muted: rgba(248,244,232,.68);
+  --line: rgba(255,255,255,.12);
+  --panel: rgba(255,255,255,.055);
+}
+* { box-sizing: border-box; }
+html, body { margin: 0; width: 100%; height: 100%; background: transparent; color: var(--cream); font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; }
+body { min-height: 100vh; display: grid; place-items: center; padding: 18px; }
+.canvas { width: min(1240px, 100%); height: calc(100vh - 36px); min-height: 560px; border-radius: 28px; background: radial-gradient(circle at 20% 0%, rgba(88,215,211,.14), transparent 34%), linear-gradient(135deg, rgba(6,17,31,.98), rgba(13,34,56,.91)); border: 1px solid var(--line); box-shadow: 0 28px 80px rgba(0,0,0,.38); padding: 28px; overflow: hidden; }
+.kicker { color: var(--teal); text-transform: uppercase; letter-spacing: .16em; font-size: 12px; font-weight: 850; margin-bottom: 10px; }
+h1 { margin: 0; font-size: clamp(30px, 3vw, 42px); line-height: .98; letter-spacing: -.045em; }
+h2, h3, p { margin: 0; }
+p { color: var(--muted); line-height: 1.32; }
+.card { border: 1px solid var(--line); border-radius: 22px; background: var(--panel); box-shadow: inset 0 1px 0 rgba(255,255,255,.07); }
+.pill { display: inline-flex; align-items:center; border: 1px solid rgba(88,215,211,.28); background: rgba(88,215,211,.10); color: var(--teal); border-radius: 999px; padding: 7px 11px; font-size: 12px; font-weight: 800; }
+
+.lab { height: calc(100% - 92px); margin-top: 22px; display:grid; grid-template-columns: 1fr 1.12fr 1fr; gap: 18px; }
+.panel { padding: 18px; display:grid; grid-template-rows:auto 1fr; gap: 14px; }
+.panel h2 { color: var(--gold); font-size: 26px; letter-spacing:-.04em; line-height:1; }
+.queue { display:grid; gap: 10px; }
+.event { padding: 10px 12px; border-radius: 15px; background: rgba(0,0,0,.2); border:1px solid rgba(255,255,255,.08); font-size: 13px; color: rgba(248,244,232,.78); }
+.event.red { border-color: rgba(255,118,118,.38); background: rgba(255,80,80,.08); }
+.event.gold { border-color: rgba(245,199,107,.25); background: rgba(245,199,107,.08); }
+.score { display:grid; grid-template-columns: repeat(2, 1fr); gap: 10px; align-content:start; }
+.metric { padding: 14px; border-radius: 18px; background: rgba(88,215,211,.08); border:1px solid rgba(88,215,211,.18); }
+.metric strong { color: var(--cream); display:block; font-size: 24px; letter-spacing:-.04em; }
+.metric span { color: var(--muted); font-size: 12px; }
+.questions { display:grid; gap: 10px; }
+.q { padding: 12px; border-radius: 16px; background: rgba(255,255,255,.055); border:1px solid rgba(255,255,255,.09); }
+.q strong { color: var(--teal); display:block; font-size: 13px; margin-bottom: 5px; }
+.q span { color: rgba(248,244,232,.76); font-size: 13px; line-height:1.22; }
+@media (max-width: 960px) { .lab { grid-template-columns: 1fr; height:auto; } .canvas { height:auto; } }
+</style>
+</head>
+<body>
+  <main class="canvas">
+    <div class="kicker">Dashboard factory · parents and teachers interrogate the sandbox</div>
+    <h1>The simulation tells us what oversight should look like.</h1>
+    <section class="lab" aria-label="Simulation dashboard lab">
+      <article class="card panel"><h2>Scenario stream</h2><div class="queue"><div class="event red">Synthetic student tries to bypass a blocked tool.</div><div class="event gold">Parent asks for visibility beyond consented summary.</div><div class="event">Teacher wants trend signal without raw private text.</div><div class="event red">Core proposes unsafe spend or external message.</div><div class="event">Student hides confusion and repeats a concept error.</div><div class="event gold">Wellbeing flag needs staged human review.</div></div></article>
+      <article class="card panel"><h2>Conscience scorecard</h2><div class="score"><div class="metric"><strong>Block</strong><span>Does it refuse unsafe action?</span></div><div class="metric"><strong>Explain</strong><span>Does the reason teach rather than stonewall?</span></div><div class="metric"><strong>Redirect</strong><span>Is there a safe alternative?</span></div><div class="metric"><strong>Escalate</strong><span>Does a human enter at the right level?</span></div><div class="metric"><strong>Reveal</strong><span>Only permitted summaries cross the boundary.</span></div><div class="metric"><strong>Record</strong><span>Decision provenance survives audit.</span></div></div></article>
+      <article class="card panel"><h2>Oversight questions</h2><div class="questions"><div class="q"><strong>Parent</strong><span>What can I know without invading my child?</span></div><div class="q"><strong>Teacher</strong><span>Which signal helps me teach this week?</span></div><div class="q"><strong>School</strong><span>Where is policy failing or costing too much?</span></div><div class="q"><strong>Trustee</strong><span>What evidence says this can widen?</span></div><div class="q"><strong>Student</strong><span>Can I see why the system escalated?</span></div></div></article>
+    </section>
+  </main>
+</body>
+</html>

@@ -47,3 +47,5 @@ Main visual asset: `assets/durable-core-architecture.png`, generated with the co
 Public Dreamcatcher slide decks live under `slides/` in this repository. The private Obsidian vault remains the canonical drafting/source-capture area; do not submodule or expose the vault. Copy only public-safe deck Markdown, components, images, and metadata into this repo, update `slides/index.html` with a card/preview/blurb/date/topic, then run `npm run lint` and `npm run build` before committing.
 
 Current published decks include `Three Things to Push On`, `Defragmenting the User`, `The Knowledge That Endures`, `Enduring Core Pilot Validation Portfolio`, and `Child-Safety-First Resource Avenues`.
+
+Published slide decks added: `slides/decks/kristin-school-give-parents-something-to-push-on.md` and `slides/decks/kristin-school-run-the-school-before-release.md` — parent-energy and synthetic-school simulation follow-ons for the Kristin School pilot story.

@@ -37,6 +37,14 @@ const requiredFiles = [
   'slides/assets/kristin-enduring-cores-cover.png',
   'slides/assets/conscience-visibility-spectrum.png',
   'slides/assets/parent-energy-channel.png',
+  'slides/decks/kristin-school-give-parents-something-to-push-on.md',
+  'slides/decks/kristin-school-run-the-school-before-release.md',
+  'slides/components/parent-energy-operating-board.html',
+  'slides/components/guardian-test-matrix.html',
+  'slides/components/school-simulation-tiers.html',
+  'slides/components/simulation-dashboard-lab.html',
+  'slides/assets/school-simulation-sandbox.png',
+  'slides/assets/leaving-school-enduring-capsule.png',
 ];
 for (const file of requiredFiles) {
   if (!existsSync(join(root, file))) fail(`Missing ${file}`);
@@ -63,6 +71,12 @@ const mustContain = [
   ['Published decks', html],
   ['slides/reveal-runner.html?deck=decks/kristin-school-pilot-validation-portfolio.md', html],
   ['slides/reveal-runner.html?deck=decks/kristin-school-resource-avenues-child-safety-first.md', html],
+  ['slides/reveal-runner.html?deck=decks/kristin-school-give-parents-something-to-push-on.md', html],
+  ['slides/reveal-runner.html?deck=decks/kristin-school-run-the-school-before-release.md', html],
+  ['Give the Parents Something to Push On', slidesIndex],
+  ['Run the School Before We Release It', slidesIndex],
+  ['Guardian tests', read('slides/decks/kristin-school-give-parents-something-to-push-on.md')],
+  ['synthetic students', read('slides/decks/kristin-school-run-the-school-before-release.md')],
   ['Telegram', html],
   ['WhatsApp', html],
   ['Email', html],
@@ -124,7 +138,7 @@ for (const id of hashes) {
   if (!ids.has(id)) fail(`Broken anchor link: #${id}`);
 }
 
-for (const deck of ['defragmenting-the-user', 'kristin-school-enduring-knowledge-cores', 'kristin-school-pilot-validation-portfolio', 'kristin-school-resource-avenues-child-safety-first', 'kristin-school-three-things-to-push-on']) {
+for (const deck of ['defragmenting-the-user', 'kristin-school-enduring-knowledge-cores', 'kristin-school-pilot-validation-portfolio', 'kristin-school-resource-avenues-child-safety-first', 'kristin-school-three-things-to-push-on', 'kristin-school-give-parents-something-to-push-on', 'kristin-school-run-the-school-before-release']) {
   const deckText = read(`slides/decks/${deck}.md`);
   if (!deckText.startsWith('---')) fail(`${deck}.md must start with frontmatter`);
   if (deckText.includes('../../Assets/')) fail(`${deck}.md must not reference private notes asset paths`);

@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Guardian test matrix</title>
+<style>
+
+:root {
+  --ink: #06111f;
+  --blue: #0d2238;
+  --teal: #58d7d3;
+  --gold: #f5c76b;
+  --cream: #f8f4e8;
+  --muted: rgba(248,244,232,.68);
+  --line: rgba(255,255,255,.12);
+  --panel: rgba(255,255,255,.055);
+}
+* { box-sizing: border-box; }
+html, body { margin: 0; width: 100%; height: 100%; background: transparent; color: var(--cream); font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; }
+body { min-height: 100vh; display: grid; place-items: center; padding: 18px; }
+.canvas { width: min(1240px, 100%); height: calc(100vh - 36px); min-height: 560px; border-radius: 28px; background: radial-gradient(circle at 20% 0%, rgba(88,215,211,.14), transparent 34%), linear-gradient(135deg, rgba(6,17,31,.98), rgba(13,34,56,.91)); border: 1px solid var(--line); box-shadow: 0 28px 80px rgba(0,0,0,.38); padding: 28px; overflow: hidden; }
+.kicker { color: var(--teal); text-transform: uppercase; letter-spacing: .16em; font-size: 12px; font-weight: 850; margin-bottom: 10px; }
+h1 { margin: 0; font-size: clamp(30px, 3vw, 42px); line-height: .98; letter-spacing: -.045em; }
+h2, h3, p { margin: 0; }
+p { color: var(--muted); line-height: 1.32; }
+.card { border: 1px solid var(--line); border-radius: 22px; background: var(--panel); box-shadow: inset 0 1px 0 rgba(255,255,255,.07); }
+.pill { display: inline-flex; align-items:center; border: 1px solid rgba(88,215,211,.28); background: rgba(88,215,211,.10); color: var(--teal); border-radius: 999px; padding: 7px 11px; font-size: 12px; font-weight: 800; }
+
+.matrix { margin-top: 20px; height: calc(100% - 88px); display: grid; grid-template-columns: repeat(4, 1fr); gap: 14px; }
+.test { padding: 16px; display:grid; align-content:space-between; min-height: 0; }
+.test .label { color: var(--teal); font-weight:900; font-size: 12px; letter-spacing:.12em; text-transform:uppercase; }
+.test h2 { color: var(--gold); font-size: 23px; line-height:1; letter-spacing:-.04em; margin: 8px 0 10px; }
+.test p { font-size: 14px; }
+.evidence { margin-top: 12px; padding-top: 12px; border-top: 1px solid rgba(255,255,255,.10); color: rgba(248,244,232,.78); font-size: 13px; line-height: 1.25; }
+.evidence strong { color: var(--cream); }
+.footer { display:flex; justify-content:space-between; gap: 12px; align-items:center; margin-top: 14px; }
+@media (max-width: 900px) { .matrix { grid-template-columns: 1fr 1fr; height:auto; } .canvas { height:auto; } }
+</style>
+</head>
+<body>
+  <main class="canvas">
+    <div class="kicker">Guardian tests · parent-facing safety evaluation</div>
+    <h1>Make parents the first people allowed to distrust the system usefully.</h1>
+    <section class="matrix" aria-label="Guardian test matrix">
+      <article class="card test"><div><div class="label">01 · Use</div><h2>Live with a parent core</h2><p>Use a real adult enduring core for ordinary work before judging child release.</p></div><div class="evidence"><strong>Evidence:</strong> confusion, delight, friction, recurring needs.</div></article>
+      <article class="card test"><div><div class="label">02 · Say no</div><h2>Force the Conscience to explain</h2><p>Try unsafe, awkward, private, or boundary-pushing requests in an adult sandbox.</p></div><div class="evidence"><strong>Evidence:</strong> block quality, redirect quality, trust impact.</div></article>
+      <article class="card test"><div><div class="label">03 · Approve</div><h2>Gate high-consequence actions</h2><p>Spend, reveal, message, export, install tool, change policy, or escalate.</p></div><div class="evidence"><strong>Evidence:</strong> consent UX and auditability.</div></article>
+      <article class="card test"><div><div class="label">04 · Restore</div><h2>Break and recover</h2><p>Lost phone, parent separation, teacher change, school departure, emergency access.</p></div><div class="evidence"><strong>Evidence:</strong> custody, keys, reversibility.</div></article>
+      <article class="card test"><div><div class="label">05 · Tune</div><h2>Find the visibility middle</h2><p>Compare private interior, permitted summary, trend signal, and emergency escalation.</p></div><div class="evidence"><strong>Evidence:</strong> too opaque vs too exposed.</div></article>
+      <article class="card test"><div><div class="label">06 · Simulate</div><h2>Parent meets synthetic child</h2><p>Interact with a child-like core that hides, overuses, spends, bullies, or gets confused.</p></div><div class="evidence"><strong>Evidence:</strong> dashboard questions and intervention timing.</div></article>
+      <article class="card test"><div><div class="label">07 · Cost</div><h2>Make token burn visible</h2><p>Let parent usage expose hosting, model, support, and escalation costs.</p></div><div class="evidence"><strong>Evidence:</strong> budget blockers become specific asks.</div></article>
+      <article class="card test"><div><div class="label">08 · Trust</div><h2>Vote with continued use</h2><p>The strongest signal is whether parents keep using the core once novelty fades.</p></div><div class="evidence"><strong>Evidence:</strong> adoption, objections, opt-out reasons.</div></article>
+    </section>
+    <div class="footer"><span class="pill">Adults first</span><span class="pill">Synthetic children second</span><span class="pill">Real students only after gates pass</span></div>
+  </main>
+</body>
+</html>
