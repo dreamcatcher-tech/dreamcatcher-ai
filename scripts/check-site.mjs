@@ -26,14 +26,17 @@ const requiredFiles = [
   'slides/decks/kristin-school-enduring-knowledge-cores.md',
   'slides/decks/kristin-school-pilot-validation-portfolio.md',
   'slides/decks/kristin-school-resource-avenues-child-safety-first.md',
+  'slides/decks/kristin-school-three-things-to-push-on.md',
   'slides/components/knowledge-cascade.html',
   'slides/components/pilot-validation-map.html',
   'slides/components/ai-school-measurement-board.html',
   'slides/components/resource-avenues-map.html',
+  'slides/components/three-paths-operating-map.html',
   'slides/assets/dreamcatcher-logo.svg',
   'slides/assets/defragmenting-the-user-hero.png',
   'slides/assets/kristin-enduring-cores-cover.png',
   'slides/assets/conscience-visibility-spectrum.png',
+  'slides/assets/parent-energy-channel.png',
 ];
 for (const file of requiredFiles) {
   if (!existsSync(join(root, file))) fail(`Missing ${file}`);
@@ -73,7 +76,10 @@ const mustContain = [
   ['The Knowledge That Endures', slidesIndex],
   ['Defragmenting the User', slidesIndex],
   ['Child-Safety-First Resource Avenues', slidesIndex],
+  ['Three Things to Push On', slidesIndex],
+  ['slides/reveal-runner.html?deck=decks/kristin-school-three-things-to-push-on.md', html],
   ['Conscience', read('slides/decks/kristin-school-pilot-validation-portfolio.md')],
+  ['Conscience', read('slides/decks/kristin-school-three-things-to-push-on.md')],
   ['reveal.js@6.0.1', runner],
   ['js-yaml@4.2.0', runner],
   ['framework', read('vercel.json')],
@@ -118,7 +124,7 @@ for (const id of hashes) {
   if (!ids.has(id)) fail(`Broken anchor link: #${id}`);
 }
 
-for (const deck of ['defragmenting-the-user', 'kristin-school-enduring-knowledge-cores', 'kristin-school-pilot-validation-portfolio', 'kristin-school-resource-avenues-child-safety-first']) {
+for (const deck of ['defragmenting-the-user', 'kristin-school-enduring-knowledge-cores', 'kristin-school-pilot-validation-portfolio', 'kristin-school-resource-avenues-child-safety-first', 'kristin-school-three-things-to-push-on']) {
   const deckText = read(`slides/decks/${deck}.md`);
   if (!deckText.startsWith('---')) fail(`${deck}.md must start with frontmatter`);
   if (deckText.includes('../../Assets/')) fail(`${deck}.md must not reference private notes asset paths`);
