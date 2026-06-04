@@ -46,7 +46,15 @@ links:
 <section class="dc-shell" style="text-align:left;">
   <p class="dc-kicker">The operating map</p>
   <h2>Run three paths concurrently.</h2>
-  <iframe class="dc-component-frame" src="../components/three-paths-operating-map.html" title="Three concurrent paths operating map"></iframe>
+  <div class="dc-grid-3" style="margin-top: 28px;">
+    <article class="dc-card"><h3>1 · Concentrate</h3><p>Pull diffuse tooling, records, decisions and evidence into a durable core the person or family can carry forward.</p><p><strong>Proof:</strong> ownership, portability, continuity.</p></article>
+    <article class="dc-card"><h3>2 · Parents first</h3><p>Issue parent cores and use adults as testers, simulated students, supervisors and guardian-test authors.</p><p><strong>Proof:</strong> trust, friction, real cost, real questions.</p></article>
+    <article class="dc-card"><h3>3 · Tune Conscience</h3><p>Test the humane middle between total opacity and surveillance: permitted summaries, explainable blocks, escalation.</p><p><strong>Proof:</strong> visibility parameter, safety evidence.</p></article>
+  </div>
+  <div class="dc-card" style="margin-top: 26px; border-color: rgba(88,215,211,.35); background: rgba(88,215,211,.08);">
+    <h3>Parent energy → three pilot paths → evidence gate</h3>
+    <p>Each path produces proof-points the school can review monthly before any child-facing release: safety decisions, trust gaps, budget, support load, custody drills, and blockers parents can help unblock.</p>
+  </div>
 </section>
 
 ---
