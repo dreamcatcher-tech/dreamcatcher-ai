@@ -15,7 +15,7 @@ links:
   resource_avenues: https://www.dreamcatcher.ai/slides/reveal-runner.html?deck=decks/kristin-school-resource-avenues-child-safety-first.md
 ---
 
-<section class="dc-shell dc-cover" style="--cover-image: url('../assets/parent-energy-channel.png')">
+<section class="dc-shell dc-cover" style="--cover-image: url('../assets/parent-energy-channel.png'); text-align: left; background-image: linear-gradient(90deg, rgba(2,6,11,0.96) 0%, rgba(6,17,31,0.86) 40%, rgba(6,17,31,0.30) 72%, rgba(6,17,31,0.10) 100%), url('../assets/parent-energy-channel.png'); background-position: center;">
   <div class="dc-brand"><img src="../assets/dreamcatcher-logo.svg" alt="Dreamcatcher logo"> Dreamcatcher.ai</div>
   <div>
     <p class="dc-kicker">Kristin School · orientation deck</p>
@@ -30,7 +30,7 @@ links:
 
 ---
 
-<section class="dc-shell">
+<section class="dc-shell" style="text-align:left;">
   <p class="dc-kicker">The immediate pressure</p>
   <h2>Parents are asking: “what do we do?”</h2>
   <p class="dc-bigline">Do not dissipate that energy in meetings. Give it a concrete interface.</p>
@@ -43,7 +43,7 @@ links:
 
 ---
 
-<section class="dc-shell">
+<section class="dc-shell" style="text-align:left;">
   <p class="dc-kicker">The operating map</p>
   <h2>Run three paths concurrently.</h2>
   <iframe class="dc-component-frame" src="../components/three-paths-operating-map.html" title="Three concurrent paths operating map"></iframe>
@@ -51,7 +51,7 @@ links:
 
 ---
 
-<section class="dc-shell">
+<section class="dc-shell" style="text-align:left;">
   <p class="dc-kicker">Path 1 · Concentrate</p>
   <div class="dc-grid-2">
     <div>
@@ -76,7 +76,7 @@ links:
 
 ---
 
-<section class="dc-shell">
+<section class="dc-shell" style="text-align:left;">
   <p class="dc-kicker">Path 2 · Parents first</p>
   <div class="dc-grid-2">
     <div>
@@ -99,7 +99,7 @@ links:
 
 ---
 
-<section class="dc-shell">
+<section class="dc-shell" style="text-align:left;">
   <p class="dc-kicker">Path 3 · Conscience</p>
   <div class="dc-grid-2">
     <div>
@@ -116,7 +116,7 @@ links:
 
 ---
 
-<section class="dc-shell">
+<section class="dc-shell" style="text-align:left;">
   <p class="dc-kicker">The cadence</p>
   <h2>Make the roadmap absorb the energy.</h2>
   <div class="dc-grid-3" style="margin-top: 28px;">
@@ -129,7 +129,7 @@ links:
 
 ---
 
-<section class="dc-shell">
+<section class="dc-shell" style="text-align:left;">
   <p class="dc-kicker">Deep dives</p>
   <h2>This deck is the front door. Use the detailed decks for the work.</h2>
   <div class="dc-grid-2" style="margin-top: 28px;">
