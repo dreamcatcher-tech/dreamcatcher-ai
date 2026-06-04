@@ -112,6 +112,8 @@ const mustContain = [
   ['Conscience', read('slides/decks/kristin-school-three-things-to-push-on.md')],
   ['reveal.js@6.0.1', runner],
   ['js-yaml@4.2.0', runner],
+  ['Download PDF', runner],
+  ['print-pdf', runner],
   ['framework', read('vercel.json')],
   ['dreamcatcher.ai', read('CNAME')],
 ];
