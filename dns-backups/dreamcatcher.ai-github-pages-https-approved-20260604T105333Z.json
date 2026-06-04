@@ -1,0 +1,45 @@
+{
+  "generated_utc": "20260604T105333Z",
+  "github_pages": {
+    "build_type": "workflow",
+    "cname": "dreamcatcher.ai",
+    "custom_404": false,
+    "html_url": "https://dreamcatcher.ai/",
+    "https_certificate": {
+      "description": "The certificate has been approved.",
+      "domains": [
+        "dreamcatcher.ai",
+        "www.dreamcatcher.ai"
+      ],
+      "expires_at": "2026-09-02",
+      "state": "approved"
+    },
+    "https_enforced": true,
+    "pending_domain_unverified_at": null,
+    "protected_domain_state": null,
+    "public": true,
+    "source": {
+      "branch": "main",
+      "path": "/"
+    },
+    "status": null,
+    "url": "https://api.github.com/repos/dreamcatcher-tech/dreamcatcher-ai/pages"
+  },
+  "https_apex": {
+    "content_checks": {
+      "canonical_www": true,
+      "hero": false
+    },
+    "exit_code": 0,
+    "headers": "HTTP/2 200 \nserver: GitHub.com\ncontent-type: text/html; charset=utf-8\nlast-modified: Thu, 04 Jun 2026 09:09:48 GMT\naccess-control-allow-origin: *\netag: \"6a2140dc-5c32\"\nexpires: Thu, 04 Jun 2026 10:58:50 GMT\ncache-control: max-age=600\nx-proxy-cache: MISS\nx-github-request-id: AED0:F86AD:C49E70:D54FD7:6A215810\naccept-ranges: bytes\ndate: Thu, 04 Jun 2026 10:53:33 GMT\nvia: 1.1 varnish\nage: 283\nx-served-by: cache-wsi-ysbk1060023-WSI\nx-cache: HIT\nx-cache-hits: 1\nx-timer: S1780570414.596091,VS0,VE1\nvary: Accept-Encoding\nx-fastly-request-id: ffe00451084f6963c8b6c054094af90fb0f2e142\ncontent-length: 23602\n\n"
+  },
+  "https_www": {
+    "content_checks": {
+      "canonical_www": true,
+      "hero": false
+    },
+    "exit_code": 0,
+    "headers": "HTTP/2 301 \nserver: GitHub.com\ncontent-type: text/html\nlocation: https://dreamcatcher.ai/\nx-github-request-id: 3F80:1796CB:C4BB4F:D56DBF:6A215813\naccept-ranges: bytes\nage: 281\ndate: Thu, 04 Jun 2026 10:53:33 GMT\nvia: 1.1 varnish\nx-served-by: cache-wsi-ysbk1060036-WSI\nx-cache: HIT\nx-cache-hits: 0\nx-timer: S1780570414.535719,VS0,VE1\nvary: Accept-Encoding\nx-fastly-request-id: 3c53b1a7e902cdadc3ec0e2c65c6e2ade6aa3bbb\ncontent-length: 162\n\nHTTP/2 200 \nserver: GitHub.com\ncontent-type: text/html; charset=utf-8\nlast-modified: Thu, 04 Jun 2026 09:09:48 GMT\naccess-control-allow-origin: *\netag: \"6a2140dc-5c32\"\nexpires: Thu, 04 Jun 2026 10:58:50 GMT\ncache-control: max-age=600\nx-proxy-cache: MISS\nx-github-request-id: AED0:F86AD:C49E70:D54FD7:6A215810\naccept-ranges: bytes\nage: 282\ndate: Thu, 04 Jun 2026 10:53:33 GMT\nvia: 1.1 varnish\nx-served-by: cache-wsi-ysbk1060061-WSI\nx-cache: HIT\nx-cache-hits: 0\nx-timer: S1780570414.554961,VS0,VE1\nvary: Accept-Encoding\nx-fastly-request-id: a225773929e95fd1d6ac024be5f2159c67e1926d\ncontent-length: 23602\n\n"
+  },
+  "purpose": "GitHub Pages HTTPS certificate approved after returning dreamcatcher.ai to GitHub Pages"
+}
