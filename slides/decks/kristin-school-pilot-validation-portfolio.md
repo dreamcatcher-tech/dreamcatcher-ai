@@ -12,6 +12,7 @@ assets:
   logo: ../assets/dreamcatcher-logo.svg
   cover_image: ../assets/kristin-enduring-cores-cover.png
   spectrum_image: ../assets/conscience-visibility-spectrum.png
+  gilfoyle_image: ../assets/gilfoyle-containment.jpg
 components:
   validation_map: ../components/pilot-validation-map.html
 source_notes:
@@ -126,11 +127,10 @@ source_notes:
       <h2>Giving a capable agent to a child is a containment problem.</h2>
       <p class="dc-bigline">Think “trying to contain Guilfoyle” — funny because it is true.</p>
     </div>
-    <div class="dc-card" style="min-height: 390px; display: grid; align-content: center; border-style: dashed; border-color: rgba(245,199,107,.42);">
-      <h3>Image slot</h3>
-      <p>Use a licensed/approved still or original homage for the Silicon Valley server-room containment metaphor: Guilfoyle/Dinesh energy, laptop, racks, “you really think you can lock this down?”</p>
-      <p class="dc-muted" style="font-size: .40em; margin-top: 18px;">Current draft uses this placeholder rather than embedding a copyrighted still without a sourced/approved asset.</p>
-    </div>
+    <figure class="dc-card" style="margin: 0; padding: 14px; min-height: 390px; display: grid; align-content: center; gap: 10px;">
+      <img src="../assets/gilfoyle-containment.jpg" alt="Server-room containment metaphor with two operators and a laptop" style="width: 100%; border-radius: 24px; box-shadow: 0 22px 70px rgba(0,0,0,.42); border: 1px solid rgba(255,255,255,.16);">
+      <figcaption class="dc-muted" style="font-size: .36em; line-height: 1.35;">The joke lands because the risk is real: a capable agent under child guidance still needs a boundary that can hold.</figcaption>
+    </figure>
   </div>
 </div>
 
