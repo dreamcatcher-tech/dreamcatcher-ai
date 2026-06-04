@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Child core confidentiality spectrum</title>
+  <style>
+    :root { --ink:#06111f; --navy:#0d2238; --teal:#58d7d3; --gold:#f5c76b; --rose:#eea383; --cream:#f8f4e8; --muted:rgba(248,244,232,.68); }
+    * { box-sizing:border-box; }
+    html, body { margin:0; width:100%; min-height:100%; background:transparent; }
+    body { color:var(--cream); font-family:Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; }
+    .canvas { width:min(1280px,100vw); height:100vh; min-height:0; margin:0 auto; padding:30px 34px; border-radius:28px; background:radial-gradient(circle at 16% 22%, rgba(88,215,211,.18), transparent 30%), radial-gradient(circle at 84% 20%, rgba(238,163,131,.17), transparent 31%), linear-gradient(135deg, rgba(6,17,31,.98), rgba(13,34,56,.94)); border:1px solid rgba(255,255,255,.11); box-shadow:inset 0 1px 0 rgba(255,255,255,.10), 0 24px 70px rgba(0,0,0,.30); overflow:hidden; position:relative; }
+    header { display:flex; justify-content:space-between; align-items:start; gap:24px; margin-bottom:36px; position:relative; z-index:1; }
+    .eyebrow { color:var(--teal); letter-spacing:.16em; text-transform:uppercase; font-weight:850; font-size:13px; margin-bottom:8px; }
+    h1 { margin:0; font-size:46px; line-height:.96; letter-spacing:-.055em; max-width:760px; }
+    .note { color:var(--muted); font-size:17px; line-height:1.28; max-width:380px; text-align:right; padding-top:18px; }
+    .track-wrap { position:relative; z-index:1; padding:58px 24px 0; }
+    .track { position:relative; height:28px; border-radius:999px; background:linear-gradient(90deg, #58d7d3, #f5c76b 50%, #eea383); box-shadow:0 0 40px rgba(88,215,211,.12), inset 0 1px 0 rgba(255,255,255,.32); }
+    .track:before, .track:after { content:""; position:absolute; top:50%; width:2px; height:62px; transform:translateY(-50%); background:rgba(255,255,255,.28); }
+    .track:before { left:0; } .track:after { right:0; }
+    .marker { position:absolute; top:-29px; left:50%; transform:translateX(-50%); width:26px; height:86px; border-radius:999px; background:rgba(6,17,31,.88); border:2px solid var(--gold); box-shadow:0 0 0 10px rgba(245,199,107,.08), 0 18px 48px rgba(0,0,0,.38); }
+    .marker:after { content:"pilot tuning zone"; position:absolute; left:50%; top:96px; transform:translateX(-50%); white-space:nowrap; color:var(--gold); font-size:14px; font-weight:850; letter-spacing:.04em; text-transform:uppercase; }
+    .ends { display:grid; grid-template-columns:1fr 1fr; gap:120px; margin-top:68px; }
+    .end { border-radius:24px; padding:24px; min-height:190px; border:1px solid rgba(255,255,255,.12); background:rgba(255,255,255,.052); box-shadow:inset 0 1px 0 rgba(255,255,255,.08); }
+    .end h2 { margin:0 0 12px; font-size:27px; line-height:1; letter-spacing:-.04em; }
+    .end p { margin:0; color:var(--muted); font-size:16px; line-height:1.32; }
+    .left h2 { color:var(--teal); } .right h2 { color:var(--rose); }
+    .middle { margin:30px auto 0; max-width:780px; text-align:center; border-radius:24px; padding:20px 26px; border:1px solid rgba(245,199,107,.24); background:rgba(245,199,107,.075); }
+    .middle strong { color:var(--gold); display:block; font-size:24px; letter-spacing:-.035em; margin-bottom:8px; }
+    .middle span { color:rgba(248,244,232,.76); font-size:15.5px; line-height:1.28; }
+    .chips { display:flex; justify-content:center; flex-wrap:wrap; gap:10px; margin-top:22px; }
+    .chip { border-radius:999px; padding:7px 12px; border:1px solid rgba(255,255,255,.12); color:rgba(248,244,232,.72); font-size:13px; background:rgba(6,17,31,.45); }
+  </style>
+</head>
+<body>
+  <div class="canvas" role="img" aria-label="A spectrum from full confidentiality to full visibility, with a pilot tuning zone in the middle.">
+    <header>
+      <div><div class="eyebrow">Open design question</div><h1>The visibility boundary must be tuned, not guessed</h1></div>
+      <div class="note">The pilot should make the trade-offs visible: child agency, parent trust, school duty, safety, and attribution.</div>
+    </header>
+    <section class="track-wrap">
+      <div class="track"><div class="marker"></div></div>
+      <div class="ends">
+        <div class="end left"><h2>Full confidentiality</h2><p>No one can see inside the child’s core. Strong interior privacy, but parents and school may lack enough visibility to help, trust, or discharge duties.</p></div>
+        <div class="end right"><h2>Full visibility</h2><p>Everyone sees everything. Easy oversight, but it collapses privacy, agency, trust, and the child’s protected interior life.</p></div>
+      </div>
+      <div class="middle"><strong>The answer is almost certainly in between.</strong><span>Experiments tune what is private, what is summarized, what is attributed, what is escalated, and what requires explicit approval.</span></div>
+      <div class="chips"><span class="chip">private interior</span><span class="chip">parent-attributed guidance</span><span class="chip">school-attributed guidance</span><span class="chip">collective wisdom labels</span><span class="chip">escalation rules</span><span class="chip">audit trail</span></div>
+    </section>
+  </div>
+</body>
+</html>

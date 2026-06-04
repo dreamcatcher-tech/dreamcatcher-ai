@@ -2,7 +2,7 @@
 
 Static public homepage for [dreamcatcher.ai](https://dreamcatcher.ai/).
 
-The site intentionally uses plain HTML, CSS, SVG assets, and tiny Node check/build scripts. There is no Next.js app, no browser chat UI, and no authentication gate.
+The site intentionally uses plain HTML, CSS, SVG/PNG assets, and tiny Node check/build scripts. There is no Next.js app, no browser chat UI, and no authentication gate.
 
 ## Local checks
 
@@ -30,4 +30,18 @@ Fly/Caddy fallback hosting has been removed; production is GitHub Pages only.
 
 ## Content direction
 
-The page positions Dreamcatcher around dedicated, portable AI agents that work through Telegram, WhatsApp, email and phone, with human oversight and privacy-first architecture. Channel links are labelled honestly as pilot/coming soon until they are implemented.
+The page now positions Dreamcatcher around **durable knowledge cores** rather than generic AI agents:
+
+- **Intentional knowledge concentration:** people leave knowledge trails anyway; Dreamcatcher turns scattered school/work/family breadcrumbs into owned, protected, useful knowledge.
+- **Enduring knowledge core:** not a bigger context window — a long-lived place where work, records, history, values, judgment and distilled wisdom accumulate.
+- **Personal software:** records stay in the durable core; software, models and services come to them. Servers become plumbing, not prisons.
+- **Semantic checkpoint:** approvals, policies, redaction, denial and escalation guard the boundary.
+- **Confidential enclave:** precious records can sit in a smaller inner zone that returns redacted answers or refusals rather than raw material.
+- **Collective wisdom of the cores:** family, school and team cores can interact through permissioned, auditable wisdom streams.
+
+Main visual asset: `assets/durable-core-architecture.png`, generated with the configured OpenAI image generator backend.
+
+
+## Slide deck publishing
+
+Public Dreamcatcher slide decks live under `slides/` in this repository. The private Obsidian vault remains the canonical drafting/source-capture area; do not submodule or expose the vault. Copy only public-safe deck Markdown, components, images, and metadata into this repo, update `slides/index.html` with a card/preview/blurb/date/topic, then run `npm run lint` and `npm run build` before committing.

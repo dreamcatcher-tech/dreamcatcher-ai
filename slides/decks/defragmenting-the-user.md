@@ -1,0 +1,182 @@
+---
+title: Defragmenting the User
+subtitle: From SaaS sprawl to durable cores
+slug: defragmenting-the-user
+created: 2026-06-04T12:29:42+12:00
+status: seed
+format: reveal-md-no-build
+theme: dreamcatcher-dark
+source_note: "[[Deck Seed - Defragmenting the User]]"
+assets:
+  hero_image: "../assets/defragmenting-the-user-hero.png"
+---
+
+# Defragmenting the User
+
+## From SaaS sprawl to durable cores
+
+![Generated split-screen image: fragmented app/server shards versus one protected durable core.](../assets/defragmenting-the-user-hero.png)
+
+Notes:
+The old world makes the user a cross-cutting concern. The new world makes the user the core.
+
+---
+
+## The pattern we know, but rarely name
+
+- SaaS sprawl
+- identity sprawl
+- data silos
+- integration spaghetti
+- split-brain user state
+
+> **The person is smeared across the stack.**
+
+---
+
+## The technical term
+
+# Cross-cutting concern
+
+In old software, some concerns cut across every module.
+
+In old SaaS, **the user** cuts across every application.
+
+---
+
+## Dreamcatcher's phrase
+
+# Defragmenting the user
+
+> The person should not be smeared across the tools. The tools should orbit the person.
+
+---
+
+## The car stereo analogy
+
+Left: the car stereo I wanted as a kid.
+
+Right: the car audio system I want now.
+
+> Complexity collapses into one trusted connection.
+
+Image brief: maximalist lights/buttons/CD/equalizer versus blank face + Bluetooth-like audio orb.
+
+---
+
+## The phone app analogy
+
+Today: a home screen full of accounts, utilities, badges, permissions, and partial records.
+
+Future: one voice-first agent orb.
+
+> The future app is not another app. It is where the other apps stop owning the user.
+
+---
+
+## Enterprise today
+
+Email. Accounting. CRM. HR. Support. BI. On-prem systems. Documents. Chat. Browser tools.
+
+The same person exists as a thin slice in each one.
+
+SSO helps you log in.
+
+> **SSO does not put you back together.**
+
+---
+
+## Enterprise with a durable core
+
+The durable core holds continuity:
+
+- records
+- keys and approvals
+- knowledge trail
+- policies and preferences
+- history and provenance
+- personal software context
+
+Services become replaceable tools around the core.
+
+---
+
+## Architectural inversion
+
+Before:
+
+```text
+Application owns record → user gets account → integrations recover coherence
+```
+
+After:
+
+```text
+Durable core owns continuity → services orbit → software comes to the core
+```
+
+---
+
+# Series B
+
+## Crypto exchange recomposed
+
+Custody inversion: the exchange becomes a service, not the holder of the self.
+
+---
+
+## Centralized exchange today
+
+One giant bundle:
+
+- custodial keys/wallets
+- account database and KYC
+- matching / routing / risk
+- statements, tax, support
+- bank rails and integrations
+- trading UI/API
+
+The exchange is where the user's trading self exists.
+
+---
+
+## The fragmented trading self
+
+Even one exchange account spans:
+
+- chain wallets
+- exchange balances
+- bank/payment rails
+- email/phone/2FA
+- tax software
+- portfolio trackers
+- trading bots/API keys
+- support tickets
+
+---
+
+## Agent-core recomposition
+
+The durable core holds:
+
+- signing policy and key custody
+- approvals firewall
+- KYC attestations/proofs
+- risk limits and preferences
+- tax/history records
+- recovery plan
+- venue trust memory
+
+Venues, matching, market data, compliance, settlement, and tax become services around it.
+
+---
+
+## Claim discipline
+
+Do not say “keys in a chatbot.”
+
+Say:
+
+> The key is not in the exchange. The key is not in the chat. The key is in the governed core.
+
+Policy-gated signing. Recovery. Backups. Explicit approval for irreversible transfers.

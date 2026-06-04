@@ -14,11 +14,22 @@ const requiredFiles = [
   'styles.css',
   'assets/dreamcatcher-mark.svg',
   'assets/agent-capsule.svg',
+  'assets/durable-core-architecture.png',
   'assets/social-card.svg',
   'robots.txt',
   'sitemap.xml',
   'CNAME',
   'vercel.json',
+  'slides/index.html',
+  'slides/reveal-runner.html',
+  'slides/decks/defragmenting-the-user.md',
+  'slides/decks/kristin-school-enduring-knowledge-cores.md',
+  'slides/decks/kristin-school-pilot-validation-portfolio.md',
+  'slides/components/knowledge-cascade.html',
+  'slides/components/pilot-validation-map.html',
+  'slides/assets/dreamcatcher-logo.svg',
+  'slides/assets/defragmenting-the-user-hero.png',
+  'slides/assets/kristin-enduring-cores-cover.png',
 ];
 for (const file of requiredFiles) {
   if (!existsSync(join(root, file))) fail(`Missing ${file}`);
@@ -26,18 +37,38 @@ for (const file of requiredFiles) {
 
 const html = read('index.html');
 const css = read('styles.css');
+const social = read('assets/social-card.svg');
+const capsule = read('assets/agent-capsule.svg');
+const slidesIndex = read('slides/index.html');
+const runner = read('slides/reveal-runner.html');
 const vercel = JSON.parse(read('vercel.json'));
 
 const mustContain = [
-  ['dedicated AI agents', html],
-  ['Your own AI agent, looked after by real people', html],
+  ['durable knowledge cores', html],
+  ['Your knowledge should accumulate, not evaporate', html],
+  ['Not a bigger context window', html],
+  ['Durable Knowledge Core', html],
+  ['Semantic Checkpoint', html],
+  ['Confidential Enclave', html],
+  ['Personal software', html],
+  ['Enduring knowledge becomes wisdom', html],
+  ['Collective wisdom of the cores', html],
+  ['Published decks', html],
+  ['slides/reveal-runner.html?deck=decks/kristin-school-pilot-validation-portfolio.md', html],
   ['Telegram', html],
   ['WhatsApp', html],
   ['Email', html],
   ['Call the agent', html],
   ['Coming soon', html],
-  ['Human steward', read('assets/agent-capsule.svg')],
   ['mailto:tom@dreamcatcher.ai', html],
+  ['Durable Knowledge Core', capsule],
+  ['Your knowledge should', social],
+  ['Dreamcatcher.ai Slides', slidesIndex],
+  ['Enduring Core Pilot Validation Portfolio', slidesIndex],
+  ['The Knowledge That Endures', slidesIndex],
+  ['Defragmenting the User', slidesIndex],
+  ['reveal.js@6.0.1', runner],
+  ['js-yaml@4.2.0', runner],
   ['framework', read('vercel.json')],
   ['dreamcatcher.ai', read('CNAME')],
 ];
@@ -54,18 +85,25 @@ const forbidden = [
   'href="/login"',
 ];
 for (const needle of forbidden) {
-  if (html.includes(needle) || css.includes(needle)) fail(`Forbidden framework/chat reference found: ${needle}`);
+  if (html.includes(needle) || css.includes(needle) || slidesIndex.includes(needle)) fail(`Forbidden framework/chat reference found: ${needle}`);
 }
 
 if (vercel.framework !== null) fail('vercel.json must set framework to null for a static site');
 if (vercel.outputDirectory !== 'dist') fail('vercel.json outputDirectory must be dist');
 if (vercel.buildCommand !== 'node scripts/build.mjs') fail('vercel.json buildCommand must run scripts/build.mjs');
 
-const localRefs = [...html.matchAll(/(?:href|src)="(?!https?:|mailto:|#|\/)([^"]+)"/g)].map((m) => m[1]);
-for (const ref of localRefs) {
-  const clean = ref.split('#')[0].split('?')[0];
-  if (!existsSync(join(root, clean))) fail(`Broken local reference: ${ref}`);
-}
+const validateLocalRefs = (file) => {
+  const markup = read(file);
+  const base = dirname(file);
+  const localRefs = [...markup.matchAll(/(?:href|src)="(?!https?:|mailto:|#|\/)([^"]+)"/g)].map((m) => m[1]);
+  for (const ref of localRefs) {
+    const clean = ref.split('#')[0].split('?')[0];
+    if (!clean) continue;
+    if (!existsSync(join(root, base, clean))) fail(`Broken local reference in ${file}: ${ref}`);
+  }
+};
+validateLocalRefs('index.html');
+validateLocalRefs('slides/index.html');
 
 const ids = new Set([...html.matchAll(/id="([^"]+)"/g)].map((m) => m[1]));
 const hashes = [...html.matchAll(/href="#([^"]+)"/g)].map((m) => m[1]);
@@ -73,9 +111,16 @@ for (const id of hashes) {
   if (!ids.has(id)) fail(`Broken anchor link: #${id}`);
 }
 
+for (const deck of ['defragmenting-the-user', 'kristin-school-enduring-knowledge-cores', 'kristin-school-pilot-validation-portfolio']) {
+  const deckText = read(`slides/decks/${deck}.md`);
+  if (!deckText.startsWith('---')) fail(`${deck}.md must start with frontmatter`);
+  if (deckText.includes('../../Assets/')) fail(`${deck}.md must not reference private notes asset paths`);
+}
+
 if (!html.trimStart().startsWith('<!doctype html>')) fail('index.html must start with <!doctype html>');
+if (!slidesIndex.trimStart().startsWith('<!doctype html>')) fail('slides/index.html must start with <!doctype html>');
 if (!css.includes('@media (max-width: 760px)')) fail('styles.css must include mobile responsive styles');
 
 if (!process.exitCode) {
-  pass('Static site content and references validated');
+  pass('Static site content, slide library, and references validated');
 }

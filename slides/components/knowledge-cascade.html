@@ -1,0 +1,341 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Dreamcatcher knowledge cascade component</title>
+  <style>
+    :root {
+      --ink: #06111f;
+      --navy: #0d2238;
+      --teal: #58d7d3;
+      --gold: #f5c76b;
+      --rose: #eea383;
+      --cream: #f8f4e8;
+      --muted: rgba(248, 244, 232, 0.68);
+      --line: rgba(248, 244, 232, 0.14);
+    }
+
+    * { box-sizing: border-box; }
+    html, body { margin: 0; width: 100%; min-height: 100%; background: transparent; }
+    body {
+      font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      color: var(--cream);
+    }
+
+    .canvas {
+      width: min(1280px, 100vw);
+      height: 100vh;
+      min-height: 0;
+      margin: 0 auto;
+      padding: 28px 34px 30px;
+      border-radius: 28px;
+      background:
+        radial-gradient(circle at 16% 16%, rgba(88, 215, 211, 0.18), transparent 28%),
+        radial-gradient(circle at 86% 24%, rgba(245, 199, 107, 0.15), transparent 32%),
+        linear-gradient(135deg, rgba(6, 17, 31, 0.98), rgba(13, 34, 56, 0.94));
+      border: 1px solid rgba(255, 255, 255, 0.11);
+      box-shadow: inset 0 1px 0 rgba(255,255,255,0.10), 0 24px 70px rgba(0,0,0,0.30);
+      overflow: hidden;
+      position: relative;
+    }
+
+    .canvas::before {
+      content: "";
+      position: absolute;
+      inset: -20%;
+      background-image:
+        linear-gradient(rgba(255,255,255,0.035) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(255,255,255,0.035) 1px, transparent 1px);
+      background-size: 48px 48px;
+      mask-image: radial-gradient(circle at 50% 50%, black, transparent 72%);
+      pointer-events: none;
+    }
+
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: start;
+      gap: 26px;
+      position: relative;
+      z-index: 1;
+      margin-bottom: 18px;
+    }
+
+    .eyebrow {
+      color: var(--teal);
+      text-transform: uppercase;
+      letter-spacing: 0.16em;
+      font-weight: 800;
+      font-size: 13px;
+      margin-bottom: 8px;
+    }
+
+    h1 {
+      margin: 0;
+      font-size: 46px;
+      line-height: 0.96;
+      letter-spacing: -0.055em;
+      max-width: 620px;
+    }
+
+    .thesis {
+      max-width: 430px;
+      color: var(--muted);
+      line-height: 1.28;
+      font-size: 18px;
+      text-align: right;
+      padding-top: 18px;
+    }
+
+    main {
+      position: relative;
+      z-index: 1;
+      display: grid;
+      grid-template-columns: 0.82fr 1.58fr;
+      gap: 22px;
+      height: calc(100% - 118px);
+    }
+
+    .landscape {
+      border: 1px solid rgba(238, 163, 131, 0.28);
+      background: linear-gradient(180deg, rgba(238, 163, 131, 0.10), rgba(255,255,255,0.035));
+      border-radius: 24px;
+      padding: 24px 22px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      min-width: 0;
+    }
+
+    .landscape h2, .cascade h2 {
+      margin: 0;
+      font-size: 24px;
+      letter-spacing: -0.035em;
+      color: var(--gold);
+    }
+
+    .scatter {
+      margin: 18px 0;
+      min-height: 174px;
+      position: relative;
+      border-radius: 20px;
+      background: rgba(0,0,0,0.18);
+      overflow: hidden;
+      border: 1px dashed rgba(248,244,232,0.18);
+    }
+
+    .dot {
+      position: absolute;
+      width: var(--s);
+      height: var(--s);
+      left: var(--x);
+      top: var(--y);
+      border-radius: 50%;
+      background: var(--c);
+      box-shadow: 0 0 18px var(--c);
+      opacity: 0.92;
+    }
+
+    .false-core {
+      border-radius: 20px;
+      padding: 16px;
+      background: rgba(6,17,31,0.62);
+      border: 1px solid rgba(238, 163, 131, 0.28);
+    }
+
+    .false-core strong { color: var(--rose); }
+    .false-core p, .landscape p { color: var(--muted); font-size: 15px; line-height: 1.32; margin: 8px 0 0; }
+
+    .platforms {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin-top: 14px;
+    }
+
+    .chip {
+      border: 1px solid rgba(248,244,232,0.13);
+      color: rgba(248,244,232,0.72);
+      border-radius: 999px;
+      padding: 6px 9px;
+      font-size: 12px;
+      background: rgba(255,255,255,0.045);
+    }
+
+    .cascade {
+      border: 1px solid rgba(88, 215, 211, 0.25);
+      background: linear-gradient(180deg, rgba(88, 215, 211, 0.08), rgba(255,255,255,0.032));
+      border-radius: 24px;
+      padding: 22px;
+      min-width: 0;
+      overflow: hidden;
+    }
+
+    .rows {
+      margin-top: 14px;
+      display: grid;
+      gap: 11px;
+    }
+
+    .row {
+      display: grid;
+      grid-template-columns: 0.92fr 0.92fr 1.08fr;
+      align-items: stretch;
+      gap: 10px;
+      position: relative;
+    }
+
+    .cell {
+      border-radius: 18px;
+      padding: 13px 15px;
+      border: 1px solid rgba(248,244,232,0.11);
+      background: rgba(6, 17, 31, 0.54);
+      min-height: 86px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+
+    .cell.process {
+      border-color: rgba(245, 199, 107, 0.28);
+      background: rgba(245,199,107,0.075);
+      text-align: center;
+      position: relative;
+    }
+
+    .cell.process::before, .cell.process::after {
+      content: "→";
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      color: rgba(245,199,107,0.74);
+      font-size: 20px;
+      font-weight: 900;
+    }
+    .cell.process::before { left: -5px; }
+    .cell.process::after { right: -5px; }
+
+    .cell.result {
+      border-color: rgba(88, 215, 211, 0.30);
+      background: rgba(88, 215, 211, 0.075);
+    }
+
+    .label {
+      color: rgba(248,244,232,0.58);
+      font-size: 11px;
+      text-transform: uppercase;
+      letter-spacing: 0.13em;
+      font-weight: 800;
+      margin-bottom: 5px;
+    }
+
+    .term {
+      font-size: 21px;
+      line-height: 1.02;
+      letter-spacing: -0.035em;
+      font-weight: 850;
+    }
+
+    .small {
+      margin-top: 6px;
+      color: var(--muted);
+      font-size: 12.5px;
+      line-height: 1.22;
+    }
+
+    .down {
+      height: 14px;
+      display: grid;
+      place-items: center;
+      color: rgba(88,215,211,0.72);
+      font-size: 16px;
+      font-weight: 900;
+      margin: -4px 0 -5px;
+    }
+
+    .guardrail {
+      margin-top: 13px;
+      border-radius: 16px;
+      padding: 10px 14px;
+      background: rgba(0,0,0,0.22);
+      border: 1px solid rgba(255,255,255,0.10);
+      color: rgba(248,244,232,0.70);
+      font-size: 13px;
+      line-height: 1.25;
+    }
+    .guardrail strong { color: var(--gold); }
+  </style>
+</head>
+<body>
+  <div class="canvas" role="img" aria-label="Infographic showing scattered information becoming concentrated information, then knowledge, wisdom, and living legacy through enduring knowledge cores.">
+    <header>
+      <div>
+        <div class="eyebrow">Infographic component</div>
+        <h1>The knowledge-quality cascade</h1>
+      </div>
+      <div class="thesis">Diffused information is weak. Concentrated, distilled, reflected-on knowledge can become wisdom. Governed wisdom across enduring cores becomes living legacy.</div>
+    </header>
+
+    <main>
+      <section class="landscape">
+        <div>
+          <h2>Before: scattered in the wind</h2>
+          <p>When learning, feedback, interests, projects, and decisions are diffused across portals, apps, chats, feeds, and devices, they are hard to harness and easy to abandon.</p>
+          <div class="scatter" aria-hidden="true">
+            <i class="dot" style="--x:9%;--y:16%;--s:10px;--c:#58d7d3"></i>
+            <i class="dot" style="--x:22%;--y:62%;--s:7px;--c:#f5c76b"></i>
+            <i class="dot" style="--x:42%;--y:30%;--s:13px;--c:#eea383"></i>
+            <i class="dot" style="--x:75%;--y:18%;--s:8px;--c:#e1b8f1"></i>
+            <i class="dot" style="--x:66%;--y:72%;--s:11px;--c:#b3e1c8"></i>
+            <i class="dot" style="--x:84%;--y:52%;--s:6px;--c:#98b5de"></i>
+            <i class="dot" style="--x:31%;--y:78%;--s:9px;--c:#58d7d3"></i>
+            <i class="dot" style="--x:53%;--y:58%;--s:6px;--c:#f5c76b"></i>
+          </div>
+        </div>
+
+        <div class="false-core">
+          <strong>False concentration → unreality</strong>
+          <p>Artificial feeds offer the feeling of focus while decoupling attention from the student’s real evidence, work, and life.</p>
+          <div class="platforms" aria-label="Examples of artificial concentration surfaces">
+            <span class="chip">social feeds</span>
+            <span class="chip">snap streams</span>
+            <span class="chip">viral loops</span>
+            <span class="chip">algorithmic identity</span>
+          </div>
+        </div>
+      </section>
+
+      <section class="cascade">
+        <h2>Main cascade: increasing the quality of information</h2>
+        <div class="rows">
+          <div class="row">
+            <div class="cell"><div class="label">starting state</div><div class="term">Scattered signals</div><div class="small">assignments, feedback, interests, conversations, records</div></div>
+            <div class="cell process"><div class="label">refinement</div><div class="term">Concentrate</div><div class="small">gather intentionally with custody, consent, and provenance</div></div>
+            <div class="cell result"><div class="label">next quality</div><div class="term">Coherent information</div><div class="small">a learning trail that can be searched, corrected, and built upon</div></div>
+          </div>
+          <div class="down">↓</div>
+          <div class="row">
+            <div class="cell"><div class="label">starting state</div><div class="term">Concentrated information</div><div class="small">the trail is no longer abandoned across silos</div></div>
+            <div class="cell process"><div class="label">refinement</div><div class="term">Distill</div><div class="small">extract patterns, lessons, strengths, questions, and evidence</div></div>
+            <div class="cell result"><div class="label">next quality</div><div class="term">Knowledge</div><div class="small">usable understanding, tied back to sources and history</div></div>
+          </div>
+          <div class="down">↓</div>
+          <div class="row">
+            <div class="cell"><div class="label">starting state</div><div class="term">Knowledge over time</div><div class="small">not a bigger prompt; a longer-lived core</div></div>
+            <div class="cell process"><div class="label">refinement</div><div class="term">Reflect</div><div class="small">challenge, revise, remember what changed the mind</div></div>
+            <div class="cell result"><div class="label">next quality</div><div class="term">Wisdom</div><div class="small">judgment, values, context, and trustworthy defaults</div></div>
+          </div>
+          <div class="down">↓</div>
+          <div class="row">
+            <div class="cell"><div class="label">starting state</div><div class="term">Many enduring cores</div><div class="small">students, teachers, families, alumni, institutions</div></div>
+            <div class="cell process"><div class="label">refinement</div><div class="term">Govern</div><div class="small">permissioned excerpts, redaction, audit, roles, challenge</div></div>
+            <div class="cell result"><div class="label">next quality</div><div class="term">Living legacy</div><div class="small">ancestral and institutional wisdom without raw pooling</div></div>
+          </div>
+        </div>
+        <div class="guardrail"><strong>Guardrail:</strong> this is not surveillance and not one giant shared database. The power comes from owned enduring cores interacting through policy.</div>
+      </section>
+    </main>
+  </div>
+</body>
+</html>

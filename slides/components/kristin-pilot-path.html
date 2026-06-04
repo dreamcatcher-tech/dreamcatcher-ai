@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Kristin enduring-core pilot path</title>
+  <style>
+    :root {
+      --ink: #06111f;
+      --navy: #0d2238;
+      --teal: #58d7d3;
+      --gold: #f5c76b;
+      --rose: #eea383;
+      --cream: #f8f4e8;
+      --muted: rgba(248, 244, 232, 0.68);
+      --line: rgba(248, 244, 232, 0.15);
+    }
+    * { box-sizing: border-box; }
+    html, body { margin: 0; width: 100%; min-height: 100%; background: transparent; }
+    body { font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; color: var(--cream); }
+    .canvas {
+      width: min(1280px, 100vw);
+      height: 100vh;
+      min-height: 0;
+      margin: 0 auto;
+      padding: 30px 34px;
+      border-radius: 28px;
+      background:
+        radial-gradient(circle at 18% 18%, rgba(238,163,131,.16), transparent 30%),
+        radial-gradient(circle at 82% 22%, rgba(88,215,211,.17), transparent 34%),
+        linear-gradient(135deg, rgba(6,17,31,.98), rgba(13,34,56,.94));
+      border: 1px solid rgba(255,255,255,.11);
+      overflow: hidden;
+      position: relative;
+      box-shadow: inset 0 1px 0 rgba(255,255,255,.10), 0 24px 70px rgba(0,0,0,.30);
+    }
+    .canvas:before {
+      content: ""; position: absolute; inset: -16%;
+      background-image: linear-gradient(rgba(255,255,255,.035) 1px, transparent 1px), linear-gradient(90deg, rgba(255,255,255,.035) 1px, transparent 1px);
+      background-size: 52px 52px;
+      mask-image: radial-gradient(circle at 50% 50%, black, transparent 72%);
+      pointer-events: none;
+    }
+    header { position: relative; z-index: 1; display: flex; justify-content: space-between; gap: 22px; align-items: start; margin-bottom: 24px; }
+    .eyebrow { color: var(--teal); letter-spacing: .16em; text-transform: uppercase; font-weight: 850; font-size: 13px; margin-bottom: 8px; }
+    h1 { margin: 0; font-size: 46px; line-height: .96; letter-spacing: -.055em; max-width: 760px; }
+    .note { max-width: 360px; color: var(--muted); font-size: 17px; line-height: 1.28; text-align: right; padding-top: 18px; }
+    main { position: relative; z-index: 1; display: grid; grid-template-columns: 1fr 1.1fr 1fr; gap: 18px; align-items: stretch; height: calc(100% - 112px); }
+    .panel { border: 1px solid rgba(248,244,232,.12); border-radius: 24px; padding: 22px; background: rgba(255,255,255,.052); display: flex; flex-direction: column; min-width: 0; }
+    .panel h2 { margin: 0 0 16px; font-size: 25px; line-height: 1.02; letter-spacing: -.04em; color: var(--gold); }
+    .panel p { margin: 0 0 14px; color: var(--muted); font-size: 15.5px; line-height: 1.3; }
+    .stake { display: grid; gap: 10px; margin-top: auto; }
+    .stake div { border-radius: 15px; padding: 11px 12px; background: rgba(0,0,0,.18); border: 1px solid rgba(255,255,255,.08); }
+    .stake strong { display: block; color: var(--cream); font-size: 15px; margin-bottom: 3px; }
+    .stake span { display: block; color: rgba(248,244,232,.64); font-size: 12.8px; line-height: 1.2; }
+    .bridge { border-color: rgba(245,199,107,.28); background: linear-gradient(180deg, rgba(245,199,107,.09), rgba(255,255,255,.04)); position: relative; }
+    .bridge:before, .bridge:after { content: "→"; position: absolute; top: 48%; color: rgba(245,199,107,.70); font-size: 28px; font-weight: 900; }
+    .bridge:before { left: -14px; } .bridge:after { right: -14px; }
+    ol { margin: 0; padding: 0; list-style: none; display: grid; gap: 10px; }
+    li { display: grid; grid-template-columns: 33px 1fr; gap: 10px; align-items: start; padding: 11px; border-radius: 16px; background: rgba(6,17,31,.46); border: 1px solid rgba(245,199,107,.16); color: var(--muted); font-size: 13.5px; line-height: 1.25; }
+    li b { display: grid; place-items: center; width: 33px; height: 33px; border-radius: 50%; background: rgba(245,199,107,.18); color: var(--gold); font-size: 15px; }
+    li strong { color: var(--cream); }
+    .target { border-color: rgba(88,215,211,.26); background: linear-gradient(180deg, rgba(88,215,211,.08), rgba(255,255,255,.035)); }
+    .target .outcome { margin-top: auto; padding: 17px; border-radius: 19px; background: rgba(88,215,211,.10); border: 1px solid rgba(88,215,211,.24); }
+    .outcome strong { color: var(--teal); display: block; font-size: 21px; letter-spacing: -.035em; margin-bottom: 8px; }
+    .outcome span { color: rgba(248,244,232,.74); font-size: 14px; line-height: 1.28; }
+  </style>
+</head>
+<body>
+  <div class="canvas" role="img" aria-label="A three-part path: current uncertainty and pressure, a safe adult-first sandbox path, and an evidence-backed school direction.">
+    <header>
+      <div><div class="eyebrow">Pilot path</div><h1>From pressure and uncertainty to evidence-backed direction</h1></div>
+      <div class="note">Not certainty by proclamation. Leadership through bounded experiments, visible corrections, and honest evidence.</div>
+    </header>
+    <main>
+      <section class="panel">
+        <h2>State of things</h2>
+        <p>Children are looking to adults for AI leadership, but no one has the comfort of long history yet.</p>
+        <div class="stake">
+          <div><strong>Parents</strong><span>anxious, eager, forceful, willing to help</span></div>
+          <div><strong>School</strong><span>duty of care, regulation, educational mandate</span></div>
+          <div><strong>Students</strong><span>need tools, safety, values, direction</span></div>
+        </div>
+      </section>
+      <section class="panel bridge">
+        <h2>Path through the middle</h2>
+        <ol>
+          <li><b>1</b><span><strong>Adult enduring cores first:</strong> staff and volunteer parents use their own cores before any child-facing rollout.</span></li>
+          <li><b>2</b><span><strong>Simulated child cores:</strong> exercise tricky social, safety, learning, and boundary cases without risking real students.</span></li>
+          <li><b>3</b><span><strong>Dashboards and cost models:</strong> observe behaviour, token burn, hosting cost, requests, failures, and policy friction.</span></li>
+          <li><b>4</b><span><strong>Corrections:</strong> alter policy, prompts, tooling, and governance before widening scope.</span></li>
+        </ol>
+      </section>
+      <section class="panel target">
+        <h2>Desired state</h2>
+        <p>Kristin can say it surveyed options, ran bounded experiments, made necessary mistakes safely, corrected them, and chose a path deliberately.</p>
+        <div class="outcome"><strong>Best available direction</strong><span>A school-safe enduring-core strategy, backed by adult experience, simulation data, real pilot evidence, and transparent trade-off decisions.</span></div>
+      </section>
+    </main>
+  </div>
+</body>
+</html>

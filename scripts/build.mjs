@@ -16,5 +16,6 @@ await copyFile(join(root, 'sitemap.xml'), join(dist, 'sitemap.xml'));
 await copyFile(join(root, 'CNAME'), join(dist, 'CNAME'));
 await writeFile(join(dist, '.nojekyll'), '');
 await cp(join(root, 'assets'), join(dist, 'assets'), { recursive: true });
+await cp(join(root, 'slides'), join(dist, 'slides'), { recursive: true });
 
 console.log('✓ Built static site into dist/');

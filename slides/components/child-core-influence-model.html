@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Child enduring-core influence model</title>
+  <style>
+    :root { --ink:#06111f; --navy:#0d2238; --teal:#58d7d3; --gold:#f5c76b; --rose:#eea383; --cream:#f8f4e8; --muted:rgba(248,244,232,.68); }
+    * { box-sizing: border-box; }
+    html, body { margin:0; width:100%; min-height:100%; background:transparent; }
+    body { color:var(--cream); font-family:Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; }
+    .canvas { width:min(1280px,100vw); height:100vh; min-height:0; margin:0 auto; padding:30px 34px; border-radius:28px; position:relative; overflow:hidden; background:radial-gradient(circle at 50% 42%, rgba(88,215,211,.16), transparent 34%), radial-gradient(circle at 17% 18%, rgba(245,199,107,.13), transparent 30%), linear-gradient(135deg, rgba(6,17,31,.98), rgba(13,34,56,.94)); border:1px solid rgba(255,255,255,.11); box-shadow:inset 0 1px 0 rgba(255,255,255,.10), 0 24px 70px rgba(0,0,0,.30); }
+    .canvas:before { content:""; position:absolute; inset:-10%; background:radial-gradient(circle at center, transparent 0 30%, rgba(255,255,255,.025) 30.4% 30.8%, transparent 31.2% 100%); background-size:110px 110px; opacity:.7; pointer-events:none; }
+    header { position:relative; z-index:2; display:flex; justify-content:space-between; gap:24px; align-items:start; margin-bottom:8px; }
+    .eyebrow { color:var(--teal); text-transform:uppercase; letter-spacing:.16em; font-size:13px; font-weight:850; margin-bottom:8px; }
+    h1 { margin:0; font-size:45px; line-height:.96; letter-spacing:-.055em; max-width:820px; }
+    .note { max-width:360px; color:var(--muted); font-size:16.5px; line-height:1.28; text-align:right; padding-top:18px; }
+    .diagram { position:relative; z-index:2; height:calc(100% - 106px); }
+    .core { position:absolute; border-radius:50%; display:grid; place-items:center; text-align:center; border:1px solid rgba(255,255,255,.16); box-shadow:0 22px 70px rgba(0,0,0,.33), inset 0 1px 0 rgba(255,255,255,.13); }
+    .core .label { font-size:14px; text-transform:uppercase; letter-spacing:.12em; font-weight:850; color:rgba(248,244,232,.58); margin-bottom:8px; }
+    .core .name { font-size:25px; line-height:1.02; font-weight:900; letter-spacing:-.04em; }
+    .core .sub { max-width:210px; margin-top:8px; color:var(--muted); font-size:13.5px; line-height:1.2; }
+    .student { width:250px; height:250px; left:50%; top:48%; transform:translate(-50%,-50%); background:radial-gradient(circle, rgba(88,215,211,.22), rgba(6,17,31,.83) 68%); border-color:rgba(88,215,211,.38); }
+    .parent { width:210px; height:210px; left:70px; top:176px; background:radial-gradient(circle, rgba(245,199,107,.20), rgba(6,17,31,.78) 70%); border-color:rgba(245,199,107,.34); }
+    .school { width:210px; height:210px; right:70px; top:176px; background:radial-gradient(circle, rgba(238,163,131,.19), rgba(6,17,31,.78) 70%); border-color:rgba(238,163,131,.34); }
+    .shared { position:absolute; left:50%; bottom:0; transform:translateX(-50%); width:520px; padding:18px 22px; border-radius:24px; background:rgba(255,255,255,.052); border:1px solid rgba(255,255,255,.12); text-align:center; box-shadow:inset 0 1px 0 rgba(255,255,255,.08); }
+    .shared strong { color:var(--gold); display:block; font-size:22px; letter-spacing:-.035em; margin-bottom:6px; }
+    .shared span { color:var(--muted); font-size:14.5px; line-height:1.25; }
+    svg { position:absolute; inset:0; width:100%; height:100%; overflow:visible; }
+    .arrow { fill:none; stroke-width:3; stroke-linecap:round; opacity:.9; }
+    .parent-line { stroke:var(--gold); color:var(--gold); }
+    .school-line { stroke:var(--rose); color:var(--rose); }
+    .shared-line { stroke:var(--teal); color:var(--teal); stroke-dasharray:8 8; }
+    .tag { position:absolute; padding:8px 11px; border-radius:999px; font-size:12.5px; font-weight:800; background:rgba(6,17,31,.82); border:1px solid rgba(255,255,255,.13); color:rgba(248,244,232,.78); white-space:nowrap; }
+    .t1 { left:257px; top:230px; color:var(--gold); } .t2 { right:244px; top:230px; color:var(--rose); } .t3 { left:50%; top:390px; transform:translateX(-50%); color:var(--teal); }
+    .overlap { position:absolute; left:50%; top:82px; transform:translateX(-50%); width:430px; padding:14px 18px; border-radius:22px; background:rgba(245,199,107,.08); border:1px solid rgba(245,199,107,.22); text-align:center; }
+    .overlap strong { color:var(--gold); font-size:20px; letter-spacing:-.035em; } .overlap p { margin:5px 0 0; color:var(--muted); font-size:13.5px; line-height:1.22; }
+  </style>
+</head>
+<body>
+  <div class="canvas" role="img" aria-label="Influence model where parent core and school core co-steer a child core through policy, with governed wisdom streams and attribution.">
+    <header>
+      <div><div class="eyebrow">Influence model</div><h1>The child’s core is steered by the influences that already exist</h1></div>
+      <div class="note">The design question is not whether adults influence children. They already do. The question is how visible, governable, and attributable that influence becomes.</div>
+    </header>
+    <section class="diagram">
+      <svg aria-hidden="true" viewBox="0 0 1212 520">
+        <defs><marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto" markerUnits="strokeWidth"><path d="M0,0 L0,6 L9,3 z" fill="currentColor"></path></marker></defs>
+        <path class="arrow parent-line" d="M250 250 C365 200, 430 206, 510 245" marker-end="url(#arrow)"></path>
+        <path class="arrow school-line" d="M962 250 C847 200, 782 206, 702 245" marker-end="url(#arrow)"></path>
+        <path class="arrow shared-line" d="M606 500 C606 452, 606 420, 606 370" marker-end="url(#arrow)"></path>
+      </svg>
+      <div class="overlap"><strong>Co-steering overlap</strong><p>knowledge, moral direction, safety, learning goals, and boundaries — tuned rather than assumed.</p></div>
+      <div class="core parent"><div><div class="label">Parent</div><div class="name">Parent core</div><div class="sub">lived values, family wisdom, support, consent</div></div></div>
+      <div class="core student"><div><div class="label">Student</div><div class="name">Child core</div><div class="sub">learning history, agency, support, and protected interior life</div></div></div>
+      <div class="core school"><div><div class="label">School</div><div class="name">School core</div><div class="sub">educational mandate, duty of care, policies, curriculum</div></div></div>
+      <div class="tag t1">proxied family wisdom</div>
+      <div class="tag t2">school policy + learning frame</div>
+      <div class="tag t3">attribution + boundaries</div>
+      <div class="shared"><strong>Governed wisdom stream</strong><span>Parent, school, and community knowledge can help the student without dumping everyone’s private core into the child’s core.</span></div>
+    </section>
+  </div>
+</body>
+</html>

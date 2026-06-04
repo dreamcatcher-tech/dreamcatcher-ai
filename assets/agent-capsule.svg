@@ -1,70 +1,63 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1120 760" role="img" aria-labelledby="title desc">
-  <title id="title">Dedicated Dreamcatcher agent model</title>
-  <desc id="desc">One protected agent home connects to communication channels, a human steward, and the Dreamcatcher network.</desc>
+  <title id="title">Dreamcatcher durable knowledge core model</title>
+  <desc id="desc">An owned durable knowledge core with a confidential enclave inside, a semantic checkpoint around it, and replaceable services outside.</desc>
   <defs>
     <linearGradient id="panel" x1="108" y1="58" x2="1008" y2="704" gradientUnits="userSpaceOnUse">
       <stop stop-color="#12213a"/>
-      <stop offset="1" stop-color="#07111f"/>
+      <stop offset="1" stop-color="#06101d"/>
     </linearGradient>
-    <linearGradient id="cyan" x1="310" y1="170" x2="810" y2="570" gradientUnits="userSpaceOnUse">
-      <stop stop-color="#22d3ee"/>
-      <stop offset=".55" stop-color="#34d399"/>
-      <stop offset="1" stop-color="#a78bfa"/>
+    <linearGradient id="core" x1="300" y1="170" x2="820" y2="590" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#f6d66f"/>
+      <stop offset=".55" stop-color="#36d399"/>
+      <stop offset="1" stop-color="#22d3ee"/>
     </linearGradient>
     <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
       <feDropShadow dx="0" dy="24" stdDeviation="24" flood-color="#000" flood-opacity=".34"/>
     </filter>
   </defs>
   <rect width="1120" height="760" rx="44" fill="url(#panel)"/>
-  <g opacity=".32" stroke="#9fb0c9" stroke-width="1">
+  <g opacity=".28" stroke="#9fb0c9" stroke-width="1">
     <path d="M96 130h928M96 250h928M96 370h928M96 490h928M96 610h928"/>
     <path d="M170 72v616M330 72v616M490 72v616M650 72v616M810 72v616M970 72v616"/>
   </g>
 
   <g filter="url(#shadow)">
-    <rect x="340" y="176" width="440" height="408" rx="54" fill="#081322" stroke="url(#cyan)" stroke-width="3"/>
-    <circle cx="560" cy="278" r="72" fill="none" stroke="url(#cyan)" stroke-width="10"/>
-    <path d="M500 284c38-48 79-52 120-12M492 326c45-21 92-18 139 10M560 207v142M491 277h138" fill="none" stroke="#eef7ff" stroke-opacity=".86" stroke-width="6" stroke-linecap="round"/>
-    <text x="560" y="430" text-anchor="middle" fill="#eef7ff" font-family="Inter, system-ui, sans-serif" font-size="34" font-weight="750">Dedicated agent home</text>
-    <text x="560" y="470" text-anchor="middle" fill="#9fb0c9" font-family="Inter, system-ui, sans-serif" font-size="22">memory · tools · files · approvals</text>
-    <rect x="455" y="506" width="210" height="46" rx="23" fill="#eef7ff"/>
-    <text x="560" y="536" text-anchor="middle" fill="#07111f" font-family="Inter, system-ui, sans-serif" font-size="18" font-weight="800">portable runtime</text>
+    <circle cx="560" cy="382" r="250" fill="none" stroke="#22d3ee" stroke-width="10" opacity=".82"/>
+    <circle cx="560" cy="382" r="188" fill="#0b182b" stroke="url(#core)" stroke-width="16" opacity=".96"/>
+    <circle cx="560" cy="382" r="92" fill="#06101d" stroke="#eef7ff" stroke-width="5"/>
+    <text x="560" y="356" text-anchor="middle" fill="#f6d66f" font-family="Inter, system-ui, sans-serif" font-size="32" font-weight="850">Durable Knowledge Core</text>
+    <text x="560" y="398" text-anchor="middle" fill="#eef7ff" font-family="Inter, system-ui, sans-serif" font-size="24" font-weight="800">Confidential Enclave</text>
+    <text x="560" y="438" text-anchor="middle" fill="#9fb0c9" font-family="Inter, system-ui, sans-serif" font-size="18">work · records · history · wisdom</text>
+    <text x="560" y="118" text-anchor="middle" fill="#22d3ee" font-family="Inter, system-ui, sans-serif" font-size="28" font-weight="850">Semantic Checkpoint</text>
+    <text x="560" y="150" text-anchor="middle" fill="#9fb0c9" font-family="Inter, system-ui, sans-serif" font-size="18">approvals · policy · redaction · denial</text>
+    <rect x="430" y="540" width="260" height="52" rx="26" fill="url(#core)"/>
+    <text x="560" y="574" text-anchor="middle" fill="#06101d" font-family="Inter, system-ui, sans-serif" font-size="20" font-weight="900">owned by person / family</text>
   </g>
 
-  <g fill="none" stroke="#5ddce5" stroke-width="3" stroke-linecap="round" opacity=".72">
-    <path d="M340 312H205"/><path d="M780 312h137"/><path d="M340 448H206"/><path d="M780 448h137"/><path d="M560 176V95"/><path d="M560 584v82"/>
+  <g fill="none" stroke="#5ddce5" stroke-width="4" stroke-linecap="round" opacity=".84">
+    <path d="M310 280H174"/><path d="M810 280h138"/><path d="M310 500H174"/><path d="M810 500h138"/>
   </g>
 
   <g font-family="Inter, system-ui, sans-serif">
-    <g transform="translate(92 244)">
-      <rect width="180" height="102" rx="24" fill="#0d1b30" stroke="#254663"/>
-      <text x="90" y="45" text-anchor="middle" fill="#eef7ff" font-size="20" font-weight="800">Telegram</text>
-      <text x="90" y="73" text-anchor="middle" fill="#9fb0c9" font-size="15">coming soon</text>
+    <g transform="translate(72 220)">
+      <rect width="190" height="118" rx="26" fill="#0d1b30" stroke="#254663"/>
+      <text x="95" y="47" text-anchor="middle" fill="#eef7ff" font-size="20" font-weight="850">Dreamcatcher</text>
+      <text x="95" y="76" text-anchor="middle" fill="#9fb0c9" font-size="15">solution stream</text>
     </g>
-    <g transform="translate(848 244)">
-      <rect width="180" height="102" rx="24" fill="#0d1b30" stroke="#254663"/>
-      <text x="90" y="45" text-anchor="middle" fill="#eef7ff" font-size="20" font-weight="800">WhatsApp</text>
-      <text x="90" y="73" text-anchor="middle" fill="#9fb0c9" font-size="15">coming soon</text>
+    <g transform="translate(858 220)">
+      <rect width="190" height="118" rx="26" fill="#0d1b30" stroke="#254663"/>
+      <text x="95" y="47" text-anchor="middle" fill="#eef7ff" font-size="20" font-weight="850">Model switchboard</text>
+      <text x="95" y="76" text-anchor="middle" fill="#9fb0c9" font-size="15">fast · careful · visual</text>
     </g>
-    <g transform="translate(92 380)">
-      <rect width="180" height="102" rx="24" fill="#0d1b30" stroke="#254663"/>
-      <text x="90" y="45" text-anchor="middle" fill="#eef7ff" font-size="20" font-weight="800">Email</text>
-      <text x="90" y="73" text-anchor="middle" fill="#34d399" font-size="15">pilot intake</text>
+    <g transform="translate(72 442)">
+      <rect width="190" height="118" rx="26" fill="#0d1b30" stroke="#254663"/>
+      <text x="95" y="47" text-anchor="middle" fill="#eef7ff" font-size="20" font-weight="850">Browser + channels</text>
+      <text x="95" y="76" text-anchor="middle" fill="#9fb0c9" font-size="15">web · Telegram · email</text>
     </g>
-    <g transform="translate(848 380)">
-      <rect width="180" height="102" rx="24" fill="#0d1b30" stroke="#254663"/>
-      <text x="90" y="45" text-anchor="middle" fill="#eef7ff" font-size="20" font-weight="800">Phone</text>
-      <text x="90" y="73" text-anchor="middle" fill="#9fb0c9" font-size="15">coming soon</text>
-    </g>
-    <g transform="translate(404 52)">
-      <rect width="312" height="84" rx="42" fill="#111f36" stroke="#324f73"/>
-      <text x="156" y="36" text-anchor="middle" fill="#eef7ff" font-size="20" font-weight="800">Human steward</text>
-      <text x="156" y="62" text-anchor="middle" fill="#9fb0c9" font-size="15">oversight · repair · QA</text>
-    </g>
-    <g transform="translate(376 626)">
-      <rect width="368" height="84" rx="42" fill="#111f36" stroke="#324f73"/>
-      <text x="184" y="36" text-anchor="middle" fill="#eef7ff" font-size="20" font-weight="800">Dreamcatcher network</text>
-      <text x="184" y="62" text-anchor="middle" fill="#9fb0c9" font-size="15">needs · specs · packets · attribution</text>
+    <g transform="translate(858 442)">
+      <rect width="190" height="118" rx="26" fill="#0d1b30" stroke="#254663"/>
+      <text x="95" y="47" text-anchor="middle" fill="#eef7ff" font-size="20" font-weight="850">Apps + media</text>
+      <text x="95" y="76" text-anchor="middle" fill="#9fb0c9" font-size="15">voice · image · video</text>
     </g>
   </g>
 </svg>
