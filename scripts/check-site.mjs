@@ -1,4 +1,4 @@
-import { existsSync, readFileSync } from 'node:fs';
+import { existsSync, readFileSync, statSync } from 'node:fs';
 import { dirname, join } from 'node:path';
 
 const root = new URL('..', import.meta.url).pathname;
@@ -113,7 +113,10 @@ const mustContain = [
   ['reveal.js@6.0.1', runner],
   ['js-yaml@4.2.0', runner],
   ['Download PDF', runner],
-  ['print-pdf', runner],
+  ['download=', runner],
+  ['pdfs/${pdfFile}', runner],
+  ['URL.createObjectURL', runner],
+  ['window.Reveal = deck', runner],
   ['framework', read('vercel.json')],
   ['dreamcatcher.ai', read('CNAME')],
 ];
@@ -160,6 +163,9 @@ for (const deck of ['dreamcatcher-ark-naming-system', 'defragmenting-the-user', 
   const deckText = read(`slides/decks/${deck}.md`);
   if (!deckText.startsWith('---')) fail(`${deck}.md must start with frontmatter`);
   if (deckText.includes('../../Assets/')) fail(`${deck}.md must not reference private notes asset paths`);
+  const pdfPath = `slides/pdfs/${deck}.pdf`;
+  if (!existsSync(join(root, pdfPath))) fail(`${pdfPath} must exist for the Download PDF button`);
+  else if (statSync(join(root, pdfPath)).size < 1000) fail(`${pdfPath} is unexpectedly small`);
 }
 
 if (!html.trimStart().startsWith('<!doctype html>')) fail('index.html must start with <!doctype html>');

@@ -56,7 +56,7 @@
 </head>
 <body>
   <nav class="dc-export-bar" aria-label="Deck downloads">
-    <a id="pdf-download-link" href="?print-pdf" target="_blank" rel="noopener" title="Open Reveal.js print-to-PDF view">Download PDF</a>
+    <a id="pdf-download-link" href="pdfs/kristin-school-pilot-validation-portfolio.pdf" download="kristin-school-pilot-validation-portfolio.pdf" title="Download this deck as a PDF">Download PDF</a>
   </nav>
   <div id="deck-error"></div>
   <div class="reveal">
@@ -84,11 +84,30 @@
       const params = new URLSearchParams(location.search);
       const deckParam = params.get('deck') || 'decks/kristin-school-pilot-validation-portfolio.md';
       const deckUrl = new URL(deckParam, location.href);
-      const pdfUrl = new URL(location.href);
-      pdfUrl.searchParams.set('deck', deckParam);
-      pdfUrl.searchParams.set('print-pdf', '');
-      pdfUrl.hash = '';
-      document.querySelector('#pdf-download-link').href = pdfUrl.href;
+      const deckFile = deckUrl.pathname.split('/').pop() || 'deck.md';
+      const pdfFile = deckFile.replace(/\.md$/i, '.pdf');
+      const pdfUrl = new URL(`pdfs/${pdfFile}`, location.href);
+      const pdfLink = document.querySelector('#pdf-download-link');
+      pdfLink.href = pdfUrl.href;
+      pdfLink.download = pdfFile;
+      pdfLink.addEventListener('click', async (event) => {
+        if (event.metaKey || event.ctrlKey || event.shiftKey || event.altKey) return;
+        event.preventDefault();
+        try {
+          const pdfResponse = await fetch(pdfLink.href);
+          if (!pdfResponse.ok) throw new Error(`${pdfResponse.status} ${pdfResponse.statusText}`);
+          const blobUrl = URL.createObjectURL(await pdfResponse.blob());
+          const download = document.createElement('a');
+          download.href = blobUrl;
+          download.download = pdfLink.download || pdfFile;
+          document.body.append(download);
+          download.click();
+          download.remove();
+          setTimeout(() => URL.revokeObjectURL(blobUrl), 30000);
+        } catch (downloadErr) {
+          location.href = pdfLink.href;
+        }
+      });
 
       // Make relative image/media URLs inside the Markdown resolve relative to the deck file.
       const base = document.createElement('base');
@@ -115,6 +134,7 @@
         margin: 0.045,
         plugins: [Markdown, Notes]
       });
+      window.Reveal = deck;
       await deck.initialize();
     } catch (err) {
       showError(`Could not load deck. Serve this folder over HTTP and pass <code>?deck=decks/kristin-school-pilot-validation-portfolio.md</code>.<br><br><code>${String(err)}</code>`);
