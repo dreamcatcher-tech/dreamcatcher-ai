@@ -8,14 +8,21 @@ format: reveal-md-no-build
 theme: dreamcatcher-dark
 source_note: "[[Deck Seed - Defragmenting the User]]"
 assets:
-  hero_image: "../assets/defragmenting-the-user-hero.png"
+  hero_image: "../assets/defragmenting-the-user-orbit-02-tool-owned-vs-person-gravity.png"
+  previous_hero_image: "../assets/defragmenting-the-user-hero.png"
+  orbit_image_options:
+    - "../assets/defragmenting-the-user-orbit-02-tool-owned-vs-person-gravity.png"
+    - "../assets/defragmenting-the-user-orbit-01-split-vs-orbit.png"
+    - "../assets/defragmenting-the-user-orbit-03-recomposition-current.png"
+components:
+  orbit_cycle: "../components/defragmenting-user-orbit-cycle.html"
 ---
 
 # Defragmenting the User
 
 ## From SaaS sprawl to durable cores
 
-![Generated split-screen image: fragmented app/server shards versus one protected durable core.](../assets/defragmenting-the-user-hero.png)
+![Generated image: tool-owned panels slice the person on the left, while a whole person/core has tools orbiting on the right.](../assets/defragmenting-the-user-orbit-02-tool-owned-vs-person-gravity.png)
 
 Notes:
 The old world makes the user a cross-cutting concern. The new world makes the user the core.
@@ -49,6 +56,15 @@ In old SaaS, **the user** cuts across every application.
 # Defragmenting the user
 
 > The person should not be smeared across the tools. The tools should orbit the person.
+
+---
+
+## Tools should orbit the person
+
+<iframe class="dc-component-frame" src="../components/defragmenting-user-orbit-cycle.html" title="Tap to cycle generated images of tools orbiting a unified person instead of fragmenting them"></iframe>
+
+Notes:
+Tap or click the image to cycle through three generated visual directions. The chosen default is the clearest: tool-owned panels slice the person on the left; a whole person/core has tools orbiting on the right.
 
 ---
 

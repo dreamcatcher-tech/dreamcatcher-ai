@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Defragmenting the User — orbit image cycle</title>
+  <style>
+    :root {
+      --ink: #06111f;
+      --panel: rgba(6, 17, 31, 0.74);
+      --cream: #f8f4e8;
+      --teal: #58d7d3;
+      --gold: #f5c76b;
+    }
+    * { box-sizing: border-box; }
+    html, body { margin: 0; width: 100%; height: 100%; overflow: hidden; background: var(--ink); color: var(--cream); font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; }
+    #stage { position: relative; width: 100vw; height: 100vh; cursor: pointer; background: radial-gradient(circle at 68% 30%, rgba(88,215,211,0.20), rgba(6,17,31,0.96) 52%, #02060b 100%); }
+    #hero { width: 100%; height: 100%; object-fit: cover; display: block; filter: saturate(1.04) contrast(1.02); }
+    .vignette { position: absolute; inset: 0; pointer-events: none; box-shadow: inset 0 0 120px rgba(0,0,0,0.42); }
+    .caption { position: absolute; left: 24px; bottom: 22px; max-width: min(740px, calc(100% - 48px)); padding: 13px 17px; border-radius: 999px; background: var(--panel); border: 1px solid rgba(255,255,255,0.16); box-shadow: 0 18px 48px rgba(0,0,0,0.34); backdrop-filter: blur(10px); font-size: clamp(13px, 1.7vw, 18px); letter-spacing: -0.015em; }
+    .caption strong { color: var(--gold); }
+    .hint { color: rgba(248,244,232,0.74); margin-left: 0.35em; }
+    .dots { position: absolute; right: 24px; bottom: 28px; display: flex; gap: 9px; padding: 9px 12px; border-radius: 999px; background: rgba(6,17,31,0.58); border: 1px solid rgba(255,255,255,0.12); backdrop-filter: blur(10px); }
+    .dot { width: 10px; height: 10px; border-radius: 50%; background: rgba(248,244,232,0.35); box-shadow: 0 0 0 1px rgba(255,255,255,0.10); }
+    .dot.active { background: var(--teal); box-shadow: 0 0 20px rgba(88,215,211,0.78); }
+    .fallback { position: absolute; inset: 0; display: none; place-items: center; padding: 36px; text-align: center; background: var(--ink); color: var(--cream); }
+    .fallback code { color: var(--gold); }
+  </style>
+</head>
+<body>
+  <main id="stage" aria-label="Interactive generated images contrasting tool-owned fragmentation with tools orbiting a unified person">
+    <img id="hero" alt="A person sliced across tool-owned panels on the left, contrasted with a whole person inside a luminous core with tools orbiting around them on the right.">
+    <div class="vignette" aria-hidden="true"></div>
+    <div class="caption" id="caption" aria-live="polite"></div>
+    <div class="dots" id="dots" aria-hidden="true"></div>
+    <div class="fallback" id="fallback">Image could not load. Check the deck asset paths for <code>defragmenting-the-user-orbit-*.png</code>.</div>
+  </main>
+  <script>
+    const assetNames = [
+      'defragmenting-the-user-orbit-02-tool-owned-vs-person-gravity.png',
+      'defragmenting-the-user-orbit-01-split-vs-orbit.png',
+      'defragmenting-the-user-orbit-03-recomposition-current.png'
+    ];
+    const titles = [
+      'Chosen direction: tool-owned shards → person-owned gravity',
+      'Alternate: split person → tools in orbit',
+      'Alternate: fragments recomposed into the durable core'
+    ];
+    const candidates = (name) => [`../assets/${name}`, `../../Assets/slide-deck-seeds/${name}`];
+    const images = assetNames.map((name, i) => ({ name, title: titles[i], srcs: candidates(name) }));
+    const hero = document.querySelector('#hero');
+    const caption = document.querySelector('#caption');
+    const dots = document.querySelector('#dots');
+    const fallback = document.querySelector('#fallback');
+    const stage = document.querySelector('#stage');
+    let index = 0;
+    let srcAttempt = 0;
+
+    images.forEach((_, i) => {
+      const dot = document.createElement('span');
+      dot.className = 'dot';
+      dot.dataset.index = i;
+      dots.appendChild(dot);
+    });
+
+    function render() {
+      srcAttempt = 0;
+      fallback.style.display = 'none';
+      hero.style.display = 'block';
+      hero.src = images[index].srcs[srcAttempt];
+      caption.innerHTML = `<strong>${images[index].title}</strong><span class="hint">Tap / click to cycle ${index + 1}/${images.length}</span>`;
+      dots.querySelectorAll('.dot').forEach((dot, i) => dot.classList.toggle('active', i === index));
+    }
+
+    function next() {
+      index = (index + 1) % images.length;
+      render();
+    }
+
+    hero.addEventListener('error', () => {
+      srcAttempt += 1;
+      if (srcAttempt < images[index].srcs.length) {
+        hero.src = images[index].srcs[srcAttempt];
+      } else {
+        hero.style.display = 'none';
+        fallback.style.display = 'grid';
+      }
+    });
+    stage.addEventListener('click', next);
+    document.addEventListener('keydown', (event) => {
+      if (event.key === ' ' || event.key === 'Enter' || event.key === 'ArrowRight') next();
+      if (event.key === 'ArrowLeft') { index = (index + images.length - 1) % images.length; render(); }
+    });
+    images.slice(1).forEach((image) => candidates(image.name).forEach((src) => { const preload = new Image(); preload.src = src; }));
+    render();
+  </script>
+</body>
+</html>
