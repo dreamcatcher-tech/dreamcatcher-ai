@@ -311,7 +311,7 @@ h1 {
 .channel-icon.app-telegram { color: #fff; background: #229ed9; }
 .channel-icon.app-whatsapp { color: #fff; background: #25d366; }
 .channel-icon.app-phone { color: #07111f; background: linear-gradient(135deg, var(--gold), #f59e0b); }
-.channel-icon.app-sms { color: #07111f; background: linear-gradient(135deg, var(--cyan), var(--blue)); }
+.channel-icon.app-sms { color: #fff; background: #5b8def; }
 .channel-icon.app-callback { color: #07111f; background: linear-gradient(135deg, var(--green), var(--cyan)); }
 .status { display: inline-flex; width: max-content; align-items: center; min-height: 28px; padding: 0 10px; border-radius: 999px; font-size: 12px; font-weight: 850; letter-spacing: .08em; text-transform: uppercase; }
 .status.live { color: #051320; background: var(--green); }
