@@ -237,7 +237,7 @@ h1 {
 .compare-card { padding: clamp(22px, 3vw, 30px); }
 .compare-card h3, .layer-card h3, .wisdom-grid h3, .channel-card h3 { margin: 14px 0 14px; font-size: clamp(24px, 2.4vw, 34px); line-height: 1.06; letter-spacing: -0.05em; }
 .card-kicker { color: var(--green); font-size: 12px; font-weight: 900; letter-spacing: .14em; text-transform: uppercase; }
-.compare-card.core { background: linear-gradient(145deg, rgba(54,211,153,.15), rgba(255,255,255,.045)); border-color: rgba(54,211,153,.36); }
+.compare-card.ark { background: linear-gradient(145deg, rgba(54,211,153,.15), rgba(255,255,255,.045)); border-color: rgba(54,211,153,.36); }
 .compare-card.sprawl { background: linear-gradient(145deg, rgba(244,114,182,.12), rgba(255,255,255,.04)); }
 
 .layer-grid { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 14px; }

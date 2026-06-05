@@ -33,10 +33,12 @@ Fly/Caddy fallback hosting has been removed; production is GitHub Pages only.
 The page now positions Dreamcatcher around **portable Arks** rather than generic AI agents:
 
 - **Intentional knowledge concentration:** people leave knowledge trails anyway; Dreamcatcher turns scattered school/work/family breadcrumbs into owned, protected, useful knowledge.
-- **Ark:** not a bigger context window — a portable, student/person-owned vessel where work, records, history, values, judgment and distilled wisdom accumulate.
-- **Steward:** the active agent/persona working inside the Ark; models and tools can change without erasing continuity.
+- **Ark:** not a bigger context window — a portable, student/person-owned continuity layer where work, records, history, values, judgment and distilled wisdom accumulate.
+- **Agent:** the live experience working inside/with the Ark; models and tools can change without erasing continuity.
 - **Conscience:** approvals, policies, redaction, denial and escalation guard the boundary.
-- **Vault:** precious records can sit in a smaller inner zone that returns redacted answers or refusals rather than raw material.
+- **Archive:** long-running history and provenance. **Vault:** sensitive secrets and high-risk controls.
+- **Model Socket + Toolbay:** replaceable model engines and tools plug in without taking ownership of the Ark.
+- **Outlast:** the continuity promise across vendors, devices, school years, and tool churn.
 - **Collective wisdom of the Arks:** family, school and team Arks can interact through permissioned, auditable wisdom streams.
 
 Main visual asset: `assets/ark-components-hero.svg`, a public-safe SVG diagram of the Ark component architecture.

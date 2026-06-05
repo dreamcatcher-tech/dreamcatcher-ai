@@ -75,7 +75,7 @@ source_notes:
   <div class="dc-grid-2">
     <div class="dc-card">
       <h3>Start cheap and visible</h3>
-      <p>Use a board of levers, events, tokens, budget counters, visibility sliders, and policy cards before genuine LLM cores are needed.</p>
+      <p>Use a board of levers, events, tokens, budget counters, visibility sliders, and policy cards before live LLM-backed Arks are needed.</p>
       <h3 style="margin-top: 22px;">What it answers</h3>
       <p>Which choices are actually choices? Which oversight questions matter? Which blockers are technical, financial, ethical, or taste-based?</p>
     </div>
@@ -129,7 +129,7 @@ source_notes:
     </div>
     <div>
       <h2>The crescendo is duration.</h2>
-      <p class="dc-bigline">A Ark that may follow someone for 50 or 100 years must be tested against time.</p>
+      <p class="dc-bigline">An Ark that may follow someone for 50 or 100 years must be tested against time.</p>
     </div>
   </div>
 </div>
@@ -177,7 +177,7 @@ source_notes:
 
 <div class="dc-shell">
   <div class="dc-kicker">Conscience benchmark</div>
-  <h2>SArk the boundary like a component, not a vibe.</h2>
+  <h2>Score the boundary like a component, not a vibe.</h2>
   <div class="dc-grid-3" style="margin-top: 28px;">
     <div class="dc-card"><h3>Inbound</h3><p>Does it protect the Ark from manipulative, unsafe, excessive, or irrelevant input?</p></div>
     <div class="dc-card"><h3>Outbound</h3><p>Does it stop unsafe messages, spends, reveals, tool calls, or external commitments?</p></div>

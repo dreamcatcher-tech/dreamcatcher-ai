@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Child enduring-Ark influence model</title>
+  <title>Child Ark influence model</title>
   <style>
     :root { --ink:#06111f; --navy:#0d2238; --teal:#58d7d3; --gold:#f5c76b; --rose:#eea383; --cream:#f8f4e8; --muted:rgba(248,244,232,.68); }
     * { box-sizing: border-box; }
@@ -16,24 +16,24 @@
     h1 { margin:0; font-size:45px; line-height:.96; letter-spacing:-.055em; max-width:820px; }
     .note { max-width:360px; color:var(--muted); font-size:16.5px; line-height:1.28; text-align:right; padding-top:18px; }
     .diagram { position:relative; z-index:2; height:calc(100% - 106px); }
-    .Ark { position:absolute; border-radius:50%; display:grid; place-items:center; text-align:center; border:1px solid rgba(255,255,255,.16); box-shadow:0 22px 70px rgba(0,0,0,.33), inset 0 1px 0 rgba(255,255,255,.13); }
+    .Ark { position:absolute; z-index:2; border-radius:50%; display:grid; place-items:center; text-align:center; border:1px solid rgba(255,255,255,.16); box-shadow:0 22px 70px rgba(0,0,0,.33), inset 0 1px 0 rgba(255,255,255,.13); }
     .Ark .label { font-size:14px; text-transform:uppercase; letter-spacing:.12em; font-weight:850; color:rgba(248,244,232,.58); margin-bottom:8px; }
     .Ark .name { font-size:25px; line-height:1.02; font-weight:900; letter-spacing:-.04em; }
     .Ark .sub { max-width:210px; margin-top:8px; color:var(--muted); font-size:13.5px; line-height:1.2; }
     .student { width:250px; height:250px; left:50%; top:48%; transform:translate(-50%,-50%); background:radial-gradient(circle, rgba(88,215,211,.22), rgba(6,17,31,.83) 68%); border-color:rgba(88,215,211,.38); }
     .parent { width:210px; height:210px; left:70px; top:176px; background:radial-gradient(circle, rgba(245,199,107,.20), rgba(6,17,31,.78) 70%); border-color:rgba(245,199,107,.34); }
     .school { width:210px; height:210px; right:70px; top:176px; background:radial-gradient(circle, rgba(238,163,131,.19), rgba(6,17,31,.78) 70%); border-color:rgba(238,163,131,.34); }
-    .shared { position:absolute; left:50%; bottom:0; transform:translateX(-50%); width:520px; padding:18px 22px; border-radius:24px; background:rgba(255,255,255,.052); border:1px solid rgba(255,255,255,.12); text-align:center; box-shadow:inset 0 1px 0 rgba(255,255,255,.08); }
+    .shared { position:absolute; z-index:3; left:50%; bottom:8px; transform:translateX(-50%); width:520px; padding:18px 22px; border-radius:24px; background:rgba(6,17,31,.94); border:1px solid rgba(255,255,255,.14); text-align:center; box-shadow:inset 0 1px 0 rgba(255,255,255,.08), 0 14px 36px rgba(0,0,0,.22); }
     .shared strong { color:var(--gold); display:block; font-size:22px; letter-spacing:-.035em; margin-bottom:6px; }
     .shared span { color:var(--muted); font-size:14.5px; line-height:1.25; }
-    svg { position:absolute; inset:0; width:100%; height:100%; overflow:visible; }
+    svg { position:absolute; z-index:1; inset:0; width:100%; height:100%; overflow:visible; }
     .arrow { fill:none; stroke-width:3; stroke-linecap:round; opacity:.9; }
     .parent-line { stroke:var(--gold); color:var(--gold); }
     .school-line { stroke:var(--rose); color:var(--rose); }
     .shared-line { stroke:var(--teal); color:var(--teal); stroke-dasharray:8 8; }
-    .tag { position:absolute; padding:8px 11px; border-radius:999px; font-size:12.5px; font-weight:800; background:rgba(6,17,31,.82); border:1px solid rgba(255,255,255,.13); color:rgba(248,244,232,.78); white-space:nowrap; }
-    .t1 { left:257px; top:230px; color:var(--gold); } .t2 { right:244px; top:230px; color:var(--rose); } .t3 { left:50%; top:390px; transform:translateX(-50%); color:var(--teal); }
-    .overlap { position:absolute; left:50%; top:82px; transform:translateX(-50%); width:430px; padding:14px 18px; border-radius:22px; background:rgba(245,199,107,.08); border:1px solid rgba(245,199,107,.22); text-align:center; }
+    .tag { position:absolute; z-index:4; padding:8px 11px; border-radius:999px; font-size:12.5px; font-weight:800; background:rgba(6,17,31,.88); border:1px solid rgba(255,255,255,.15); color:rgba(248,244,232,.78); white-space:nowrap; box-shadow:0 10px 24px rgba(0,0,0,.2); }
+    .t1 { left:257px; top:230px; color:var(--gold); } .t2 { right:244px; top:230px; color:var(--rose); } .t3 { left:50%; top:326px; transform:translateX(-50%); color:var(--teal); }
+    .overlap { position:absolute; z-index:3; left:50%; top:74px; transform:translateX(-50%); width:430px; padding:14px 18px; border-radius:22px; background:rgba(6,17,31,.78); border:1px solid rgba(245,199,107,.26); text-align:center; box-shadow:0 14px 36px rgba(0,0,0,.22); }
     .overlap strong { color:var(--gold); font-size:20px; letter-spacing:-.035em; } .overlap p { margin:5px 0 0; color:var(--muted); font-size:13.5px; line-height:1.22; }
   </style>
 </head>

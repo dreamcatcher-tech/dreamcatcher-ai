@@ -10,11 +10,11 @@ created: 2026-06-04
 format: reveal.js external Markdown, no build
 assets:
   logo: ../assets/dreamcatcher-logo.svg
-  cover_image: ../assets/kristin-enduring-cores-cover.png
+  cover_image: ../assets/kristin-knowledge-that-endures-cover.png
 components:
   knowledge_cascade: ../components/knowledge-cascade.html
   pilot_path: ../components/kristin-pilot-path.html
-  influence_model: ../components/child-core-influence-model.html
+  influence_model: ../components/child-ark-influence-model.html
   confidentiality_spectrum: ../components/confidentiality-spectrum.html
   pilot_flywheel: ../components/pilot-learning-flywheel.html
 source_notes:
@@ -25,7 +25,7 @@ source_notes:
   - ../../Inbox/2026-06-04 Dreamcatcher Homepage Concept Inventory.md
 ---
 
-<div class="dc-shell dc-cover" style="--cover-image: url('../assets/kristin-enduring-cores-cover.png')">
+<div class="dc-shell dc-cover" style="--cover-image: url('../assets/kristin-knowledge-that-endures-cover.png')">
   <div class="dc-brand"><img src="../assets/dreamcatcher-logo.svg" alt="Dreamcatcher logo"><span>Dreamcatcher</span></div>
   <div>
     <div class="dc-kicker">Prepared for Kristin School</div>
@@ -107,7 +107,7 @@ source_notes:
   <div class="dc-grid-3" style="margin-top: 28px;">
     <div class="dc-card"><h3>Parental energy</h3><p>Anxious, eager, forceful, practical: “choose for us, do something, make it happen — we can help.”</p></div>
     <div class="dc-card"><h3>School obligation</h3><p>Regulatory requirements, duty of care, educational mandate, and responsibility for children’s development.</p></div>
-    <div class="dc-card"><h3>Enduring-Ark strategy</h3><p>A malleable Ark system that can be tested first with adults, then simulated children, before real students.</p></div>
+    <div class="dc-card"><h3>Ark strategy</h3><p>A malleable Ark system that can be tested first with adults, then simulated children, before real students.</p></div>
   </div>
   <p class="dc-muted" style="font-size: 0.48em; margin-top: 34px;">The pitch is to give parental energy a safe place to go — not by deciding everything in advance, but by turning it into evidence.</p>
 </div>
@@ -140,7 +140,7 @@ source_notes:
 
 ---
 
-<iframe class="dc-component-frame" src="../components/child-core-influence-model.html" title="Child Ark influence model"></iframe>
+<iframe class="dc-component-frame" src="../components/child-ark-influence-model.html" title="Child Ark influence model"></iframe>
 
 ---
 
@@ -175,7 +175,7 @@ source_notes:
   <h2>A stepwise path that can stop, correct, or widen.</h2>
   <div class="dc-grid-3" style="margin-top: 28px;">
     <div class="dc-card"><h3>1 · Kristin sandbox</h3><p>Give the department its own isolated agentic workforce and Arks. Use it internally first.</p></div>
-    <div class="dc-card"><h3>2 · Parent partners</h3><p>Invite interested parents into a bounded pilot. Their cores are real; the child counterpart can begin simulated.</p></div>
+    <div class="dc-card"><h3>2 · Parent partners</h3><p>Invite interested parents into a bounded pilot. Their Arks are real; the child counterpart can begin simulated.</p></div>
     <div class="dc-card"><h3>3 · Simulated child Arks</h3><p>Exercise realistic and deliberately problematic situations before any student rollout.</p></div>
   </div>
   <div class="dc-grid-3" style="margin-top: 20px;">
@@ -192,13 +192,13 @@ source_notes:
   <div class="dc-grid-2">
     <div>
       <h2>Start with a scarce, simple agent portal.</h2>
-      <p class="dc-bigline">A Kristin address unlocks the pilot. A small list of cores makes participation concrete.</p>
+      <p class="dc-bigline">A Kristin address unlocks the pilot. A small list of Arks makes participation concrete.</p>
     </div>
     <div class="dc-card">
       <h3>Provisioning flow</h3>
       <ul>
         <li>Verify a Kristin School email address.</li>
-        <li>Show a limited initial list — for example, five pilot cores.</li>
+        <li>Show a limited initial list — for example, five pilot Arks.</li>
         <li>Let the parent select and bond to one Ark.</li>
         <li>Start using it for real adult work and reflection.</li>
         <li>Only later connect to simulated-student Arks, dashboards, and school policy experiments.</li>
@@ -247,7 +247,7 @@ source_notes:
 ---
 
 <div class="dc-shell">
-  <div class="dc-kicker">From individual cores to school wisdom</div>
+  <div class="dc-kicker">From individual Arks to school wisdom</div>
   <h2>Wisdom should be permissioned, not pooled.</h2>
   <div class="dc-grid-3" style="margin-top: 28px;">
     <div class="dc-card"><h3>Student Ark</h3><p>A protected learning history that helps the student build on prior work, strengths, questions, and feedback.</p></div>

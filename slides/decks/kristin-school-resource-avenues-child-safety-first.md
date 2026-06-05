@@ -10,7 +10,7 @@ created: 2026-06-04
 format: reveal.js external Markdown, no build
 assets:
   logo: ../assets/dreamcatcher-logo.svg
-  cover_image: ../assets/kristin-enduring-cores-cover.png
+  cover_image: ../assets/kristin-knowledge-that-endures-cover.png
 components:
   resource_avenues_map: ../components/resource-avenues-map.html
   measurement_board: ../components/ai-school-measurement-board.html
@@ -22,7 +22,7 @@ source_notes:
   - ../Deck Seed - Resource Avenues and Child Safety First.md
 ---
 
-<div class="dc-shell dc-cover" style="--cover-image: url('../assets/kristin-enduring-cores-cover.png')">
+<div class="dc-shell dc-cover" style="--cover-image: url('../assets/kristin-knowledge-that-endures-cover.png')">
   <div class="dc-brand"><img src="../assets/dreamcatcher-logo.svg" alt="Dreamcatcher logo"><span>Dreamcatcher</span></div>
   <div>
     <div class="dc-kicker">Prepared for Kristin School</div>
@@ -184,7 +184,7 @@ source_notes:
   <div class="dc-kicker">What can happen while the blocker remains closed</div>
   <h2>Sandboxing keeps momentum without pretending the release gate is solved.</h2>
   <div class="dc-grid-3" style="margin-top: 28px;">
-    <div class="dc-card"><h3>Adult cores</h3><p>Staff and parent partners use real Arks for adult work, reflection, and feedback.</p></div>
+    <div class="dc-card"><h3>Adult Arks</h3><p>Staff and parent partners use real Arks for adult work, reflection, and feedback.</p></div>
     <div class="dc-card"><h3>Simulated children</h3><p>Synthetic child Arks exercise hard cases: secrecy, unsafe asks, overuse, bullying, confusion, money, escalation.</p></div>
     <div class="dc-card"><h3>Problem register</h3><p>Every concern, request, idea, and cost trigger enters a visible pipeline instead of evaporating into meetings.</p></div>
   </div>

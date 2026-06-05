@@ -102,7 +102,7 @@ SSO helps you log in.
 
 ---
 
-## Enterprise with a Ark
+## Enterprise with an Ark
 
 The Ark holds continuity:
 

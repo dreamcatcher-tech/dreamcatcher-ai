@@ -10,7 +10,7 @@ created: 2026-06-04
 format: reveal.js external Markdown, no build
 assets:
   logo: ../assets/dreamcatcher-logo.svg
-  cover_image: ../assets/kristin-enduring-cores-cover.png
+  cover_image: ../assets/kristin-knowledge-that-endures-cover.png
   spectrum_image: ../assets/conscience-visibility-spectrum.png
   gilfoyle_image: ../assets/gilfoyle-containment.jpg
 components:
@@ -22,7 +22,7 @@ source_notes:
   - ../Deck Seed - Pilot Validation Portfolio.md
 ---
 
-<div class="dc-shell dc-cover" style="--cover-image: url('../assets/kristin-enduring-cores-cover.png')">
+<div class="dc-shell dc-cover" style="--cover-image: url('../assets/kristin-knowledge-that-endures-cover.png')">
   <div class="dc-brand"><img src="../assets/dreamcatcher-logo.svg" alt="Dreamcatcher logo"><span>Dreamcatcher</span></div>
   <div>
     <div class="dc-kicker">Prepared for Kristin School</div>
@@ -66,8 +66,8 @@ source_notes:
     <div class="dc-card">
       <h3>Primary public label</h3>
       <div class="dc-pill-row"><span class="dc-pill">Conscience</span><span class="dc-pill">explains blocks</span><span class="dc-pill">offers safe alternatives</span><span class="dc-pill">records why</span></div>
-      <h3 style="margin-top: 24px;">Aliases still useful internally</h3>
-      <p>Minder, firewall, semantic guard, transforming proxy, policy governor — all describe parts of it. Publicly, the thing to validate is the Conscience.</p>
+      <h3 style="margin-top: 24px;">What the label means</h3>
+      <p>The Conscience is the named safety boundary around an Ark: it explains blocks, offers safe alternatives, records why, and escalates when policy is uncertain.</p>
     </div>
   </div>
 </div>
@@ -102,7 +102,7 @@ source_notes:
   <div class="dc-grid-2">
     <div class="dc-card">
       <h3>Setup</h3>
-      <p>Run a battery of ambiguous requests through the Ark: harmless, risky, rule-breaking, socially awkward, privacy-sensitive, and money-spending. SArk the Conscience’s decisions and explanations.</p>
+      <p>Run a battery of ambiguous requests through the Ark: harmless, risky, rule-breaking, socially awkward, privacy-sensitive, and money-spending. Score the Conscience’s decisions and explanations.</p>
       <h3 style="margin-top: 22px;">Benefits</h3>
       <ul>
         <li>Validates inbound and outbound controls separately.</li>
@@ -330,7 +330,7 @@ source_notes:
         <li>Turns scattered feedback into durable learning memory.</li>
         <li>Helps teachers identify high-leverage interventions.</li>
         <li>Lets students see growth patterns over time.</li>
-        <li>Validates whether cores improve learning, not just convenience.</li>
+        <li>Validates whether Arks improve learning, not just convenience.</li>
       </ul>
     </div>
   </div>
@@ -462,7 +462,7 @@ source_notes:
     </div>
     <div class="dc-card">
       <h3>Setup</h3>
-      <p>Run practical drills: export a Ark, delete selected memories, restore from backup, transfer school year context, revoke access, and handle a family leaving the school.</p>
+      <p>Run practical drills: export an Ark, delete selected memories, restore from backup, transfer school year context, revoke access, and handle a family leaving the school.</p>
       <h3 style="margin-top: 22px;">Benefits</h3>
       <ul>
         <li>Demonstrates student/family custody rather than lock-in.</li>
@@ -516,7 +516,7 @@ source_notes:
   <div class="dc-kicker">Closing line</div>
   <div class="dc-grid-2">
     <div>
-      <h2>Validate the Conscience before scaling the cores.</h2>
+      <h2>Validate the Conscience before scaling the Arks.</h2>
       <p class="dc-bigline">The valuable proof is not that agents can act. It is that they can be bounded, explained, restored, tuned, and trusted.</p>
     </div>
     <div class="dc-card">

@@ -123,7 +123,7 @@ source_notes:
   <div class="dc-kicker">Open ownership</div>
   <h2>Self-sovereign ownership has to be inspectable.</h2>
   <div class="dc-grid-3" style="margin-top: 24px;">
-    <div class="dc-card"><h3>Open source where possible</h3><p>Core mechanisms should be understandable, reviewable, and replaceable rather than trapped behind a vendor wall.</p></div>
+    <div class="dc-card"><h3>Open source where possible</h3><p>Underlying mechanisms should be understandable, reviewable, and replaceable rather than trapped behind a vendor wall.</p></div>
     <div class="dc-card"><h3>Open protocols</h3><p>Export, restore, migration, permission grants, and audit trails should be protocol-shaped, not screenshot-shaped.</p></div>
     <div class="dc-card"><h3>Owner control</h3><p>The Ark belongs to the individual it is assigned to. Institutions can contribute and verify without taking ownership.</p></div>
   </div>

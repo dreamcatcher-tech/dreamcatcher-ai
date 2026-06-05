@@ -47,7 +47,7 @@ links:
   <p class="dc-kicker">The operating map</p>
   <h2>Run three paths concurrently.</h2>
   <div class="dc-grid-3" style="margin-top: 28px;">
-    <article class="dc-card"><h3>1 · Concentrate</h3><p>Pull diffuse tooling, records, decisions and evidence into a Ark the person or family can carry forward.</p><p><strong>Proof:</strong> ownership, portability, continuity.</p></article>
+    <article class="dc-card"><h3>1 · Concentrate</h3><p>Pull diffuse tooling, records, decisions and evidence into an Ark the person or family can carry forward.</p><p><strong>Proof:</strong> ownership, portability, continuity.</p></article>
     <article class="dc-card"><h3>2 · Parents first</h3><p>Issue parent Arks and use adults as testers, simulated students, supervisors and guardian-test authors.</p><p><strong>Proof:</strong> trust, friction, real cost, real questions.</p></article>
     <article class="dc-card"><h3>3 · Tune Conscience</h3><p>Test the humane middle between total opacity and surveillance: permitted summaries, explainable blocks, escalation.</p><p><strong>Proof:</strong> visibility parameter, safety evidence.</p></article>
   </div>
@@ -95,7 +95,7 @@ links:
     <div class="dc-card">
       <h3>Useful parent roles</h3>
       <ul>
-        <li>Adult users of real cores.</li>
+        <li>Adult users of real Arks.</li>
         <li>Supervisors of simulated student Arks.</li>
         <li>Source of guardian tests and awkward scenarios.</li>
         <li>Funding/time signal when blockers are visible.</li>
@@ -128,7 +128,7 @@ links:
   <p class="dc-kicker">The cadence</p>
   <h2>Make the roadmap absorb the energy.</h2>
   <div class="dc-grid-3" style="margin-top: 28px;">
-    <article class="dc-card"><h3>1 · Issue cores</h3><p>Start with staff and parent volunteers. Keep the first cohort small and consent-based.</p></article>
+    <article class="dc-card"><h3>1 · Issue Arks</h3><p>Start with staff and parent volunteers. Keep the first cohort small and consent-based.</p></article>
     <article class="dc-card"><h3>2 · Run guardian tests</h3><p>Use parents, teachers and synthetic students to test the Conscience, containment, cost and custody.</p></article>
     <article class="dc-card"><h3>3 · Publish proof-points</h3><p>Monthly evidence: what worked, what blocked release, what needs money, time or review.</p></article>
   </div>
