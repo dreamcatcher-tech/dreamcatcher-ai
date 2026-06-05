@@ -7,6 +7,11 @@
   <link rel="stylesheet" href="https://esm.sh/reveal.js@6.0.1/reset.css">
   <link rel="stylesheet" href="https://esm.sh/reveal.js@6.0.1/reveal.css">
   <link rel="stylesheet" href="https://esm.sh/reveal.js@6.0.1/dist/theme/black.css">
+  <script>
+    if (new URLSearchParams(window.location.search).has('print-pdf')) {
+      document.documentElement.classList.add('dc-pdf-export');
+    }
+  </script>
   <style>
     :root {
       --dc-ink: #06111f;
@@ -51,12 +56,13 @@
     .dc-export-bar { position: fixed; top: 18px; right: 18px; z-index: 40; font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; }
     .dc-export-bar a { display: inline-flex; align-items: center; gap: 8px; border: 1px solid rgba(88,215,211,0.38); border-radius: 999px; padding: 9px 14px; color: var(--dc-cream); background: rgba(6,17,31,0.72); text-decoration: none; font-size: 13px; font-weight: 800; letter-spacing: 0.01em; box-shadow: 0 14px 32px rgba(0,0,0,0.28); backdrop-filter: blur(12px); }
     .dc-export-bar a:hover { color: var(--dc-ink); background: var(--dc-teal); }
+    html.dc-pdf-export .dc-export-bar { display: none !important; }
     @media print { .dc-export-bar { display: none !important; } }
   </style>
 </head>
 <body>
   <nav class="dc-export-bar" aria-label="Deck downloads">
-    <a id="pdf-download-link" href="pdfs/kristin-school-pilot-validation-portfolio.pdf" download="kristin-school-pilot-validation-portfolio.pdf" title="Download this deck as a PDF">Download PDF</a>
+    <a id="pdf-download-link" href="reveal-runner.html?deck=decks/kristin-school-pilot-validation-portfolio.md&amp;print-pdf" target="_blank" rel="noopener" title="Open this deck in Reveal.js PDF export mode">Download PDF</a>
   </nav>
   <div id="deck-error"></div>
   <div class="reveal">
@@ -84,30 +90,12 @@
       const params = new URLSearchParams(location.search);
       const deckParam = params.get('deck') || 'decks/kristin-school-pilot-validation-portfolio.md';
       const deckUrl = new URL(deckParam, location.href);
-      const deckFile = deckUrl.pathname.split('/').pop() || 'deck.md';
-      const pdfFile = deckFile.replace(/\.md$/i, '.pdf');
-      const pdfUrl = new URL(`pdfs/${pdfFile}`, location.href);
       const pdfLink = document.querySelector('#pdf-download-link');
-      pdfLink.href = pdfUrl.href;
-      pdfLink.download = pdfFile;
-      pdfLink.addEventListener('click', async (event) => {
-        if (event.metaKey || event.ctrlKey || event.shiftKey || event.altKey) return;
-        event.preventDefault();
-        try {
-          const pdfResponse = await fetch(pdfLink.href);
-          if (!pdfResponse.ok) throw new Error(`${pdfResponse.status} ${pdfResponse.statusText}`);
-          const blobUrl = URL.createObjectURL(await pdfResponse.blob());
-          const download = document.createElement('a');
-          download.href = blobUrl;
-          download.download = pdfLink.download || pdfFile;
-          document.body.append(download);
-          download.click();
-          download.remove();
-          setTimeout(() => URL.revokeObjectURL(blobUrl), 30000);
-        } catch (downloadErr) {
-          location.href = pdfLink.href;
-        }
-      });
+      const exportUrl = new URL(location.href);
+      exportUrl.searchParams.set('deck', deckParam);
+      exportUrl.searchParams.set('print-pdf', '');
+      exportUrl.hash = '';
+      pdfLink.href = exportUrl.href.replace(/print-pdf=/, 'print-pdf');
 
       // Make relative image/media URLs inside the Markdown resolve relative to the deck file.
       const base = document.createElement('base');

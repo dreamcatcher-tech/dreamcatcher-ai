@@ -1,4 +1,4 @@
-import { existsSync, readFileSync, statSync } from 'node:fs';
+import { existsSync, readFileSync } from 'node:fs';
 import { dirname, join } from 'node:path';
 
 const root = new URL('..', import.meta.url).pathname;
@@ -138,9 +138,10 @@ const mustContain = [
   ['reveal.js@6.0.1', runner],
   ['js-yaml@4.2.0', runner],
   ['Download PDF', runner],
-  ['download=', runner],
-  ['pdfs/${pdfFile}', runner],
-  ['URL.createObjectURL', runner],
+  ['print-pdf', runner],
+  ['target="_blank"', runner],
+  ['rel="noopener"', runner],
+  ['dc-pdf-export', runner],
   ['window.Reveal = deck', runner],
   ['framework', read('vercel.json')],
   ['dreamcatcher.ai', read('CNAME')],
@@ -164,6 +165,11 @@ const forbidden = [
 for (const needle of forbidden) {
   if (html.includes(needle) || css.includes(needle) || slidesIndex.includes(needle)) fail(`Forbidden framework/chat reference found: ${needle}`);
 }
+
+for (const needle of ['URL.createObjectURL', 'pdfs/${pdfFile}', 'download=', 'render:slide-pdfs']) {
+  if (runner.includes(needle)) fail(`Reveal runner must use lightweight print-pdf export, not static PDF download plumbing: ${needle}`);
+}
+if (existsSync(join(root, 'slides/pdfs'))) fail('slides/pdfs must not exist; use Reveal print-pdf export mode instead of pre-generated PDFs');
 
 const publicNamingFiles = [
   'index.html',
@@ -267,9 +273,6 @@ for (const deck of ['dreamcatcher-ark-components', 'defragmenting-the-user', 'kr
   const deckText = read(`slides/decks/${deck}.md`);
   if (!deckText.startsWith('---')) fail(`${deck}.md must start with frontmatter`);
   if (deckText.includes('../../Assets/')) fail(`${deck}.md must not reference private notes asset paths`);
-  const pdfPath = `slides/pdfs/${deck}.pdf`;
-  if (!existsSync(join(root, pdfPath))) fail(`${pdfPath} must exist for the Download PDF button`);
-  else if (statSync(join(root, pdfPath)).size < 1000) fail(`${pdfPath} is unexpectedly small`);
 }
 
 if (!html.trimStart().startsWith('<!doctype html>')) fail('index.html must start with <!doctype html>');
