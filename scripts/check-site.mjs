@@ -116,6 +116,7 @@ const mustContain = [
   ['mailto:concierge@agent.dreamcatcher.ai', html],
   ['Dreamcatcher%20Concierge%20pilot%20request', html],
   ['https://t.me/dreamcatcher_concierge_bot?start=website_pilot', html],
+  ['https://t.me/share/url?url=https%3A%2F%2Ft.me%2Fdreamcatcher_concierge_bot%3Fstart%3Dwebsite_pilot', html],
   ['https://wa.me/?text=', html],
   ['Ark', capsule],
   ['Your knowledge should', social],
