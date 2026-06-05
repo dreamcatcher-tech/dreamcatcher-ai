@@ -1,6 +1,6 @@
 ---
 title: The Knowledge That Endures
-slug: kristin-school-enduring-knowledge-cores
+slug: kristin-school-knowledge-that-endures
 status: draft
 audience: Kristin School
 prepared_by: Tom Thompson
@@ -25,7 +25,7 @@ source_notes:
   - ../../Inbox/2026-06-04 Dreamcatcher Homepage Concept Inventory.md
 ---
 
-<div class="dc-shell dc-cover" style="--cover-image: url('../assets/kristin-knowledge-that-endures-cover.png')">
+<div class="dc-shell dc-cover" style="--cover-image: url('assets/kristin-knowledge-that-endures-cover.png')">
   <div class="dc-brand"><img src="../assets/dreamcatcher-logo.svg" alt="Dreamcatcher logo"><span>Dreamcatcher</span></div>
   <div>
     <div class="dc-kicker">Prepared for Kristin School</div>

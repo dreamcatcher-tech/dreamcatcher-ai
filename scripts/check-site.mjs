@@ -27,7 +27,7 @@ const requiredFiles = [
   'slides/reveal-runner.html',
   'slides/decks/dreamcatcher-ark-components.md',
   'slides/decks/defragmenting-the-user.md',
-  'slides/decks/kristin-school-enduring-knowledge-cores.md',
+  'slides/decks/kristin-school-knowledge-that-endures.md',
   'slides/decks/kristin-school-pilot-validation-portfolio.md',
   'slides/decks/kristin-school-resource-avenues-child-safety-first.md',
   'slides/decks/kristin-school-three-things-to-push-on.md',
@@ -60,6 +60,16 @@ const requiredFiles = [
 ];
 for (const file of requiredFiles) {
   if (!existsSync(join(root, file))) fail(`Missing ${file}`);
+}
+const forbiddenFiles = [
+  'slides/decks/kristin-school-enduring-knowledge-cores.md',
+  'slides/pdfs/kristin-school-enduring-knowledge-cores.pdf',
+  'assets/durable-core-architecture.png',
+  'slides/assets/kristin-enduring-cores-cover.png',
+  'slides/components/child-core-influence-model.html',
+];
+for (const file of forbiddenFiles) {
+  if (existsSync(join(root, file))) fail(`Retired public path must not exist: ${file}`);
 }
 
 const html = read('index.html');
@@ -144,6 +154,47 @@ for (const needle of forbidden) {
   if (html.includes(needle) || css.includes(needle) || slidesIndex.includes(needle)) fail(`Forbidden framework/chat reference found: ${needle}`);
 }
 
+const publicNamingFiles = [
+  'index.html',
+  'slides/index.html',
+  'assets/agent-capsule.svg',
+  'assets/social-card.svg',
+  'slides/decks/dreamcatcher-ark-components.md',
+  'slides/decks/defragmenting-the-user.md',
+  'slides/decks/kristin-school-knowledge-that-endures.md',
+  'slides/decks/kristin-school-pilot-validation-portfolio.md',
+  'slides/decks/kristin-school-resource-avenues-child-safety-first.md',
+  'slides/decks/kristin-school-run-the-school-before-release.md',
+  'slides/decks/kristin-school-three-things-to-push-on.md',
+  'slides/decks/kristin-school-give-parents-something-to-push-on.md',
+  'slides/components/ai-school-measurement-board.html',
+  'slides/components/child-ark-influence-model.html',
+  'slides/components/kristin-pilot-path.html',
+  'slides/components/parent-energy-operating-board.html',
+  'slides/components/pilot-learning-flywheel.html',
+  'slides/components/resource-avenues-map.html',
+  'slides/components/school-simulation-tiers.html',
+  'slides/components/three-paths-operating-map.html',
+];
+const retiredNamingPatterns = [
+  /kristin-school-enduring-knowledge-cores/i,
+  /enduring-knowledge-cores/i,
+  /\b(?:core|cores)\b/i,
+  /\ba Ark\b/i,
+  /SArk/i,
+  /\bSteward\b/i,
+  /Minder/i,
+  /semantic guard/i,
+  /transforming proxy/i,
+  /policy governor/i,
+];
+for (const file of publicNamingFiles) {
+  const content = read(file);
+  for (const pattern of retiredNamingPatterns) {
+    if (pattern.test(content)) fail(`Retired public naming term ${pattern} still present in ${file}`);
+  }
+}
+
 if (vercel.framework !== null) fail('vercel.json must set framework to null for a static site');
 if (vercel.outputDirectory !== 'dist') fail('vercel.json outputDirectory must be dist');
 if (vercel.buildCommand !== 'node scripts/build.mjs') fail('vercel.json buildCommand must run scripts/build.mjs');
@@ -201,7 +252,7 @@ for (const retiredTerm of ['Codex', 'Covenant', 'The Ark Naming System', 'ark-na
   if (arkComponentsBundle.includes(retiredTerm)) fail(`Retired Ark Components term still present: ${retiredTerm}`);
 }
 
-for (const deck of ['dreamcatcher-ark-components', 'defragmenting-the-user', 'kristin-school-enduring-knowledge-cores', 'kristin-school-pilot-validation-portfolio', 'kristin-school-resource-avenues-child-safety-first', 'kristin-school-three-things-to-push-on', 'kristin-school-give-parents-something-to-push-on', 'kristin-school-run-the-school-before-release']) {
+for (const deck of ['dreamcatcher-ark-components', 'defragmenting-the-user', 'kristin-school-knowledge-that-endures', 'kristin-school-pilot-validation-portfolio', 'kristin-school-resource-avenues-child-safety-first', 'kristin-school-three-things-to-push-on', 'kristin-school-give-parents-something-to-push-on', 'kristin-school-run-the-school-before-release']) {
   const deckText = read(`slides/decks/${deck}.md`);
   if (!deckText.startsWith('---')) fail(`${deck}.md must start with frontmatter`);
   if (deckText.includes('../../Assets/')) fail(`${deck}.md must not reference private notes asset paths`);

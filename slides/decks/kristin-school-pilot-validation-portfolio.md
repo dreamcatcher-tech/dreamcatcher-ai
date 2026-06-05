@@ -22,7 +22,7 @@ source_notes:
   - ../Deck Seed - Pilot Validation Portfolio.md
 ---
 
-<div class="dc-shell dc-cover" style="--cover-image: url('../assets/kristin-knowledge-that-endures-cover.png')">
+<div class="dc-shell dc-cover" style="--cover-image: url('assets/kristin-knowledge-that-endures-cover.png')">
   <div class="dc-brand"><img src="../assets/dreamcatcher-logo.svg" alt="Dreamcatcher logo"><span>Dreamcatcher</span></div>
   <div>
     <div class="dc-kicker">Prepared for Kristin School</div>

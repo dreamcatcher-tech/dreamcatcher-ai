@@ -23,7 +23,7 @@ source_notes:
   - ../Deck Seed - Run the School Before We Release It.md
 ---
 
-<div class="dc-shell dc-cover" style="--cover-image: url('../assets/school-simulation-sandbox.png')">
+<div class="dc-shell dc-cover" style="--cover-image: url('assets/school-simulation-sandbox.png')">
   <div class="dc-brand"><img src="../assets/dreamcatcher-logo.svg" alt="Dreamcatcher logo"><span>Dreamcatcher</span></div>
   <div>
     <div class="dc-kicker">Prepared for Kristin School</div>

@@ -6,7 +6,7 @@
       <stop stop-color="#12213a"/>
       <stop offset="1" stop-color="#06101d"/>
     </linearGradient>
-    <linearGradient id="core" x1="300" y1="170" x2="820" y2="590" gradientUnits="userSpaceOnUse">
+    <linearGradient id="ark" x1="300" y1="170" x2="820" y2="590" gradientUnits="userSpaceOnUse">
       <stop stop-color="#f6d66f"/>
       <stop offset=".55" stop-color="#36d399"/>
       <stop offset="1" stop-color="#22d3ee"/>
@@ -23,14 +23,14 @@
 
   <g filter="url(#shadow)">
     <circle cx="560" cy="382" r="250" fill="none" stroke="#22d3ee" stroke-width="10" opacity=".82"/>
-    <circle cx="560" cy="382" r="188" fill="#0b182b" stroke="url(#core)" stroke-width="16" opacity=".96"/>
+    <circle cx="560" cy="382" r="188" fill="#0b182b" stroke="url(#ark)" stroke-width="16" opacity=".96"/>
     <circle cx="560" cy="382" r="92" fill="#06101d" stroke="#eef7ff" stroke-width="5"/>
     <text x="560" y="356" text-anchor="middle" fill="#f6d66f" font-family="Inter, system-ui, sans-serif" font-size="32" font-weight="850">Ark</text>
     <text x="560" y="398" text-anchor="middle" fill="#eef7ff" font-family="Inter, system-ui, sans-serif" font-size="24" font-weight="800">Vault</text>
     <text x="560" y="438" text-anchor="middle" fill="#9fb0c9" font-family="Inter, system-ui, sans-serif" font-size="18">work · records · history · wisdom</text>
     <text x="560" y="118" text-anchor="middle" fill="#22d3ee" font-family="Inter, system-ui, sans-serif" font-size="28" font-weight="850">Conscience</text>
     <text x="560" y="150" text-anchor="middle" fill="#9fb0c9" font-family="Inter, system-ui, sans-serif" font-size="18">approvals · policy · redaction · denial</text>
-    <rect x="430" y="540" width="260" height="52" rx="26" fill="url(#core)"/>
+    <rect x="430" y="540" width="260" height="52" rx="26" fill="url(#ark)"/>
     <text x="560" y="574" text-anchor="middle" fill="#06101d" font-family="Inter, system-ui, sans-serif" font-size="20" font-weight="900">owned by person / family</text>
   </g>
 

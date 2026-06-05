@@ -7,7 +7,7 @@
       <stop offset=".55" stop-color="#091426"/>
       <stop offset="1" stop-color="#10223d"/>
     </linearGradient>
-    <linearGradient id="core" x1="330" y1="160" x2="770" y2="480" gradientUnits="userSpaceOnUse">
+    <linearGradient id="ark" x1="330" y1="160" x2="770" y2="480" gradientUnits="userSpaceOnUse">
       <stop stop-color="#f6d66f"/>
       <stop offset=".55" stop-color="#36d399"/>
       <stop offset="1" stop-color="#22d3ee"/>
@@ -25,7 +25,7 @@
   <circle cx="160" cy="560" r="330" fill="#f6d66f" opacity=".10"/>
   <g transform="translate(740 104)" opacity=".94">
     <ellipse cx="184" cy="210" rx="212" ry="120" fill="none" stroke="#22d3ee" stroke-width="5" opacity=".85" filter="url(#glow)"/>
-    <ellipse cx="184" cy="210" rx="154" ry="84" fill="#f6d66f" opacity=".16" stroke="url(#core)" stroke-width="9"/>
+    <ellipse cx="184" cy="210" rx="154" ry="84" fill="#f6d66f" opacity=".16" stroke="url(#ark)" stroke-width="9"/>
     <ellipse cx="184" cy="210" rx="72" ry="42" fill="#07111f" stroke="#f2f8ff" stroke-width="4"/>
     <text x="184" y="204" text-anchor="middle" fill="#f2f8ff" font-family="Inter, system-ui, sans-serif" font-size="22" font-weight="850">Enclave</text>
     <text x="184" y="238" text-anchor="middle" fill="#f6d66f" font-family="Inter, system-ui, sans-serif" font-size="24" font-weight="850">Ark</text>
@@ -38,8 +38,8 @@
     </g>
   </g>
   <g transform="translate(82 94)">
-    <rect width="96" height="96" rx="24" fill="#07111f" stroke="url(#core)" stroke-width="4"/>
-    <circle cx="48" cy="48" r="31" fill="none" stroke="url(#core)" stroke-width="5"/>
+    <rect width="96" height="96" rx="24" fill="#07111f" stroke="url(#ark)" stroke-width="4"/>
+    <circle cx="48" cy="48" r="31" fill="none" stroke="url(#ark)" stroke-width="5"/>
     <path d="M24 49c10-13 20-19 29-17 9 1 15 8 19 20M31 70c8-20 21-31 37-32M27 31c10 22 26 34 47 35M21 48h54M48 17v62" fill="none" stroke="#eaf8ff" stroke-opacity=".76" stroke-width="2.4" stroke-linecap="round"/>
     <circle cx="48" cy="48" r="6" fill="#eaf8ff"/>
   </g>
@@ -47,6 +47,6 @@
   <text x="86" y="334" fill="#f6d66f" font-family="Inter, system-ui, sans-serif" font-size="72" font-weight="850" letter-spacing="-4">accumulate,</text>
   <text x="86" y="418" fill="#f2f8ff" font-family="Inter, system-ui, sans-serif" font-size="72" font-weight="850" letter-spacing="-4">not evaporate.</text>
   <text x="90" y="490" fill="#c8d6ea" font-family="Inter, system-ui, sans-serif" font-size="29">Own the Ark. Swap the engines. Build personal software.</text>
-  <rect x="86" y="532" width="360" height="58" rx="29" fill="url(#core)"/>
+  <rect x="86" y="532" width="360" height="58" rx="29" fill="url(#ark)"/>
   <text x="266" y="570" text-anchor="middle" fill="#051320" font-family="Inter, system-ui, sans-serif" font-size="22" font-weight="900">Dreamcatcher.ai</text>
 </svg>

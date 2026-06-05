@@ -23,7 +23,7 @@ source_notes:
   - ../Deck Seed - Give the Parents Something to Push On.md
 ---
 
-<div class="dc-shell dc-cover" style="--cover-image: url('../assets/parent-energy-channel.png')">
+<div class="dc-shell dc-cover" style="--cover-image: url('assets/parent-energy-channel.png')">
   <div class="dc-brand"><img src="../assets/dreamcatcher-logo.svg" alt="Dreamcatcher logo"><span>Dreamcatcher</span></div>
   <div>
     <div class="dc-kicker">Prepared for Kristin School</div>
