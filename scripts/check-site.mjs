@@ -21,6 +21,7 @@ const requiredFiles = [
   'assets/social-card.svg',
   'robots.txt',
   'sitemap.xml',
+  '.nojekyll',
   'CNAME',
   'vercel.json',
   'slides/index.html',
@@ -79,6 +80,7 @@ const capsule = read('assets/agent-capsule.svg');
 const slidesIndex = read('slides/index.html');
 const runner = read('slides/reveal-runner.html');
 const vercel = JSON.parse(read('vercel.json'));
+const pkg = JSON.parse(read('package.json'));
 
 const mustContain = [
   ['portable Arks', html],
@@ -116,6 +118,10 @@ const mustContain = [
   ['Dreamcatcher%20Concierge%20pilot%20request', html],
   ['assets/dreamcatcher-concierge-profile.png', html],
   ['assets/dreamcatcher-concierge.vcf', html],
+  ['https://esm.sh/@tabler/icons-webfont@3.44.0/dist/tabler-icons.min.css', html],
+  ['ti-brand-whatsapp', html],
+  ['ti-brand-telegram', html],
+  ['external-link-icon', html],
   ['https://t.me/dreamcatcher_concierge_bot', html],
   ['https://wa.me/64223571853?text=', html],
   ['tel:+64223571853', html],
@@ -166,6 +172,14 @@ for (const needle of forbidden) {
   if (html.includes(needle) || css.includes(needle) || slidesIndex.includes(needle)) fail(`Forbidden framework/chat reference found: ${needle}`);
 }
 
+const contactCard = html.match(/<article class="channel-card contact-card-panel">[\s\S]*?<\/article>/)?.[0] || '';
+for (const hiddenContactText of ['concierge@agent.dreamcatcher.ai', '+64 22 357 1853', '@dreamcatcher_concierge_bot']) {
+  if (contactCard.includes(hiddenContactText)) fail(`Contact card should not visibly list ${hiddenContactText}`);
+}
+if (html.includes('<svg')) fail('Homepage icons must come from the esm.sh icon set, not inline SVG');
+if (css.includes('data:image/svg+xml') || css.includes('external-link::after')) fail('External-link icon must come from the esm.sh icon set, not CSS SVG masks');
+if (html.includes('@fortawesome') || html.includes('fontawesome')) fail('Homepage should use the Tabler icon set from esm.sh, not Font Awesome runtime SVG injection');
+
 for (const needle of ['URL.createObjectURL', 'pdfs/${pdfFile}', 'download=', 'render:slide-pdfs']) {
   if (runner.includes(needle)) fail(`Reveal runner must use lightweight print-pdf export, not static PDF download plumbing: ${needle}`);
 }
@@ -213,8 +227,9 @@ for (const file of publicNamingFiles) {
 }
 
 if (vercel.framework !== null) fail('vercel.json must set framework to null for a static site');
-if (vercel.outputDirectory !== 'dist') fail('vercel.json outputDirectory must be dist');
-if (vercel.buildCommand !== 'node scripts/build.mjs') fail('vercel.json buildCommand must run scripts/build.mjs');
+if (vercel.outputDirectory !== '.') fail('vercel.json outputDirectory must be . for root static publishing');
+if (vercel.buildCommand !== null) fail('vercel.json buildCommand must be null; this site intentionally has no build step');
+if (pkg.scripts?.build) fail('package.json must not define a build script; this site intentionally has no build step');
 
 const validateLocalRefs = (file) => {
   const markup = read(file);
