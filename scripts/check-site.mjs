@@ -23,7 +23,6 @@ const requiredFiles = [
   'sitemap.xml',
   '.nojekyll',
   'CNAME',
-  'vercel.json',
   'slides/index.html',
   'slides/reveal-runner.html',
   'slides/decks/dreamcatcher-ark-components.md',
@@ -65,6 +64,9 @@ for (const file of requiredFiles) {
 const forbiddenFiles = [
   'slides/decks/kristin-school-enduring-knowledge-cores.md',
   'slides/pdfs/kristin-school-enduring-knowledge-cores.pdf',
+  'slides/pdfs',
+  'dist',
+  'vercel.json',
   'assets/durable-core-architecture.png',
   'slides/assets/kristin-enduring-cores-cover.png',
   'slides/components/child-core-influence-model.html',
@@ -79,8 +81,8 @@ const social = read('assets/social-card.svg');
 const capsule = read('assets/agent-capsule.svg');
 const slidesIndex = read('slides/index.html');
 const runner = read('slides/reveal-runner.html');
-const vercel = JSON.parse(read('vercel.json'));
 const pkg = JSON.parse(read('package.json'));
+const gitignore = read('.gitignore');
 
 const mustContain = [
   ['portable Arks', html],
@@ -145,11 +147,15 @@ const mustContain = [
   ['js-yaml@4.2.0', runner],
   ['Download PDF', runner],
   ['print-pdf', runner],
+  ['autoprint', runner],
+  ['window.print()', runner],
+  ['Save as PDF', runner],
   ['target="_blank"', runner],
   ['rel="noopener"', runner],
   ['dc-pdf-export', runner],
+  ['dc-print-help', runner],
+  ['dc-print-requested', runner],
   ['window.Reveal = deck', runner],
-  ['framework', read('vercel.json')],
   ['dreamcatcher.ai', read('CNAME')],
 ];
 for (const [needle, haystack] of mustContain) {
@@ -183,7 +189,7 @@ if (html.includes('@fortawesome') || html.includes('fontawesome')) fail('Homepag
 for (const needle of ['URL.createObjectURL', 'pdfs/${pdfFile}', 'download=', 'render:slide-pdfs']) {
   if (runner.includes(needle)) fail(`Reveal runner must use lightweight print-pdf export, not static PDF download plumbing: ${needle}`);
 }
-if (existsSync(join(root, 'slides/pdfs'))) fail('slides/pdfs must not exist; use Reveal print-pdf export mode instead of pre-generated PDFs');
+if (gitignore.includes('dist/') || gitignore.includes('.vercel/')) fail('.gitignore must not preserve legacy build/Vercel relics; this site is root-published GitHub Pages only');
 
 const publicNamingFiles = [
   'index.html',
@@ -226,9 +232,6 @@ for (const file of publicNamingFiles) {
   }
 }
 
-if (vercel.framework !== null) fail('vercel.json must set framework to null for a static site');
-if (vercel.outputDirectory !== '.') fail('vercel.json outputDirectory must be . for root static publishing');
-if (vercel.buildCommand !== null) fail('vercel.json buildCommand must be null; this site intentionally has no build step');
 if (pkg.scripts?.build) fail('package.json must not define a build script; this site intentionally has no build step');
 
 const validateLocalRefs = (file) => {

@@ -7,10 +7,6 @@
 .env
 .env.*
 
-# build/deploy output
-dist/
-.vercel/
-
 # dependency caches if someone experiments locally
 node_modules/
 npm-debug.log*

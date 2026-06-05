@@ -15,7 +15,7 @@ Then open <http://127.0.0.1:3100/>.
 
 ## Deployment
 
-Production is back on GitHub Pages. The canonical Pages custom domain is `www.dreamcatcher.ai`; the apex `dreamcatcher.ai` is configured at DNS level for GitHub Pages and redirects to `www`.
+Production is GitHub Pages only. The canonical Pages custom domain is `www.dreamcatcher.ai`; the apex `dreamcatcher.ai` is configured at DNS level for GitHub Pages and redirects to `www`. There is no Vercel config, build output directory, or fallback hosting relic in the repo.
 
 Current web DNS at Porkbun:
 
@@ -47,6 +47,8 @@ Generated site logo assets: `assets/dreamcatcher-logo.png` and the header/favico
 ## Slide deck publishing
 
 Public Dreamcatcher slide decks live under `slides/` in this repository. The private Obsidian vault remains the canonical drafting/source-capture area; do not submodule or expose the vault. Copy only public-safe deck Markdown, components, images, and metadata into this repo, update `slides/index.html` with a card/preview/blurb/date/topic, then run `npm run lint` before committing.
+
+The deck runner’s **Download PDF** control follows the Reveal.js PDF-export flow: it opens the same deck with `print-pdf&autoprint`, waits for Reveal/assets to settle, then launches the browser print dialog so the visitor can choose **Save as PDF** with landscape/no-margin/background settings.
 
 Current published decks include `Ark Components`, `Three Things to Push On`, `Defragmenting the User`, `The Knowledge That Endures`, `Ark Pilot Validation Portfolio`, and `Child-Safety-First Resource Avenues`.
 

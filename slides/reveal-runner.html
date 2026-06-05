@@ -53,17 +53,22 @@
     .reveal .dc-component-frame { width: 100%; height: 640px; border: 0; border-radius: 26px; background: #06111f; box-shadow: 0 28px 80px rgba(0,0,0,0.42); }
     #deck-error { display: none; max-width: 820px; margin: 10vh auto; padding: 24px; border: 1px solid rgba(245,199,107,0.45); border-radius: 18px; color: var(--dc-cream); background: rgba(0,0,0,0.55); font-family: ui-sans-serif, system-ui; }
     #deck-error code { color: var(--dc-gold); }
-    .dc-export-bar { position: fixed; top: 18px; right: 18px; z-index: 40; font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; }
+    .dc-export-bar, .dc-print-help { position: fixed; z-index: 40; font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; }
+    .dc-export-bar { top: 18px; right: 18px; }
     .dc-export-bar a { display: inline-flex; align-items: center; gap: 8px; border: 1px solid rgba(88,215,211,0.38); border-radius: 999px; padding: 9px 14px; color: var(--dc-cream); background: rgba(6,17,31,0.72); text-decoration: none; font-size: 13px; font-weight: 800; letter-spacing: 0.01em; box-shadow: 0 14px 32px rgba(0,0,0,0.28); backdrop-filter: blur(12px); }
     .dc-export-bar a:hover { color: var(--dc-ink); background: var(--dc-teal); }
+    .dc-print-help { display: none; left: 50%; bottom: 18px; transform: translateX(-50%); width: min(720px, calc(100vw - 28px)); border: 1px solid rgba(245,199,107,0.42); border-radius: 18px; padding: 12px 16px; color: var(--dc-cream); background: rgba(6,17,31,0.84); box-shadow: 0 18px 44px rgba(0,0,0,0.35); backdrop-filter: blur(14px); font-size: 13px; line-height: 1.35; text-align: center; }
+    html.dc-pdf-export .dc-print-help { display: block; }
+    .dc-print-help strong { color: var(--dc-gold); }
     html.dc-pdf-export .dc-export-bar { display: none !important; }
-    @media print { .dc-export-bar { display: none !important; } }
+    @media print { .dc-export-bar, .dc-print-help { display: none !important; } }
   </style>
 </head>
 <body>
   <nav class="dc-export-bar" aria-label="Deck downloads">
-    <a id="pdf-download-link" href="reveal-runner.html?deck=decks/kristin-school-pilot-validation-portfolio.md&amp;print-pdf" target="_blank" rel="noopener" title="Open this deck in Reveal.js PDF export mode">Download PDF</a>
+    <a id="pdf-download-link" href="reveal-runner.html?deck=decks/kristin-school-pilot-validation-portfolio.md&amp;print-pdf&amp;autoprint" target="_blank" rel="noopener" title="Open this deck in Reveal.js PDF export mode and launch the browser print dialog">Download PDF</a>
   </nav>
+  <aside class="dc-print-help" aria-live="polite"><strong>PDF export is ready.</strong> If the print dialog did not open, press Ctrl/Cmd+P, choose “Save as PDF”, Landscape, no margins, and include background graphics.</aside>
   <div id="deck-error"></div>
   <div class="reveal">
     <div class="slides">
@@ -88,14 +93,27 @@
 
     try {
       const params = new URLSearchParams(location.search);
+      const shouldAutoPrint = params.has('print-pdf') && params.has('autoprint');
       const deckParam = params.get('deck') || 'decks/kristin-school-pilot-validation-portfolio.md';
       const deckUrl = new URL(deckParam, location.href);
       const pdfLink = document.querySelector('#pdf-download-link');
       const exportUrl = new URL(location.href);
       exportUrl.searchParams.set('deck', deckParam);
       exportUrl.searchParams.set('print-pdf', '');
+      exportUrl.searchParams.set('autoprint', '');
       exportUrl.hash = '';
-      pdfLink.href = exportUrl.href.replace(/print-pdf=/, 'print-pdf');
+      pdfLink.href = exportUrl.href.replace(/print-pdf=/, 'print-pdf').replace(/autoprint=/, 'autoprint');
+
+      const waitForPrintReady = async () => {
+        await new Promise((resolve) => requestAnimationFrame(() => requestAnimationFrame(resolve)));
+        if (document.fonts?.ready) await document.fonts.ready.catch(() => {});
+        const pendingImages = [...document.images].filter((image) => !image.complete);
+        await Promise.all(pendingImages.map((image) => new Promise((resolve) => {
+          image.addEventListener('load', resolve, { once: true });
+          image.addEventListener('error', resolve, { once: true });
+        })));
+        await new Promise((resolve) => setTimeout(resolve, 900));
+      };
 
       // Make relative image/media URLs inside the Markdown resolve relative to the deck file.
       const base = document.createElement('base');
@@ -124,6 +142,11 @@
       });
       window.Reveal = deck;
       await deck.initialize();
+      if (shouldAutoPrint) {
+        await waitForPrintReady();
+        document.documentElement.classList.add('dc-print-requested');
+        window.print();
+      }
     } catch (err) {
       showError(`Could not load deck. Serve this folder over HTTP and pass <code>?deck=decks/kristin-school-pilot-validation-portfolio.md</code>.<br><br><code>${String(err)}</code>`);
     }
