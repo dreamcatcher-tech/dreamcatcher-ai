@@ -46,7 +46,7 @@
           <a class="button primary" href="#talk">Start a pilot</a>
           <a class="button secondary" href="#architecture">See the architecture</a>
         </div>
-        <p class="pilot-note">Private pilots are open. Email and Telegram now route to the Dreamcatcher Concierge; WhatsApp can open a draft while direct phone/WhatsApp numbers are staged.</p>
+        <p class="pilot-note">Private pilots are open. Email, Telegram, WhatsApp, phone, SMS, callback requests, and a downloadable contact card now route to the Dreamcatcher Concierge.</p>
       </div>
       <figure class="hero-card" id="architecture" aria-label="Dreamcatcher Ark architecture diagram">
         <img src="assets/ark-components-hero.svg" alt="Diagram of Ark components showing a Conscience boundary, Archive, Vault, Model Socket, Toolbay, open ports, and replaceable capabilities." width="1536" height="1024">
@@ -313,59 +313,95 @@
         </div>
         <div class="channel-grid" id="talk" aria-label="Agent contact channels">
           <article class="channel-card featured">
-            <div class="channel-icon" aria-hidden="true">✉</div>
+            <div class="channel-icon app-email" aria-hidden="true">
+              <svg viewBox="0 0 24 24" role="img"><path d="M3.75 5.75h16.5v12.5H3.75z" fill="none" stroke="currentColor" stroke-width="1.8"/><path d="m4.6 6.7 7.4 6.1 7.4-6.1" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </div>
             <div>
               <span class="status live">Pilot intake</span>
               <h3>Email the Dreamcatcher Concierge</h3>
               <p>Tell us what knowledge is scattered, what should be protected, and what personal software would make it useful.</p>
             </div>
             <div class="channel-actions">
-              <a class="channel-action" href="mailto:concierge@agent.dreamcatcher.ai?subject=Dreamcatcher%20Concierge%20pilot%20request&amp;body=Hi%20Dreamcatcher%20Concierge%2C%0A%0AI%20want%20to%20explore%20a%20portable%20Ark%20for%3A%0A%0AThe%20knowledge%20currently%20scattered%20across%3A%0A%0AThe%20approval%20boundary%20must%20be%3A%0A%0AThe%20best%20channel%20to%20reach%20me%20is%3A%0A" target="_blank" rel="noopener">Start by email</a>
+              <a class="channel-action external-link" href="mailto:concierge@agent.dreamcatcher.ai?subject=Dreamcatcher%20Concierge%20pilot%20request&amp;body=Hi%20Dreamcatcher%20Concierge%2C%0A%0AI%20want%20to%20explore%20a%20portable%20Ark%20for%3A%0A%0AThe%20knowledge%20currently%20scattered%20across%3A%0A%0AThe%20approval%20boundary%20must%20be%3A%0A%0AThe%20best%20channel%20to%20reach%20me%20is%3A%0A" target="_blank" rel="noopener">Start by email</a>
               <p class="contact-fallback">If your browser blocks mail links, email <span>concierge@agent.dreamcatcher.ai</span> with subject <span>Dreamcatcher Concierge pilot request</span>.</p>
             </div>
           </article>
 
-          <article class="channel-card">
-            <div class="channel-icon" aria-hidden="true">◉</div>
-            <div>
-              <span class="status live">Telegram live</span>
-              <h3>Open the Concierge bot in Telegram</h3>
-              <p>Message the Dreamcatcher Concierge, send files and voice notes, and shape the first agent job in a familiar chat. Telegram direct bot links can pass a start cue; editable draft text opens through Telegram's share flow.</p>
+          <article class="channel-card contact-card-panel">
+            <div class="contact-profile">
+              <img class="contact-avatar" src="assets/dreamcatcher-concierge-profile.png" alt="Dreamcatcher Concierge profile icon: a glowing doorway inside a dreamcatcher ring." width="512" height="512">
+              <div>
+                <span class="status live">Contact card</span>
+                <h3>Dreamcatcher Concierge</h3>
+                <p>AI front-of-house concierge for pilot intake, support, and safe handoff.</p>
+              </div>
             </div>
-            <div class="channel-actions">
-              <a class="channel-action" href="https://t.me/dreamcatcher_concierge_bot?start=website_pilot" target="_blank" rel="noopener">Open Telegram bot</a>
-              <a class="channel-action secondary-action" href="https://t.me/share/url?url=https%3A%2F%2Ft.me%2Fdreamcatcher_concierge_bot%3Fstart%3Dwebsite_pilot&amp;text=Hi%20Dreamcatcher%20Concierge%2C%20I%20want%20to%20explore%20a%20portable%20Ark.%20The%20first%20workflow%20or%20knowledge%20trail%20is%3A%20" target="_blank" rel="noopener">Open Telegram draft</a>
-            </div>
+            <ul class="contact-lines" aria-label="Dreamcatcher Concierge contact details">
+              <li>concierge@agent.dreamcatcher.ai</li>
+              <li>+64 22 357 1853</li>
+              <li>@dreamcatcher_concierge_bot</li>
+            </ul>
+            <a class="channel-action" href="assets/dreamcatcher-concierge.vcf" download="dreamcatcher-concierge.vcf">Download contact card</a>
           </article>
 
           <article class="channel-card">
-            <div class="channel-icon" aria-hidden="true">☏</div>
+            <div class="channel-icon app-telegram" aria-hidden="true">
+              <svg viewBox="0 0 24 24" role="img"><path d="M21.2 4.5 18 19.8c-.2 1-1 1.2-1.8.7l-4.9-3.6-2.4 2.3c-.3.3-.5.5-1 .5l.4-5 9.1-8.2c.4-.4-.1-.6-.6-.2L5.5 13.4.7 11.9c-1-.3-1-.9.2-1.4L19.6 3.3c.9-.3 1.7.2 1.6 1.2z" fill="currentColor"/></svg>
+            </div>
             <div>
-              <span class="status soon">Coming soon</span>
+              <span class="status live">Telegram</span>
+              <h3>Open the Concierge bot</h3>
+              <p>Message the Dreamcatcher Concierge in Telegram, send files and voice notes, and shape the first agent job in a familiar chat.</p>
+            </div>
+            <a class="channel-action external-link" href="https://t.me/dreamcatcher_concierge_bot" target="_blank" rel="noopener">Open Telegram</a>
+          </article>
+
+          <article class="channel-card">
+            <div class="channel-icon app-whatsapp" aria-hidden="true">
+              <svg viewBox="0 0 24 24" role="img"><path d="M12 3.1a8.7 8.7 0 0 0-7.5 13.1L3.4 21l4.9-1.1A8.7 8.7 0 1 0 12 3.1zm0 1.7a7 7 0 0 1 5.9 10.8 7 7 0 0 1-8.6 2.6l-.4-.2-2.9.7.7-2.8-.3-.5A7 7 0 0 1 12 4.8zm-3.1 3.8c-.2 0-.5.1-.7.3-.2.3-.9.9-.9 2.1 0 1.3.9 2.5 1.1 2.7.1.2 1.8 2.9 4.5 3.9 2.2.9 2.7.7 3.2.6.5-.1 1.5-.6 1.7-1.2.2-.6.2-1.1.2-1.2-.1-.1-.2-.2-.5-.4l-1.7-.8c-.2-.1-.4-.1-.6.1-.2.3-.7.9-.9 1.1-.2.2-.3.2-.6.1-.3-.2-1.2-.4-2.2-1.4-.8-.7-1.4-1.6-1.5-1.9-.2-.3 0-.4.1-.6l.4-.5c.1-.2.2-.3.3-.5.1-.2 0-.4 0-.5l-.8-1.8c-.2-.5-.4-.5-.6-.5z" fill="currentColor"/></svg>
+            </div>
+            <div>
+              <span class="status live">WhatsApp</span>
+              <h3>Send a WhatsApp message</h3>
+              <p>Open WhatsApp with a prepared pilot note to the Concierge number for mobile-first handoff.</p>
+            </div>
+            <a class="channel-action external-link" href="https://wa.me/64223571853?text=Hi%20Dreamcatcher%20Concierge%2C%20I%20want%20to%20explore%20a%20portable%20Ark.%20The%20first%20workflow%20or%20knowledge%20trail%20is%3A%20" target="_blank" rel="noopener">Send WhatsApp message</a>
+          </article>
+
+          <article class="channel-card">
+            <div class="channel-icon app-phone" aria-hidden="true">
+              <svg viewBox="0 0 24 24" role="img"><path d="M7.1 4.2 9.4 8c.3.5.2 1.1-.2 1.5l-1.1 1.1c1.2 2.4 3 4.2 5.3 5.4l1.2-1.2c.4-.4 1-.5 1.5-.2l3.7 2.2c.6.3.8 1 .6 1.6-.5 1.3-1.7 2.1-3.1 2.1-7.6 0-13.8-6.2-13.8-13.8 0-1.4.9-2.6 2.1-3.1.6-.2 1.2 0 1.5.6z" fill="currentColor"/></svg>
+            </div>
+            <div>
+              <span class="status live">Phone</span>
               <h3>Call the agent</h3>
-              <p>A real phone number for urgent handoffs, spoken instructions, and agent-mediated follow-up. Number allocation is in rollout.</p>
+              <p>Start a mobile call for urgent handoffs, spoken instructions, and agent-mediated follow-up.</p>
             </div>
-            <span class="channel-action muted" aria-disabled="true">Phone number soon</span>
+            <a class="channel-action external-link" href="tel:+64223571853" target="_blank" rel="noopener">Call now</a>
           </article>
 
           <article class="channel-card">
-            <div class="channel-icon" aria-hidden="true">☑</div>
+            <div class="channel-icon app-sms" aria-hidden="true">
+              <svg viewBox="0 0 24 24" role="img"><path d="M4 5.3h16v10.5H9.2L4 20.1z" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/><path d="M7.5 9h9M7.5 12.4h6" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
+            </div>
             <div>
-              <span class="status soon">Coming soon</span>
+              <span class="status live">SMS</span>
+              <h3>Send an SMS</h3>
+              <p>Open your phone's Messages app with the Concierge number and a short pilot-intake prompt.</p>
+            </div>
+            <a class="channel-action external-link" href="sms:+64223571853?&amp;body=Hi%20Dreamcatcher%20Concierge%2C%20I%20want%20to%20explore%20a%20portable%20Ark.%20The%20first%20workflow%20or%20knowledge%20trail%20is%3A%20" target="_blank" rel="noopener">Send SMS</a>
+          </article>
+
+          <article class="channel-card">
+            <div class="channel-icon app-callback" aria-hidden="true">
+              <svg viewBox="0 0 24 24" role="img"><path d="M7.1 4.2 9.4 8c.3.5.2 1.1-.2 1.5l-1.1 1.1c1.2 2.4 3 4.2 5.3 5.4l1.2-1.2c.4-.4 1-.5 1.5-.2l3.7 2.2c.6.3.8 1 .6 1.6-.5 1.3-1.7 2.1-3.1 2.1-7.6 0-13.8-6.2-13.8-13.8 0-1.4.9-2.6 2.1-3.1.6-.2 1.2 0 1.5.6z" fill="currentColor"/><path d="M15 3.5h4.5V8M19.3 3.7l-5.7 5.7" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </div>
+            <div>
+              <span class="status live">Callback</span>
               <h3>Ask us to call you</h3>
-              <p>Prefer not to drive the setup? Request a callback and we will help define the Ark, Conscience and pilot path with you.</p>
+              <p>Send a prepared callback request if you prefer the Concierge to call and help define the Ark, Conscience, and pilot path.</p>
             </div>
-            <span class="channel-action muted" aria-disabled="true">Callback form soon</span>
-          </article>
-
-          <article class="channel-card">
-            <div class="channel-icon" aria-hidden="true">◆</div>
-            <div>
-              <span class="status draft">Draft only</span>
-              <h3>Open a WhatsApp draft</h3>
-              <p>Open WhatsApp with a prepared pilot note. Direct Concierge routing will use a dedicated WhatsApp number once allocated.</p>
-            </div>
-            <a class="channel-action" href="https://wa.me/?text=Hi%20Dreamcatcher%20Concierge%2C%20I%20want%20to%20explore%20a%20portable%20Ark.%20The%20first%20workflow%20or%20knowledge%20trail%20is%3A%20" target="_blank" rel="noopener">Open WhatsApp draft</a>
+            <a class="channel-action external-link" href="sms:+64223571853?&amp;body=Hi%20Dreamcatcher%20Concierge%2C%20please%20call%20me%20back%20about%20a%20Dreamcatcher%20pilot." target="_blank" rel="noopener">Request callback</a>
           </article>
         </div>
       </div>
@@ -375,7 +411,7 @@
       <p class="eyebrow">Private pilots are open</p>
       <h2 id="final-title">Turn scattered breadcrumbs into a portable Ark.</h2>
       <p>Start with one person, family, school, or team. Choose what belongs in the Ark, what must stay in the Vault, and which services are allowed through the Conscience.</p>
-      <a class="button primary" href="mailto:concierge@agent.dreamcatcher.ai?subject=Talk%20to%20Dreamcatcher%20Concierge&amp;body=Hi%20Dreamcatcher%20Concierge%2C%0A%0AI%20want%20an%20enduring%20Ark%20for%3A%0A%0AThe%20first%20workflow%20or%20knowledge%20trail%20is%3A%0A%0AThe%20thing%20it%20must%20not%20do%20without%20approval%20is%3A%0A%0AThe%20best%20channel%20to%20reach%20me%20is%3A%0A" target="_blank" rel="noopener">Talk to the concierge</a>
+      <a class="button primary external-link" href="mailto:concierge@agent.dreamcatcher.ai?subject=Talk%20to%20Dreamcatcher%20Concierge&amp;body=Hi%20Dreamcatcher%20Concierge%2C%0A%0AI%20want%20an%20enduring%20Ark%20for%3A%0A%0AThe%20first%20workflow%20or%20knowledge%20trail%20is%3A%0A%0AThe%20thing%20it%20must%20not%20do%20without%20approval%20is%3A%0A%0AThe%20best%20channel%20to%20reach%20me%20is%3A%0A" target="_blank" rel="noopener">Talk to the concierge</a>
     </section>
   </main>
 

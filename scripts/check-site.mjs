@@ -112,12 +112,15 @@ const mustContain = [
   ['WhatsApp', html],
   ['Email', html],
   ['Call the agent', html],
-  ['Coming soon', html],
   ['mailto:concierge@agent.dreamcatcher.ai', html],
   ['Dreamcatcher%20Concierge%20pilot%20request', html],
-  ['https://t.me/dreamcatcher_concierge_bot?start=website_pilot', html],
-  ['https://t.me/share/url?url=https%3A%2F%2Ft.me%2Fdreamcatcher_concierge_bot%3Fstart%3Dwebsite_pilot', html],
-  ['https://wa.me/?text=', html],
+  ['assets/dreamcatcher-concierge-profile.png', html],
+  ['assets/dreamcatcher-concierge.vcf', html],
+  ['https://t.me/dreamcatcher_concierge_bot', html],
+  ['https://wa.me/64223571853?text=', html],
+  ['tel:+64223571853', html],
+  ['sms:+64223571853?', html],
+  ['Download contact card', html],
   ['Ark', capsule],
   ['Your knowledge should', social],
   ['Dreamcatcher.ai Slides', slidesIndex],
@@ -153,6 +156,10 @@ const forbidden = [
   'app/(chat)',
   'href="/chat"',
   'href="/login"',
+  'start=website_pilot',
+  'Open Telegram draft',
+  'Draft only',
+  'https://wa.me/?text=',
 ];
 for (const needle of forbidden) {
   if (html.includes(needle) || css.includes(needle) || slidesIndex.includes(needle)) fail(`Forbidden framework/chat reference found: ${needle}`);
@@ -206,7 +213,7 @@ if (vercel.buildCommand !== 'node scripts/build.mjs') fail('vercel.json buildCom
 const validateLocalRefs = (file) => {
   const markup = read(file);
   const base = dirname(file);
-  const localRefs = [...markup.matchAll(/(?:href|src)="(?!https?:|mailto:|#|\/)([^"]+)"/g)].map((m) => m[1]);
+  const localRefs = [...markup.matchAll(/(?:href|src)="(?!https?:|mailto:|tel:|sms:|#|\/)([^"]+)"/g)].map((m) => m[1]);
   for (const ref of localRefs) {
     const clean = ref.split('#')[0].split('?')[0];
     if (!clean) continue;

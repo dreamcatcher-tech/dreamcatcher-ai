@@ -1,0 +1,15 @@
+BEGIN:VCARD
+VERSION:3.0
+FN:Dreamcatcher Concierge
+N:Concierge;Dreamcatcher;;;
+ORG:Dreamcatcher.ai
+TITLE:AI Front-of-House Concierge
+EMAIL;TYPE=INTERNET:concierge@agent.dreamcatcher.ai
+TEL;TYPE=CELL,VOICE:+64 22 357 1853
+TEL;TYPE=CELL,MSG:+64 22 357 1853
+URL:https://dreamcatcher.ai/
+URL;TYPE=Telegram:https://t.me/dreamcatcher_concierge_bot
+URL;TYPE=WhatsApp:https://wa.me/64223571853
+PHOTO;VALUE=URI:https://dreamcatcher.ai/assets/dreamcatcher-concierge-profile.png
+NOTE:AI concierge for Dreamcatcher pilot intake, agent onboarding, support, complaints, and safe handoff.
+END:VCARD
