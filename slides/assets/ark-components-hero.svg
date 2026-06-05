@@ -1,0 +1,75 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1536" height="1024" viewBox="0 0 1536 1024" role="img" aria-labelledby="title desc">
+  <title id="title">Ark Components</title>
+  <desc id="desc">Diagram of an owned Ark with Conscience boundary, Archive, Vault, Model Socket, Toolbay, and Open Ports.</desc>
+  <defs>
+    <radialGradient id="bg" cx="60%" cy="38%" r="75%">
+      <stop offset="0" stop-color="#163f5f"/>
+      <stop offset="0.52" stop-color="#071322"/>
+      <stop offset="1" stop-color="#02060b"/>
+    </radialGradient>
+    <linearGradient id="shell" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0" stop-color="#102c46"/>
+      <stop offset="0.62" stop-color="#071827"/>
+      <stop offset="1" stop-color="#02070c"/>
+    </linearGradient>
+    <filter id="glow" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur stdDeviation="14" result="blur"/>
+      <feColorMatrix in="blur" type="matrix" values="0 0 0 0 0.35 0 0 0 0 0.84 0 0 0 0 0.82 0 0 0 .55 0"/>
+      <feMerge><feMergeNode/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <marker id="arrow" markerWidth="14" markerHeight="14" refX="10" refY="5" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L10,5 L0,10 Z" fill="#58d7d3"/>
+    </marker>
+    <style>
+      .bg-line{stroke:#ffffff;stroke-opacity:.055;stroke-width:1}.label{font:700 24px Inter,Arial,sans-serif;fill:#f8f4e8}.small{font:600 16px Inter,Arial,sans-serif;fill:#b9d4d8}.tiny{font:700 13px Inter,Arial,sans-serif;fill:#58d7d3;letter-spacing:.08em}.gold{fill:#f5c76b}.box{fill:rgba(255,255,255,.06);stroke:rgba(255,255,255,.18);stroke-width:2}.flow{fill:none;stroke:#58d7d3;stroke-width:4;stroke-linecap:round;marker-end:url(#arrow)}
+    </style>
+  </defs>
+  <rect width="1536" height="1024" fill="url(#bg)"/>
+  <g opacity=".75">
+    <path class="bg-line" d="M96 128H1440M96 256H1440M96 384H1440M96 512H1440M96 640H1440M96 768H1440M96 896H1440"/>
+    <path class="bg-line" d="M128 96V928M320 96V928M512 96V928M704 96V928M896 96V928M1088 96V928M1280 96V928M1408 96V928"/>
+  </g>
+  <text x="116" y="122" class="tiny">OPEN · SELF-SOVEREIGN · MODULAR</text>
+  <text x="112" y="184" style="font:900 86px Inter,Arial,sans-serif;letter-spacing:-.06em;fill:#f8f4e8">Ark Components</text>
+  <text x="118" y="230" style="font:600 28px Inter,Arial,sans-serif;fill:#cfe7e5">A portable operating system for precious continuity.</text>
+
+  <ellipse cx="836" cy="552" rx="438" ry="300" fill="none" stroke="#58d7d3" stroke-opacity=".64" stroke-width="5" filter="url(#glow)"/>
+  <ellipse cx="836" cy="552" rx="506" ry="358" fill="none" stroke="#f5c76b" stroke-opacity=".30" stroke-width="3" stroke-dasharray="16 18"/>
+  <rect x="548" y="334" width="576" height="354" rx="50" fill="url(#shell)" stroke="#f5c76b" stroke-opacity=".74" stroke-width="5" filter="url(#glow)"/>
+  <path d="M662 334v-48c0-52 42-94 94-94h160c52 0 94 42 94 94v48" fill="none" stroke="#f5c76b" stroke-width="20" stroke-linecap="round" opacity=".72"/>
+  <text x="680" y="414" class="label gold">The Ark</text>
+  <text x="680" y="449" class="small">owned continuity, not a rented account</text>
+
+  <rect class="box" x="590" y="495" width="154" height="94" rx="22"/>
+  <text x="616" y="532" class="label">Archive</text>
+  <text x="616" y="562" class="small">long history</text>
+  <rect class="box" x="770" y="495" width="138" height="94" rx="22"/>
+  <text x="801" y="532" class="label">Vault</text>
+  <text x="797" y="562" class="small">secrets</text>
+  <rect class="box" x="934" y="495" width="154" height="94" rx="22"/>
+  <text x="957" y="532" class="label">Runtime</text>
+  <text x="954" y="562" class="small">compose work</text>
+
+  <rect x="150" y="360" width="244" height="110" rx="28" fill="rgba(88,215,211,.12)" stroke="#58d7d3" stroke-width="3"/>
+  <text x="186" y="405" class="label">Model Socket</text>
+  <text x="186" y="438" class="small">models plug in, then change</text>
+  <rect x="150" y="610" width="244" height="110" rx="28" fill="rgba(245,199,107,.10)" stroke="#f5c76b" stroke-width="3"/>
+  <text x="200" y="655" class="label">Toolbay</text>
+  <text x="185" y="688" class="small">tools come and go</text>
+  <path class="flow" d="M394 415C464 420 492 442 548 486"/>
+  <path class="flow" d="M394 662C458 646 495 626 548 588"/>
+
+  <rect x="1170" y="432" width="248" height="150" rx="32" fill="rgba(6,17,31,.72)" stroke="#58d7d3" stroke-width="3"/>
+  <text x="1210" y="488" class="label gold">Conscience</text>
+  <text x="1210" y="524" class="small">transparent boundary</text>
+  <text x="1210" y="552" class="small">permissions, policy, explanations</text>
+  <path class="flow" d="M1124 512C1148 512 1154 512 1170 512"/>
+
+  <rect x="1168" y="664" width="250" height="92" rx="26" fill="rgba(255,255,255,.055)" stroke="rgba(255,255,255,.20)" stroke-width="2"/>
+  <text x="1210" y="704" class="label">Open Ports</text>
+  <text x="1210" y="734" class="small">export · restore · migrate</text>
+  <path class="flow" d="M1052 688C1100 724 1128 728 1168 724"/>
+
+  <text x="116" y="896" style="font:800 36px Inter,Arial,sans-serif;fill:#f5c76b;letter-spacing:-.035em">Outlast the model. Outlast the tool. Outlast the vendor.</text>
+  <text x="118" y="940" style="font:600 21px Inter,Arial,sans-serif;fill:#cfe7e5">The person-owned Ark carries continuity while capabilities are modularly switched over time.</text>
+</svg>

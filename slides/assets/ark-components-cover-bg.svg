@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1536" height="1024" viewBox="0 0 1536 1024" role="img" aria-labelledby="title desc">
+  <title id="title">Ark component background</title>
+  <desc id="desc">Abstract Ark component architecture background without large cover text.</desc>
+  <defs>
+    <radialGradient id="bg" cx="62%" cy="38%" r="76%"><stop offset="0" stop-color="#17415f"/><stop offset="0.56" stop-color="#071322"/><stop offset="1" stop-color="#02060b"/></radialGradient>
+    <linearGradient id="shell" x1="0" x2="1" y1="0" y2="1"><stop offset="0" stop-color="#102c46"/><stop offset="0.64" stop-color="#071827"/><stop offset="1" stop-color="#02070c"/></linearGradient>
+    <filter id="glow" x="-30%" y="-30%" width="160%" height="160%"><feGaussianBlur stdDeviation="14" result="blur"/><feColorMatrix in="blur" type="matrix" values="0 0 0 0 0.35 0 0 0 0 0.84 0 0 0 0 0.82 0 0 0 .48 0"/><feMerge><feMergeNode/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+    <marker id="arrow" markerWidth="14" markerHeight="14" refX="10" refY="5" orient="auto" markerUnits="strokeWidth"><path d="M0,0 L10,5 L0,10 Z" fill="#58d7d3"/></marker>
+    <style>.line{stroke:#fff;stroke-opacity:.055}.label{font:800 28px Inter,Arial,sans-serif;fill:#f5c76b}.small{font:650 18px Inter,Arial,sans-serif;fill:#cfe7e5}.box{fill:rgba(255,255,255,.055);stroke:rgba(255,255,255,.18);stroke-width:2}.flow{fill:none;stroke:#58d7d3;stroke-width:5;stroke-linecap:round;marker-end:url(#arrow)}</style>
+  </defs>
+  <rect width="1536" height="1024" fill="url(#bg)"/>
+  <g opacity=".75"><path class="line" d="M96 128H1440M96 256H1440M96 384H1440M96 512H1440M96 640H1440M96 768H1440M96 896H1440"/><path class="line" d="M128 96V928M320 96V928M512 96V928M704 96V928M896 96V928M1088 96V928M1280 96V928M1408 96V928"/></g>
+  <ellipse cx="850" cy="518" rx="442" ry="286" fill="none" stroke="#58d7d3" stroke-opacity=".64" stroke-width="6" filter="url(#glow)"/>
+  <ellipse cx="850" cy="518" rx="516" ry="356" fill="none" stroke="#f5c76b" stroke-opacity=".28" stroke-width="4" stroke-dasharray="18 22"/>
+  <rect x="548" y="326" width="604" height="356" rx="56" fill="url(#shell)" stroke="#f5c76b" stroke-opacity=".72" stroke-width="6" filter="url(#glow)"/>
+  <path d="M674 326v-52c0-56 45-101 101-101h150c56 0 101 45 101 101v52" fill="none" stroke="#f5c76b" stroke-width="22" stroke-linecap="round" opacity=".70"/>
+  <rect class="box" x="600" y="474" width="164" height="102" rx="24"/><text x="628" y="516" class="label">Archive</text><text x="628" y="550" class="small">long history</text>
+  <rect class="box" x="794" y="474" width="138" height="102" rx="24"/><text x="829" y="516" class="label">Vault</text><text x="824" y="550" class="small">secrets</text>
+  <rect class="box" x="962" y="474" width="154" height="102" rx="24"/><text x="994" y="516" class="label">Runtime</text><text x="990" y="550" class="small">compose work</text>
+  <rect x="156" y="300" width="244" height="104" rx="30" fill="rgba(88,215,211,.12)" stroke="#58d7d3" stroke-width="4"/><text x="194" y="346" class="label">Model Socket</text><text x="194" y="380" class="small">replaceable models</text>
+  <rect x="156" y="594" width="244" height="104" rx="30" fill="rgba(245,199,107,.10)" stroke="#f5c76b" stroke-width="4"/><text x="218" y="640" class="label">Toolbay</text><text x="194" y="674" class="small">replaceable tools</text>
+  <path class="flow" d="M400 352C470 368 512 410 548 466"/><path class="flow" d="M400 646C480 618 518 582 548 552"/>
+  <rect x="1198" y="408" width="252" height="148" rx="34" fill="rgba(6,17,31,.74)" stroke="#58d7d3" stroke-width="4"/><text x="1240" y="466" class="label">Conscience</text><text x="1240" y="502" class="small">permissions and policy</text>
+  <path class="flow" d="M1152 508C1174 508 1184 508 1198 508"/>
+  <rect x="1198" y="636" width="252" height="88" rx="30" fill="rgba(255,255,255,.055)" stroke="rgba(255,255,255,.22)" stroke-width="3"/><text x="1248" y="676" class="label">Open Ports</text><text x="1248" y="706" class="small">export · restore · migrate</text>
+</svg>

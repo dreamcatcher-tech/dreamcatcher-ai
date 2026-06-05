@@ -1,0 +1,118 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Ark community ecosystem cycle</title>
+  <style>
+    :root { --ink:#06111f; --blue:#0d2238; --teal:#58d7d3; --gold:#f5c76b; --cream:#f8f4e8; --muted:rgba(248,244,232,.70); --green:#8ee7a7; --rose:#ff8aa3; }
+    * { box-sizing:border-box; }
+    html, body { margin:0; width:100%; height:100%; overflow:hidden; background:var(--ink); color:var(--cream); font-family:Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; }
+    #stage { width:100vw; height:100vh; position:relative; cursor:pointer; background:radial-gradient(circle at 54% 38%, rgba(245,199,107,.16), transparent 34%), linear-gradient(135deg,#06111f,#0d2238 56%,#02060b); }
+    .variant { position:absolute; inset:0; display:none; padding:20px; }
+    .variant.active { display:block; }
+    svg { width:100%; height:100%; display:block; border-radius:24px; }
+    .caption { position:absolute; left:24px; bottom:20px; max-width:880px; padding:12px 16px; border:1px solid rgba(255,255,255,.14); border-radius:999px; background:rgba(6,17,31,.72); box-shadow:0 18px 46px rgba(0,0,0,.34); backdrop-filter:blur(10px); font-size:16px; }
+    .caption strong { color:var(--gold); }
+    .caption span { color:var(--muted); margin-left:.45em; }
+    .dots { position:absolute; right:24px; bottom:24px; display:flex; gap:9px; padding:9px 12px; border-radius:999px; background:rgba(6,17,31,.60); border:1px solid rgba(255,255,255,.12); }
+    .dot { width:10px; height:10px; border-radius:50%; background:rgba(248,244,232,.32); }
+    .dot.active { background:var(--teal); box-shadow:0 0 18px rgba(88,215,211,.76); }
+    .h { font:900 31px Inter,Arial,sans-serif; fill:var(--cream); letter-spacing:-.04em; }
+    .t { font:800 16px Inter,Arial,sans-serif; fill:var(--gold); }
+    .s { font:600 12.5px Inter,Arial,sans-serif; fill:rgba(248,244,232,.73); }
+    .mini { font:800 10px Inter,Arial,sans-serif; fill:var(--teal); letter-spacing:.10em; text-transform:uppercase; }
+    .ark { fill:rgba(255,255,255,.055); stroke:rgba(245,199,107,.68); stroke-width:2.2; }
+    .child { fill:rgba(88,215,211,.12); stroke:rgba(88,215,211,.72); stroke-width:2.4; }
+    .gate { fill:rgba(6,17,31,.86); stroke:rgba(88,215,211,.70); stroke-width:1.8; }
+    .box { fill:rgba(255,255,255,.05); stroke:rgba(255,255,255,.16); stroke-width:1.5; }
+    .arrow { fill:none; stroke:var(--teal); stroke-width:3; stroke-linecap:round; stroke-linejoin:round; marker-end:url(#arrow); }
+    .goldarrow { fill:none; stroke:var(--gold); stroke-width:3; stroke-linecap:round; stroke-linejoin:round; marker-end:url(#arrowGold); }
+    .greenarrow { fill:none; stroke:var(--green); stroke-width:3; stroke-linecap:round; stroke-linejoin:round; marker-end:url(#arrowGreen); }
+    .dash { stroke-dasharray:8 8; }
+  </style>
+</head>
+<body>
+<main id="stage" aria-label="Interactive community ecosystem diagram; click to cycle through versions">
+  <section class="variant active" data-title="Version A: permission bridges between child, parent, and teacher Arks">
+    <svg viewBox="0 0 1280 720" role="img" aria-label="Child, parent, and teacher Arks connected by permission bridges">
+      <defs>
+        <marker id="arrow" markerWidth="12" markerHeight="12" refX="9" refY="5" orient="auto"><path d="M0,0 L10,5 L0,10 Z" fill="#58d7d3"/></marker>
+        <marker id="arrowGold" markerWidth="12" markerHeight="12" refX="9" refY="5" orient="auto"><path d="M0,0 L10,5 L0,10 Z" fill="#f5c76b"/></marker>
+        <marker id="arrowGreen" markerWidth="12" markerHeight="12" refX="9" refY="5" orient="auto"><path d="M0,0 L10,5 L0,10 Z" fill="#8ee7a7"/></marker>
+      </defs>
+      <rect width="1280" height="720" rx="28" fill="rgba(6,17,31,.34)" stroke="rgba(255,255,255,.08)"/>
+      <text x="54" y="68" class="mini">community view</text><text x="54" y="106" class="h">Each person can own an Ark. Permissioned flows connect them.</text>
+      <rect x="488" y="218" width="304" height="214" rx="44" class="child"/><text x="568" y="277" class="h" style="font-size:36px">Child Ark</text><text x="548" y="314" class="s" style="font-size:16px">owned by the child / family</text><text x="544" y="354" class="s">Archive: learning history</text><text x="544" y="381" class="s">Vault: sensitive material</text>
+      <rect x="102" y="238" width="272" height="182" rx="40" class="ark"/><text x="170" y="294" class="h" style="font-size:32px">Parent Ark</text><text x="147" y="331" class="s" style="font-size:16px">family context and care</text>
+      <rect x="906" y="238" width="272" height="182" rx="40" class="ark"/><text x="982" y="294" class="h" style="font-size:32px">Teacher Ark</text><text x="944" y="331" class="s" style="font-size:16px">learning design and evidence</text>
+      <rect x="424" y="304" width="104" height="52" rx="20" class="gate"/><text x="445" y="336" class="t">grant</text>
+      <rect x="752" y="304" width="104" height="52" rx="20" class="gate"/><text x="773" y="336" class="t">grant</text>
+      <path class="greenarrow" d="M374 300C400 300 413 306 424 320"/><text x="334" y="280" class="s">family context</text>
+      <path class="arrow" d="M528 342C512 380 474 408 374 404"/><text x="373" y="430" class="s">approved summary</text>
+      <path class="goldarrow" d="M906 300C874 300 863 307 856 324"/><text x="806" y="220" class="s">assignments + feedback</text>
+      <path class="arrow" d="M752 355C724 402 760 456 906 404"/><text x="792" y="456" class="s">certified evidence</text>
+      <rect x="426" y="514" width="428" height="72" rx="26" class="box"/><text x="494" y="557" class="t">Conscience on every Ark explains what can cross.</text>
+    </svg>
+  </section>
+
+  <section class="variant" data-title="Version B: community mesh with no shared raw interior">
+    <svg viewBox="0 0 1280 720" role="img" aria-label="Community mesh of self-owned Arks with explicit channels">
+      <defs>
+        <marker id="arrow" markerWidth="12" markerHeight="12" refX="9" refY="5" orient="auto"><path d="M0,0 L10,5 L0,10 Z" fill="#58d7d3"/></marker>
+        <marker id="arrowGold" markerWidth="12" markerHeight="12" refX="9" refY="5" orient="auto"><path d="M0,0 L10,5 L0,10 Z" fill="#f5c76b"/></marker>
+        <marker id="arrowGreen" markerWidth="12" markerHeight="12" refX="9" refY="5" orient="auto"><path d="M0,0 L10,5 L0,10 Z" fill="#8ee7a7"/></marker>
+      </defs>
+      <rect width="1280" height="720" rx="28" fill="rgba(6,17,31,.34)" stroke="rgba(255,255,255,.08)"/>
+      <text x="54" y="68" class="mini">mesh view</text><text x="54" y="106" class="h">A community is a network of owned Arks, not one shared dossier.</text>
+      <circle cx="640" cy="350" r="78" class="child"/><text x="604" y="338" class="t">Child</text><text x="612" y="366" class="s">Ark</text>
+      <circle cx="324" cy="240" r="72" class="ark"/><text x="286" y="232" class="t">Parent</text><text x="302" y="260" class="s">Ark</text>
+      <circle cx="956" cy="240" r="72" class="ark"/><text x="916" y="232" class="t">Teacher</text><text x="935" y="260" class="s">Ark</text>
+      <circle cx="314" cy="494" r="64" class="ark"/><text x="274" y="487" class="t">School</text><text x="292" y="513" class="s">Ark</text>
+      <circle cx="966" cy="494" r="64" class="ark"/><text x="930" y="487" class="t">Parent</text><text x="944" y="513" class="s">Ark</text>
+      <path class="greenarrow" d="M381 284C443 326 501 345 562 350"/><path class="arrow dash" d="M562 372C486 408 418 448 372 472"/>
+      <path class="goldarrow" d="M899 284C828 326 762 345 718 350"/><path class="arrow dash" d="M718 372C780 414 847 456 910 486"/>
+      <path class="arrow" d="M640 428C625 486 558 526 378 514"/>
+      <path class="goldarrow dash" d="M902 494C806 512 714 492 652 428"/>
+      <rect x="446" y="156" width="388" height="64" rx="26" class="box"/><text x="483" y="195" class="t">Every link is explicit: purpose, scope, expiry, audit.</text>
+      <rect x="430" y="574" width="420" height="56" rx="24" class="box"/><text x="465" y="609" class="s" style="font-size:16px">Raw interiors stay private unless the owner grants a defined flow.</text>
+    </svg>
+  </section>
+
+  <section class="variant" data-title="Version C: classroom / family flow">
+    <svg viewBox="0 0 1280 720" role="img" aria-label="Classroom and family information flow between teacher, child, and parent Arks">
+      <defs>
+        <marker id="arrow" markerWidth="12" markerHeight="12" refX="9" refY="5" orient="auto"><path d="M0,0 L10,5 L0,10 Z" fill="#58d7d3"/></marker>
+        <marker id="arrowGold" markerWidth="12" markerHeight="12" refX="9" refY="5" orient="auto"><path d="M0,0 L10,5 L0,10 Z" fill="#f5c76b"/></marker>
+        <marker id="arrowGreen" markerWidth="12" markerHeight="12" refX="9" refY="5" orient="auto"><path d="M0,0 L10,5 L0,10 Z" fill="#8ee7a7"/></marker>
+      </defs>
+      <rect width="1280" height="720" rx="28" fill="rgba(6,17,31,.34)" stroke="rgba(255,255,255,.08)"/>
+      <text x="54" y="68" class="mini">flow view</text><text x="54" y="106" class="h">A useful ecosystem moves summaries, support, and evidence — not everything.</text>
+      <rect x="102" y="210" width="260" height="118" rx="32" class="ark"/><text x="162" y="258" class="h" style="font-size:30px">Teacher Ark</text><text x="146" y="291" class="s">assignment · rubric · feedback</text>
+      <rect x="510" y="192" width="260" height="154" rx="36" class="child"/><text x="574" y="246" class="h" style="font-size:32px">Child Ark</text><text x="548" y="282" class="s">work, reflection, learning history</text><text x="574" y="309" class="s">private by default</text>
+      <rect x="918" y="210" width="260" height="118" rx="32" class="ark"/><text x="986" y="258" class="h" style="font-size:30px">Parent Ark</text><text x="954" y="291" class="s">care context · home support</text>
+      <rect x="456" y="424" width="368" height="96" rx="30" class="box"/><text x="512" y="462" class="t">Permissioned shared channel</text><text x="488" y="490" class="s" style="font-size:15px">approved digest · certified artifact · support request</text>
+      <path class="goldarrow" d="M362 266C412 262 452 258 510 258"/><text x="382" y="236" class="s">learning task</text>
+      <path class="greenarrow" d="M770 258C824 260 870 263 918 266"/><text x="800" y="236" class="s">progress digest</text>
+      <path class="arrow" d="M640 346V424"/><text x="660" y="390" class="s">Conscience checks</text>
+      <path class="arrow dash" d="M456 472C338 462 272 408 236 328"/><text x="268" y="430" class="s">teacher-visible evidence</text>
+      <path class="greenarrow dash" d="M824 472C942 462 1008 408 1044 328"/><text x="908" y="430" class="s">parent-visible support</text>
+      <rect x="90" y="576" width="1100" height="54" rx="24" class="box"/><text x="184" y="610" class="s" style="font-size:16px">The child can be supported without turning the Ark into school surveillance or a parent-owned control panel.</text>
+    </svg>
+  </section>
+  <div class="caption" id="caption" aria-live="polite"></div><div class="dots" id="dots" aria-hidden="true"></div>
+</main>
+<script>
+  const variants = [...document.querySelectorAll('.variant')];
+  const caption = document.querySelector('#caption');
+  const dots = document.querySelector('#dots');
+  let index = 0;
+  variants.forEach((_, i) => { const dot = document.createElement('span'); dot.className = 'dot'; dots.append(dot); });
+  function render() { variants.forEach((v, i) => v.classList.toggle('active', i === index)); dots.querySelectorAll('.dot').forEach((d, i) => d.classList.toggle('active', i === index)); caption.innerHTML = `<strong>${variants[index].dataset.title}</strong><span>Tap / click to cycle ${index + 1}/${variants.length}</span>`; }
+  function next() { index = (index + 1) % variants.length; render(); }
+  document.querySelector('#stage').addEventListener('click', next);
+  document.addEventListener('keydown', (event) => { if ([' ', 'Enter', 'ArrowRight'].includes(event.key)) next(); if (event.key === 'ArrowLeft') { index = (index + variants.length - 1) % variants.length; render(); } });
+  render();
+</script>
+</body>
+</html>
