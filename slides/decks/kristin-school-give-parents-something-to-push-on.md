@@ -91,12 +91,12 @@ source_notes:
   <div class="dc-kicker">Surprising solution</div>
   <div class="dc-grid-2">
     <div>
-      <h2>Give parents their own cores.</h2>
-      <p class="dc-bigline">Not a parent dashboard. A real Ark they can live with.</p>
+      <h2>Give parents their own Ark.</h2>
+      <p class="dc-bigline">A real Agent they can live with.</p>
     </div>
     <div class="dc-card">
       <h3>Why this changes the conversation</h3>
-      <p>A parent who has used a Ark understands custody, memory, permissions, annoyance, cost, delight, and trust failure from the inside.</p>
+      <p>An Ark is the owner-controlled continuity layer; the Agent is the active thing the parent lives with. A parent who has lived with an Ark’s Agent understands custody, memory, permissions, annoyance, cost, delight, and trust failure from the inside.</p>
       <h3 style="margin-top: 22px;">What it produces</h3>
       <div class="dc-pill-row"><span class="dc-pill">adult usage evidence</span><span class="dc-pill">guardian test cases</span><span class="dc-pill">cost signals</span><span class="dc-pill">trust objections</span></div>
     </div>
@@ -217,7 +217,7 @@ source_notes:
   <div class="dc-kicker">Co-steering</div>
   <div class="dc-grid-2">
     <div class="dc-card">
-      <h3>Parent cores should influence — not own — child Arks</h3>
+      <h3>Parent Arks should influence — not own — child Arks</h3>
       <p>A parent Ark can offer family values, lessons, constraints, and permitted summaries through policy. The child Ark remains protected, attributed, and age-appropriately independent.</p>
       <h3 style="margin-top: 22px;">The open tuning question</h3>
       <p>How much came from parent, school, child, collective wisdom, source material, or model? Influence attribution should be visible and adjustable.</p>
@@ -247,7 +247,7 @@ source_notes:
 <div class="dc-shell">
   <div class="dc-kicker">First 30 days</div>
   <div class="dc-grid-3" style="margin-top: 28px;">
-    <div class="dc-card"><h3>1 · Five parent Arks</h3><p>Kristin-address gated pilot slots. Adults use cores for real adult work and feedback.</p></div>
+    <div class="dc-card"><h3>1 · Five parent Arks</h3><p>Kristin-address gated pilot slots. Adults live with Arks for real adult work and feedback.</p></div>
     <div class="dc-card"><h3>2 · Guardian test v1</h3><p>Run consent, visibility, recovery, cost, and Conscience drills; publish what failed.</p></div>
     <div class="dc-card"><h3>3 · Simulation preview</h3><p>Give parents and teachers the first school-shaped sandbox to interrogate.</p></div>
   </div>
