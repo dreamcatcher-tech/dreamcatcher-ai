@@ -71,6 +71,7 @@ const vercel = JSON.parse(read('vercel.json'));
 const mustContain = [
   ['portable Arks', html],
   ['assets/dreamcatcher-logo-180.png', html],
+  ['../assets/dreamcatcher-logo-180.png', slidesIndex],
   ['Your knowledge should accumulate, not evaporate', html],
   ['Not a bigger context window', html],
   ['Ark', html],
@@ -155,6 +156,29 @@ const validateLocalRefs = (file) => {
 };
 validateLocalRefs('index.html');
 validateLocalRefs('slides/index.html');
+
+const validateRevealLinksOpenInNewTabs = (file) => {
+  const markup = read(file);
+  const revealLinks = [...markup.matchAll(/<a\b(?=[^>]*href="[^"]*reveal-runner\.html\?deck=[^"]*")[^>]*>/g)].map((m) => m[0]);
+  for (const link of revealLinks) {
+    if (!link.includes('target="_blank"')) fail(`Reveal deck link must open in a new tab in ${file}: ${link}`);
+    if (!/rel="[^"]*\bnoopener\b[^"]*"/.test(link)) fail(`Reveal deck link must use rel="noopener" in ${file}: ${link}`);
+  }
+};
+validateRevealLinksOpenInNewTabs('index.html');
+validateRevealLinksOpenInNewTabs('slides/index.html');
+
+const validateUniqueDeckThumbnails = (file) => {
+  const markup = read(file);
+  const deckImages = [...markup.matchAll(/<a class="deck-thumb"[^>]*>\s*<img src="([^"]+)"/gs)].map((m) => m[1]);
+  const seen = new Set();
+  for (const image of deckImages) {
+    if (seen.has(image)) fail(`Duplicate deck thumbnail in ${file}: ${image}`);
+    seen.add(image);
+  }
+};
+validateUniqueDeckThumbnails('index.html');
+validateUniqueDeckThumbnails('slides/index.html');
 
 const ids = new Set([...html.matchAll(/id="([^"]+)"/g)].map((m) => m[1]));
 const hashes = [...html.matchAll(/href="#([^"]+)"/g)].map((m) => m[1]);
