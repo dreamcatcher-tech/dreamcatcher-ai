@@ -306,6 +306,7 @@ h1 {
 }
 .status { display: inline-flex; width: max-content; align-items: center; min-height: 28px; padding: 0 10px; border-radius: 999px; font-size: 12px; font-weight: 850; letter-spacing: .08em; text-transform: uppercase; }
 .status.live { color: #051320; background: var(--green); }
+.status.draft { color: #061421; background: var(--gold); }
 .status.soon { color: var(--muted-strong); background: rgba(255,255,255,.07); border: 1px solid var(--line); }
 .channel-action {
   min-height: 44px;
