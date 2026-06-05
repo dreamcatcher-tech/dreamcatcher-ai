@@ -27,7 +27,7 @@ source_notes:
   <div>
     <div class="dc-kicker">Prepared for Kristin School</div>
     <h1 class="dc-title">Ark Pilot Validation Portfolio</h1>
-    <p class="dc-subtitle">One-slide pilot briefs for validating the Conscience, the Ark, the care boundary, and the economics of student-safe Ark Stewards.</p>
+    <p class="dc-subtitle">One-slide pilot briefs for validating the Conscience, the Ark, the care boundary, and the economics of student-safe Arks and Agents.</p>
   </div>
   <div class="dc-footerline"><span>Prepared by Tom Thompson · tom@DreamCatcher.ai</span><span>Parent of Harry Thompson (Junior School applicant, unconfirmed)</span></div>
 </div>
