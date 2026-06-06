@@ -10,7 +10,7 @@ created: 2026-06-06
 format: reveal.js external Markdown, no build
 assets:
   cover_image: ../assets/studybuddy-cover.svg
-  mark: ../assets/studybuddy-mark.svg
+  logo: ../assets/studybuddy-logo.png
 components:
   learning_loop: ../components/studybuddy-learning-loop.html
   upgrade_ladder: ../components/studybuddy-upgrade-ladder.html
@@ -21,7 +21,7 @@ source_notes:
 ---
 
 <div class="dc-shell dc-cover" style="--cover-image: url('assets/studybuddy-cover.svg')">
-  <div class="dc-brand"><img src="../assets/studybuddy-mark.svg" alt="StudyBuddy mark"><span>StudyBuddy</span></div>
+  <div class="dc-brand"><img src="../assets/studybuddy-logo.png" alt="StudyBuddy logo" style="width: 310px; height: auto; border-radius: 18px; background: rgba(255,255,255,.96); padding: 10px 14px;"></div>
   <div>
     <div class="dc-kicker">Prepared for Kristin School</div>
     <h1 class="dc-title">StudyBuddy</h1>

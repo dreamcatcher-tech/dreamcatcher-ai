@@ -61,6 +61,7 @@ const requiredFiles = [
   'slides/assets/school-simulation-sandbox.png',
   'slides/assets/leaving-school-enduring-capsule.png',
   'slides/assets/studybuddy-cover.svg',
+  'slides/assets/studybuddy-logo.png',
   'slides/assets/studybuddy-mark.svg',
 ];
 for (const file of requiredFiles) {
@@ -109,6 +110,7 @@ const mustContain = [
   ['slides/reveal-runner.html?deck=decks/studybuddy-ai-learning-companion.md', html],
   ['StudyBuddy', html],
   ['StudyBuddy', slidesIndex],
+  ['studybuddy-logo.png', read('slides/decks/studybuddy-ai-learning-companion.md')],
   ['studybuddy-learning-loop.html', read('slides/decks/studybuddy-ai-learning-companion.md')],
   ['studybuddy-upgrade-ladder.html', read('slides/decks/studybuddy-ai-learning-companion.md')],
   ['The output is understanding', read('slides/decks/studybuddy-ai-learning-companion.md')],
