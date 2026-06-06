@@ -31,6 +31,7 @@ const requiredFiles = [
   'slides/decks/kristin-school-pilot-validation-portfolio.md',
   'slides/decks/kristin-school-resource-avenues-child-safety-first.md',
   'slides/decks/kristin-school-three-things-to-push-on.md',
+  'slides/decks/studybuddy-ai-learning-companion.md',
   'slides/components/ark-components-architecture-cycle.html',
   'slides/components/ark-community-ecosystem-cycle.html',
   'slides/components/knowledge-cascade.html',
@@ -55,8 +56,12 @@ const requiredFiles = [
   'slides/components/guardian-test-matrix.html',
   'slides/components/school-simulation-tiers.html',
   'slides/components/simulation-dashboard-lab.html',
+  'slides/components/studybuddy-learning-loop.html',
+  'slides/components/studybuddy-upgrade-ladder.html',
   'slides/assets/school-simulation-sandbox.png',
   'slides/assets/leaving-school-enduring-capsule.png',
+  'slides/assets/studybuddy-cover.svg',
+  'slides/assets/studybuddy-mark.svg',
 ];
 for (const file of requiredFiles) {
   if (!existsSync(join(root, file))) fail(`Missing ${file}`);
@@ -101,6 +106,14 @@ const mustContain = [
   ['slides/reveal-runner.html?deck=decks/kristin-school-resource-avenues-child-safety-first.md', html],
   ['slides/reveal-runner.html?deck=decks/kristin-school-give-parents-something-to-push-on.md', html],
   ['slides/reveal-runner.html?deck=decks/kristin-school-run-the-school-before-release.md', html],
+  ['slides/reveal-runner.html?deck=decks/studybuddy-ai-learning-companion.md', html],
+  ['StudyBuddy', html],
+  ['StudyBuddy', slidesIndex],
+  ['studybuddy-learning-loop.html', read('slides/decks/studybuddy-ai-learning-companion.md')],
+  ['studybuddy-upgrade-ladder.html', read('slides/decks/studybuddy-ai-learning-companion.md')],
+  ['The output is understanding', read('slides/decks/studybuddy-ai-learning-companion.md')],
+  ['specialist eyes', read('slides/components/studybuddy-upgrade-ladder.html')],
+  ['Permitted teacher signal', read('slides/components/studybuddy-learning-loop.html')],
   ['Ark Components', slidesIndex],
   ['slides/reveal-runner.html?deck=decks/dreamcatcher-ark-components.md', html],
   ['dreamcatcher-ark-components.md', slidesIndex],
@@ -209,6 +222,7 @@ const publicNamingFiles = [
   'slides/decks/kristin-school-run-the-school-before-release.md',
   'slides/decks/kristin-school-three-things-to-push-on.md',
   'slides/decks/kristin-school-give-parents-something-to-push-on.md',
+  'slides/decks/studybuddy-ai-learning-companion.md',
   'slides/components/ai-school-measurement-board.html',
   'slides/components/child-ark-influence-model.html',
   'slides/components/kristin-pilot-path.html',
@@ -217,6 +231,8 @@ const publicNamingFiles = [
   'slides/components/resource-avenues-map.html',
   'slides/components/school-simulation-tiers.html',
   'slides/components/three-paths-operating-map.html',
+  'slides/components/studybuddy-learning-loop.html',
+  'slides/components/studybuddy-upgrade-ladder.html',
 ];
 const retiredNamingPatterns = [
   /kristin-school-enduring-knowledge-cores/i,
@@ -292,7 +308,7 @@ for (const retiredTerm of ['Codex', 'Covenant', 'The Ark Naming System', 'ark-na
   if (arkComponentsBundle.includes(retiredTerm)) fail(`Retired Ark Components term still present: ${retiredTerm}`);
 }
 
-for (const deck of ['dreamcatcher-ark-components', 'defragmenting-the-user', 'kristin-school-knowledge-that-endures', 'kristin-school-pilot-validation-portfolio', 'kristin-school-resource-avenues-child-safety-first', 'kristin-school-three-things-to-push-on', 'kristin-school-give-parents-something-to-push-on', 'kristin-school-run-the-school-before-release']) {
+for (const deck of ['dreamcatcher-ark-components', 'defragmenting-the-user', 'kristin-school-knowledge-that-endures', 'kristin-school-pilot-validation-portfolio', 'kristin-school-resource-avenues-child-safety-first', 'kristin-school-three-things-to-push-on', 'kristin-school-give-parents-something-to-push-on', 'kristin-school-run-the-school-before-release', 'studybuddy-ai-learning-companion']) {
   const deckText = read(`slides/decks/${deck}.md`);
   if (!deckText.startsWith('---')) fail(`${deck}.md must start with frontmatter`);
   if (deckText.includes('../../Assets/')) fail(`${deck}.md must not reference private notes asset paths`);

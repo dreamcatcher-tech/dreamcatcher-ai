@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="512" height="512" viewBox="0 0 512 512" role="img" aria-labelledby="title desc">
+  <title id="title">StudyBuddy mark</title>
+  <desc id="desc">Teal open-book learning companion mark.</desc>
+  <rect width="512" height="512" rx="104" fill="#009EA6"/>
+  <g transform="translate(72 72) scale(1.35)" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M146 8 L238 60 Q248 66 248 78 L248 184 Q248 196 238 202 L146 254 Q136 260 126 254 L34 202 Q24 196 24 184 L24 78 Q24 66 34 60 L126 8 Q136 2 146 8 Z" stroke-width="13"/>
+    <path d="M70 91 Q101 72 136 91 Q171 72 202 91 L202 176 Q171 158 136 176 Q101 158 70 176 Z" stroke-width="13"/>
+    <path d="M136 91 L136 176" stroke-width="8"/>
+    <path d="M87 116 Q108 105 124 115" stroke-width="8"/>
+    <path d="M153 115 Q170 105 190 116" stroke-width="8"/>
+    <path d="M83 143 Q107 132 124 144" stroke-width="8"/>
+    <path d="M153 144 Q172 132 193 143" stroke-width="8"/>
+    <path d="M204 54 Q231 60 239 83" stroke-width="13" opacity=".94"/>
+  </g>
+  <circle cx="380" cy="192" r="14" fill="#fff"/>
+  <circle cx="404" cy="225" r="11" fill="#fff"/>
+</svg>

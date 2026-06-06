@@ -1,0 +1,71 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1536" height="1024" viewBox="0 0 1536 1024" role="img" aria-labelledby="title desc">
+  <title id="title">StudyBuddy AI learning companion abstract cover</title>
+  <desc id="desc">A teal and gold abstract StudyBuddy cover with an open-book mark, lesson cards, and private help signal shapes.</desc>
+  <defs>
+    <radialGradient id="glow" cx="66%" cy="24%" r="64%">
+      <stop offset="0%" stop-color="#174766"/>
+      <stop offset="48%" stop-color="#071827"/>
+      <stop offset="100%" stop-color="#02060b"/>
+    </radialGradient>
+    <linearGradient id="card" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0%" stop-color="#0d3340" stop-opacity="0.82"/>
+      <stop offset="100%" stop-color="#07111f" stop-opacity="0.88"/>
+    </linearGradient>
+    <filter id="soft" x="-30%" y="-30%" width="160%" height="160%">
+      <feDropShadow dx="0" dy="24" stdDeviation="28" flood-color="#000" flood-opacity="0.30"/>
+    </filter>
+    <style>
+      .cream{fill:#f8f4e8}.muted{fill:#b8d4d4}.teal{fill:#58d7d3}.gold{fill:#f5c76b}
+      .line{fill:none;stroke:#58d7d3;stroke-width:12;stroke-linecap:round;stroke-linejoin:round}
+      .thin{fill:none;stroke:#58d7d3;stroke-width:7;stroke-linecap:round;stroke-linejoin:round}
+      .dash{fill:none;stroke:#58d7d3;stroke-width:5;stroke-linecap:round;stroke-dasharray:12 18;opacity:.48}
+    </style>
+  </defs>
+  <rect width="1536" height="1024" fill="url(#glow)"/>
+  <circle cx="1090" cy="190" r="320" fill="#58d7d3" opacity="0.09"/>
+  <circle cx="310" cy="816" r="280" fill="#f5c76b" opacity="0.07"/>
+  <path class="dash" d="M205 704 C414 558 632 568 790 422 S1120 244 1306 318"/>
+  <path class="dash" d="M236 332 C424 440 578 426 758 320 S1026 186 1210 182" opacity=".30"/>
+
+  <g transform="translate(128 248)" filter="url(#soft)" opacity=".9">
+    <rect x="0" y="0" width="382" height="184" rx="34" fill="url(#card)" stroke="#58d7d3" stroke-opacity=".22"/>
+    <rect x="40" y="48" width="220" height="16" rx="8" fill="#58d7d3" opacity=".45"/>
+    <rect x="40" y="84" width="292" height="14" rx="7" fill="#f8f4e8" opacity=".24"/>
+    <rect x="40" y="118" width="236" height="14" rx="7" fill="#f8f4e8" opacity=".18"/>
+  </g>
+
+  <g transform="translate(178 566)" filter="url(#soft)" opacity=".82">
+    <rect x="0" y="0" width="452" height="222" rx="40" fill="url(#card)" stroke="#f5c76b" stroke-opacity=".24"/>
+    <circle cx="64" cy="70" r="18" class="gold" opacity=".85"/>
+    <rect x="104" y="56" width="254" height="18" rx="9" fill="#f5c76b" opacity=".38"/>
+    <rect x="64" y="112" width="314" height="14" rx="7" fill="#f8f4e8" opacity=".24"/>
+    <rect x="64" y="146" width="240" height="14" rx="7" fill="#f8f4e8" opacity=".18"/>
+  </g>
+
+  <g transform="translate(824 220)" filter="url(#soft)">
+    <rect x="-34" y="-34" width="514" height="514" rx="78" fill="rgba(255,255,255,.045)" stroke="#f8f4e8" stroke-opacity=".13"/>
+    <g transform="translate(78 58) scale(1.22)">
+      <path class="line" d="M146 8 L238 60 Q248 66 248 78 L248 184 Q248 196 238 202 L146 254 Q136 260 126 254 L34 202 Q24 196 24 184 L24 78 Q24 66 34 60 L126 8 Q136 2 146 8 Z"/>
+      <path class="line" d="M70 91 Q101 72 136 91 Q171 72 202 91 L202 176 Q171 158 136 176 Q101 158 70 176 Z"/>
+      <path class="thin" d="M136 91 L136 176"/>
+      <path class="thin" d="M87 116 Q108 105 124 115"/>
+      <path class="thin" d="M153 115 Q170 105 190 116"/>
+      <path class="thin" d="M83 143 Q107 132 124 144"/>
+      <path class="thin" d="M153 144 Q172 132 193 143"/>
+      <path class="line" d="M204 54 Q231 60 239 83" opacity=".94"/>
+      <circle cx="215" cy="67" r="8" class="teal"/>
+      <circle cx="228" cy="91" r="6.5" class="teal"/>
+      <path class="thin" d="M47 64 L70 73" opacity=".86"/>
+      <circle cx="46" cy="64" r="6.5" class="teal" opacity=".86"/>
+    </g>
+  </g>
+
+  <g transform="translate(818 770)" opacity=".9">
+    <rect x="0" y="0" width="166" height="82" rx="24" fill="#58d7d3" fill-opacity=".10" stroke="#58d7d3" stroke-opacity=".28"/>
+    <rect x="32" y="32" width="102" height="14" rx="7" fill="#58d7d3" opacity=".55"/>
+    <rect x="216" y="-46" width="166" height="82" rx="24" fill="#f5c76b" fill-opacity=".11" stroke="#f5c76b" stroke-opacity=".30"/>
+    <rect x="250" y="-14" width="98" height="14" rx="7" fill="#f5c76b" opacity=".55"/>
+    <rect x="432" y="0" width="166" height="82" rx="24" fill="#58d7d3" fill-opacity=".10" stroke="#58d7d3" stroke-opacity=".28"/>
+    <rect x="466" y="32" width="98" height="14" rx="7" fill="#58d7d3" opacity=".55"/>
+  </g>
+</svg>
