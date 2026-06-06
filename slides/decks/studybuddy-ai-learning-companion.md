@@ -3,9 +3,8 @@ title: StudyBuddy AI Learning Companion
 slug: studybuddy-ai-learning-companion
 status: draft
 audience: Kristin School
-prepared_by: Tom Thompson
-contact: tom@DreamCatcher.ai
-affiliation: Parent of Harry Thompson (Junior School applicant, unconfirmed)
+prepared_by: Sophie and Tom Thompson
+affiliation: Parents of Harry Thompson (Junior School applicant, unconfirmed)
 created: 2026-06-06
 format: reveal.js external Markdown, no build
 assets:
@@ -27,7 +26,7 @@ source_notes:
     <h1 class="dc-title">StudyBuddy</h1>
     <p class="dc-subtitle">An AI learning companion: patient, private, adaptive, and present — in every lesson, through every question, until understanding genuinely lands.</p>
   </div>
-  <div class="dc-footerline"><span>Prepared by Tom Thompson · tom@DreamCatcher.ai</span><span>AI learning companion product deck</span></div>
+  <div class="dc-footerline"><span>Prepared by Sophie and Tom Thompson</span><span>AI learning companion product deck</span></div>
 </div>
 
 ---
@@ -58,7 +57,7 @@ source_notes:
     <div class="dc-card">
       <h3>Approved context</h3>
       <ul>
-        <li>IB curriculum and unit objectives where applicable.</li>
+        <li>International Baccalaureate (IB) curriculum and unit objectives where applicable.</li>
         <li>Teacher lesson plans, vocabulary and resources.</li>
         <li>Prerequisites and common misconceptions.</li>
         <li>The student’s preferred learning methods and confidence patterns.</li>

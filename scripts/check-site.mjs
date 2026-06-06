@@ -110,6 +110,8 @@ const mustContain = [
   ['slides/reveal-runner.html?deck=decks/studybuddy-ai-learning-companion.md', html],
   ['StudyBuddy', html],
   ['StudyBuddy', slidesIndex],
+  ['Sophie and Tom Thompson', read('slides/decks/studybuddy-ai-learning-companion.md')],
+  ['International Baccalaureate (IB)', read('slides/decks/studybuddy-ai-learning-companion.md')],
   ['studybuddy-logo.png', read('slides/decks/studybuddy-ai-learning-companion.md')],
   ['studybuddy-learning-loop.html', read('slides/decks/studybuddy-ai-learning-companion.md')],
   ['studybuddy-upgrade-ladder.html', read('slides/decks/studybuddy-ai-learning-companion.md')],
@@ -180,6 +182,11 @@ const mustContain = [
 ];
 for (const [needle, haystack] of mustContain) {
   if (!haystack.includes(needle)) fail(`Expected content not found: ${needle}`);
+}
+
+const studyBuddyDeck = read('slides/decks/studybuddy-ai-learning-companion.md');
+for (const hiddenStudyBuddyText of ['tom@DreamCatcher.ai', 'tom@dreamcatcher.ai', 'contact:']) {
+  if (studyBuddyDeck.includes(hiddenStudyBuddyText)) fail(`StudyBuddy deck should not include public contact/email text: ${hiddenStudyBuddyText}`);
 }
 
 const forbidden = [
