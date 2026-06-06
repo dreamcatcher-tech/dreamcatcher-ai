@@ -32,6 +32,7 @@ const requiredFiles = [
   'slides/decks/kristin-school-resource-avenues-child-safety-first.md',
   'slides/decks/kristin-school-three-things-to-push-on.md',
   'slides/decks/class-coach-ai-learning-companion.md',
+  'slides/decks/class-coach-understanding-first.md',
   'slides/components/ark-components-architecture-cycle.html',
   'slides/components/ark-community-ecosystem-cycle.html',
   'slides/components/knowledge-cascade.html',
@@ -59,9 +60,14 @@ const requiredFiles = [
   'slides/components/classcoach-logo-cycle.html',
   'slides/components/classcoach-learning-loop.html',
   'slides/components/classcoach-upgrade-ladder.html',
+  'slides/components/classcoach-understanding-first-contrast.html',
+  'slides/components/classcoach-understanding-evidence-loop.html',
+  'slides/components/classcoach-understanding-plan-board.html',
+  'slides/components/classcoach-understanding-team-teaching.html',
   'slides/assets/school-simulation-sandbox.png',
   'slides/assets/leaving-school-enduring-capsule.png',
   'slides/assets/classcoach-cover.svg',
+  'slides/assets/classcoach-understanding-first-cover.svg',
   'slides/assets/classcoach-logo-01.svg',
   'slides/assets/classcoach-logo-02.svg',
   'slides/assets/classcoach-logo-03.svg',
@@ -119,6 +125,13 @@ const mustContain = [
   ['slides/reveal-runner.html?deck=decks/kristin-school-give-parents-something-to-push-on.md', html],
   ['slides/reveal-runner.html?deck=decks/kristin-school-run-the-school-before-release.md', html],
   ['slides/reveal-runner.html?deck=decks/class-coach-ai-learning-companion.md', html],
+  ['slides/reveal-runner.html?deck=decks/class-coach-understanding-first.md', html],
+  ['class-coach-understanding-first.md', slidesIndex],
+  ['Understanding First', read('slides/decks/class-coach-understanding-first.md')],
+  ['Demonstrate mastery in many forms', read('slides/decks/class-coach-understanding-first.md')],
+  ['classcoach-understanding-plan-board.html', read('slides/decks/class-coach-understanding-first.md')],
+  ['The old way compresses proof into a day', read('slides/components/classcoach-understanding-first-contrast.html')],
+  ['Misconception hunter', read('slides/components/classcoach-understanding-team-teaching.html')],
   ['Class Coach', html],
   ['Class Coach', slidesIndex],
   ['Sophie and Tom Thompson', read('slides/decks/class-coach-ai-learning-companion.md')],
@@ -160,8 +173,8 @@ const mustContain = [
   ['external-link-icon', html],
   ['https://t.me/dreamcatcher_concierge_bot', html],
   ['https://wa.me/64223571853?text=', html],
-  ['tel:+64223571853', html],
-  ['sms:+64223571853?', html],
+  ['tel:+642****1853', html],
+  ['sms:+642****1853?', html],
   ['Download contact card', html],
   ['Ark', capsule],
   ['Your knowledge should', social],
@@ -244,6 +257,7 @@ const publicNamingFiles = [
   'slides/decks/kristin-school-three-things-to-push-on.md',
   'slides/decks/kristin-school-give-parents-something-to-push-on.md',
   'slides/decks/class-coach-ai-learning-companion.md',
+  'slides/decks/class-coach-understanding-first.md',
   'slides/components/ai-school-measurement-board.html',
   'slides/components/child-ark-influence-model.html',
   'slides/components/kristin-pilot-path.html',
@@ -255,6 +269,10 @@ const publicNamingFiles = [
   'slides/components/classcoach-logo-cycle.html',
   'slides/components/classcoach-learning-loop.html',
   'slides/components/classcoach-upgrade-ladder.html',
+  'slides/components/classcoach-understanding-first-contrast.html',
+  'slides/components/classcoach-understanding-evidence-loop.html',
+  'slides/components/classcoach-understanding-plan-board.html',
+  'slides/components/classcoach-understanding-team-teaching.html',
 ];
 const retiredNamingPatterns = [
   /kristin-school-enduring-knowledge-cores/i,
@@ -330,7 +348,7 @@ for (const retiredTerm of ['Codex', 'Covenant', 'The Ark Naming System', 'ark-na
   if (arkComponentsBundle.includes(retiredTerm)) fail(`Retired Ark Components term still present: ${retiredTerm}`);
 }
 
-for (const deck of ['dreamcatcher-ark-components', 'defragmenting-the-user', 'kristin-school-knowledge-that-endures', 'kristin-school-pilot-validation-portfolio', 'kristin-school-resource-avenues-child-safety-first', 'kristin-school-three-things-to-push-on', 'kristin-school-give-parents-something-to-push-on', 'kristin-school-run-the-school-before-release', 'class-coach-ai-learning-companion']) {
+for (const deck of ['dreamcatcher-ark-components', 'defragmenting-the-user', 'kristin-school-knowledge-that-endures', 'kristin-school-pilot-validation-portfolio', 'kristin-school-resource-avenues-child-safety-first', 'kristin-school-three-things-to-push-on', 'kristin-school-give-parents-something-to-push-on', 'kristin-school-run-the-school-before-release', 'class-coach-ai-learning-companion', 'class-coach-understanding-first']) {
   const deckText = read(`slides/decks/${deck}.md`);
   if (!deckText.startsWith('---')) fail(`${deck}.md must start with frontmatter`);
   if (deckText.includes('../../Assets/')) fail(`${deck}.md must not reference private notes asset paths`);

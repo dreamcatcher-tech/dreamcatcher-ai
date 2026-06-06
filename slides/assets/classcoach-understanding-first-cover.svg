@@ -1,0 +1,55 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1536" height="1024" viewBox="0 0 1536 1024" role="img" aria-labelledby="title desc">
+  <title id="title">Class Coach Understanding First cover</title>
+  <desc id="desc">A dark teal and gold cover contrasting a single exam day with a long trail of demonstrated understanding evidence.</desc>
+  <defs>
+    <radialGradient id="bg" cx="68%" cy="18%" r="80%">
+      <stop offset="0" stop-color="#1b6d7f"/>
+      <stop offset="0.46" stop-color="#06111f"/>
+      <stop offset="1" stop-color="#02060b"/>
+    </radialGradient>
+    <linearGradient id="teal" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0" stop-color="#58d7d3"/>
+      <stop offset="1" stop-color="#0fa7ae"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="24" stdDeviation="34" flood-color="#000" flood-opacity="0.42"/>
+    </filter>
+  </defs>
+  <rect width="1536" height="1024" fill="url(#bg)"/>
+  <circle cx="1256" cy="170" r="420" fill="#58d7d3" opacity="0.10"/>
+  <circle cx="1176" cy="200" r="250" fill="#f5c76b" opacity="0.10"/>
+  <g opacity="0.17" stroke="#f8f4e8" stroke-width="2">
+    <path d="M92 820 C310 720 424 835 620 710 S960 536 1240 626" fill="none"/>
+    <path d="M100 890 C372 760 472 900 760 740 S1080 610 1410 710" fill="none"/>
+  </g>
+  <g filter="url(#shadow)">
+    <rect x="104" y="110" width="1328" height="804" rx="48" fill="#06111f" opacity="0.74" stroke="#ffffff" stroke-opacity="0.12"/>
+  </g>
+  <g transform="translate(180 168)">
+    <text x="0" y="0" fill="#58d7d3" font-family="Inter, Arial, sans-serif" font-size="28" font-weight="900" letter-spacing="6">CLASS COACH</text>
+    <text x="0" y="104" fill="#f8f4e8" font-family="Inter, Arial, sans-serif" font-size="104" font-weight="900" letter-spacing="-6">Understanding</text>
+    <text x="0" y="212" fill="#f5c76b" font-family="Inter, Arial, sans-serif" font-size="104" font-weight="900" letter-spacing="-6">First</text>
+    <text x="0" y="286" fill="#f8f4e8" opacity="0.78" font-family="Inter, Arial, sans-serif" font-size="38" font-weight="650">Prove durable understanding. Use exams as calibration.</text>
+  </g>
+  <g transform="translate(190 580)">
+    <rect x="0" y="0" width="320" height="180" rx="28" fill="#ffffff" opacity="0.055" stroke="#ffffff" stroke-opacity="0.14"/>
+    <text x="34" y="58" fill="#f5c76b" font-family="Inter, Arial, sans-serif" font-size="28" font-weight="850">Old way</text>
+    <line x1="42" y1="110" x2="250" y2="110" stroke="#f8f4e8" stroke-opacity="0.30" stroke-width="8" stroke-linecap="round"/>
+    <circle cx="252" cy="110" r="28" fill="#f5c76b" opacity="0.9"/>
+    <text x="214" y="166" fill="#f8f4e8" opacity="0.70" font-family="Inter, Arial, sans-serif" font-size="19" font-weight="700">one day</text>
+  </g>
+  <g transform="translate(570 560)">
+    <rect x="0" y="0" width="728" height="224" rx="34" fill="#58d7d3" opacity="0.09" stroke="#58d7d3" stroke-opacity="0.32"/>
+    <text x="34" y="62" fill="#58d7d3" font-family="Inter, Arial, sans-serif" font-size="30" font-weight="900">Understanding-first</text>
+    <g transform="translate(42 108)">
+      <circle cx="0" cy="0" r="17" fill="url(#teal)"/><circle cx="118" cy="0" r="17" fill="url(#teal)"/><circle cx="236" cy="0" r="17" fill="url(#teal)"/><circle cx="354" cy="0" r="17" fill="url(#teal)"/><circle cx="472" cy="0" r="17" fill="url(#teal)"/><circle cx="590" cy="0" r="17" fill="#f5c76b"/>
+      <path d="M18 0 H100 M136 0 H218 M254 0 H336 M372 0 H454 M490 0 H572" stroke="#58d7d3" stroke-width="7" stroke-linecap="round" opacity="0.52"/>
+      <text x="-22" y="64" fill="#f8f4e8" opacity="0.76" font-family="Inter, Arial, sans-serif" font-size="19" font-weight="750">explain</text>
+      <text x="86" y="64" fill="#f8f4e8" opacity="0.76" font-family="Inter, Arial, sans-serif" font-size="19" font-weight="750">transfer</text>
+      <text x="215" y="64" fill="#f8f4e8" opacity="0.76" font-family="Inter, Arial, sans-serif" font-size="19" font-weight="750">build</text>
+      <text x="320" y="64" fill="#f8f4e8" opacity="0.76" font-family="Inter, Arial, sans-serif" font-size="19" font-weight="750">retrieve</text>
+      <text x="438" y="64" fill="#f8f4e8" opacity="0.76" font-family="Inter, Arial, sans-serif" font-size="19" font-weight="750">badge</text>
+      <text x="548" y="64" fill="#f5c76b" font-family="Inter, Arial, sans-serif" font-size="19" font-weight="850">exam</text>
+    </g>
+  </g>
+</svg>
