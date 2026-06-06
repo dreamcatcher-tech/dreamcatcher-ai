@@ -78,6 +78,29 @@ components:
 
 <iframe class="dc-component-frame" src="../components/classcoach-understanding-plan-board.html" title="Class Coach parent progress plan and retention board"></iframe>
 
+
+---
+
+<div class="dc-shell">
+  <div class="dc-kicker">Teacher reports and evidence integrity</div>
+  <div class="dc-grid-2">
+    <div>
+      <h2>Teachers should not need an exam setting to know where the class is.</h2>
+      <p class="dc-bigline">Class Coach can report progress, homework completion, stale topics and misconceptions as permitted learning evidence.</p>
+    </div>
+    <div class="dc-card">
+      <h3>Integrity checks for higher-stakes evidence</h3>
+      <ul>
+        <li>Short oral checks with consented speaker verification.</li>
+        <li>Response timing in voice or text as a confidence signal.</li>
+        <li>Consistency with the learner’s wider understanding trail.</li>
+        <li>Human review when a signal affects a badge or intervention.</li>
+      </ul>
+      <p class="dc-muted" style="font-size: 0.42em; line-height: 1.25; margin-top: 16px;">Frame this as evidence integrity, not surveillance: proportionate, consented, policy-governed and never based on one signal alone.</p>
+    </div>
+  </div>
+</div>
+
 ---
 
 <div class="dc-shell">

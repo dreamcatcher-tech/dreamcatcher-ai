@@ -130,6 +130,8 @@ const mustContain = [
   ['Understanding First', read('slides/decks/class-coach-understanding-first.md')],
   ['Demonstrate mastery in many forms', read('slides/decks/class-coach-understanding-first.md')],
   ['classcoach-understanding-plan-board.html', read('slides/decks/class-coach-understanding-first.md')],
+  ['Teacher reports and evidence integrity', read('slides/decks/class-coach-understanding-first.md')],
+  ['speaker verification', read('slides/decks/class-coach-understanding-first.md')],
   ['The old way compresses proof into a day', read('slides/components/classcoach-understanding-first-contrast.html')],
   ['Misconception hunter', read('slides/components/classcoach-understanding-team-teaching.html')],
   ['Class Coach', html],
