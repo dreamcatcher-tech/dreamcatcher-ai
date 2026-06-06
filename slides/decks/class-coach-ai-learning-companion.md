@@ -1,6 +1,6 @@
 ---
-title: StudyBuddy AI Learning Companion
-slug: studybuddy-ai-learning-companion
+title: Class Coach AI Learning Companion
+slug: class-coach-ai-learning-companion
 status: draft
 audience: Kristin School
 prepared_by: Sophie and Tom Thompson
@@ -8,22 +8,30 @@ affiliation: Parents of Harry Thompson (Junior School applicant, unconfirmed)
 created: 2026-06-06
 format: reveal.js external Markdown, no build
 assets:
-  cover_image: ../assets/studybuddy-cover.svg
-  logo: ../assets/studybuddy-logo.png
+  cover_image: ../assets/classcoach-cover.svg
+  logo: ../assets/classcoach-logo-01.svg
+  logo_options:
+    - ../assets/classcoach-logo-01.svg
+    - ../assets/classcoach-logo-02.svg
+    - ../assets/classcoach-logo-03.svg
+    - ../assets/classcoach-logo-04.svg
+    - ../assets/classcoach-logo-05.svg
+    - ../assets/classcoach-logo-06.svg
 components:
-  learning_loop: ../components/studybuddy-learning-loop.html
-  upgrade_ladder: ../components/studybuddy-upgrade-ladder.html
+  logo_cycle: ../components/classcoach-logo-cycle.html
+  learning_loop: ../components/classcoach-learning-loop.html
+  upgrade_ladder: ../components/classcoach-upgrade-ladder.html
 source_notes:
   - ../README.md
   - ../Format - Markdown Reveal Decks No Build.md
-  - ../Deck Seed - StudyBuddy AI Learning Companion.md
+  - ../Deck Seed - Class Coach AI Learning Companion.md
 ---
 
-<div class="dc-shell dc-cover" style="--cover-image: url('assets/studybuddy-cover.svg')">
-  <div class="dc-brand"><img src="../assets/studybuddy-logo.png" alt="StudyBuddy logo" style="width: 310px; height: auto; border-radius: 18px; background: rgba(255,255,255,.96); padding: 10px 14px;"></div>
+<div class="dc-shell dc-cover" style="--cover-image: url('assets/classcoach-cover.svg')">
+  <div class="dc-brand"><img src="../assets/classcoach-logo-01.svg" alt="Class Coach logo" style="width: 310px; height: auto; border-radius: 18px; background: rgba(255,255,255,.96); padding: 10px 14px;"></div>
   <div>
     <div class="dc-kicker">Prepared for Kristin School</div>
-    <h1 class="dc-title">StudyBuddy</h1>
+    <h1 class="dc-title">Class Coach</h1>
     <p class="dc-subtitle">An AI learning companion: patient, private, adaptive, and present — in every lesson, through every question, until understanding genuinely lands.</p>
   </div>
   <div class="dc-footerline"><span>Prepared by Sophie and Tom Thompson</span><span>AI learning companion product deck</span></div>
@@ -31,11 +39,15 @@ source_notes:
 
 ---
 
+<iframe class="dc-component-frame" src="../components/classcoach-logo-cycle.html" title="Class Coach logo options"></iframe>
+
+---
+
 <div class="dc-shell">
   <div class="dc-kicker">Product definition</div>
   <h2>One companion from the start of the learning journey.</h2>
   <div class="dc-grid-3" style="margin-top: 32px;">
-    <article class="dc-card"><h3>Every lesson</h3><p>StudyBuddy sits with the student through each lesson in the permitted classroom mode.</p></article>
+    <article class="dc-card"><h3>Every lesson</h3><p>Class Coach sits with the student through each lesson in the permitted classroom mode.</p></article>
     <article class="dc-card"><h3>Every gap</h3><p>When a concept does not land, the companion keeps working with the child during class, break, homework, or later revision.</p></article>
     <article class="dc-card"><h3>Every learner</h3><p>It remembers what explanations, examples, languages, and practice patterns have helped this student before.</p></article>
   </div>
@@ -51,7 +63,7 @@ source_notes:
   <div class="dc-kicker">What it understands</div>
   <div class="dc-grid-2">
     <div>
-      <h2>StudyBuddy works from the lesson the child is actually in.</h2>
+      <h2>Class Coach works from the lesson the child is actually in.</h2>
       <p class="dc-bigline">Curriculum, lesson plan, learner profile, and teacher intent come together.</p>
     </div>
     <div class="dc-card">
@@ -68,7 +80,7 @@ source_notes:
 
 ---
 
-<iframe class="dc-component-frame" src="../components/studybuddy-learning-loop.html" title="StudyBuddy learning loop"></iframe>
+<iframe class="dc-component-frame" src="../components/classcoach-learning-loop.html" title="Class Coach learning loop"></iframe>
 
 ---
 
@@ -93,7 +105,7 @@ source_notes:
       <ul>
         <li>Concepts the student is still struggling with.</li>
         <li>Evidence that understanding has improved.</li>
-        <li>Confidence and engagement signals from StudyBuddy work.</li>
+        <li>Confidence and engagement signals from Class Coach work.</li>
         <li>Suggested small-group or individual support moves.</li>
       </ul>
     </div>
@@ -123,7 +135,7 @@ source_notes:
 
 ---
 
-<iframe class="dc-component-frame" src="../components/studybuddy-upgrade-ladder.html" title="StudyBuddy modular upgrade ladder"></iframe>
+<iframe class="dc-component-frame" src="../components/classcoach-upgrade-ladder.html" title="Class Coach modular upgrade ladder"></iframe>
 
 ---
 
@@ -145,5 +157,5 @@ source_notes:
       </ul>
     </div>
   </div>
-  <p class="dc-quote" style="margin-top: 30px;">StudyBuddy is the personification of patient help: always available, always kind, and tuned to the child in front of it.</p>
+  <p class="dc-quote" style="margin-top: 30px;">Class Coach is the personification of patient help: always available, always kind, and tuned to the child in front of it.</p>
 </div>

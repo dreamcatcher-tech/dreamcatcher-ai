@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="500" viewBox="0 0 1400 500" role="img" aria-labelledby="title desc">
+  <title id="title">Class Coach logo option 4</title>
+  <desc id="desc">Logo option 4: compass for Class Coach, an AI learning companion.</desc>
+  <rect width="1400" height="500" rx="54" fill="#fcf9ef"/>
+  <rect x="18" y="18" width="1364" height="464" rx="44" fill="none" stroke="#008b95" stroke-opacity=".12" stroke-width="2"/>
+
+        <g transform="translate(78 78)">
+          <circle cx="148" cy="148" r="132" fill="#e8f7f6" stroke="#008b95" stroke-width="12"/>
+          <path d="M148 52 L182 132 L260 148 L182 166 L148 246 L114 166 L36 148 L114 132 Z" fill="none" stroke="#008b95" stroke-width="12" stroke-linejoin="round"/>
+          <path d="M92 194 Q126 174 148 194 Q174 174 208 194" fill="none" stroke="#172a3a" stroke-width="10" stroke-linecap="round"/>
+          <circle cx="148" cy="148" r="18" fill="#f4a261"/>
+        </g>
+  <g transform="translate(420 148)">
+    <text x="0" y="0" font-family="Inter, Arial, sans-serif" font-size="118" font-weight="900" letter-spacing="-7" fill="#172a3a">Class</text>
+    <text x="420" y="0" font-family="Inter, Arial, sans-serif" font-size="118" font-weight="900" letter-spacing="-7" fill="#008b95">Coach</text>
+    <rect x="2" y="42" width="578" height="12" rx="6" fill="#f4a261" opacity=".92"/>
+    <text x="2" y="118" font-family="Inter, Arial, sans-serif" font-size="43" font-weight="760" letter-spacing=".3" fill="#172a3a" opacity=".86">AI learning companion</text>
+    <text x="2" y="176" font-family="Inter, Arial, sans-serif" font-size="24" font-weight="750" letter-spacing="1.2" fill="#008b95" opacity=".82">curriculum context · learner confidence</text>
+  </g>
+</svg>

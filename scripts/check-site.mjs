@@ -31,7 +31,7 @@ const requiredFiles = [
   'slides/decks/kristin-school-pilot-validation-portfolio.md',
   'slides/decks/kristin-school-resource-avenues-child-safety-first.md',
   'slides/decks/kristin-school-three-things-to-push-on.md',
-  'slides/decks/studybuddy-ai-learning-companion.md',
+  'slides/decks/class-coach-ai-learning-companion.md',
   'slides/components/ark-components-architecture-cycle.html',
   'slides/components/ark-community-ecosystem-cycle.html',
   'slides/components/knowledge-cascade.html',
@@ -56,13 +56,18 @@ const requiredFiles = [
   'slides/components/guardian-test-matrix.html',
   'slides/components/school-simulation-tiers.html',
   'slides/components/simulation-dashboard-lab.html',
-  'slides/components/studybuddy-learning-loop.html',
-  'slides/components/studybuddy-upgrade-ladder.html',
+  'slides/components/classcoach-logo-cycle.html',
+  'slides/components/classcoach-learning-loop.html',
+  'slides/components/classcoach-upgrade-ladder.html',
   'slides/assets/school-simulation-sandbox.png',
   'slides/assets/leaving-school-enduring-capsule.png',
-  'slides/assets/studybuddy-cover.svg',
-  'slides/assets/studybuddy-logo.png',
-  'slides/assets/studybuddy-mark.svg',
+  'slides/assets/classcoach-cover.svg',
+  'slides/assets/classcoach-logo-01.svg',
+  'slides/assets/classcoach-logo-02.svg',
+  'slides/assets/classcoach-logo-03.svg',
+  'slides/assets/classcoach-logo-04.svg',
+  'slides/assets/classcoach-logo-05.svg',
+  'slides/assets/classcoach-logo-06.svg',
 ];
 for (const file of requiredFiles) {
   if (!existsSync(join(root, file))) fail(`Missing ${file}`);
@@ -76,6 +81,12 @@ const forbiddenFiles = [
   'assets/durable-core-architecture.png',
   'slides/assets/kristin-enduring-cores-cover.png',
   'slides/components/child-core-influence-model.html',
+  'slides/decks/studybuddy-ai-learning-companion.md',
+  'slides/components/studybuddy-learning-loop.html',
+  'slides/components/studybuddy-upgrade-ladder.html',
+  'slides/assets/studybuddy-cover.svg',
+  'slides/assets/studybuddy-logo.png',
+  'slides/assets/studybuddy-mark.svg',
 ];
 for (const file of forbiddenFiles) {
   if (existsSync(join(root, file))) fail(`Retired public path must not exist: ${file}`);
@@ -107,17 +118,18 @@ const mustContain = [
   ['slides/reveal-runner.html?deck=decks/kristin-school-resource-avenues-child-safety-first.md', html],
   ['slides/reveal-runner.html?deck=decks/kristin-school-give-parents-something-to-push-on.md', html],
   ['slides/reveal-runner.html?deck=decks/kristin-school-run-the-school-before-release.md', html],
-  ['slides/reveal-runner.html?deck=decks/studybuddy-ai-learning-companion.md', html],
-  ['StudyBuddy', html],
-  ['StudyBuddy', slidesIndex],
-  ['Sophie and Tom Thompson', read('slides/decks/studybuddy-ai-learning-companion.md')],
-  ['International Baccalaureate (IB)', read('slides/decks/studybuddy-ai-learning-companion.md')],
-  ['studybuddy-logo.png', read('slides/decks/studybuddy-ai-learning-companion.md')],
-  ['studybuddy-learning-loop.html', read('slides/decks/studybuddy-ai-learning-companion.md')],
-  ['studybuddy-upgrade-ladder.html', read('slides/decks/studybuddy-ai-learning-companion.md')],
-  ['The output is understanding', read('slides/decks/studybuddy-ai-learning-companion.md')],
-  ['specialist eyes', read('slides/components/studybuddy-upgrade-ladder.html')],
-  ['Permitted teacher signal', read('slides/components/studybuddy-learning-loop.html')],
+  ['slides/reveal-runner.html?deck=decks/class-coach-ai-learning-companion.md', html],
+  ['Class Coach', html],
+  ['Class Coach', slidesIndex],
+  ['Sophie and Tom Thompson', read('slides/decks/class-coach-ai-learning-companion.md')],
+  ['International Baccalaureate (IB)', read('slides/decks/class-coach-ai-learning-companion.md')],
+  ['classcoach-logo-cycle.html', read('slides/decks/class-coach-ai-learning-companion.md')],
+  ['classcoach-logo-06.svg', read('slides/components/classcoach-logo-cycle.html')],
+  ['classcoach-learning-loop.html', read('slides/decks/class-coach-ai-learning-companion.md')],
+  ['classcoach-upgrade-ladder.html', read('slides/decks/class-coach-ai-learning-companion.md')],
+  ['The output is understanding', read('slides/decks/class-coach-ai-learning-companion.md')],
+  ['specialist eyes', read('slides/components/classcoach-upgrade-ladder.html')],
+  ['Permitted teacher signal', read('slides/components/classcoach-learning-loop.html')],
   ['Ark Components', slidesIndex],
   ['slides/reveal-runner.html?deck=decks/dreamcatcher-ark-components.md', html],
   ['dreamcatcher-ark-components.md', slidesIndex],
@@ -184,9 +196,9 @@ for (const [needle, haystack] of mustContain) {
   if (!haystack.includes(needle)) fail(`Expected content not found: ${needle}`);
 }
 
-const studyBuddyDeck = read('slides/decks/studybuddy-ai-learning-companion.md');
-for (const hiddenStudyBuddyText of ['tom@DreamCatcher.ai', 'tom@dreamcatcher.ai', 'contact:']) {
-  if (studyBuddyDeck.includes(hiddenStudyBuddyText)) fail(`StudyBuddy deck should not include public contact/email text: ${hiddenStudyBuddyText}`);
+const classCoachDeck = read('slides/decks/class-coach-ai-learning-companion.md');
+for (const hiddenClassCoachText of ['tom@DreamCatcher.ai', 'tom@dreamcatcher.ai', 'contact:', 'StudyBuddy', 'studybuddy-']) {
+  if (classCoachDeck.includes(hiddenClassCoachText)) fail(`Class Coach deck should not include stale/contact text: ${hiddenClassCoachText}`);
 }
 
 const forbidden = [
@@ -231,7 +243,7 @@ const publicNamingFiles = [
   'slides/decks/kristin-school-run-the-school-before-release.md',
   'slides/decks/kristin-school-three-things-to-push-on.md',
   'slides/decks/kristin-school-give-parents-something-to-push-on.md',
-  'slides/decks/studybuddy-ai-learning-companion.md',
+  'slides/decks/class-coach-ai-learning-companion.md',
   'slides/components/ai-school-measurement-board.html',
   'slides/components/child-ark-influence-model.html',
   'slides/components/kristin-pilot-path.html',
@@ -240,8 +252,9 @@ const publicNamingFiles = [
   'slides/components/resource-avenues-map.html',
   'slides/components/school-simulation-tiers.html',
   'slides/components/three-paths-operating-map.html',
-  'slides/components/studybuddy-learning-loop.html',
-  'slides/components/studybuddy-upgrade-ladder.html',
+  'slides/components/classcoach-logo-cycle.html',
+  'slides/components/classcoach-learning-loop.html',
+  'slides/components/classcoach-upgrade-ladder.html',
 ];
 const retiredNamingPatterns = [
   /kristin-school-enduring-knowledge-cores/i,
@@ -317,7 +330,7 @@ for (const retiredTerm of ['Codex', 'Covenant', 'The Ark Naming System', 'ark-na
   if (arkComponentsBundle.includes(retiredTerm)) fail(`Retired Ark Components term still present: ${retiredTerm}`);
 }
 
-for (const deck of ['dreamcatcher-ark-components', 'defragmenting-the-user', 'kristin-school-knowledge-that-endures', 'kristin-school-pilot-validation-portfolio', 'kristin-school-resource-avenues-child-safety-first', 'kristin-school-three-things-to-push-on', 'kristin-school-give-parents-something-to-push-on', 'kristin-school-run-the-school-before-release', 'studybuddy-ai-learning-companion']) {
+for (const deck of ['dreamcatcher-ark-components', 'defragmenting-the-user', 'kristin-school-knowledge-that-endures', 'kristin-school-pilot-validation-portfolio', 'kristin-school-resource-avenues-child-safety-first', 'kristin-school-three-things-to-push-on', 'kristin-school-give-parents-something-to-push-on', 'kristin-school-run-the-school-before-release', 'class-coach-ai-learning-companion']) {
   const deckText = read(`slides/decks/${deck}.md`);
   if (!deckText.startsWith('---')) fail(`${deck}.md must start with frontmatter`);
   if (deckText.includes('../../Assets/')) fail(`${deck}.md must not reference private notes asset paths`);

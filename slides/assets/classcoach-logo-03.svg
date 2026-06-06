@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="500" viewBox="0 0 1400 500" role="img" aria-labelledby="title desc">
+  <title id="title">Class Coach logo option 3</title>
+  <desc id="desc">Logo option 3: cc monogram for Class Coach, an AI learning companion.</desc>
+  <rect width="1400" height="500" rx="54" fill="#ffffff"/>
+  <rect x="18" y="18" width="1364" height="464" rx="44" fill="none" stroke="#2a9d8f" stroke-opacity=".12" stroke-width="2"/>
+
+        <g transform="translate(76 78)">
+          <circle cx="148" cy="148" r="134" fill="#effaf7" stroke="#2a9d8f" stroke-width="14"/>
+          <text x="148" y="160" text-anchor="middle" font-family="Inter, Arial, sans-serif" font-size="104" font-weight="900" fill="#0b1f33" letter-spacing="-9">CC</text>
+          <path d="M78 200 Q114 184 148 202 Q184 184 220 200" fill="none" stroke="#e9c46a" stroke-width="12" stroke-linecap="round"/>
+          <circle cx="236" cy="84" r="12" fill="#2a9d8f"/><path d="M224 100 L206 122" stroke="#2a9d8f" stroke-width="7" stroke-linecap="round"/>
+        </g>
+  <g transform="translate(420 148)">
+    <text x="0" y="0" font-family="Inter, Arial, sans-serif" font-size="118" font-weight="900" letter-spacing="-7" fill="#0b1f33">Class</text>
+    <text x="420" y="0" font-family="Inter, Arial, sans-serif" font-size="118" font-weight="900" letter-spacing="-7" fill="#2a9d8f">Coach</text>
+    <rect x="2" y="42" width="578" height="12" rx="6" fill="#e9c46a" opacity=".92"/>
+    <text x="2" y="118" font-family="Inter, Arial, sans-serif" font-size="43" font-weight="760" letter-spacing=".3" fill="#0b1f33" opacity=".86">AI learning companion</text>
+    <text x="2" y="176" font-family="Inter, Arial, sans-serif" font-size="24" font-weight="750" letter-spacing="1.2" fill="#2a9d8f" opacity=".82">personal tutor for every lesson</text>
+  </g>
+</svg>
