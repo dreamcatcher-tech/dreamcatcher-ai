@@ -25,30 +25,9 @@ source_notes:
   <div>
     <div class="dc-kicker">Prepared for Kristin School</div>
     <h1 class="dc-title">StudyBuddy</h1>
-    <p class="dc-subtitle">An AI learning companion: patient, private, adaptive, and present whenever a student does not quite understand.</p>
+    <p class="dc-subtitle">An AI learning companion: patient, private, adaptive, and present — in every lesson, through every question, until understanding genuinely lands.</p>
   </div>
   <div class="dc-footerline"><span>Prepared by Tom Thompson · tom@DreamCatcher.ai</span><span>AI learning companion product deck</span></div>
-</div>
-
----
-
-<div class="dc-shell">
-  <div class="dc-kicker">The hook</div>
-  <div class="dc-grid-2">
-    <div>
-      <h2>The moment that matters is quiet.</h2>
-      <p class="dc-bigline">“I didn’t get that” is often the question a child will not ask out loud.</p>
-    </div>
-    <div class="dc-card">
-      <h3>StudyBuddy gives that moment somewhere to go</h3>
-      <ul>
-        <li>A private way to ask in the child’s own words.</li>
-        <li>A patient explanation that can try again differently.</li>
-        <li>A check that the concept has genuinely landed.</li>
-      </ul>
-      <div class="dc-pill-row"><span class="dc-pill">confidence</span><span class="dc-pill">clarity</span><span class="dc-pill">no embarrassment</span></div>
-    </div>
-  </div>
 </div>
 
 ---
