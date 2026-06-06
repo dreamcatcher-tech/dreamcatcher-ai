@@ -86,7 +86,7 @@ components:
   <div class="dc-grid-2">
     <div>
       <h2>Teachers should not need an exam setting to know where the class is.</h2>
-      <p class="dc-bigline">Class Coach can report progress, homework completion, stale topics and misconceptions as permitted learning evidence.</p>
+      <p class="dc-bigline" style="font-size: 1.08em; line-height: 1.06;">Class Coach can report progress, homework completion, stale topics and misconceptions as permitted learning evidence.</p>
     </div>
     <div class="dc-card">
       <h3>Integrity checks for higher-stakes evidence</h3>
