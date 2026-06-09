@@ -1,0 +1,373 @@
+{
+  "body": {
+    "cloudflare": "enabled",
+    "records": [
+      {
+        "content": "185.199.111.153",
+        "id": "552635523",
+        "name": "dreamcatcher.ai",
+        "notes": "",
+        "prio": "0",
+        "ttl": "600",
+        "type": "A"
+      },
+      {
+        "content": "185.199.110.153",
+        "id": "552635508",
+        "name": "dreamcatcher.ai",
+        "notes": "",
+        "prio": "0",
+        "ttl": "600",
+        "type": "A"
+      },
+      {
+        "content": "185.199.109.153",
+        "id": "552635503",
+        "name": "dreamcatcher.ai",
+        "notes": "",
+        "prio": "0",
+        "ttl": "600",
+        "type": "A"
+      },
+      {
+        "content": "185.199.108.153",
+        "id": "552635494",
+        "name": "dreamcatcher.ai",
+        "notes": "",
+        "prio": "0",
+        "ttl": "600",
+        "type": "A"
+      },
+      {
+        "content": "2606:50c0:8003::153",
+        "id": "552635533",
+        "name": "dreamcatcher.ai",
+        "notes": "",
+        "prio": "0",
+        "ttl": "600",
+        "type": "AAAA"
+      },
+      {
+        "content": "2606:50c0:8002::153",
+        "id": "552635530",
+        "name": "dreamcatcher.ai",
+        "notes": "",
+        "prio": "0",
+        "ttl": "600",
+        "type": "AAAA"
+      },
+      {
+        "content": "2606:50c0:8001::153",
+        "id": "552635529",
+        "name": "dreamcatcher.ai",
+        "notes": "",
+        "prio": "0",
+        "ttl": "600",
+        "type": "AAAA"
+      },
+      {
+        "content": "2606:50c0:8000::153",
+        "id": "552635526",
+        "name": "dreamcatcher.ai",
+        "notes": "",
+        "prio": "0",
+        "ttl": "600",
+        "type": "AAAA"
+      },
+      {
+        "content": "accounts.clerk.services",
+        "id": "509508544",
+        "name": "accounts.dreamcatcher.ai",
+        "notes": "",
+        "prio": "0",
+        "ttl": "600",
+        "type": "CNAME"
+      },
+      {
+        "content": "dreamcatcher-tech.github.io",
+        "id": "552635540",
+        "name": "www.dreamcatcher.ai",
+        "notes": "",
+        "prio": "0",
+        "ttl": "600",
+        "type": "CNAME"
+      },
+      {
+        "content": "dreamcatcher-tech.github.io",
+        "id": "552878789",
+        "name": "crypto.dreamcatcher.ai",
+        "notes": "",
+        "prio": "0",
+        "ttl": "600",
+        "type": "CNAME"
+      },
+      {
+        "content": "mail.70plyqi6o7qr.clerk.services",
+        "id": "509508547",
+        "name": "clkmail.dreamcatcher.ai",
+        "notes": "",
+        "prio": "0",
+        "ttl": "600",
+        "type": "CNAME"
+      },
+      {
+        "content": "dkim2.70plyqi6o7qr.clerk.services",
+        "id": "509508542",
+        "name": "clk2._domainkey.dreamcatcher.ai",
+        "notes": "",
+        "prio": "0",
+        "ttl": "600",
+        "type": "CNAME"
+      },
+      {
+        "content": "dkim1.70plyqi6o7qr.clerk.services",
+        "id": "509508541",
+        "name": "clk._domainkey.dreamcatcher.ai",
+        "notes": "",
+        "prio": "0",
+        "ttl": "600",
+        "type": "CNAME"
+      },
+      {
+        "content": "frontend-api.clerk.services",
+        "id": "509508545",
+        "name": "clerk.dreamcatcher.ai",
+        "notes": "",
+        "prio": "0",
+        "ttl": "600",
+        "type": "CNAME"
+      },
+      {
+        "content": "dreamcatcher-agents.github.io.",
+        "id": "550364828",
+        "name": "agents.dreamcatcher.ai",
+        "notes": "",
+        "prio": "0",
+        "ttl": "600",
+        "type": "CNAME"
+      },
+      {
+        "content": "_0f7ad858d363534bb43f884c41c8affd.duyqrilejt.acm-validations.aws",
+        "id": "509508539",
+        "name": "_aa01f2bce6378add2eea0961c3087f26.dreamcatcher.ai",
+        "notes": "",
+        "prio": "0",
+        "ttl": "600",
+        "type": "CNAME"
+      },
+      {
+        "content": "inbound-smtp.us-east-1.amazonaws.com",
+        "id": "550597257",
+        "name": "agent.dreamcatcher.ai",
+        "notes": "",
+        "prio": "0",
+        "ttl": "600",
+        "type": "MX"
+      },
+      {
+        "content": "feedback-smtp.us-east-1.amazonses.com",
+        "id": "550597338",
+        "name": "mail.agent.dreamcatcher.ai",
+        "notes": "",
+        "prio": "0",
+        "ttl": "600",
+        "type": "MX"
+      },
+      {
+        "content": "mxb.eu.mailgun.org",
+        "id": "554403385",
+        "name": "edu.dreamcatcher.ai",
+        "notes": "OpenMail edu.dreamcatcher.ai MX",
+        "prio": "10",
+        "ttl": "600",
+        "type": "MX"
+      },
+      {
+        "content": "mxa.eu.mailgun.org",
+        "id": "554403381",
+        "name": "edu.dreamcatcher.ai",
+        "notes": "OpenMail edu.dreamcatcher.ai MX",
+        "prio": "10",
+        "ttl": "600",
+        "type": "MX"
+      },
+      {
+        "content": "aspmx.l.google.com",
+        "id": "509508525",
+        "name": "dreamcatcher.ai",
+        "notes": "",
+        "prio": "1",
+        "ttl": "3600",
+        "type": "MX"
+      },
+      {
+        "content": "alt4.aspmx.l.google.com",
+        "id": "509508530",
+        "name": "dreamcatcher.ai",
+        "notes": "",
+        "prio": "10",
+        "ttl": "3600",
+        "type": "MX"
+      },
+      {
+        "content": "alt3.aspmx.l.google.com",
+        "id": "509508529",
+        "name": "dreamcatcher.ai",
+        "notes": "",
+        "prio": "10",
+        "ttl": "3600",
+        "type": "MX"
+      },
+      {
+        "content": "alt2.aspmx.l.google.com",
+        "id": "509508534",
+        "name": "dreamcatcher.ai",
+        "notes": "",
+        "prio": "5",
+        "ttl": "3600",
+        "type": "MX"
+      },
+      {
+        "content": "alt1.aspmx.l.google.com",
+        "id": "509508533",
+        "name": "dreamcatcher.ai",
+        "notes": "",
+        "prio": "5",
+        "ttl": "3600",
+        "type": "MX"
+      },
+      {
+        "content": "curitiba.porkbun.com",
+        "id": "509507809",
+        "name": "dreamcatcher.ai",
+        "notes": null,
+        "prio": null,
+        "ttl": "86400",
+        "type": "NS"
+      },
+      {
+        "content": "fortaleza.porkbun.com",
+        "id": "509507808",
+        "name": "dreamcatcher.ai",
+        "notes": null,
+        "prio": null,
+        "ttl": "86400",
+        "type": "NS"
+      },
+      {
+        "content": "maceio.porkbun.com",
+        "id": "509507806",
+        "name": "dreamcatcher.ai",
+        "notes": null,
+        "prio": null,
+        "ttl": "86400",
+        "type": "NS"
+      },
+      {
+        "content": "salvador.porkbun.com",
+        "id": "509507807",
+        "name": "dreamcatcher.ai",
+        "notes": null,
+        "prio": null,
+        "ttl": "86400",
+        "type": "NS"
+      },
+      {
+        "content": "1f7e6295f1b976aaabe937162d6304",
+        "id": "550385762",
+        "name": "_github-pages-challenge-dreamcatcher-agents.agents.dreamcatcher.ai",
+        "notes": "",
+        "prio": "0",
+        "ttl": "600",
+        "type": "TXT"
+      },
+      {
+        "content": "d1b1a0f05a",
+        "id": "509508543",
+        "name": "_github-challenge-dreamcatcher-ai.dreamcatcher.ai",
+        "notes": "",
+        "prio": "0",
+        "ttl": "1800",
+        "type": "TXT"
+      },
+      {
+        "content": "v=DMARC1; p=none; rua=mailto:dmarc@dreamcatcher.ai",
+        "id": "552876028",
+        "name": "_dmarc.dreamcatcher.ai",
+        "notes": "",
+        "prio": "0",
+        "ttl": "600",
+        "type": "TXT"
+      },
+      {
+        "content": "v=DMARC1; p=reject; rua=mailto:dmarc@agent.dreamcatcher.ai",
+        "id": "550597422",
+        "name": "_dmarc.agent.dreamcatcher.ai",
+        "notes": "",
+        "prio": "0",
+        "ttl": "600",
+        "type": "TXT"
+      },
+      {
+        "content": "v=DKIM1; k=rsa; p=MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAnqQLy1j53lF67CVOSuy4fn4mrKkax2t8bndZxIF4O4BeC/tk0f19OkOTyqJP8ydhetP6NbOUJJ6PNMHXiaKotuTgK73X6BTHUjY0xbJwydnDXB7aewfGFE3PNuwmPhniYnAjAAbzxBvIqI5dW4I51xebkGWHFtEH31LqpM4M/K1Qz2RxUbVEOogfgTvFDfgJoNxI7uVkArqxgoyi2b0G4YMqsuZcZETLhUo867qYUyaBrwp/xF7gHogybvIfNGkJlpLtyB6IFXTiwOHNiMLSlWLV3ZV+dNBg1+1My8yM5ZhOkSx5hkDSxroZqq85NAA0H7qEhZmChoJBxYjFj/IuOQIDAQAB",
+        "id": "550597157",
+        "name": "agentmail._domainkey.agent.dreamcatcher.ai",
+        "notes": "",
+        "prio": "0",
+        "ttl": "600",
+        "type": "TXT"
+      },
+      {
+        "content": "k=rsa; p=MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAwR+UFgHdqagDJ++YLPE3shiOfX9O0tUZkmXVgCs4aenKtYyxwMrNlb+g8uXghB7DikmtVqlWLbp1XoXdjqpn0eKlkdolZZdbess8vALhn2RU1vsoYmVLOTuLe1i/i6DxbNo44mchWOX4yFP3XZN2DNRaqpQXDN/4BR03jnvYeQKkt/LCVUlZqNxzIZzNE5wIsMjYx7hORkqGW6FlclgILuqjwJ071wc5j2RHbL/a5Ewhb4quTmlSK+SpzWYfW/ejk6d3Np3fW35yCS+QGOahCuggkWi/Svc6cFD6dhlORy+7M4vHrNmIfqDNZl6jpuu7lom/glgqF1xHRHDCMtfTYwIDAQAB",
+        "id": "554403415",
+        "name": "openmail._domainkey.edu.dreamcatcher.ai",
+        "notes": "OpenMail edu.dreamcatcher.ai DKIM",
+        "prio": "0",
+        "ttl": "600",
+        "type": "TXT"
+      },
+      {
+        "content": "v=spf1 include:amazonses.com -all",
+        "id": "550597380",
+        "name": "mail.agent.dreamcatcher.ai",
+        "notes": "",
+        "prio": "0",
+        "ttl": "600",
+        "type": "TXT"
+      },
+      {
+        "content": "v=spf1 include:mailgun.org ~all",
+        "id": "554403402",
+        "name": "edu.dreamcatcher.ai",
+        "notes": "OpenMail edu.dreamcatcher.ai SPF",
+        "prio": "0",
+        "ttl": "600",
+        "type": "TXT"
+      },
+      {
+        "content": "v=spf1 include:_spf.google.com ~all",
+        "id": "552876022",
+        "name": "dreamcatcher.ai",
+        "notes": "",
+        "prio": "0",
+        "ttl": "600",
+        "type": "TXT"
+      },
+      {
+        "content": "google-site-verification=FSXGlm03UYU-1wmnpAJygU2X74NaL2_7DNOQup3rIjs",
+        "id": "509508538",
+        "name": "dreamcatcher.ai",
+        "notes": "",
+        "prio": "0",
+        "ttl": "1800",
+        "type": "TXT"
+      }
+    ],
+    "requestId": "019eaeb2-ea9b-7b76-9db6-1252747f6d51",
+    "status": "SUCCESS"
+  },
+  "headers": {
+    "X-Request-Id": "019eaeb2-ea9b-7b76-9db6-1252747f6d51"
+  },
+  "status_code": 200
+}
