@@ -1,4 +1,4 @@
-import { existsSync, readFileSync } from 'node:fs';
+import { existsSync, readFileSync, readdirSync } from 'node:fs';
 import { dirname, join } from 'node:path';
 
 const root = new URL('..', import.meta.url).pathname;
@@ -8,6 +8,24 @@ const fail = (message) => {
   process.exitCode = 1;
 };
 const pass = (message) => console.log(`✓ ${message}`);
+
+const confidentialSchoolName = String.fromCharCode(107, 114, 105, 115, 116, 105, 110);
+const validateNoSchoolIdentity = (directory, relative = '') => {
+  for (const entry of readdirSync(directory, { withFileTypes: true })) {
+    if (['.git', 'node_modules'].includes(entry.name)) continue;
+    const relativePath = join(relative, entry.name);
+    const absolutePath = join(directory, entry.name);
+    if (relativePath.toLowerCase().includes(confidentialSchoolName)) {
+      fail(`School-identifying name remains in public path: ${relativePath}`);
+    }
+    if (entry.isDirectory()) {
+      validateNoSchoolIdentity(absolutePath, relativePath);
+    } else if (entry.isFile() && readFileSync(absolutePath).toString('latin1').toLowerCase().includes(confidentialSchoolName)) {
+      fail(`School-identifying name remains in public file: ${relativePath}`);
+    }
+  }
+};
+validateNoSchoolIdentity(root);
 
 const requiredFiles = [
   'index.html',
@@ -27,10 +45,10 @@ const requiredFiles = [
   'slides/reveal-runner.html',
   'slides/decks/dreamcatcher-ark-components.md',
   'slides/decks/defragmenting-the-user.md',
-  'slides/decks/kristin-school-knowledge-that-endures.md',
-  'slides/decks/kristin-school-pilot-validation-portfolio.md',
-  'slides/decks/kristin-school-resource-avenues-child-safety-first.md',
-  'slides/decks/kristin-school-three-things-to-push-on.md',
+  'slides/decks/school-knowledge-that-endures.md',
+  'slides/decks/school-pilot-validation-portfolio.md',
+  'slides/decks/school-resource-avenues-child-safety-first.md',
+  'slides/decks/school-three-things-to-push-on.md',
   'slides/decks/class-coach-ai-learning-companion.md',
   'slides/decks/class-coach-understanding-first.md',
   'slides/components/ark-components-architecture-cycle.html',
@@ -48,11 +66,11 @@ const requiredFiles = [
   'slides/assets/defragmenting-the-user-orbit-01-split-vs-orbit.png',
   'slides/assets/defragmenting-the-user-orbit-02-tool-owned-vs-person-gravity.png',
   'slides/assets/defragmenting-the-user-orbit-03-recomposition-current.png',
-  'slides/assets/kristin-knowledge-that-endures-cover.png',
+  'slides/assets/school-knowledge-that-endures-cover.png',
   'slides/assets/conscience-visibility-spectrum.png',
   'slides/assets/parent-energy-channel.png',
-  'slides/decks/kristin-school-give-parents-something-to-push-on.md',
-  'slides/decks/kristin-school-run-the-school-before-release.md',
+  'slides/decks/school-give-parents-something-to-push-on.md',
+  'slides/decks/school-run-the-school-before-release.md',
   'slides/components/parent-energy-operating-board.html',
   'slides/components/guardian-test-matrix.html',
   'slides/components/school-simulation-tiers.html',
@@ -79,13 +97,13 @@ for (const file of requiredFiles) {
   if (!existsSync(join(root, file))) fail(`Missing ${file}`);
 }
 const forbiddenFiles = [
-  'slides/decks/kristin-school-enduring-knowledge-cores.md',
-  'slides/pdfs/kristin-school-enduring-knowledge-cores.pdf',
+  'slides/decks/school-enduring-knowledge-cores.md',
+  'slides/pdfs/school-enduring-knowledge-cores.pdf',
   'slides/pdfs',
   'dist',
   'vercel.json',
   'assets/durable-core-architecture.png',
-  'slides/assets/kristin-enduring-cores-cover.png',
+  'slides/assets/school-enduring-cores-cover.png',
   'slides/components/child-core-influence-model.html',
   'slides/decks/studybuddy-ai-learning-companion.md',
   'slides/components/studybuddy-learning-loop.html',
@@ -133,10 +151,10 @@ const mustContain = [
   ['Unlimited human problem solving', html],
   ['Start a £500 agent pilot', html],
   ['Published decks', html],
-  ['slides/reveal-runner.html?deck=decks/kristin-school-pilot-validation-portfolio.md', html],
-  ['slides/reveal-runner.html?deck=decks/kristin-school-resource-avenues-child-safety-first.md', html],
-  ['slides/reveal-runner.html?deck=decks/kristin-school-give-parents-something-to-push-on.md', html],
-  ['slides/reveal-runner.html?deck=decks/kristin-school-run-the-school-before-release.md', html],
+  ['slides/reveal-runner.html?deck=decks/school-pilot-validation-portfolio.md', html],
+  ['slides/reveal-runner.html?deck=decks/school-resource-avenues-child-safety-first.md', html],
+  ['slides/reveal-runner.html?deck=decks/school-give-parents-something-to-push-on.md', html],
+  ['slides/reveal-runner.html?deck=decks/school-run-the-school-before-release.md', html],
   ['slides/reveal-runner.html?deck=decks/class-coach-ai-learning-companion.md', html],
   ['slides/reveal-runner.html?deck=decks/class-coach-understanding-first.md', html],
   ['class-coach-understanding-first.md', slidesIndex],
@@ -172,8 +190,8 @@ const mustContain = [
   ['Vault crossing', read('slides/components/ark-components-architecture-cycle.html')],
   ['Give the Parents Something to Push On', slidesIndex],
   ['Run the School Before We Release It', slidesIndex],
-  ['Guardian tests', read('slides/decks/kristin-school-give-parents-something-to-push-on.md')],
-  ['synthetic students', read('slides/decks/kristin-school-run-the-school-before-release.md')],
+  ['Guardian tests', read('slides/decks/school-give-parents-something-to-push-on.md')],
+  ['synthetic students', read('slides/decks/school-run-the-school-before-release.md')],
   ['Telegram', html],
   ['WhatsApp', html],
   ['Email', html],
@@ -202,9 +220,9 @@ const mustContain = [
   ['defragmenting-user-orbit-cycle.html', read('slides/decks/defragmenting-the-user.md')],
   ['Child-Safety-First Resource Avenues', slidesIndex],
   ['Three Things to Push On', slidesIndex],
-  ['slides/reveal-runner.html?deck=decks/kristin-school-three-things-to-push-on.md', html],
-  ['Conscience', read('slides/decks/kristin-school-pilot-validation-portfolio.md')],
-  ['Conscience', read('slides/decks/kristin-school-three-things-to-push-on.md')],
+  ['slides/reveal-runner.html?deck=decks/school-three-things-to-push-on.md', html],
+  ['Conscience', read('slides/decks/school-pilot-validation-portfolio.md')],
+  ['Conscience', read('slides/decks/school-three-things-to-push-on.md')],
   ['reveal.js@6.0.1', runner],
   ['js-yaml@4.2.0', runner],
   ['Download PDF', runner],
@@ -265,17 +283,17 @@ const publicNamingFiles = [
   'assets/social-card.svg',
   'slides/decks/dreamcatcher-ark-components.md',
   'slides/decks/defragmenting-the-user.md',
-  'slides/decks/kristin-school-knowledge-that-endures.md',
-  'slides/decks/kristin-school-pilot-validation-portfolio.md',
-  'slides/decks/kristin-school-resource-avenues-child-safety-first.md',
-  'slides/decks/kristin-school-run-the-school-before-release.md',
-  'slides/decks/kristin-school-three-things-to-push-on.md',
-  'slides/decks/kristin-school-give-parents-something-to-push-on.md',
+  'slides/decks/school-knowledge-that-endures.md',
+  'slides/decks/school-pilot-validation-portfolio.md',
+  'slides/decks/school-resource-avenues-child-safety-first.md',
+  'slides/decks/school-run-the-school-before-release.md',
+  'slides/decks/school-three-things-to-push-on.md',
+  'slides/decks/school-give-parents-something-to-push-on.md',
   'slides/decks/class-coach-ai-learning-companion.md',
   'slides/decks/class-coach-understanding-first.md',
   'slides/components/ai-school-measurement-board.html',
   'slides/components/child-ark-influence-model.html',
-  'slides/components/kristin-pilot-path.html',
+  'slides/components/school-pilot-path.html',
   'slides/components/parent-energy-operating-board.html',
   'slides/components/pilot-learning-flywheel.html',
   'slides/components/resource-avenues-map.html',
@@ -290,7 +308,7 @@ const publicNamingFiles = [
   'slides/components/classcoach-understanding-team-teaching.html',
 ];
 const retiredNamingPatterns = [
-  /kristin-school-enduring-knowledge-cores/i,
+  /school-enduring-knowledge-cores/i,
   /enduring-knowledge-cores/i,
   /\b(?:core|cores)\b/i,
   /\ba Ark\b/i,
@@ -363,7 +381,7 @@ for (const retiredTerm of ['Codex', 'Covenant', 'The Ark Naming System', 'ark-na
   if (arkComponentsBundle.includes(retiredTerm)) fail(`Retired Ark Components term still present: ${retiredTerm}`);
 }
 
-for (const deck of ['dreamcatcher-ark-components', 'defragmenting-the-user', 'kristin-school-knowledge-that-endures', 'kristin-school-pilot-validation-portfolio', 'kristin-school-resource-avenues-child-safety-first', 'kristin-school-three-things-to-push-on', 'kristin-school-give-parents-something-to-push-on', 'kristin-school-run-the-school-before-release', 'class-coach-ai-learning-companion', 'class-coach-understanding-first']) {
+for (const deck of ['dreamcatcher-ark-components', 'defragmenting-the-user', 'school-knowledge-that-endures', 'school-pilot-validation-portfolio', 'school-resource-avenues-child-safety-first', 'school-three-things-to-push-on', 'school-give-parents-something-to-push-on', 'school-run-the-school-before-release', 'class-coach-ai-learning-companion', 'class-coach-understanding-first']) {
   const deckText = read(`slides/decks/${deck}.md`);
   if (!deckText.startsWith('---')) fail(`${deck}.md must start with frontmatter`);
   if (deckText.includes('../../Assets/')) fail(`${deck}.md must not reference private notes asset paths`);

@@ -1,11 +1,11 @@
 ---
 title: Give the Parents Something to Push On
-slug: kristin-school-give-parents-something-to-push-on
+slug: school-give-parents-something-to-push-on
 status: draft
-audience: Kristin School
+audience: School leaders
 prepared_by: Tom Thompson
 contact: tom@DreamCatcher.ai
-affiliation: Parent of Harry Thompson (Junior School applicant, unconfirmed)
+affiliation: Independent family proposal
 created: 2026-06-04
 format: reveal.js external Markdown, no build
 assets:
@@ -26,11 +26,11 @@ source_notes:
 <div class="dc-shell dc-cover" style="--cover-image: url('assets/parent-energy-channel.png')">
   <div class="dc-brand"><img src="../assets/dreamcatcher-logo.svg" alt="Dreamcatcher logo"><span>Dreamcatcher</span></div>
   <div>
-    <div class="dc-kicker">Prepared for Kristin School</div>
+    <div class="dc-kicker">Prepared for school leaders</div>
     <h1 class="dc-title">Give the Parents Something to Push On</h1>
     <p class="dc-subtitle">Harnessing parental energy as testing, resources, governance feedback, and proof for Ark pilots.</p>
   </div>
-  <div class="dc-footerline"><span>Prepared by Tom Thompson · tom@DreamCatcher.ai</span><span>Parent of Harry Thompson (Junior School applicant, unconfirmed)</span></div>
+  <div class="dc-footerline"><span>Prepared by Tom Thompson · tom@DreamCatcher.ai</span><span>Independent family proposal</span></div>
 </div>
 
 ---
@@ -239,7 +239,7 @@ source_notes:
     <div class="dc-card"><h3>What failed</h3><p>Blocks that were too dumb, dashboards that were too invasive, costs that exceeded expectation.</p></div>
     <div class="dc-card"><h3>What changed</h3><p>Policy edits, visibility tuning, new asks, abandoned ideas, next cohort size.</p></div>
   </div>
-  <p class="dc-muted" style="font-size: .48em; margin-top: 28px;">Suggested parent-readable rhythm: Kristin AI Safety Field Notes.</p>
+  <p class="dc-muted" style="font-size: .48em; margin-top: 28px;">Suggested parent-readable rhythm: School AI Safety Field Notes.</p>
 </div>
 
 ---
@@ -247,7 +247,7 @@ source_notes:
 <div class="dc-shell">
   <div class="dc-kicker">First 30 days</div>
   <div class="dc-grid-3" style="margin-top: 28px;">
-    <div class="dc-card"><h3>1 · Five parent Arks</h3><p>Kristin-address gated pilot slots. Adults live with Arks for real adult work and feedback.</p></div>
+    <div class="dc-card"><h3>1 · Five parent Arks</h3><p>School-address gated pilot slots. Adults live with Arks for real adult work and feedback.</p></div>
     <div class="dc-card"><h3>2 · Guardian test v1</h3><p>Run consent, visibility, recovery, cost, and Conscience drills; publish what failed.</p></div>
     <div class="dc-card"><h3>3 · Simulation preview</h3><p>Give parents and teachers the first school-shaped sandbox to interrogate.</p></div>
   </div>

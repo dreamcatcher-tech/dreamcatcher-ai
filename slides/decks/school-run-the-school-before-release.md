@@ -1,11 +1,11 @@
 ---
 title: Run the School Before We Release It
-slug: kristin-school-run-the-school-before-release
+slug: school-run-the-school-before-release
 status: draft
-audience: Kristin School
+audience: School leaders
 prepared_by: Tom Thompson
 contact: tom@DreamCatcher.ai
-affiliation: Parent of Harry Thompson (Junior School applicant, unconfirmed)
+affiliation: Independent family proposal
 created: 2026-06-04
 format: reveal.js external Markdown, no build
 assets:
@@ -26,11 +26,11 @@ source_notes:
 <div class="dc-shell dc-cover" style="--cover-image: url('assets/school-simulation-sandbox.png')">
   <div class="dc-brand"><img src="../assets/dreamcatcher-logo.svg" alt="Dreamcatcher logo"><span>Dreamcatcher</span></div>
   <div>
-    <div class="dc-kicker">Prepared for Kristin School</div>
+    <div class="dc-kicker">Prepared for school leaders</div>
     <h1 class="dc-title">Run the School Before We Release It</h1>
     <p class="dc-subtitle">A tiered simulation path for testing Arks, synthetic students, dashboards, Conscience controls, and the long life of a school-certified agent.</p>
   </div>
-  <div class="dc-footerline"><span>Prepared by Tom Thompson · tom@DreamCatcher.ai</span><span>Parent of Harry Thompson (Junior School applicant, unconfirmed)</span></div>
+  <div class="dc-footerline"><span>Prepared by Tom Thompson · tom@DreamCatcher.ai</span><span>Independent family proposal</span></div>
 </div>
 
 ---
@@ -276,7 +276,7 @@ source_notes:
   <div class="dc-kicker">Custody drills</div>
   <h2>The simulation should rehearse leaving, not just starting.</h2>
   <div class="dc-grid-3" style="margin-top: 28px;">
-    <div class="dc-card"><h3>Export</h3><p>Can the student take the Ark, or an exportable successor, beyond Kristin?</p></div>
+    <div class="dc-card"><h3>Export</h3><p>Can the student take the Ark, or an exportable successor, beyond the school?</p></div>
     <div class="dc-card"><h3>Delete / forget</h3><p>What should be erased, decayed, redacted, or kept under provenance?</p></div>
     <div class="dc-card"><h3>Transfer</h3><p>What happens when families move, students graduate, teachers leave, policies change, or vendors change?</p></div>
   </div>
@@ -300,7 +300,7 @@ source_notes:
   <div class="dc-kicker">Closing claim</div>
   <div class="dc-grid-2">
     <div>
-      <h2>The simulation is how Kristin can think long-term safely.</h2>
+      <h2>The simulation is how a school can think long-term safely.</h2>
       <p class="dc-bigline">Run the future with synthetic students first. Then decide what real children should inherit.</p>
     </div>
     <div class="dc-card">

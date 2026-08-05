@@ -2,9 +2,9 @@
 title: Class Coach AI Learning Companion
 slug: class-coach-ai-learning-companion
 status: draft
-audience: Kristin School
+audience: School leaders
 prepared_by: Sophie and Tom Thompson
-affiliation: Parents of Harry Thompson (Junior School applicant, unconfirmed)
+affiliation: Independent family proposal
 created: 2026-06-06
 format: reveal.js external Markdown, no build
 assets:
@@ -30,7 +30,7 @@ source_notes:
 <div class="dc-shell dc-cover" style="--cover-image: url('assets/classcoach-cover.svg')">
   <div class="dc-brand"><img src="../assets/classcoach-logo-01.svg" alt="Class Coach logo" style="width: 310px; height: auto; border-radius: 18px; background: rgba(255,255,255,.96); padding: 10px 14px;"></div>
   <div>
-    <div class="dc-kicker">Prepared for Kristin School</div>
+    <div class="dc-kicker">Prepared for school leaders</div>
     <h1 class="dc-title">Class Coach</h1>
     <p class="dc-subtitle">An AI learning companion: patient, private, adaptive, and present — in every lesson, through every question, until understanding genuinely lands.</p>
   </div>

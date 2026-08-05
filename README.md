@@ -52,4 +52,4 @@ The deck runner’s **Download PDF** control follows the Reveal.js PDF-export fl
 
 Current published decks include `Ark Components`, `Three Things to Push On`, `Defragmenting the User`, `The Knowledge That Endures`, `Ark Pilot Validation Portfolio`, and `Child-Safety-First Resource Avenues`.
 
-Published slide decks added: `slides/decks/kristin-school-give-parents-something-to-push-on.md` and `slides/decks/kristin-school-run-the-school-before-release.md` — parent-energy and synthetic-school simulation follow-ons for the Kristin School pilot story.
+Published slide decks added: `slides/decks/school-give-parents-something-to-push-on.md` and `slides/decks/school-run-the-school-before-release.md` — parent-energy and synthetic-school simulation follow-ons for the school pilot story.

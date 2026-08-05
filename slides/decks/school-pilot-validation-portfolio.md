@@ -1,16 +1,16 @@
 ---
 title: Ark Pilot Validation Portfolio
-slug: kristin-school-pilot-validation-portfolio
+slug: school-pilot-validation-portfolio
 status: draft
-audience: Kristin School
+audience: School leaders
 prepared_by: Tom Thompson
 contact: tom@DreamCatcher.ai
-affiliation: Parent of Harry Thompson (Junior School applicant, unconfirmed)
+affiliation: Independent family proposal
 created: 2026-06-04
 format: reveal.js external Markdown, no build
 assets:
   logo: ../assets/dreamcatcher-logo.svg
-  cover_image: ../assets/kristin-knowledge-that-endures-cover.png
+  cover_image: ../assets/school-knowledge-that-endures-cover.png
   spectrum_image: ../assets/conscience-visibility-spectrum.png
   gilfoyle_image: ../assets/gilfoyle-containment.jpg
 components:
@@ -22,14 +22,14 @@ source_notes:
   - ../Deck Seed - Pilot Validation Portfolio.md
 ---
 
-<div class="dc-shell dc-cover" style="--cover-image: url('assets/kristin-knowledge-that-endures-cover.png')">
+<div class="dc-shell dc-cover" style="--cover-image: url('assets/school-knowledge-that-endures-cover.png')">
   <div class="dc-brand"><img src="../assets/dreamcatcher-logo.svg" alt="Dreamcatcher logo"><span>Dreamcatcher</span></div>
   <div>
-    <div class="dc-kicker">Prepared for Kristin School</div>
+    <div class="dc-kicker">Prepared for school leaders</div>
     <h1 class="dc-title">Ark Pilot Validation Portfolio</h1>
     <p class="dc-subtitle">One-slide pilot briefs for validating the Conscience, the Ark, the care boundary, and the economics of student-safe Arks and Agents.</p>
   </div>
-  <div class="dc-footerline"><span>Prepared by Tom Thompson · tom@DreamCatcher.ai</span><span>Parent of Harry Thompson (Junior School applicant, unconfirmed)</span></div>
+  <div class="dc-footerline"><span>Prepared by Tom Thompson · tom@DreamCatcher.ai</span><span>Independent family proposal</span></div>
 </div>
 
 ---
@@ -529,5 +529,5 @@ source_notes:
       </ul>
     </div>
   </div>
-  <div class="dc-footerline" style="margin-top: 72px;"><span>Dreamcatcher</span><span>Prepared for Kristin School · Tom Thompson</span></div>
+  <div class="dc-footerline" style="margin-top: 72px;"><span>Dreamcatcher</span><span>Prepared for school leaders · Tom Thompson</span></div>
 </div>

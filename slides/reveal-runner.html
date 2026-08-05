@@ -66,7 +66,7 @@
 </head>
 <body>
   <nav class="dc-export-bar" aria-label="Deck downloads">
-    <a id="pdf-download-link" href="reveal-runner.html?deck=decks/kristin-school-pilot-validation-portfolio.md&amp;print-pdf&amp;autoprint" target="_blank" rel="noopener" title="Open this deck in Reveal.js PDF export mode and launch the browser print dialog">Download PDF</a>
+    <a id="pdf-download-link" href="reveal-runner.html?deck=decks/school-pilot-validation-portfolio.md&amp;print-pdf&amp;autoprint" target="_blank" rel="noopener" title="Open this deck in Reveal.js PDF export mode and launch the browser print dialog">Download PDF</a>
   </nav>
   <aside class="dc-print-help" aria-live="polite"><strong>PDF export is ready.</strong> If the print dialog did not open, press Ctrl/Cmd+P, choose “Save as PDF”, Landscape, no margins, and include background graphics.</aside>
   <div id="deck-error"></div>
@@ -94,7 +94,7 @@
     try {
       const params = new URLSearchParams(location.search);
       const shouldAutoPrint = params.has('print-pdf') && params.has('autoprint');
-      const deckParam = params.get('deck') || 'decks/kristin-school-pilot-validation-portfolio.md';
+      const deckParam = params.get('deck') || 'decks/school-pilot-validation-portfolio.md';
       const deckUrl = new URL(deckParam, location.href);
       const pdfLink = document.querySelector('#pdf-download-link');
       const exportUrl = new URL(location.href);
@@ -148,7 +148,7 @@
         window.print();
       }
     } catch (err) {
-      showError(`Could not load deck. Serve this folder over HTTP and pass <code>?deck=decks/kristin-school-pilot-validation-portfolio.md</code>.<br><br><code>${String(err)}</code>`);
+      showError(`Could not load deck. Serve this folder over HTTP and pass <code>?deck=decks/school-pilot-validation-portfolio.md</code>.<br><br><code>${String(err)}</code>`);
     }
   </script>
 </body>

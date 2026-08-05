@@ -1,16 +1,16 @@
 ---
 title: Child-Safety-First Resource Avenues
-slug: kristin-school-resource-avenues-child-safety-first
+slug: school-resource-avenues-child-safety-first
 status: draft
-audience: Kristin School
+audience: School leaders
 prepared_by: Tom Thompson
 contact: tom@DreamCatcher.ai
-affiliation: Parent of Harry Thompson (Junior School applicant, unconfirmed)
+affiliation: Independent family proposal
 created: 2026-06-04
 format: reveal.js external Markdown, no build
 assets:
   logo: ../assets/dreamcatcher-logo.svg
-  cover_image: ../assets/kristin-knowledge-that-endures-cover.png
+  cover_image: ../assets/school-knowledge-that-endures-cover.png
 components:
   resource_avenues_map: ../components/resource-avenues-map.html
   measurement_board: ../components/ai-school-measurement-board.html
@@ -22,14 +22,14 @@ source_notes:
   - ../Deck Seed - Resource Avenues and Child Safety First.md
 ---
 
-<div class="dc-shell dc-cover" style="--cover-image: url('assets/kristin-knowledge-that-endures-cover.png')">
+<div class="dc-shell dc-cover" style="--cover-image: url('assets/school-knowledge-that-endures-cover.png')">
   <div class="dc-brand"><img src="../assets/dreamcatcher-logo.svg" alt="Dreamcatcher logo"><span>Dreamcatcher</span></div>
   <div>
-    <div class="dc-kicker">Prepared for Kristin School</div>
+    <div class="dc-kicker">Prepared for school leaders</div>
     <h1 class="dc-title">Child-Safety-First Resource Avenues</h1>
     <p class="dc-subtitle">How to turn the child-safety blocker into a shared research agenda, an external-support ask, a parent update rhythm, and a measured benchmark against other schools.</p>
   </div>
-  <div class="dc-footerline"><span>Prepared by Tom Thompson · tom@DreamCatcher.ai</span><span>Parent of Harry Thompson (Junior School applicant, unconfirmed)</span></div>
+  <div class="dc-footerline"><span>Prepared by Tom Thompson · tom@DreamCatcher.ai</span><span>Independent family proposal</span></div>
 </div>
 
 ---
@@ -220,9 +220,9 @@ source_notes:
   <div class="dc-grid-3" style="margin-top: 28px;">
     <div class="dc-card"><h3>1 · Safety gate</h3><p>What passed, what failed, what was changed, what remains blocked.</p></div>
     <div class="dc-card"><h3>2 · Resource radar</h3><p>OpenAI / foundation / university / school-partner avenues being pursued, with status and next ask.</p></div>
-    <div class="dc-card"><h3>3 · Benchmark board</h3><p>What other schools and systems are doing, and what evidence Kristin can compare against.</p></div>
+    <div class="dc-card"><h3>3 · Benchmark board</h3><p>What other schools and systems are doing, and what evidence the school can compare against.</p></div>
   </div>
-  <p class="dc-muted" style="font-size: .46em; margin-top: 26px;">Suggested title: <strong>Kristin AI Safety Field Notes</strong> — short, source-linked, parent-readable.</p>
+  <p class="dc-muted" style="font-size: .46em; margin-top: 26px;">Suggested title: <strong>School AI Safety Field Notes</strong> — short, source-linked, parent-readable.</p>
 </div>
 
 ---

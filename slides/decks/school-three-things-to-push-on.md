@@ -1,8 +1,8 @@
 ---
 title: Three Things to Push On
-slug: kristin-school-three-things-to-push-on
+slug: school-three-things-to-push-on
 status: draft-deck
-audience: Kristin School
+audience: School leaders
 created: 2026-06-04
 assets:
   cover: ../assets/parent-energy-channel.png
@@ -10,21 +10,21 @@ assets:
   conscience_spectrum: ../assets/conscience-visibility-spectrum.png
 links:
   defragmenting_the_user: https://www.dreamcatcher.ai/slides/reveal-runner.html?deck=decks/defragmenting-the-user.md
-  knowledge_that_endures: https://www.dreamcatcher.ai/slides/reveal-runner.html?deck=decks/kristin-school-knowledge-that-endures.md
-  pilot_validation_portfolio: https://www.dreamcatcher.ai/slides/reveal-runner.html?deck=decks/kristin-school-pilot-validation-portfolio.md
-  resource_avenues: https://www.dreamcatcher.ai/slides/reveal-runner.html?deck=decks/kristin-school-resource-avenues-child-safety-first.md
+  knowledge_that_endures: https://www.dreamcatcher.ai/slides/reveal-runner.html?deck=decks/school-knowledge-that-endures.md
+  pilot_validation_portfolio: https://www.dreamcatcher.ai/slides/reveal-runner.html?deck=decks/school-pilot-validation-portfolio.md
+  resource_avenues: https://www.dreamcatcher.ai/slides/reveal-runner.html?deck=decks/school-resource-avenues-child-safety-first.md
 ---
 
 <section class="dc-shell dc-cover" style="--cover-image: url('assets/parent-energy-channel.png'); text-align: left; background-image: linear-gradient(90deg, rgba(2,6,11,0.96) 0%, rgba(6,17,31,0.86) 40%, rgba(6,17,31,0.30) 72%, rgba(6,17,31,0.10) 100%), url('../assets/parent-energy-channel.png'); background-position: center;">
   <div class="dc-brand"><img src="../assets/dreamcatcher-logo.svg" alt="Dreamcatcher logo"> Dreamcatcher.ai</div>
   <div>
-    <p class="dc-kicker">Kristin School · orientation deck</p>
+    <p class="dc-kicker">School leaders · orientation deck</p>
     <h1 class="dc-title">Three things to push on.</h1>
     <p class="dc-subtitle">Concentrate the Ark · put parents in the loop · tune the Conscience.</p>
   </div>
   <div class="dc-footerline">
     <span>Prepared by Tom Thompson · tom@DreamCatcher.ai</span>
-    <span>Parent of Harry Thompson · Junior School applicant, unconfirmed</span>
+    <span>Independent family proposal</span>
   </div>
 </section>
 
@@ -68,7 +68,7 @@ links:
       <p class="dc-muted">The issue is not just “too many AI tools.” It is school portals, SaaS apps, files, inboxes, model chats and family evidence scattered outside a portable owner-controlled Ark.</p>
       <div class="dc-pill-row">
         <a class="dc-pill" href="https://www.dreamcatcher.ai/slides/reveal-runner.html?deck=decks/defragmenting-the-user.md">Open: Defragmenting the User</a>
-        <a class="dc-pill" href="https://www.dreamcatcher.ai/slides/reveal-runner.html?deck=decks/kristin-school-knowledge-that-endures.md">Open: The Knowledge That Endures</a>
+        <a class="dc-pill" href="https://www.dreamcatcher.ai/slides/reveal-runner.html?deck=decks/school-knowledge-that-endures.md">Open: The Knowledge That Endures</a>
       </div>
     </div>
     <div class="dc-card">
@@ -100,7 +100,7 @@ links:
         <li>Source of guardian tests and awkward scenarios.</li>
         <li>Funding/time signal when blockers are visible.</li>
       </ul>
-      <div class="dc-pill-row"><a class="dc-pill" href="https://www.dreamcatcher.ai/slides/reveal-runner.html?deck=decks/kristin-school-pilot-validation-portfolio.md">Open: Pilot Validation Portfolio</a></div>
+      <div class="dc-pill-row"><a class="dc-pill" href="https://www.dreamcatcher.ai/slides/reveal-runner.html?deck=decks/school-pilot-validation-portfolio.md">Open: Pilot Validation Portfolio</a></div>
     </div>
   </div>
 </section>
@@ -114,7 +114,7 @@ links:
       <h2>The Conscience is the parent of confidentiality.</h2>
       <p class="dc-bigline">Confidentiality is not a switch. It is a parameter to tune.</p>
       <p class="dc-muted">Too opaque and the school cannot help. Too visible and the child loses agency and trust. The Conscience is the intelligent boundary that makes a humane middle testable.</p>
-      <div class="dc-pill-row"><a class="dc-pill" href="https://www.dreamcatcher.ai/slides/reveal-runner.html?deck=decks/kristin-school-pilot-validation-portfolio.md">Open: Conscience validation deck</a></div>
+      <div class="dc-pill-row"><a class="dc-pill" href="https://www.dreamcatcher.ai/slides/reveal-runner.html?deck=decks/school-pilot-validation-portfolio.md">Open: Conscience validation deck</a></div>
     </div>
     <figure style="margin:0;">
       <img src="../assets/conscience-visibility-spectrum.png" alt="Generated illustration of the Conscience visibility spectrum with opaque, balanced, and over-visible zones">
@@ -132,7 +132,7 @@ links:
     <article class="dc-card"><h3>2 · Run guardian tests</h3><p>Use parents, teachers and synthetic students to test the Conscience, containment, cost and custody.</p></article>
     <article class="dc-card"><h3>3 · Publish proof-points</h3><p>Monthly evidence: what worked, what blocked release, what needs money, time or review.</p></article>
   </div>
-  <div class="dc-pill-row" style="justify-content: center; margin-top: 30px;"><a class="dc-pill" href="https://www.dreamcatcher.ai/slides/reveal-runner.html?deck=decks/kristin-school-resource-avenues-child-safety-first.md">Open: Child-Safety-First Resource Avenues</a></div>
+  <div class="dc-pill-row" style="justify-content: center; margin-top: 30px;"><a class="dc-pill" href="https://www.dreamcatcher.ai/slides/reveal-runner.html?deck=decks/school-resource-avenues-child-safety-first.md">Open: Child-Safety-First Resource Avenues</a></div>
 </section>
 
 ---
@@ -142,8 +142,8 @@ links:
   <h2>This deck is the front door. Use the detailed decks for the work.</h2>
   <div class="dc-grid-2" style="margin-top: 28px;">
     <article class="dc-card"><h3>Defragmenting the User</h3><p>Why the old world scatters the person and the new world makes the person the Ark.</p><p><a href="https://www.dreamcatcher.ai/slides/reveal-runner.html?deck=decks/defragmenting-the-user.md">Open deck →</a></p></article>
-    <article class="dc-card"><h3>The Knowledge That Endures</h3><p>Durable school/family Arks, adult-first pilots and living institutional wisdom.</p><p><a href="https://www.dreamcatcher.ai/slides/reveal-runner.html?deck=decks/kristin-school-knowledge-that-endures.md">Open deck →</a></p></article>
-    <article class="dc-card"><h3>Pilot Validation Portfolio</h3><p>One-slide pilot briefs for Conscience, containment, confidential custody, care and learning lift.</p><p><a href="https://www.dreamcatcher.ai/slides/reveal-runner.html?deck=decks/kristin-school-pilot-validation-portfolio.md">Open deck →</a></p></article>
-    <article class="dc-card"><h3>Resource Avenues</h3><p>Child safety as the first public research gate, plus proof-point boards and support asks.</p><p><a href="https://www.dreamcatcher.ai/slides/reveal-runner.html?deck=decks/kristin-school-resource-avenues-child-safety-first.md">Open deck →</a></p></article>
+    <article class="dc-card"><h3>The Knowledge That Endures</h3><p>Durable school/family Arks, adult-first pilots and living institutional wisdom.</p><p><a href="https://www.dreamcatcher.ai/slides/reveal-runner.html?deck=decks/school-knowledge-that-endures.md">Open deck →</a></p></article>
+    <article class="dc-card"><h3>Pilot Validation Portfolio</h3><p>One-slide pilot briefs for Conscience, containment, confidential custody, care and learning lift.</p><p><a href="https://www.dreamcatcher.ai/slides/reveal-runner.html?deck=decks/school-pilot-validation-portfolio.md">Open deck →</a></p></article>
+    <article class="dc-card"><h3>Resource Avenues</h3><p>Child safety as the first public research gate, plus proof-point boards and support asks.</p><p><a href="https://www.dreamcatcher.ai/slides/reveal-runner.html?deck=decks/school-resource-avenues-child-safety-first.md">Open deck →</a></p></article>
   </div>
 </section>

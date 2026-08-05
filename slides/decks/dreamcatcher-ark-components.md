@@ -2,10 +2,10 @@
 title: Ark Components
 slug: dreamcatcher-ark-components
 status: reviewed
-audience: Dreamcatcher / Kristin School
+audience: Dreamcatcher / school leaders
 prepared_by: Tom Thompson
 contact: tom@DreamCatcher.ai
-affiliation: Parent of Harry Thompson (Junior School applicant, unconfirmed)
+affiliation: Independent family proposal
 created: 2026-06-04
 updated: 2026-06-05
 format: reveal.js external Markdown, no build
@@ -24,11 +24,11 @@ source_notes:
   <img src="../assets/ark-components-cover-bg.svg" alt="" aria-hidden="true" style="position:absolute; right:-260px; top:58px; width:56%; max-height:none; height:auto; opacity:.76; box-shadow:none; border-radius:0; background:transparent; z-index:0;">
   <div class="dc-brand" style="position:relative; z-index:2;"><img src="../assets/dreamcatcher-logo.svg" alt="Dreamcatcher logo"><span>Dreamcatcher</span></div>
   <div style="position:relative; z-index:2; max-width:820px;">
-    <div class="dc-kicker">Prepared for Kristin School</div>
+    <div class="dc-kicker">Prepared for school leaders</div>
     <h1 class="dc-title">Ark Components</h1>
     <p class="dc-subtitle">An open, self-sovereign architecture for durable personal AI: a person-owned Ark, a live Agent, a Conscience boundary, Archive, Vault, Model Socket, Toolbay, Open Ports, and Outlast continuity.</p>
   </div>
-  <div class="dc-footerline" style="position:relative; z-index:2;"><span>Prepared by Tom Thompson · tom@DreamCatcher.ai</span><span>Parent of Harry Thompson (Junior School applicant, unconfirmed)</span></div>
+  <div class="dc-footerline" style="position:relative; z-index:2;"><span>Prepared by Tom Thompson · tom@DreamCatcher.ai</span><span>Independent family proposal</span></div>
 </div>
 
 ---

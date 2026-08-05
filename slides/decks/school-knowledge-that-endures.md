@@ -1,19 +1,19 @@
 ---
 title: The Knowledge That Endures
-slug: kristin-school-knowledge-that-endures
+slug: school-knowledge-that-endures
 status: draft
-audience: Kristin School
+audience: School leaders
 prepared_by: Tom Thompson
 contact: tom@DreamCatcher.ai
-affiliation: Parent of Harry Thompson (Junior School applicant, unconfirmed)
+affiliation: Independent family proposal
 created: 2026-06-04
 format: reveal.js external Markdown, no build
 assets:
   logo: ../assets/dreamcatcher-logo.svg
-  cover_image: ../assets/kristin-knowledge-that-endures-cover.png
+  cover_image: ../assets/school-knowledge-that-endures-cover.png
 components:
   knowledge_cascade: ../components/knowledge-cascade.html
-  pilot_path: ../components/kristin-pilot-path.html
+  pilot_path: ../components/school-pilot-path.html
   influence_model: ../components/child-ark-influence-model.html
   confidentiality_spectrum: ../components/confidentiality-spectrum.html
   pilot_flywheel: ../components/pilot-learning-flywheel.html
@@ -25,14 +25,14 @@ source_notes:
   - ../../Inbox/2026-06-04 Dreamcatcher Homepage Concept Inventory.md
 ---
 
-<div class="dc-shell dc-cover" style="--cover-image: url('assets/kristin-knowledge-that-endures-cover.png')">
+<div class="dc-shell dc-cover" style="--cover-image: url('assets/school-knowledge-that-endures-cover.png')">
   <div class="dc-brand"><img src="../assets/dreamcatcher-logo.svg" alt="Dreamcatcher logo"><span>Dreamcatcher</span></div>
   <div>
-    <div class="dc-kicker">Prepared for Kristin School</div>
+    <div class="dc-kicker">Prepared for school leaders</div>
     <h1 class="dc-title">The Knowledge That Endures</h1>
     <p class="dc-subtitle">Enduring agents, student Arks, and the wisdom a school can keep building.</p>
   </div>
-  <div class="dc-footerline"><span>Prepared by Tom Thompson · tom@DreamCatcher.ai</span><span>Parent of Harry Thompson (Junior School applicant, unconfirmed)</span></div>
+  <div class="dc-footerline"><span>Prepared by Tom Thompson · tom@DreamCatcher.ai</span><span>Independent family proposal</span></div>
 </div>
 
 ---
@@ -114,7 +114,7 @@ source_notes:
 
 ---
 
-<iframe class="dc-component-frame" src="../components/kristin-pilot-path.html" title="Kristin School Ark pilot path"></iframe>
+<iframe class="dc-component-frame" src="../components/school-pilot-path.html" title="School Ark pilot path"></iframe>
 
 ---
 
@@ -166,7 +166,7 @@ source_notes:
 
 ---
 
-<iframe class="dc-component-frame" src="../components/pilot-learning-flywheel.html" title="Kristin pilot learning flywheel"></iframe>
+<iframe class="dc-component-frame" src="../components/pilot-learning-flywheel.html" title="School pilot learning flywheel"></iframe>
 
 ---
 
@@ -174,7 +174,7 @@ source_notes:
   <div class="dc-kicker">Pilot phases</div>
   <h2>A stepwise path that can stop, correct, or widen.</h2>
   <div class="dc-grid-3" style="margin-top: 28px;">
-    <div class="dc-card"><h3>1 · Kristin sandbox</h3><p>Give the department its own isolated agentic workforce and Arks. Use it internally first.</p></div>
+    <div class="dc-card"><h3>1 · School sandbox</h3><p>Give the department its own isolated agentic workforce and Arks. Use it internally first.</p></div>
     <div class="dc-card"><h3>2 · Parent partners</h3><p>Invite interested parents into a bounded pilot. Their Arks are real; the child counterpart can begin simulated.</p></div>
     <div class="dc-card"><h3>3 · Simulated child Arks</h3><p>Exercise realistic and deliberately problematic situations before any student rollout.</p></div>
   </div>
@@ -192,12 +192,12 @@ source_notes:
   <div class="dc-grid-2">
     <div>
       <h2>Start with a scarce, simple agent portal.</h2>
-      <p class="dc-bigline">A Kristin address unlocks the pilot. A small list of Arks makes participation concrete.</p>
+      <p class="dc-bigline">A school address unlocks the pilot. A small list of Arks makes participation concrete.</p>
     </div>
     <div class="dc-card">
       <h3>Provisioning flow</h3>
       <ul>
-        <li>Verify a Kristin School email address.</li>
+        <li>Verify a school email address.</li>
         <li>Show a limited initial list — for example, five pilot Arks.</li>
         <li>Let the parent select and bond to one Ark.</li>
         <li>Start using it for real adult work and reflection.</li>
@@ -260,7 +260,7 @@ source_notes:
 ---
 
 <div class="dc-shell">
-  <div class="dc-kicker">For Kristin School</div>
+  <div class="dc-kicker">For school leaders</div>
   <div class="dc-grid-2">
     <div>
       <h2>A school should not just pass knowledge through.</h2>
@@ -288,5 +288,5 @@ source_notes:
   <div class="dc-pill-row">
     <span class="dc-pill">adult Arks first</span><span class="dc-pill">simulated children</span><span class="dc-pill">dashboards</span><span class="dc-pill">visibility tuning</span><span class="dc-pill">living legacy</span>
   </div>
-  <div class="dc-footerline" style="margin-top: 104px;"><span>Dreamcatcher</span><span>Prepared for Kristin School · Tom Thompson</span></div>
+  <div class="dc-footerline" style="margin-top: 104px;"><span>Dreamcatcher</span><span>Prepared for school leaders · Tom Thompson</span></div>
 </div>
