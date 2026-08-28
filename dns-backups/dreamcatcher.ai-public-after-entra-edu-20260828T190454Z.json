@@ -1,0 +1,286 @@
+{
+  "captured_at": "20260828T190454Z",
+  "domain": "dreamcatcher.ai",
+  "queries": [
+    {
+      "name": "edu.dreamcatcher.ai",
+      "resolver": "cloudflare",
+      "response": {
+        "AD": false,
+        "Answer": [
+          {
+            "TTL": 600,
+            "data": "10 mxa.eu.mailgun.org.",
+            "name": "edu.dreamcatcher.ai",
+            "type": 15
+          },
+          {
+            "TTL": 600,
+            "data": "10 mxb.eu.mailgun.org.",
+            "name": "edu.dreamcatcher.ai",
+            "type": 15
+          }
+        ],
+        "CD": false,
+        "Question": [
+          {
+            "name": "edu.dreamcatcher.ai",
+            "type": 15
+          }
+        ],
+        "RA": true,
+        "RD": true,
+        "Status": 0,
+        "TC": false
+      },
+      "type": "MX"
+    },
+    {
+      "name": "edu.dreamcatcher.ai",
+      "resolver": "cloudflare",
+      "response": {
+        "AD": false,
+        "Answer": [
+          {
+            "TTL": 600,
+            "data": "\"MS=ms61661472\"",
+            "name": "edu.dreamcatcher.ai",
+            "type": 16
+          },
+          {
+            "TTL": 600,
+            "data": "\"v=spf1 include:mailgun.org ~all\"",
+            "name": "edu.dreamcatcher.ai",
+            "type": 16
+          }
+        ],
+        "CD": false,
+        "Question": [
+          {
+            "name": "edu.dreamcatcher.ai",
+            "type": 16
+          }
+        ],
+        "RA": true,
+        "RD": true,
+        "Status": 0,
+        "TC": false
+      },
+      "type": "TXT"
+    },
+    {
+      "name": "edu.dreamcatcher.ai",
+      "resolver": "cloudflare",
+      "response": {
+        "AD": false,
+        "Authority": [
+          {
+            "TTL": 1800,
+            "data": "curitiba.ns.porkbun.com. dns.cloudflare.com. 2413429526 10000 2400 604800 1800",
+            "name": "dreamcatcher.ai",
+            "type": 6
+          }
+        ],
+        "CD": false,
+        "Question": [
+          {
+            "name": "edu.dreamcatcher.ai",
+            "type": 5
+          }
+        ],
+        "RA": true,
+        "RD": true,
+        "Status": 0,
+        "TC": false
+      },
+      "type": "CNAME"
+    },
+    {
+      "name": "dreamcatcher.ai",
+      "resolver": "cloudflare",
+      "response": {
+        "AD": false,
+        "Answer": [
+          {
+            "TTL": 86400,
+            "data": "curitiba.ns.porkbun.com.",
+            "name": "dreamcatcher.ai",
+            "type": 2
+          },
+          {
+            "TTL": 86400,
+            "data": "fortaleza.ns.porkbun.com.",
+            "name": "dreamcatcher.ai",
+            "type": 2
+          },
+          {
+            "TTL": 86400,
+            "data": "maceio.ns.porkbun.com.",
+            "name": "dreamcatcher.ai",
+            "type": 2
+          },
+          {
+            "TTL": 86400,
+            "data": "salvador.ns.porkbun.com.",
+            "name": "dreamcatcher.ai",
+            "type": 2
+          }
+        ],
+        "CD": false,
+        "Question": [
+          {
+            "name": "dreamcatcher.ai",
+            "type": 2
+          }
+        ],
+        "RA": true,
+        "RD": true,
+        "Status": 0,
+        "TC": false
+      },
+      "type": "NS"
+    },
+    {
+      "name": "edu.dreamcatcher.ai",
+      "resolver": "google",
+      "response": {
+        "AD": false,
+        "Answer": [
+          {
+            "TTL": 600,
+            "data": "10 mxb.eu.mailgun.org.",
+            "name": "edu.dreamcatcher.ai.",
+            "type": 15
+          },
+          {
+            "TTL": 600,
+            "data": "10 mxa.eu.mailgun.org.",
+            "name": "edu.dreamcatcher.ai.",
+            "type": 15
+          }
+        ],
+        "CD": false,
+        "Comment": "Response from 162.159.8.140.",
+        "Question": [
+          {
+            "name": "edu.dreamcatcher.ai.",
+            "type": 15
+          }
+        ],
+        "RA": true,
+        "RD": true,
+        "Status": 0,
+        "TC": false
+      },
+      "type": "MX"
+    },
+    {
+      "name": "edu.dreamcatcher.ai",
+      "resolver": "google",
+      "response": {
+        "AD": false,
+        "Answer": [
+          {
+            "TTL": 600,
+            "data": "v=spf1 include:mailgun.org ~all",
+            "name": "edu.dreamcatcher.ai.",
+            "type": 16
+          },
+          {
+            "TTL": 600,
+            "data": "MS=ms61661472",
+            "name": "edu.dreamcatcher.ai.",
+            "type": 16
+          }
+        ],
+        "CD": false,
+        "Comment": "Response from 162.159.8.140.",
+        "Question": [
+          {
+            "name": "edu.dreamcatcher.ai.",
+            "type": 16
+          }
+        ],
+        "RA": true,
+        "RD": true,
+        "Status": 0,
+        "TC": false
+      },
+      "type": "TXT"
+    },
+    {
+      "name": "edu.dreamcatcher.ai",
+      "resolver": "google",
+      "response": {
+        "AD": false,
+        "Authority": [
+          {
+            "TTL": 1800,
+            "data": "curitiba.ns.porkbun.com. dns.cloudflare.com. 2413429526 10000 2400 604800 1800",
+            "name": "dreamcatcher.ai.",
+            "type": 6
+          }
+        ],
+        "CD": false,
+        "Comment": "Response from 162.159.10.150.",
+        "Question": [
+          {
+            "name": "edu.dreamcatcher.ai.",
+            "type": 5
+          }
+        ],
+        "RA": true,
+        "RD": true,
+        "Status": 0,
+        "TC": false
+      },
+      "type": "CNAME"
+    },
+    {
+      "name": "dreamcatcher.ai",
+      "resolver": "google",
+      "response": {
+        "AD": false,
+        "Answer": [
+          {
+            "TTL": 21600,
+            "data": "salvador.ns.porkbun.com.",
+            "name": "dreamcatcher.ai.",
+            "type": 2
+          },
+          {
+            "TTL": 21600,
+            "data": "maceio.ns.porkbun.com.",
+            "name": "dreamcatcher.ai.",
+            "type": 2
+          },
+          {
+            "TTL": 21600,
+            "data": "fortaleza.ns.porkbun.com.",
+            "name": "dreamcatcher.ai.",
+            "type": 2
+          },
+          {
+            "TTL": 21600,
+            "data": "curitiba.ns.porkbun.com.",
+            "name": "dreamcatcher.ai.",
+            "type": 2
+          }
+        ],
+        "CD": false,
+        "Comment": "Response from 173.245.58.37.",
+        "Question": [
+          {
+            "name": "dreamcatcher.ai.",
+            "type": 2
+          }
+        ],
+        "RA": true,
+        "RD": true,
+        "Status": 0,
+        "TC": false
+      },
+      "type": "NS"
+    }
+  ]
+}

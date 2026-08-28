@@ -1,0 +1,36 @@
+{
+  "captured_at": "20260828T190454Z",
+  "checks": {
+    "account_enabled": true,
+    "cloudflare_public": true,
+    "entra_domain_verified": true,
+    "google_public": true,
+    "provider_exact_count": 1,
+    "user_upn_matches_agent_email": true
+  },
+  "dns_expected": {
+    "content": "MS=ms61661472",
+    "name": "edu.dreamcatcher.ai",
+    "ttl": "3600",
+    "type": "TXT"
+  },
+  "domain": {
+    "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#domains(id,isVerified,isDefault,isInitial,authenticationType)/$entity",
+    "authenticationType": "Managed",
+    "id": "edu.dreamcatcher.ai",
+    "isDefault": false,
+    "isInitial": false,
+    "isVerified": true
+  },
+  "user": {
+    "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#users(id,displayName,userPrincipalName,mailNickname,mail,accountEnabled,userType,createdDateTime)/$entity",
+    "accountEnabled": true,
+    "createdDateTime": "2026-08-27T00:01:05Z",
+    "displayName": "McHermes Dreamcatcher Agent",
+    "id": "3f6eee54-10d5-4009-a027-75dec65b1036",
+    "mail": null,
+    "mailNickname": "mchermes",
+    "userPrincipalName": "mchermes@edu.dreamcatcher.ai",
+    "userType": "Member"
+  }
+}
