@@ -40,6 +40,7 @@ const requiredFiles = [
   'robots.txt',
   'sitemap.xml',
   '.nojekyll',
+  '.well-known/microsoft-identity-association.json',
   'CNAME',
   'slides/index.html',
   'slides/reveal-runner.html',
@@ -123,7 +124,13 @@ const capsule = read('assets/agent-capsule.svg');
 const slidesIndex = read('slides/index.html');
 const runner = read('slides/reveal-runner.html');
 const pkg = JSON.parse(read('package.json'));
+const microsoftIdentityAssociation = JSON.parse(read('.well-known/microsoft-identity-association.json'));
 const gitignore = read('.gitignore');
+
+const associatedApplicationIds = microsoftIdentityAssociation.associatedApplications?.map((entry) => entry.applicationId) || [];
+if (JSON.stringify(associatedApplicationIds) !== JSON.stringify(['0f680c47-5770-440b-94ff-f26e6a491475'])) {
+  fail('Microsoft publisher-domain association must contain only the current Dreamcatcher M365 OAuth client ID');
+}
 
 const mustContain = [
   ['portable Arks', html],
